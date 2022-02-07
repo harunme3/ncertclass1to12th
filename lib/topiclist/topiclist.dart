@@ -37,7 +37,7 @@ class TopicList extends StatefulWidget {
 }
 
 class _TopicListState extends State<TopicList> {
-  var d = Logger();
+  var l = Logger();
 
   deletePdfdata(index, File file) {
     if (file.existsSync()) {
@@ -74,58 +74,10 @@ class _TopicListState extends State<TopicList> {
     }
   }
 
-  Future ishintdownloaded(String filename) async {
-    Directory dir = await getApplicationDocumentsDirectory();
-    final file = File('${dir.path}/$filename');
-
-    if (file.existsSync()) {
-      return file;
-    } else {
-      return false;
-    }
-  }
-
-  isSolutionExist(int index) async {
-    bool status = widget
-        .bookSolutionDataSet![widget.solutionindex!].topicDataset
+  Future<bool> isSolutionExist(int index) async {
+    return widget.bookSolutionDataSet![widget.solutionindex!].topicDataset
         .contains(widget.topicDataSet[index].topicName);
 
-    if (status) {
-      final projectname = 'Education';
-      final examname = 'NCERT and Exampler';
-      final classname = widget.classname;
-      final medium =
-          await Provider.of<LangaugeProvider>(context, listen: false).isHindi
-              ? 'HindiMedium'
-              : 'EnglishMedium';
-
-      final bookname = widget.bookname;
-      final subjectname = widget.subjectname;
-      final booksolutionname =
-          widget.bookSolutionDataSet![widget.solutionindex!].booksolutionname;
-      final topicname = widget.bookSolutionDataSet![widget.solutionindex!]
-          .topicDataset[index].topicName;
-      final String pathofdata =
-          '$projectname/$examname/$classname/$medium/$bookname/$subjectname/$booksolutionname/$topicname/';
-      final String filename =
-          '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_${topicname}';
-
-      var file = await ishintdownloaded(filename);
-      d.e(file);
-      if (file != false) {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => HintPdf(file: file)),
-        );
-      } else if (file == false) {
-        d.i('We have to download file now');
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => HintDownload(pathofdata, filename)),
-        );
-      }
-    }
     //check solution is exist or not if it is exist then send path
   }
 
@@ -176,13 +128,54 @@ class _TopicListState extends State<TopicList> {
                       return snapshot.data != false
                           ? GestureDetector(
                               onTap: () async {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => PdfViewLocation(
-                                          classname: widget.classname,
-                                          file: snapshot.data)),
-                                );
+                                bool status = await isSolutionExist(index);
+                                l.e(status);
+                                if (status) {
+                                  final projectname = 'Education';
+                                  final examname = 'NCERT and Exampler';
+                                  final classname = widget.classname;
+                                  final medium =
+                                      await Provider.of<LangaugeProvider>(
+                                                  context,
+                                                  listen: false)
+                                              .isHindi
+                                          ? 'HindiMedium'
+                                          : 'EnglishMedium';
+
+                                  final bookname = widget.bookname;
+                                  final subjectname = widget.subjectname;
+                                  final booksolutionname = widget
+                                      .bookSolutionDataSet![
+                                          widget.solutionindex!]
+                                      .booksolutionname;
+                                  final topicname = widget
+                                      .bookSolutionDataSet![
+                                          widget.solutionindex!]
+                                      .topicDataset[index]
+                                      .topicName;
+                                  final String pathofdata =
+                                      await '$projectname/$examname/$classname/$medium/$bookname/$subjectname/$booksolutionname/$topicname/';
+                                  final String filename =
+                                      await '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_${topicname}';
+
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => PdfViewLocation(
+                                            classname: widget.classname,
+                                            file: snapshot.data,
+                                            filename: filename,
+                                            pathofdata: pathofdata)),
+                                  );
+                                } else {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => PdfViewLocation(
+                                            classname: widget.classname,
+                                            file: snapshot.data)),
+                                  );
+                                }
                               },
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),

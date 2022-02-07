@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:logger/logger.dart';
+import 'package:ncertclass1to12th/pdf%20view/otherpdf.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdf%20view_location.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -96,11 +97,10 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
           _percenatge = 0,
           print(
               '================================task completed=================================='),
-          // Navigator.pushReplacement(
-          //   context,
-          //   MaterialPageRoute(
-          //       builder: (context) => PdfViewLocation(file: file!)),
-          // ),
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => OtherPdf(file: file!)),
+          ),
         });
   }
 
