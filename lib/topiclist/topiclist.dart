@@ -11,14 +11,12 @@ import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 
 class TopicList extends StatefulWidget {
-  TopicList(this.topicDataSet, this.index1, this.index2, this.index3,
+  TopicList(this.bookname, this.subjectname, this.topicDataSet,
       this.booksolutionname, this.classname);
-
-  final String booksolutionname;
-  final index1;
-  final index2;
-  final index3;
+  final String bookname;
+  final String subjectname;
   final List<TopicDataSet> topicDataSet;
+  final String booksolutionname;
   final String classname;
 
   @override
@@ -33,26 +31,22 @@ class _TopicListState extends State<TopicList> {
     }
   }
 
-  Future canviewpdf(int index, DataSet dataSet) async {
-    String language = 'en';
+  Future canviewpdf(int index) async {
+    final projectname = 'Education';
+    final examname = 'NCERT and Exampler';
+    final classname = widget.classname;
+    final medium =
+        await Provider.of<LangaugeProvider>(context, listen: false).isHindi
+            ? 'HindiMedium'
+            : 'EnglishMedium';
 
-    final bookname = dataSet.bookDataSet[widget.index1].bookName;
-    final subjectname = dataSet
-        .bookDataSet[widget.index1].subjectDataSet[widget.index2].subjectName;
-    final booksolutionname = dataSet
-        .bookDataSet[widget.index1]
-        .subjectDataSet[widget.index2]
-        .bookSolutionDataSet[widget.index3]
-        .booksolutionname;
-    final topicname = dataSet
-        .bookDataSet[widget.index1]
-        .subjectDataSet[widget.index2]
-        .bookSolutionDataSet[widget.index3]
-        .topicDataset[index]
-        .topicName;
+    final bookname = widget.bookname;
+    final subjectname = widget.subjectname;
+    final booksolutionname = widget.booksolutionname;
+    final topicname = widget.topicDataSet[index];
 
     String filename =
-        '${bookname}_${subjectname}_${booksolutionname}_${topicname}_$language' +
+        '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_${topicname}' +
             '.pdf';
 
     Directory dir = await getApplicationDocumentsDirectory();
@@ -118,7 +112,7 @@ class _TopicListState extends State<TopicList> {
                             delegate: SliverChildBuilderDelegate(
                                 (BuildContext context, int index) {
                           return FutureBuilder(
-                            future: canviewpdf(index, snapshot.data),
+                            future: canviewpdf(index),
                             builder: (BuildContext context,
                                 AsyncSnapshot viewpdfsnapshot) {
                               switch (viewpdfsnapshot.connectionState) {
@@ -214,17 +208,40 @@ class _TopicListState extends State<TopicList> {
                                           )
                                         : GestureDetector(
                                             onTap: () async {
+                                              final projectname = 'Education';
+                                              final examname =
+                                                  'NCERT and Exampler';
+                                              final classname =
+                                                  widget.classname;
+                                              final medium = await Provider.of<
+                                                              LangaugeProvider>(
+                                                          context,
+                                                          listen: false)
+                                                      .isHindi
+                                                  ? 'HindiMedium'
+                                                  : 'EnglishMedium';
+
+                                              final bookname = widget.bookname;
+                                              final subjectname =
+                                                  widget.subjectname;
+                                              final booksolutionname =
+                                                  widget.booksolutionname;
+                                              final topicname =
+                                                  widget.topicDataSet[index];
+
+                                              final String pathofdata =
+                                                  '$projectname/$examname/$classname/$medium/$bookname/$subjectname/$booksolutionname/$topicname/';
+                                              final String filename =
+                                                  '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_${topicname}';
+
                                               Navigator.push(
                                                 context,
                                                 MaterialPageRoute(
                                                     builder: (context) =>
                                                         DownloadPlatform(
-                                                            index,
-                                                            snapshot.data,
-                                                            widget.index1,
-                                                            widget.index2,
-                                                            widget.index3,
-                                                            'en')),
+                                                          pathofdata,
+                                                          filename,
+                                                        )),
                                               ).then((value) {
                                                 setState(() {
                                                   print(

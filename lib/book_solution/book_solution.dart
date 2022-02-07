@@ -8,13 +8,16 @@ import 'package:ncertclass1to12th/topiclist/topiclist.dart';
 import 'package:provider/provider.dart';
 
 class MyBookandSolution extends StatefulWidget {
-  final index1;
-  final index2;
+  const MyBookandSolution(
+    this.bookname,
+    this.bookSolutionDataSet,
+    this.subjectname,
+    this.classname,
+  );
+  final String bookname;
   final List<BookSolutionDataSet> bookSolutionDataSet;
-  final String subjectname;
   final String classname;
-  const MyBookandSolution(this.bookSolutionDataSet, this.index1, this.index2,
-      this.subjectname, this.classname);
+  final String subjectname;
 
   @override
   _MyBookandSolutionState createState() => _MyBookandSolutionState();
@@ -61,10 +64,9 @@ class _MyBookandSolutionState extends State<MyBookandSolution> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => TopicList(
+                                widget.bookname,
+                                widget.subjectname,
                                 widget.bookSolutionDataSet[index].topicDataset,
-                                widget.index1,
-                                widget.index2,
-                                index,
                                 widget.bookSolutionDataSet[index]
                                     .booksolutionname,
                                 widget.classname)),

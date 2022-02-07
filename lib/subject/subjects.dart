@@ -8,12 +8,16 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class Subject extends StatefulWidget {
-  final index1;
-  final List<SubjectDataSet> subjectDataSet;
+  const Subject(
+    this.subjectDataSet,
+    this.bookname,
+    this.classname,
+  );
+
   final String bookname;
   final String classname;
-  const Subject(
-      this.subjectDataSet, this.index1, this.bookname, this.classname);
+
+  final List<SubjectDataSet> subjectDataSet;
 
   @override
   _SubjectState createState() => _SubjectState();
@@ -57,10 +61,9 @@ class _SubjectState extends State<Subject> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => MyBookandSolution(
+                                widget.bookname,
                                 widget
                                     .subjectDataSet[index].bookSolutionDataSet,
-                                widget.index1,
-                                index,
                                 widget.subjectDataSet[index].subjectName,
                                 widget.classname)),
                       );

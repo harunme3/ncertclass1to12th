@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:ncertclass1to12th/Modals/listdata.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdf%20view_location.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -13,15 +12,10 @@ import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 
 class DownloadPlatform extends StatefulWidget {
-  const DownloadPlatform(this.index, this.dataSet, this.index1, this.index2,
-      this.index3, this.language);
+  const DownloadPlatform(this.pathofdata, this.filename);
 
-  final DataSet dataSet;
-  final int index;
-  final index1;
-  final index2;
-  final index3;
-  final String language;
+  final String pathofdata;
+  final String filename;
 
   @override
   _DownloadPlatformState createState() => _DownloadPlatformState();
@@ -49,7 +43,7 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
   void initState() {
     super.initState();
 
-    downloadpdfdata(widget.index, widget.dataSet, widget.language);
+    downloadpdfdata(widget.pathofdata, widget.filename);
   }
 
   deletePdfdata(File file) {
@@ -58,37 +52,13 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
     }
   }
 
-  void downloadpdfdata(index, DataSet dataSet, String language) async {
-    print(
-        '========================================$language ==================================================');
-
-    final bookname = dataSet.bookDataSet[widget.index1].bookName;
-    final subjectname = dataSet
-        .bookDataSet[widget.index1].subjectDataSet[widget.index2].subjectName;
-    final booksolutionname = dataSet
-        .bookDataSet[widget.index1]
-        .subjectDataSet[widget.index2]
-        .bookSolutionDataSet[widget.index3]
-        .booksolutionname;
-    final topicname = dataSet
-        .bookDataSet[widget.index1]
-        .subjectDataSet[widget.index2]
-        .bookSolutionDataSet[widget.index3]
-        .topicDataset[index]
-        .topicName;
-
-    final String pathofdata =
-        '$bookname/$subjectname/$booksolutionname/$topicname/$language/';
-
-    String filename =
-        '${bookname}_${subjectname}_${booksolutionname}_${topicname}_$language';
-
+  void downloadpdfdata(pathofdata, filename) async {
     final ref = await FirebaseStorage.instance.ref(pathofdata).listAll();
 
     if (ref.items.isNotEmpty) {
       ref.items.forEach((e) {
         filename = filename + '.pdf';
-        writefile(e, filename, index);
+        writefile(e, filename);
       });
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -99,7 +69,7 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
     }
   }
 
-  writefile(Reference ref, String filename, index) async {
+  writefile(Reference ref, String filename) async {
     final dir = await getApplicationDocumentsDirectory();
 
     this.file = File('${dir.path}/$filename');

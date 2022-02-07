@@ -10,9 +10,12 @@ import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:provider/provider.dart';
 
 class Books extends StatefulWidget {
+  const Books(
+    this.classname,
+  );
+
   final String classname;
 
-  const Books(this.classname);
   @override
   _BooksState createState() => _BooksState();
 }
@@ -57,7 +60,6 @@ class _BooksState extends State<Books> {
                                         builder: (context) => Subject(
                                             snapshot.data!.bookDataSet[index]
                                                 .subjectDataSet,
-                                            index,
                                             snapshot.data!.bookDataSet[index]
                                                 .bookName,
                                             widget.classname)),
