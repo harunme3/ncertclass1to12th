@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:logger/logger.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdf%20view_location.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -21,9 +22,9 @@ class DownloadPlatform extends StatefulWidget {
 }
 
 class _DownloadPlatformState extends State<DownloadPlatform> {
+  var l = Logger();
   File? file;
   DownloadTask? task;
-
   double _percenatge = 0;
 
   @override
@@ -54,6 +55,9 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
   void downloadpdfdata(pathofdata, filename) async {
     final ref = await FirebaseStorage.instance.ref(pathofdata).listAll();
 
+    // l.e(pathofdata);
+    // l.w(filename);
+    // l.e(ref.items);
     if (ref.items.isNotEmpty) {
       ref.items.forEach((e) {
         filename = filename + '.pdf';
