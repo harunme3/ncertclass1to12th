@@ -1,11 +1,9 @@
 import 'dart:io';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:ncertclass1to12th/DownloadHint/hintdownload.dart';
 import 'package:ncertclass1to12th/DownloadforTopic/downloadplatform.dart';
 import 'package:ncertclass1to12th/Modals/listdata.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
-import 'package:ncertclass1to12th/pdf%20view/hintpdf.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdf%20view_location.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:flutter/material.dart';

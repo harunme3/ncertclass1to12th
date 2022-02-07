@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:in_app_update/in_app_update.dart';
 import 'package:ncertclass1to12th/SlideUp_Pdfoption/slideup_pdfoption.dart';
-import 'package:ncertclass1to12th/pdf%20view/hintfloatingbutton.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdfviewdarkmode.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdfviewdistractionfreemode.dart';
 import 'package:screenshot/screenshot.dart';
