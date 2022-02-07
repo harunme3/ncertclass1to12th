@@ -146,11 +146,10 @@ class _NcertHomeState extends State<NcertHome> {
             builder: (BuildContext context, AsyncSnapshot snapshot) {
               switch (snapshot.connectionState) {
                 case ConnectionState.waiting:
-                  return Container(
-                    //Background page on reload
-                    color: Colors.white,
-                    height: MediaQuery.of(context).size.height,
-                    width: MediaQuery.of(context).size.width,
+                  return SafeArea(
+                    child: Scaffold(
+                      body: Center(child: CircularProgressIndicator()),
+                    ),
                   );
                 default:
                   if (snapshot.hasError)

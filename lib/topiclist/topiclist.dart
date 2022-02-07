@@ -52,7 +52,7 @@ class _TopicListState extends State<TopicList> {
     final bookname = widget.bookname;
     final subjectname = widget.subjectname;
     final booksolutionname = widget.booksolutionname;
-    final topicname = widget.topicDataSet[index];
+    final topicname = widget.topicDataSet[index].topicName;
 
     String filename =
         '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_$topicname' +
@@ -107,7 +107,11 @@ class _TopicListState extends State<TopicList> {
                 builder: (BuildContext context, AsyncSnapshot snapshot) {
                   switch (snapshot.connectionState) {
                     case ConnectionState.waiting:
-                      return Text('');
+                      return SafeArea(
+                        child: Scaffold(
+                          body: Center(child: CircularProgressIndicator()),
+                        ),
+                      );
                     default:
                       if (snapshot.hasError)
                         return Text('Error: ${snapshot.error}');
@@ -202,15 +206,12 @@ class _TopicListState extends State<TopicList> {
                                   final String filename =
                                       '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_${topicname}';
 
-                                  l.e(pathofdata);
-                                  l.d(filename);
-                                  l.w(topicname);
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => DownloadPlatform(
-                                              pathofdata,
-                                              filename,
+                                              pathofdata: pathofdata,
+                                              filename: filename,
                                             )),
                                   ).then((value) {
                                     setState(() {

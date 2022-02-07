@@ -41,7 +41,11 @@ class _AllClassState extends State<AllClass> {
       builder: (BuildContext context, AsyncSnapshot<ClassDataSet> snapshot) {
         switch (snapshot.connectionState) {
           case ConnectionState.waiting:
-            return Text('Loading....');
+            return SafeArea(
+              child: Scaffold(
+                body: Center(child: CircularProgressIndicator()),
+              ),
+            );
           default:
             if (snapshot.hasError)
               return Text('Error: ${snapshot.error}');

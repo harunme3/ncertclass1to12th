@@ -8,11 +8,10 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 import 'package:path_provider/path_provider.dart';
-
 import 'package:provider/provider.dart';
 
 class DownloadPlatform extends StatefulWidget {
-  const DownloadPlatform(this.pathofdata, this.filename);
+  const DownloadPlatform({required this.pathofdata, required this.filename});
 
   final String pathofdata;
   final String filename;
@@ -55,9 +54,6 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
   void downloadpdfdata(pathofdata, filename) async {
     final ref = await FirebaseStorage.instance.ref(pathofdata).listAll();
 
-    // l.e(pathofdata);
-    // l.w(filename);
-    // l.e(ref.items);
     if (ref.items.isNotEmpty) {
       ref.items.forEach((e) {
         filename = filename + '.pdf';

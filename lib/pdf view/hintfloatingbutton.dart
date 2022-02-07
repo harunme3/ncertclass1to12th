@@ -23,7 +23,11 @@ class HintFloatingActionButton extends StatelessWidget {
         builder: (BuildContext context, AsyncSnapshot<DataSet> snapshot) {
           switch (snapshot.connectionState) {
             case ConnectionState.waiting:
-              return Text('Loading....');
+              return SafeArea(
+                child: Scaffold(
+                  body: Center(child: CircularProgressIndicator()),
+                ),
+              );
             default:
               if (snapshot.hasError)
                 return Text('Error: ${snapshot.error}');
