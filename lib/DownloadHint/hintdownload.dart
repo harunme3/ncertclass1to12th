@@ -10,19 +10,9 @@ import 'package:provider/provider.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class HintDownload extends StatefulWidget {
-  final String bookname;
-  final String booksolutionname;
-  final String topicname;
-  final String language;
-  final int index;
-  const HintDownload(
-      {Key? key,
-      required this.bookname,
-      required this.booksolutionname,
-      required this.topicname,
-      required this.language,
-      required this.index})
-      : super(key: key);
+  final String pathofdata;
+  final String filename;
+  const HintDownload(this.pathofdata, this.filename);
 
   @override
   _HintDownloadState createState() => _HintDownloadState();
@@ -48,8 +38,8 @@ class _HintDownloadState extends State<HintDownload> {
   @override
   void initState() {
     super.initState();
-    downloadpdfdata(widget.bookname, widget.booksolutionname, widget.topicname,
-        widget.language);
+
+    downloadpdfdata(widget.pathofdata, widget.filename);
   }
 
   deletePdfdata(File file) {
@@ -58,21 +48,13 @@ class _HintDownloadState extends State<HintDownload> {
     }
   }
 
-  void downloadpdfdata(bookname, booksolutionname, topicname, language) async {
-    print(
-        '========================================Love Hindi==================================================');
-
-    final String pathofdata =
-        '$bookname/$booksolutionname/$topicname/$language/';
-
-    String filename = '${bookname}_${booksolutionname}_${topicname}_$language';
-
+  void downloadpdfdata(pathofdata, filename) async {
     final ref = await FirebaseStorage.instance.ref(pathofdata).listAll();
 
     if (ref.items.isNotEmpty) {
       ref.items.forEach((e) {
         filename = filename + '.pdf';
-        writefile(e, filename, widget.index);
+        writefile(e, filename);
       });
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -83,7 +65,7 @@ class _HintDownloadState extends State<HintDownload> {
     }
   }
 
-  writefile(Reference ref, String filename, index) async {
+  writefile(Reference ref, String filename) async {
     final dir = await getApplicationDocumentsDirectory();
 
     this.file = File('${dir.path}/$filename');
@@ -111,11 +93,11 @@ class _HintDownloadState extends State<HintDownload> {
           _percenatge = 0,
           print(
               '================================task completed=================================='),
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-                builder: (context) => PdfViewLocation(file: file!)),
-          ),
+          // Navigator.pushReplacement(
+          //   context,
+          //   MaterialPageRoute(
+          //       builder: (context) => PdfViewLocation(file: file!)),
+          // ),
         });
   }
 

@@ -96,11 +96,11 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
           _percenatge = 0,
           print(
               '================================task completed=================================='),
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-                builder: (context) => PdfViewLocation(file: file!)),
-          ),
+          // Navigator.pushReplacement(
+          //   context,
+          //   MaterialPageRoute(
+          //       builder: (context) => PdfViewLocation(file: file!)),
+          // ),
         });
   }
 

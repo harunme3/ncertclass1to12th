@@ -5,21 +5,25 @@ import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:logger/logger.dart';
 
-class HintFloatingActionButton extends StatelessWidget {
+class HintFloatingActionButton extends StatefulWidget {
   HintFloatingActionButton({
-    Key? key,
-    required this.size,
-  }) : super(key: key);
+    required this.classname,
+  });
+  final String classname;
 
-  final Size size;
+  @override
+  State<HintFloatingActionButton> createState() =>
+      _HintFloatingActionButtonState();
+}
 
+class _HintFloatingActionButtonState extends State<HintFloatingActionButton> {
   final d = Logger();
 
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<DataSet>(
         future: Provider.of<LangaugeProvider>(context)
-            .loadJsonDataSet('class 10'), // async work
+            .loadJsonDataSet(widget.classname), // async work
         builder: (BuildContext context, AsyncSnapshot<DataSet> snapshot) {
           switch (snapshot.connectionState) {
             case ConnectionState.waiting:
@@ -34,8 +38,6 @@ class HintFloatingActionButton extends StatelessWidget {
               else
                 return FloatingActionButton(
                   child: Container(
-                    height: size.width / 6,
-                    width: size.width / 6,
                     child: Align(
                       alignment: Alignment.center,
                       child: AutoSizeText(

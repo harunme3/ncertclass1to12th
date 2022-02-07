@@ -1,9 +1,11 @@
 import 'dart:io';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:ncertclass1to12th/DownloadHint/hintdownload.dart';
 import 'package:ncertclass1to12th/DownloadforTopic/downloadplatform.dart';
 import 'package:ncertclass1to12th/Modals/listdata.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
+import 'package:ncertclass1to12th/pdf%20view/hintpdf.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdf%20view_location.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -13,16 +15,20 @@ import 'package:logger/logger.dart';
 
 class TopicList extends StatefulWidget {
   TopicList({
+    this.bookSolutionDataSet,
     required this.bookname,
     required this.booksolutionname,
     required this.classname,
+    this.solutionindex,
     required this.subjectname,
     required this.topicDataSet,
   });
 
+  final List<BookSolutionDataSet>? bookSolutionDataSet;
   final String bookname;
   final String booksolutionname;
   final String classname;
+  final int? solutionindex;
   final String subjectname;
   final List<TopicDataSet> topicDataSet;
 
@@ -31,7 +37,7 @@ class TopicList extends StatefulWidget {
 }
 
 class _TopicListState extends State<TopicList> {
-  var l = Logger();
+  var d = Logger();
 
   deletePdfdata(index, File file) {
     if (file.existsSync()) {
@@ -66,6 +72,61 @@ class _TopicListState extends State<TopicList> {
     } else {
       return false;
     }
+  }
+
+  Future ishintdownloaded(String filename) async {
+    Directory dir = await getApplicationDocumentsDirectory();
+    final file = File('${dir.path}/$filename');
+
+    if (file.existsSync()) {
+      return file;
+    } else {
+      return false;
+    }
+  }
+
+  isSolutionExist(int index) async {
+    bool status = widget
+        .bookSolutionDataSet![widget.solutionindex!].topicDataset
+        .contains(widget.topicDataSet[index].topicName);
+
+    if (status) {
+      final projectname = 'Education';
+      final examname = 'NCERT and Exampler';
+      final classname = widget.classname;
+      final medium =
+          await Provider.of<LangaugeProvider>(context, listen: false).isHindi
+              ? 'HindiMedium'
+              : 'EnglishMedium';
+
+      final bookname = widget.bookname;
+      final subjectname = widget.subjectname;
+      final booksolutionname =
+          widget.bookSolutionDataSet![widget.solutionindex!].booksolutionname;
+      final topicname = widget.bookSolutionDataSet![widget.solutionindex!]
+          .topicDataset[index].topicName;
+      final String pathofdata =
+          '$projectname/$examname/$classname/$medium/$bookname/$subjectname/$booksolutionname/$topicname/';
+      final String filename =
+          '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_${topicname}';
+
+      var file = await ishintdownloaded(filename);
+      d.e(file);
+      if (file != false) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => HintPdf(file: file)),
+        );
+      } else if (file == false) {
+        d.i('We have to download file now');
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => HintDownload(pathofdata, filename)),
+        );
+      }
+    }
+    //check solution is exist or not if it is exist then send path
   }
 
   @override
@@ -118,8 +179,9 @@ class _TopicListState extends State<TopicList> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) =>
-                                          PdfViewLocation(file: snapshot.data)),
+                                      builder: (context) => PdfViewLocation(
+                                          classname: widget.classname,
+                                          file: snapshot.data)),
                                 );
                               },
                               child: Padding(

@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:logger/logger.dart';
 import 'package:ncertclass1to12th/Modals/listdata.dart';
 import 'package:ncertclass1to12th/config/appcolor.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
@@ -25,6 +26,7 @@ class MyBookandSolution extends StatefulWidget {
 }
 
 class _MyBookandSolutionState extends State<MyBookandSolution> {
+  var l = Logger();
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -61,20 +63,45 @@ class _MyBookandSolutionState extends State<MyBookandSolution> {
                 delegate: SliverChildBuilderDelegate((context, index) {
                   return GestureDetector(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => TopicList(
-                                  bookname: widget.bookname,
-                                  booksolutionname: widget
-                                      .bookSolutionDataSet[index]
-                                      .booksolutionname,
-                                  classname: widget.classname,
-                                  subjectname: widget.subjectname,
-                                  topicDataSet: widget
-                                      .bookSolutionDataSet[index].topicDataset,
-                                )),
-                      );
+                      if (widget.bookSolutionDataSet[index].isitbook &&
+                          index + 1 < widget.bookSolutionDataSet.length &&
+                          !widget.bookSolutionDataSet[index + 1].isitbook) {
+                        l.e('yessssssssssssssssss');
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TopicList(
+                                    bookSolutionDataSet:
+                                        widget.bookSolutionDataSet,
+                                    bookname: widget.bookname,
+                                    booksolutionname: widget
+                                        .bookSolutionDataSet[index]
+                                        .booksolutionname,
+                                    classname: widget.classname,
+                                    solutionindex: index + 1,
+                                    subjectname: widget.subjectname,
+                                    topicDataSet: widget
+                                        .bookSolutionDataSet[index]
+                                        .topicDataset,
+                                  )),
+                        );
+                      } else {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TopicList(
+                                    bookname: widget.bookname,
+                                    booksolutionname: widget
+                                        .bookSolutionDataSet[index]
+                                        .booksolutionname,
+                                    classname: widget.classname,
+                                    subjectname: widget.subjectname,
+                                    topicDataSet: widget
+                                        .bookSolutionDataSet[index]
+                                        .topicDataset,
+                                  )),
+                        );
+                      }
                     },
                     child: Tooltip(
                       textStyle: TextStyle(color: Colors.white),

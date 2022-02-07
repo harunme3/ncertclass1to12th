@@ -87,12 +87,12 @@ class _DownloadedBookState extends State<DownloadedBook> {
 
                         return GestureDetector(
                           onTap: () async {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      PdfViewLocation(file: file)),
-                            );
+                            // Navigator.push(
+                            //   context,
+                            //   MaterialPageRoute(
+                            //       builder: (context) =>
+                            //           PdfViewLocation(file: file)),
+                            // );
                           },
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
