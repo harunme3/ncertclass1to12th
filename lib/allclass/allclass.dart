@@ -5,6 +5,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_switch/flutter_switch.dart';
+import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:ncertclass1to12th/Modals/classdata.dart';
 import 'package:ncertclass1to12th/books/books.dart';
 import 'package:ncertclass1to12th/config/appcolor.dart';
@@ -15,9 +16,9 @@ import 'package:provider/provider.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class AllClass extends StatefulWidget {
-  const AllClass(this.zoomDrawerController);
+  const AllClass({required this.zoomDrawerController});
 
-  final zoomDrawerController;
+  final ZoomDrawerController zoomDrawerController;
 
   @override
   _AllClassState createState() => _AllClassState();
@@ -51,7 +52,7 @@ class _AllClassState extends State<AllClass> {
                     elevation: 0,
                     leading: IconButton(
                       icon: Icon(Icons.menu),
-                      onPressed: () => widget.zoomDrawerController.toggle(),
+                      onPressed: () => widget.zoomDrawerController.toggle!(),
                     ),
                     actions: [
                       Padding(
@@ -119,10 +120,12 @@ class _AllClassState extends State<AllClass> {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => Books(snapshot
-                                              .data!
-                                              .classDataSet[index]
-                                              .className)));
+                                          builder: (context) => Books(
+                                                classname: snapshot
+                                                    .data!
+                                                    .classDataSet[index]
+                                                    .className,
+                                              )));
                                 },
                                 child: Tooltip(
                                   textStyle: TextStyle(color: Colors.white),

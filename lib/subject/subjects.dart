@@ -9,14 +9,12 @@ import 'package:provider/provider.dart';
 
 class Subject extends StatefulWidget {
   const Subject(
-    this.subjectDataSet,
-    this.bookname,
-    this.classname,
-  );
+      {required this.bookname,
+      required this.classname,
+      required this.subjectDataSet});
 
   final String bookname;
   final String classname;
-
   final List<SubjectDataSet> subjectDataSet;
 
   @override
@@ -60,12 +58,15 @@ class _SubjectState extends State<Subject> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => MyBookandSolution(
-                                widget.bookname,
-                                widget
-                                    .subjectDataSet[index].bookSolutionDataSet,
+                          builder: (context) => MyBookandSolution(
+                            bookSolutionDataSet: widget
+                                .subjectDataSet[index].bookSolutionDataSet,
+                            bookname: widget.bookname,
+                            classname: widget.classname,
+                            subjectname:
                                 widget.subjectDataSet[index].subjectName,
-                                widget.classname)),
+                          ),
+                        ),
                       );
                     },
                     child: Tooltip(

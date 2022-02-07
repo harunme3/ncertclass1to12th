@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
       body: ZoomDrawer(
         controller: _drawerController,
         style: DrawerStyle.Style1,
-        mainScreen: AllClass(_drawerController),
+        mainScreen: AllClass(zoomDrawerController: _drawerController),
         menuScreen: MyDrawer(),
         borderRadius: 26.0,
         angle: 0.0,

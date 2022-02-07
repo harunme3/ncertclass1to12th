@@ -6,7 +6,6 @@ import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
-import 'package:logger/logger.dart';
 import 'package:path_provider/path_provider.dart';
 
 import 'package:provider/provider.dart';

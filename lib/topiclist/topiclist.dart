@@ -11,13 +11,19 @@ import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 
 class TopicList extends StatefulWidget {
-  TopicList(this.bookname, this.subjectname, this.topicDataSet,
-      this.booksolutionname, this.classname);
+  TopicList({
+    required this.bookname,
+    required this.booksolutionname,
+    required this.classname,
+    required this.subjectname,
+    required this.topicDataSet,
+  });
+
   final String bookname;
-  final String subjectname;
-  final List<TopicDataSet> topicDataSet;
   final String booksolutionname;
   final String classname;
+  final String subjectname;
+  final List<TopicDataSet> topicDataSet;
 
   @override
   _TopicListState createState() => _TopicListState();

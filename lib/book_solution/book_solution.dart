@@ -8,14 +8,15 @@ import 'package:ncertclass1to12th/topiclist/topiclist.dart';
 import 'package:provider/provider.dart';
 
 class MyBookandSolution extends StatefulWidget {
-  const MyBookandSolution(
-    this.bookname,
-    this.bookSolutionDataSet,
-    this.subjectname,
-    this.classname,
-  );
-  final String bookname;
+  const MyBookandSolution({
+    required this.bookSolutionDataSet,
+    required this.bookname,
+    required this.classname,
+    required this.subjectname,
+  });
+
   final List<BookSolutionDataSet> bookSolutionDataSet;
+  final String bookname;
   final String classname;
   final String subjectname;
 
@@ -64,12 +65,15 @@ class _MyBookandSolutionState extends State<MyBookandSolution> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => TopicList(
-                                widget.bookname,
-                                widget.subjectname,
-                                widget.bookSolutionDataSet[index].topicDataset,
-                                widget.bookSolutionDataSet[index]
-                                    .booksolutionname,
-                                widget.classname)),
+                                  bookname: widget.bookname,
+                                  booksolutionname: widget
+                                      .bookSolutionDataSet[index]
+                                      .booksolutionname,
+                                  classname: widget.classname,
+                                  subjectname: widget.subjectname,
+                                  topicDataSet: widget
+                                      .bookSolutionDataSet[index].topicDataset,
+                                )),
                       );
                     },
                     child: Tooltip(

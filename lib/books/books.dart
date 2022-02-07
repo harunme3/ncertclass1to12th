@@ -10,9 +10,7 @@ import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:provider/provider.dart';
 
 class Books extends StatefulWidget {
-  const Books(
-    this.classname,
-  );
+  const Books({required this.classname});
 
   final String classname;
 
@@ -58,11 +56,14 @@ class _BooksState extends State<Books> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => Subject(
-                                            snapshot.data!.bookDataSet[index]
-                                                .subjectDataSet,
-                                            snapshot.data!.bookDataSet[index]
-                                                .bookName,
-                                            widget.classname)),
+                                              bookname: snapshot.data!
+                                                  .bookDataSet[index].bookName,
+                                              classname: widget.classname,
+                                              subjectDataSet: snapshot
+                                                  .data!
+                                                  .bookDataSet[index]
+                                                  .subjectDataSet,
+                                            )),
                                   );
                                 },
                                 child: Tooltip(
