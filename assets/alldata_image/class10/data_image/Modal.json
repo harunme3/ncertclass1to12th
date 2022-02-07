@@ -1,0 +1,1393 @@
+{
+  "book_dataset": [
+    {
+      "book_name": "Ncert Books",
+      "book_image_src": "assets/ncert/class10/ncert.png",
+      "subject_dataset": [
+        {
+          "subject_name": "Mathematics",
+          "subject_image_src":  "assets/ncert/class10/subject/mathematics.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Mathematics Books",
+              "book_solution_image_src": "assets/ncert/class10/book/mathematics.png",              
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Real Numbers"
+                },
+                {
+                  "topic_name": "Polynomials"
+                },
+                {
+                  "topic_name": "Pair of Linear Equations in Two Variables"
+                },
+                {
+                  "topic_name": "Quadratic Equations"
+                },
+                {
+                  "topic_name": "Arithmetic Progressions"
+                },
+                {
+                  "topic_name": "Triangles"
+                },
+                {
+                  "topic_name": "Coordinate Geometry"
+                },
+                {
+                  "topic_name": "Introduction to Trigonometry"
+                },
+                {
+                  "topic_name": "Some Applications of Trigonometry"
+                },
+                {
+                  "topic_name": "Circles"
+                },
+                {
+                  "topic_name": "Constructions"
+                },
+                {
+                  "topic_name": "Areas Related to Circles"
+                },
+                {
+                  "topic_name": "Surface Areas and Volumes"
+                },
+                {
+                  "topic_name": "Statistics"
+                },
+                {
+                  "topic_name": "Probability"
+                },
+                {
+                  "topic_name": "Appendix I"
+                },
+                {
+                  "topic_name": "Appendix II"
+                },
+                {
+                  "topic_name": "Answers"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Mathematics Solutions",
+              "book_solution_image_src": "assets/ncert/class10/solution/mathematics.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "Real Numbers"
+                },
+                {
+                  "topic_name": "Polynomials"
+                },
+                {
+                  "topic_name": "Pair of Linear Equations in Two Variables"
+                },
+                {
+                  "topic_name": "Quadratic Equations"
+                },
+                {
+                  "topic_name": "Arithmetic Progressions"
+                },
+                {
+                  "topic_name": "Triangles"
+                },
+                {
+                  "topic_name": "Coordinate Geometry"
+                },
+                {
+                  "topic_name": "Introduction to Trigonometry"
+                },
+                {
+                  "topic_name": "Some Applications of Trigonometry"
+                },
+                {
+                  "topic_name": "Circles"
+                },
+                {
+                  "topic_name": "Constructions"
+                },
+                {
+                  "topic_name": "Areas Related to Circles"
+                },
+                {
+                  "topic_name": "Surface Areas and Volumes"
+                },
+                {
+                  "topic_name": "Statistics"
+                },
+                {
+                  "topic_name": "Probability"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Science",
+          "subject_image_src":  "assets/ncert/class10/subject/science.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Science Books",
+              "book_solution_image_src":  "assets/ncert/class10/book/science.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Chemical Reactions and Equations"
+                },
+                {
+                  "topic_name": "Acids, Bases and Salts"
+                },
+                {
+                  "topic_name": "Metals and Non-metals"
+                },
+                {
+                  "topic_name": "Carbon and its Compounds"
+                },
+                {
+                  "topic_name": "Periodic Classification of Elements"
+                },
+                {
+                  "topic_name": "Life Processes"
+                },
+                {
+                  "topic_name": "Control and Coordination"
+                },
+                {
+                  "topic_name": "How do Organisms Reproduce?"
+                },
+                {
+                  "topic_name": "Heredity and Evolution"
+                },
+                {
+                  "topic_name": "Light – Reflection and Refraction"
+                },
+                {
+                  "topic_name": "The Human Eye and the Colourful World"
+                },
+                {
+                  "topic_name": "Electricity"
+                },
+                {
+                  "topic_name": "Magnetic Effects of Electric Current"
+                },
+                {
+                  "topic_name": "Sources of Energy"
+                },
+                {
+                  "topic_name": "Our Environment"
+                },
+                {
+                  "topic_name": "Sustainable Management of Natural Resources"
+                },
+                {
+                  "topic_name": "Answers"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Science Solutions",
+              "book_solution_image_src":"assets/ncert/class10/solution/science.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "Chemical Reactions and Equations"
+                },
+                {
+                  "topic_name": "Acids, Bases and Salts"
+                },
+                {
+                  "topic_name": "Metals and Non-metals"
+                },
+                {
+                  "topic_name": "Carbon and its Compounds"
+                },
+                {
+                  "topic_name": "Periodic Classification of Elements"
+                },
+                {
+                  "topic_name": "Life Processes"
+                },
+                {
+                  "topic_name": "Control and Coordination"
+                },
+                {
+                  "topic_name": "How do Organisms Reproduce?"
+                },
+                {
+                  "topic_name": "Heredity and Evolution"
+                },
+                {
+                  "topic_name": "Light – Reflection and Refraction"
+                },
+                {
+                  "topic_name": "The Human Eye and the Colourful World"
+                },
+                {
+                  "topic_name": "Electricity"
+                },
+                {
+                  "topic_name": "Magnetic Effects of Electric Current"
+                },
+                {
+                  "topic_name": "Sources of Energy"
+                },
+                {
+                  "topic_name": "Our Environment"
+                },
+                {
+                  "topic_name": "Sustainable Management of Natural Resources"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "English",
+          "subject_image_src": "assets/ncert/class10/subject/english.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "First Flight Books",
+              "book_solution_image_src": "assets/ncert/class10/book/beehive.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "A Letter to God"
+                },
+                {
+                  "topic_name": "Nelson Mandela-Long Walk to Freedom"
+                },
+                {
+                  "topic_name": "Two Stories about Flying"
+                },
+                {
+                  "topic_name": "From the Diary of Anne Frank"
+                },
+                {
+                  "topic_name": "The Hundred Dresses–I"
+                },
+                {
+                  "topic_name": "The Hundred Dresses–II"
+                },
+                {
+                  "topic_name": "Glimpses of India"
+                },
+                {
+                  "topic_name": "Mijbil the Otter"
+                },
+                {
+                  "topic_name": "Madam Rides the Bus"
+                },
+                {
+                  "topic_name": "The Sermon at Benares"
+                },
+                {
+                  "topic_name": "The Proposal"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "First Flight Solutions",
+              "book_solution_image_src": "assets/ncert/class10/solution/beehive.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "A Letter to God"
+                },
+                {
+                  "topic_name": "Nelson Mandela-Long Walk to Freedom"
+                },
+                {
+                  "topic_name": "Two Stories about Flying"
+                },
+                {
+                  "topic_name": "From the Diary of Anne Frank"
+                },
+                {
+                  "topic_name": "The Hundred Dresses–I"
+                },
+                {
+                  "topic_name": "The Hundred Dresses–II"
+                },
+                {
+                  "topic_name": "Glimpses of India"
+                },
+                {
+                  "topic_name": "Mijbil the Otter"
+                },
+                {
+                  "topic_name": "Madam Rides the Bus"
+                },
+                {
+                  "topic_name": "The Sermon at Benares"
+                },
+                {
+                  "topic_name": "The Proposal"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "FootPrints Without Feet Books",
+              "book_solution_image_src": "assets/ncert/class10/book/moment.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "A Triumph of Surgery"
+                },
+                {
+                  "topic_name": "The Thief’s Story"
+                },
+                {
+                  "topic_name": "The Midnight Visitor"
+                },
+                {
+                  "topic_name": "A Question of Trust"
+                },
+                {
+                  "topic_name": "Footprints without Feet"
+                },
+                {
+                  "topic_name": "The Making of a Scientist"
+                },
+                {
+                  "topic_name": "The Necklace"
+                },
+                {
+                  "topic_name": "The Hack Driver"
+                },
+                {
+                  "topic_name": "Bholi"
+                },
+                {
+                  "topic_name": "The Book That Saved the Earth"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "FootPrints Without Feet Solutions",
+              "book_solution_image_src": "assets/ncert/class10/solution/moment.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "A Triumph of Surgery"
+                },
+                {
+                  "topic_name": "The Thief’s Story"
+                },
+                {
+                  "topic_name": "The Midnight Visitor"
+                },
+                {
+                  "topic_name": "A Question of Trust"
+                },
+                {
+                  "topic_name": "Footprints without Feet"
+                },
+                {
+                  "topic_name": "The Making of a Scientist"
+                },
+                {
+                  "topic_name": "The Necklace"
+                },
+                {
+                  "topic_name": "The Hack Driver"
+                },
+                {
+                  "topic_name": "Bholi"
+                },
+                {
+                  "topic_name": "The Book That Saved the Earth"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Words and Expression Books",
+              "book_solution_image_src": "assets/ncert/class10/book/wordexpression.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "A Letter to God"
+                },
+                {
+                  "topic_name": "Nelson Mandela-Long Walk to Freedom"
+                },
+                {
+                  "topic_name": "Two Stories about Flying"
+                },
+                {
+                  "topic_name": "From the Diary of Anne Frank"
+                },
+                {
+                  "topic_name": "The Hundred Dresses–I"
+                },
+                {
+                  "topic_name": "The Hundred Dresses–II"
+                },
+                {
+                  "topic_name": "Glimpses of India"
+                },
+                {
+                  "topic_name": "Mijbil the Otter"
+                },
+                {
+                  "topic_name": "Madam Rides the Bus"
+                },
+                {
+                  "topic_name": "The Sermon at Benares"
+                },
+                {
+                  "topic_name": "The Proposal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Hindi",
+          "subject_image_src":"assets/ncert/class10/subject/hindi.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "कृतिका किताब",
+              "book_solution_image_src": "assets/ncert/class10/book/kritika.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "माता का आँचल"
+                },
+                {
+                  "topic_name": "जॉर्ज पंचम की नाक"
+                },
+                {
+                  "topic_name": "साना-साना हाथ जोड़ि"
+                },
+                {
+                  "topic_name": "एही ठैयाँ झुलनी हेरानी हो रामा"
+                },
+                {
+                  "topic_name": "मैं क्यों लिखता हूँ?"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "कृतिका हल",
+              "book_solution_image_src":  "assets/ncert/class10/solution/kritika.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "माता का आँचल"
+                },
+                {
+                  "topic_name": "जॉर्ज पंचम की नाक"
+                },
+                {
+                  "topic_name": "साना-साना हाथ जोड़ि"
+                },
+                {
+                  "topic_name": "एही ठैयाँ झुलनी हेरानी हो रामा"
+                },
+                {
+                  "topic_name": "मैं क्यों लिखता हूँ?"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "क्षितिज किताब",
+              "book_solution_image_src": "assets/ncert/class10/book/kshitij.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "पद"
+                },
+                {
+                  "topic_name": "राम-लक्ष्मण-परशुराम संवाद"
+                },
+                {
+                  "topic_name": "सवैया और कवित्त"
+                },
+                {
+                  "topic_name": "आत्मकथ्य"
+                },
+                {
+                  "topic_name": "उत्साह और अट नहीं रही"
+                },
+                {
+                  "topic_name": "यह दंतुरहित मुस्कान और फसल"
+                },
+                {
+                  "topic_name": "छाया मत छूना"
+                },
+                {
+                  "topic_name": "कन्यादान"
+                },
+                {
+                  "topic_name": "संगतकार"
+                },
+                {
+                  "topic_name": "नेताजी का चश्मा"
+                },
+                {
+                  "topic_name": "बालगोबिन भगत"
+                },
+                {
+                  "topic_name": "लखनवी अंदाज़"
+                },
+                {
+                  "topic_name": "मानवीय करुणा की दिव्या चमक"
+                },
+                {
+                  "topic_name": "एक कहानी यह भी"
+                },
+                {
+                  "topic_name": "स्त्री शिक्षा के विरोधी कुतर्कों का खंडन"
+                },
+                {
+                  "topic_name": "नौबतखाने में इबादत"
+                },
+                {
+                  "topic_name": "संस्कृति"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "क्षितिज हल",
+              "book_solution_image_src": "assets/ncert/class10/solution/kshitij.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "पद"
+                },
+                {
+                  "topic_name": "राम-लक्ष्मण-परशुराम संवाद"
+                },
+                {
+                  "topic_name": "सवैया और कवित्त"
+                },
+                {
+                  "topic_name": "आत्मकथ्य"
+                },
+                {
+                  "topic_name": "उत्साह और अट नहीं रही"
+                },
+                {
+                  "topic_name": "यह दंतुरहित मुस्कान और फसल"
+                },
+                {
+                  "topic_name": "छाया मत छूना"
+                },
+                {
+                  "topic_name": "कन्यादान"
+                },
+                {
+                  "topic_name": "संगतकार"
+                },
+                {
+                  "topic_name": "नेताजी का चश्मा"
+                },
+                {
+                  "topic_name": "बालगोबिन भगत"
+                },
+                {
+                  "topic_name": "लखनवी अंदाज़"
+                },
+                {
+                  "topic_name": "मानवीय करुणा की दिव्या चमक"
+                },
+                {
+                  "topic_name": "एक कहानी यह भी"
+                },
+                {
+                  "topic_name": "स्त्री शिक्षा के विरोधी कुतर्कों का खंडन"
+                },
+                {
+                  "topic_name": "नौबतखाने में इबादत"
+                },
+                {
+                  "topic_name": "संस्कृति"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "स्पर्श किताब",
+              "book_solution_image_src":  "assets/ncert/class10/book/sparsh.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "साखी"
+                },
+                {
+                  "topic_name": "पद"
+                },
+                {
+                  "topic_name": "दोहे"
+                },
+                {
+                  "topic_name": "मनुष्यता"
+                },
+                {
+                  "topic_name": "पर्वत प्रदेश में पावस"
+                },
+                {
+                  "topic_name": "मधुर-मधुर मेरे दीपक जल"
+                },
+                {
+                  "topic_name": "तोप"
+                },
+                {
+                  "topic_name": "कर चले हम फ़िदा"
+                },
+                {
+                  "topic_name": "आत्मत्राण"
+                },
+                {
+                  "topic_name": "बड़े भाई साहब"
+                },
+                {
+                  "topic_name": "डायरी का एक पन्ना"
+                },
+                {
+                  "topic_name": "तताँरा-वामीरो कथा"
+                },
+                {
+                  "topic_name": "तीसरी कसम के शिल्पकार शैलेंद्र"
+                },
+                {
+                  "topic_name": "गिरगिट"
+                },
+                {
+                  "topic_name": "अब कहाँ दूसरे के दुख से दुखी होने वाले"
+                },
+                {
+                  "topic_name": "पतझर में टूटी पत्तियाँ"
+                },
+                {
+                  "topic_name": "कारतूस"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "स्पर्श हल",
+              "book_solution_image_src": "assets/ncert/class10/solution/sparsh.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "साखी"
+                },
+                {
+                  "topic_name": "पद"
+                },
+                {
+                  "topic_name": "दोहे"
+                },
+                {
+                  "topic_name": "मनुष्यता"
+                },
+                {
+                  "topic_name": "पर्वत प्रदेश में पावस"
+                },
+                {
+                  "topic_name": "मधुर-मधुर मेरे दीपक जल"
+                },
+                {
+                  "topic_name": "तोप"
+                },
+                {
+                  "topic_name": "कर चले हम फ़िदा"
+                },
+                {
+                  "topic_name": "आत्मत्राण"
+                },
+                {
+                  "topic_name": "बड़े भाई साहब"
+                },
+                {
+                  "topic_name": "डायरी का एक पन्ना"
+                },
+                {
+                  "topic_name": "तताँरा-वामीरो कथा"
+                },
+                {
+                  "topic_name": "तीसरी कसम के शिल्पकार शैलेंद्र"
+                },
+                {
+                  "topic_name": "गिरगिट"
+                },
+                {
+                  "topic_name": "अब कहाँ दूसरे के दुख से दुखी होने वाले"
+                },
+                {
+                  "topic_name": "पतझर में टूटी पत्तियाँ"
+                },
+                {
+                  "topic_name": "कारतूस"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "संचयन किताब",
+              "book_solution_image_src": "assets/ncert/class10/book/sanchayan.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "हरिहर काका"
+                },
+                {
+                  "topic_name": "सपनों के-से दिन"
+                },
+                {
+                  "topic_name": "टोपी शुक्ला"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "संचयन हल",
+              "book_solution_image_src": "assets/ncert/class10/solution/sanchayan.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "हरिहर काका"
+                },
+                {
+                  "topic_name": "सपनों के-से दिन"
+                },
+                {
+                  "topic_name": "टोपी शुक्ला"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Sanskrit",
+          "subject_image_src": "assets/ncert/class10/subject/sanskrit.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "शेमुषी किताब",
+              "book_solution_image_src": "assets/ncert/class10/book/shemushi.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "शुचिपर्यावरणम्"
+                },
+                {
+                  "topic_name": "बुद्धिर्बलवती सदा"
+                },
+                {
+                  "topic_name": "व्यायाम सर्वदा पथ्य"
+                },
+                {
+                  "topic_name": "शिशुलालनम्"
+                },
+                {
+                  "topic_name": "जननी तुल्यवत्सला"
+                },
+                {
+                  "topic_name": "सुभाषितानि"
+                },
+                {
+                  "topic_name": "सौहार्दं प्रकृते-शोभा"
+                },
+                {
+                  "topic_name": "विचित्र साक्षी"
+                },
+                {
+                  "topic_name": "सूक्तय"
+                },
+                {
+                  "topic_name": "भूकंपविभीषिका"
+                },
+                {
+                  "topic_name": "प्राणेभ्योऽपि प्रिय सुह्रद्"
+                },
+                {
+                  "topic_name": "अनयोक्त्य"
+                }
+               
+              ]
+            },
+            {
+              "book_solution_name": "शेमुषी हल",
+              "book_solution_image_src": "assets/ncert/class10/solution/shemushi.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "शुचिपर्यावरणम्"
+                },
+                {
+                  "topic_name": "बुद्धिर्बलवती सदा"
+                },
+                {
+                  "topic_name": "व्यायाम सर्वदा पथ्य"
+                },
+                {
+                  "topic_name": "शिशुलालनम्"
+                },
+                {
+                  "topic_name": "जननी तुल्यवत्सला"
+                },
+                {
+                  "topic_name": "सुभाषितानि"
+                },
+                {
+                  "topic_name": "सौहार्दं प्रकृते-शोभा"
+                },
+                {
+                  "topic_name": "विचित्र साक्षी"
+                },
+                {
+                  "topic_name": "सूक्तय"
+                },
+                {
+                  "topic_name": "भूकंपविभीषिका"
+                },
+                {
+                  "topic_name": "प्राणेभ्योऽपि प्रिय सुह्रद्"
+                },
+                {
+                  "topic_name": "अनयोक्त्य"
+                }
+               
+              ]
+            },    
+            {
+              "book_solution_name": "अभ्यासवान् भव भाग किताब",
+              "book_solution_image_src": "assets/ncert/class10/book/abhyasvanbhav.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "अपठितावबोधनम्"
+                },
+                {
+                  "topic_name": "पत्रलेखनम्"
+                },
+                {
+                  "topic_name": "अनुच्छेदलेखमन्"
+                },
+                {
+                  "topic_name": "चित्रवर्णनम्"
+                },
+                {
+                  "topic_name": "रचनानुवाद (वाक्यरचनाकौशलम्)"
+                },
+                {
+                  "topic_name": "सन्धि"
+                },
+                {
+                  "topic_name": "समासा"
+                },
+                {
+                  "topic_name": "प्रत्यया"
+                },
+                {
+                  "topic_name": "अव्ययानि"
+                },
+                {
+                  "topic_name": "समय"
+                },
+                {
+                  "topic_name": "वाच्यम्"
+                },
+                {
+                  "topic_name": "अशुद्धिसंशोधना"
+                },
+                {
+                  "topic_name": "मिश्रिताभ्यास"
+                },
+                {
+                  "topic_name": "आदर्शप्रश्नपत्रम्"
+                },
+                {
+                  "topic_name": "परिशिष्टम्"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "अभ्यासवान् भव भाग हल",
+              "book_solution_image_src": "assets/ncert/class10/solution/abhyasvanbhav.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "अपठितावबोधनम्"
+                },
+                {
+                  "topic_name": "पत्रलेखनम्"
+                },
+                {
+                  "topic_name": "अनुच्छेदलेखमन्"
+                },
+                {
+                  "topic_name": "चित्रवर्णनम्"
+                },
+                {
+                  "topic_name": "रचनानुवाद (वाक्यरचनाकौशलम्)"
+                },
+                {
+                  "topic_name": "सन्धि"
+                },
+                {
+                  "topic_name": "समासा"
+                },
+                {
+                  "topic_name": "प्रत्यया"
+                },
+                {
+                  "topic_name": "अव्ययानि"
+                },
+                {
+                  "topic_name": "समय"
+                },
+                {
+                  "topic_name": "वाच्यम्"
+                },
+                {
+                  "topic_name": "अशुद्धिसंशोधना"
+                },
+                {
+                  "topic_name": "मिश्रिताभ्यास"
+                },
+                {
+                  "topic_name": "आदर्शप्रश्नपत्रम्"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "व्‍याकरणवीथि किताब",
+              "book_solution_image_src":"assets/ncert/class10/book/vykaranvithi.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "वर्ण विचार"
+                },
+                {
+                  "topic_name": "संज्ञा एवं परिभाषा प्रकरण"
+                },
+                {
+                  "topic_name": "सन्धि"
+                },
+                {
+                  "topic_name": "शब्‍दरूप सामान्‍य परिचय"
+                },
+                {
+                  "topic_name": "धातुरूप सामान्‍य परिचय"
+                },
+                {
+                  "topic_name": "उपसर्ग"
+                },
+                {
+                  "topic_name": "अव्‍यय"
+                },
+                {
+                  "topic_name": "प्रत्‍यय"
+                },
+                {
+                  "topic_name": "समास परिचय"
+                },
+                {
+                  "topic_name": "कारक और विभक्‍त"
+                },
+                {
+                  "topic_name": "वाच्‍य परिवर्तन"
+                },
+                {
+                  "topic_name": "रचना प्रयोग"
+                },
+                {
+                  "topic_name": "शब्‍दरूपािण"
+                },
+                {
+                  "topic_name": "धातुरूपािण"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Social Science",
+          "subject_image_src": "assets/ncert/class10/subject/socialscience.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Contemporary India II Books",
+              "book_solution_image_src": "assets/ncert/class10/book/geography.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Resources and Development"
+                },
+                {
+                  "topic_name": "Forest and Wildlife Resources"
+                },
+                {
+                  "topic_name": "Water Resources"
+                },
+                {
+                  "topic_name": "Agriculture"
+                },
+                {
+                  "topic_name": "Minerals and Energy Resources"
+                },
+                {
+                  "topic_name": "Manufacturing Industries"
+                },
+                {
+                  "topic_name": "Lifelines of National Economy"
+                },
+                {
+                  "topic_name": "Appendix I"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Contemporary India II Solutions",
+              "book_solution_image_src":"assets/ncert/class10/solution/geography.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "Resources and Development"
+                },
+                {
+                  "topic_name": "Forest and Wildlife Resources"
+                },
+                {
+                  "topic_name": "Water Resources"
+                },
+                {
+                  "topic_name": "Agriculture"
+                },
+                {
+                  "topic_name": "Minerals and Energy Resources"
+                },
+                {
+                  "topic_name": "Manufacturing Industries"
+                },
+                {
+                  "topic_name": "Lifelines of National Economy"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Understanding Economic Development Books",
+              "book_solution_image_src": "assets/ncert/class10/book/economics.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Development"
+                },
+                {
+                  "topic_name": "Sectors Of The Indian Economy"
+                },
+                {
+                  "topic_name": "Money And Credit"
+                },
+                {
+                  "topic_name": "Globalisation And The Indian Economy"
+                },
+                {
+                  "topic_name": "Consumer Rights"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Understanding Economic Development Solutions",
+              "book_solution_image_src": "assets/ncert/class10/solution/economics.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "Development"
+                },
+                {
+                  "topic_name": "Sectors Of The Indian Economy"
+                },
+                {
+                  "topic_name": "Money And Credit"
+                },
+                {
+                  "topic_name": "Globalisation And The Indian Economy"
+                },
+                {
+                  "topic_name": "Consumer Rights"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "India and the Contemporary World – II Books",
+              "book_solution_image_src":"assets/ncert/class10/book/history.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Rise of Nationalism in Europe"
+                },
+                {
+                  "topic_name": "Nationalism in India"
+                },
+                {
+                  "topic_name": "The Making of a Global World"
+                },
+                {
+                  "topic_name": "The Age of Industrialisation"
+                },
+                {
+                  "topic_name": "Print Culture and the Modern World"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "India and the Contemporary World – II Solutions",
+              "book_solution_image_src": "assets/ncert/class10/solution/history.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "The Rise of Nationalism in Europe"
+                },
+                {
+                  "topic_name": "Nationalism in India"
+                },
+                {
+                  "topic_name": "The Making of a Global World"
+                },
+                {
+                  "topic_name": "The Age of Industrialisation"
+                },
+                {
+                  "topic_name": "Print Culture and the Modern World"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Democratic Politics-II Books",
+              "book_solution_image_src": "assets/ncert/class10/book/political.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Power-sharing"
+                },
+                {
+                  "topic_name": "Federalism"
+                },
+                {
+                  "topic_name": "Democracy and Diversity"
+                },
+                {
+                  "topic_name": "Gender, Religion and Caste"
+                },
+                {
+                  "topic_name": "Popular Struggles and Movements"
+                },
+                {
+                  "topic_name": "Political Parties"
+                },
+                {
+                  "topic_name": "Outcomes of Democracy"
+                },
+                {
+                  "topic_name": "Challenges to Democracy"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Democratic Politics-II Solutions",
+              "book_solution_image_src": "assets/ncert/class10/solution/political.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "Power-sharing"
+                },
+                {
+                  "topic_name": "Federalism"
+                },
+                {
+                  "topic_name": "Democracy and Diversity"
+                },
+                {
+                  "topic_name": "Gender, Religion and Caste"
+                },
+                {
+                  "topic_name": "Popular Struggles and Movements"
+                },
+                {
+                  "topic_name": "Political Parties"
+                },
+                {
+                  "topic_name": "Outcomes of Democracy"
+                },
+                {
+                  "topic_name": "Challenges to Democracy"
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "subject_name": "Health and Physical Education",
+          "subject_image_src": "assets/ncert/class10/subject/healthcare.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Health and Physical Education Book",
+              "book_solution_image_src":"assets/ncert/class10/book/health.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Physical Education:Relation with other Subjects"
+                },
+                {
+                  "topic_name": "Effects of Physical Activities on Human Body"
+                },
+                {
+                  "topic_name": "Growth and Development during Adolescence"
+                },
+                {
+                  "topic_name": "Individual Games and Sports I"
+                },
+                {
+                  "topic_name": "Individual Games and Sports II"
+                },
+                {
+                  "topic_name": "Team Games and Sports I"
+                },
+                {
+                  "topic_name": "Team Games and Sports II"
+                },
+                {
+                  "topic_name": "Yoga for Healthy Living"
+                },
+                {
+                  "topic_name": "Dietary Considerations and Food Quality"
+                },
+                {
+                  "topic_name": "Safety Measures for Healthy Living "
+                },
+                {
+                  "topic_name": "Healthy Community Living"
+                },
+                {
+                  "topic_name": "Social Health"
+                },
+                {
+                  "topic_name": "Agencies and Awards Promoting Health, Sports and Yoga"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "book_name": "Exampler Books",
+      "book_image_src":  "assets/exampler/class10/exampler.png",
+      "subject_dataset": [
+        {
+          "subject_name": "Mathematics",
+          "subject_image_src": "assets/exampler/class10/subject/mathematics.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Mathematics Books",
+              "book_solution_image_src": "assets/exampler/class10/book/mathematics.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Real Numbers"
+                },
+                {
+                  "topic_name": "Polynomials"
+                },
+                {
+                  "topic_name": "Pair of Linear Equations in Two Variables"
+                },
+                {
+                  "topic_name": "Quadratic Equations"
+                },
+                {
+                  "topic_name": "Arithmetic Progressions"
+                },
+                {
+                  "topic_name": "Triangles"
+                },
+                {
+                  "topic_name": "Coordinate Geometry"
+                },
+                {
+                  "topic_name": "Introduction to Trigonometry & its Equation"
+                },
+                
+                {
+                  "topic_name": "Circles"
+                },
+                {
+                  "topic_name": "Constructions"
+                },
+                {
+                  "topic_name": "Areas Related to Circles"
+                },
+                {
+                  "topic_name": "Surface Areas and Volumes"
+                },
+                {
+                  "topic_name": "Statistics & Probability"
+                },
+                {
+                  "topic_name": "Design of the Question Paper- Set I"
+                },
+                {
+                  "topic_name": "Design of the Question Paper- Set II"
+                },
+                {
+                  "topic_name": "Answers"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

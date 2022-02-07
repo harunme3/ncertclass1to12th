@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "229339537244",
+    "project_id": "all-in-one-education-fe95f",
+    "storage_bucket": "all-in-one-education-fe95f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229339537244:android:0067b6320be43dd31a2b99",
+        "android_client_info": {
+          "package_name": "com.vs.ncertclass10th"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229339537244-5411bpj7jnupd7sdoeh5i72eor5meci3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC14yQFOX_e2GyvSOv3Tpn6Rf-BSDg554"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "229339537244-5411bpj7jnupd7sdoeh5i72eor5meci3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229339537244:android:1054186050349a451a2b99",
+        "android_client_info": {
+          "package_name": "com.vs.ncertclass10thadminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229339537244-5411bpj7jnupd7sdoeh5i72eor5meci3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC14yQFOX_e2GyvSOv3Tpn6Rf-BSDg554"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "229339537244-5411bpj7jnupd7sdoeh5i72eor5meci3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229339537244:android:1db2bbb92a35c04d1a2b99",
+        "android_client_info": {
+          "package_name": "com.vs.ncertclass1to12th"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229339537244-5411bpj7jnupd7sdoeh5i72eor5meci3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC14yQFOX_e2GyvSOv3Tpn6Rf-BSDg554"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "229339537244-5411bpj7jnupd7sdoeh5i72eor5meci3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,1471 @@
+{
+  "book_dataset": [
+    {
+      "book_name": "NCERT Books",
+      "book_image_src": "assets/ncert/class11/ncert.png",
+      "subject_dataset": [
+        {
+          "subject_name": "Accountancy",
+          "subject_image_src": "assets/ncert/class11/subject/subject1.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Financial Accounting-I Book",
+              "book_solution_image_src": "assets/ncert/class11/book/accountacy/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Introduction to Accounting"
+                },
+                {
+                  "topic_name": "Theory Base of Accounting"
+                },
+                {
+                  "topic_name": "Recording of Transactions - I"
+                },
+                {
+                  "topic_name": "Recording of Transactions - II"
+                },
+                {
+                  "topic_name": "Bank Reconciliation Statement"
+                },
+                {
+                  "topic_name": "Trial Balance and Rectification of Errors"
+                },
+                {
+                  "topic_name": "Depreciation, Provisions and Reserves"
+                },
+                {
+                  "topic_name": "Bill of Exchange"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Financial Accounting-II Book",
+              "book_solution_image_src": "assets/ncert/class11/book/accountacy/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Financial Statements - I"
+                },
+                {
+                  "topic_name": "Financial Statements - II"
+                },
+                {
+                  "topic_name": "Accounts from Incomplete Records"
+                },
+                {
+                  "topic_name": "Applications of Computers in Accounting"
+                },
+                {
+                  "topic_name": "Computerised Accounting System"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Biology",
+          "subject_image_src": "assets/ncert/class11/subject/subject2.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Biology Book",
+              "book_solution_image_src": "assets/ncert/class11/book/biology/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Living World"
+                },
+                {
+                  "topic_name": "Biological Classification"
+                },
+                {
+                  "topic_name": "Plant Kingdom"
+                },
+                {
+                  "topic_name": "Animal Kingdom"
+                },
+                {
+                  "topic_name": "Morphology of Flowering Plants"
+                },
+                {
+                  "topic_name": "Anatomy of Flowering Plants"
+                },
+                {
+                  "topic_name": "Structural Organisation in Animals"
+                },
+                {
+                  "topic_name": "Cell-The Unit of Life"
+                },
+                {
+                  "topic_name": "Biomolecules"
+                },
+                {
+                  "topic_name": "Cell Cycle and Cell Division"
+                },
+                {
+                  "topic_name": "Transport in Plants"
+                },
+                {
+                  "topic_name": "Mineral Nutrition"
+                },
+                {
+                  "topic_name": "Photosynthesis in Higher Plants"
+                },
+                {
+                  "topic_name": "Respiration in Plants"
+                },
+                {
+                  "topic_name": "Plant Growth and Development"
+                },
+                {
+                  "topic_name": "Digestion and Absorption"
+                },
+                {
+                  "topic_name": "Breathing and Exchange of Gases"
+                },
+                {
+                  "topic_name": "Body Fluids and Circulation"
+                },
+                {
+                  "topic_name": "Excretory Products and their Elimination"
+                },
+                {
+                  "topic_name": "Locomotion and Movement"
+                },
+                {
+                  "topic_name": "Neural Control and Coordination"
+                },
+                {
+                  "topic_name": "Chemical Coordination and Integration"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Chemistry",
+          "subject_image_src": "assets/ncert/class11/subject/subject3.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Chemistry part-1 Book",
+              "book_solution_image_src": "assets/ncert/class11/book/chemistry/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Some Basic Concepts of Chemistry"
+                },
+                {
+                  "topic_name": "Structure of Atom"
+                },
+                {
+                  "topic_name": "Classification of Elements and Periodicity in Properties"
+                },
+                {
+                  "topic_name": "Chemical Bonding and Molecular Structure"
+                },
+                {
+                  "topic_name": "States of Matter"
+                },
+                {
+                  "topic_name": "Thermodynamics"
+                },
+                {
+                  "topic_name": "Equilibrium"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Chemistry part-2 Book",
+              "book_solution_image_src": "assets/ncert/class11/book/chemistry/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Redox Reactions"
+                },
+                {
+                  "topic_name": "Hydrogen"
+                },
+                {
+                  "topic_name": "The s-Block Elements"
+                },
+                {
+                  "topic_name": "The p-Block Elements"
+                },
+                {
+                  "topic_name": "Organic Chemistry – Some Basic Principles and Techniques"
+                },
+                {
+                  "topic_name": "Hydrocarbons"
+                },
+                {
+                  "topic_name": "Environmental Chemistry"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "English",
+          "subject_image_src": "assets/ncert/class11/subject/subject4.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Short Stories Book",
+              "book_solution_image_src": "assets/ncert/class11/book/english/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Lament"
+                },
+                {
+                  "topic_name": "A Pair of Mustachios"
+                },
+                {
+                  "topic_name": "The Rocking-horse Winner"
+                },
+                {
+                  "topic_name": "The Adventure of the Three Garridebs"
+                },
+                {
+                  "topic_name": "Pappachi’s Moth"
+                },
+                {
+                  "topic_name": "The Third and Final Continent"
+                },
+                {
+                  "topic_name": "Glory at Twilight"
+                },
+                {
+                  "topic_name": "The Luncheon"
+                }
+                
+              ]
+            },
+            {
+              "book_solution_name": "Poetry Book",
+              "book_solution_image_src": "assets/ncert/class11/book/english/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Peacock"
+                },
+                {
+                  "topic_name": "Let me Not to the Marriage of True Minds"
+                },
+                {
+                  "topic_name": "Coming"
+                },
+                {
+                  "topic_name": "Telephone Conversation"
+                },
+                {
+                  "topic_name": "The World is too Much With Us"
+                },
+                {
+                  "topic_name": "Mother Tongue"
+                },
+                {
+                  "topic_name": "Hawk Roosting"
+                },
+                {
+                  "topic_name": "For Elkana"
+                },
+                {
+                  "topic_name": "Refugee Blues"
+                },
+                {
+                  "topic_name": "Felling of the Banyan Tree"
+                },
+                {
+                  "topic_name": "Ode to a Nightingale"
+                },
+                {
+                  "topic_name": "Ajamil and the Tigers"
+                }
+                
+              ]
+            },
+            {
+              "book_solution_name": "Essays Book",
+              "book_solution_image_src": "assets/ncert/class11/book/english/book3.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "My Watch"
+                },
+                {
+                  "topic_name": "My Three Passions"
+                },
+                {
+                  "topic_name": "Patterns of Creativity"
+                },
+                {
+                  "topic_name": "Tribal Verse"
+                },
+                {
+                  "topic_name": "What is a Good Book?"
+                },
+                {
+                  "topic_name": "The Story"
+                },
+                {
+                  "topic_name": "Bridges"
+                }
+                
+              ]
+            },
+            {
+              "book_solution_name": "Snapshots Book",
+              "book_solution_image_src": "assets/ncert/class11/book/english/book4.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Summer of the Beautiful White Horse"
+                },
+                {
+                  "topic_name": "The Address"
+                },
+                {
+                  "topic_name": "Ranga’s Marriage"
+                },
+                {
+                  "topic_name": "Albert Einstein at School"
+                },
+                {
+                  "topic_name": "Mother’s Day"
+                },
+                {
+                  "topic_name": "The Ghat of the Only World"
+                },
+                {
+                  "topic_name": "Birth"
+                },
+                {
+                  "topic_name": "The Tale of Melon City"
+                }
+                
+              ]
+            },
+            {
+              "book_solution_name": "Hornbill Book",
+              "book_solution_image_src": "assets/ncert/class11/book/english/book5.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Portrait of a Lady"
+                },
+                {
+                  "topic_name": "A Photograph"
+                },
+                {
+                  "topic_name": "We’re Not Afraid to Die if We Can All Be Together"
+                },
+                {
+                  "topic_name": "Discovering Tut-the Saga Continues"
+                },
+                {
+                  "topic_name": "The Laburnum Top"
+                },
+                {
+                  "topic_name": "Landscape of the Soul"
+                },
+                {
+                  "topic_name": "The Voice of the Rain"
+                },
+                {
+                  "topic_name": "The Ailing Planet-the Green Movement’s Role"
+                },
+                {
+                  "topic_name": "The Browning Version"
+                },
+                {
+                  "topic_name": "Childhood"
+                },
+                {
+                  "topic_name": "The Adventure"
+                },
+                {
+                  "topic_name": "Silk Road"
+                },
+                {
+                  "topic_name": "Father to Son"
+                },
+                {
+                  "topic_name": "Note-making"
+                },
+                {
+                  "topic_name": "Summarising"
+                },
+                {
+                  "topic_name": "Sub-titling"
+                },
+                {
+                  "topic_name": "Essay-writing"
+                },
+                {
+                  "topic_name": "Letter-writing "
+                },
+                {
+                  "topic_name": "Creative Writing"
+                }
+                
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Geography",
+          "subject_image_src": "assets/ncert/class11/subject/subject5.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Fundamentals Of Physical Geography Book",
+              "book_solution_image_src": "assets/ncert/class11/book/geography/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Geography As A Discipline"
+                },
+                {
+                  "topic_name": "The Earth"
+                },
+                {
+                  "topic_name": "Landforms"
+                },
+                {
+                  "topic_name": "Climate"
+                },
+                {
+                  "topic_name": "Water (Oceans)"
+                },
+                {
+                  "topic_name": "Life On The Earth"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "India Physical Environment Book",
+              "book_solution_image_src": "assets/ncert/class11/book/geography/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Introduction"
+                },
+                {
+                  "topic_name": "Physiography"
+                },
+                {
+                  "topic_name": "Climate, Vegetation And Soil"
+                },
+                {
+                  "topic_name": "Natural Hazards And Disasters-Causes,consequences And Management"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Practical Work In Geography Book",
+              "book_solution_image_src": "assets/ncert/class11/book/geography/book3.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Introduction to Maps"
+                },
+                {
+                  "topic_name": "Map Scale"
+                },
+                {
+                  "topic_name": "Latitude, Longitude and Time"
+                },
+                {
+                  "topic_name": "Map Projections"
+                },
+                {
+                  "topic_name": "Topographical Maps"
+                },
+                {
+                  "topic_name": "Introduction To Aerial Photographs"
+                },
+                {
+                  "topic_name": "Introduction To Remote Sensing"
+                },
+                {
+                  "topic_name": "Weather Instruments, Maps and Charts"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "हिंदी",
+          "subject_image_src": "assets/ncert/class11/subject/subject6.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "अंतरा किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/hindi/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "ईदगाह"
+                },
+                {
+                  "topic_name": "दोपहर का भोजन"
+                },
+                {
+                  "topic_name": "टार्च बेचनेवाले"
+                },
+                {
+                  "topic_name": "गूँगे"
+                },
+                {
+                  "topic_name": "ज्योतिबा फुले"
+                },
+                {
+                  "topic_name": "खानाबदोश"
+                },
+                {
+                  "topic_name": "नए की जन्म कुंडली-एक"
+                },
+                {
+                  "topic_name": "उसकी माँ"
+                },
+                {
+                  "topic_name": "भारतवर्ष की उन्नति कैसे हो सकती है"
+                },
+                {
+                  "topic_name": "कबीर"
+                },
+                {
+                  "topic_name": "सूरदास"
+                },
+                {
+                  "topic_name": "देव"
+                },
+                {
+                  "topic_name": "पद्माकर"
+                },
+                {
+                  "topic_name": "सुमित्रानंदन पंत"
+                },
+                {
+                  "topic_name": "महादेवी वर्मा"
+                },
+                {
+                  "topic_name": "नरेंद्र शर्मा"
+                },
+                {
+                  "topic_name": "नागार्जुन"
+                },
+                {
+                  "topic_name": "श्रीकांत वर्मा"
+                },
+                {
+                  "topic_name": "धूमिल"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "आरोह किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/hindi/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "नमक का दारोगा"
+                },
+                {
+                  "topic_name": "मियाँ नसीरुद्दीन"
+                },
+                {
+                  "topic_name": "अपू के साथ ढाई साल"
+                },
+                {
+                  "topic_name": "विदाई – संभाषण"
+                },
+                {
+                  "topic_name": "गलता लोहा"
+                },
+                {
+                  "topic_name": "स्पीति में बारिश"
+                },
+                {
+                  "topic_name": "रजनी"
+                },
+                {
+                  "topic_name": "जामुन का पेड़"
+                },
+                {
+                  "topic_name": "भारत माता"
+                },
+                {
+                  "topic_name": "आत्मा का ताप"
+                },
+                {
+                  "topic_name": "कबीर"
+                },
+                {
+                  "topic_name": "मीरा"
+                },
+                {
+                  "topic_name": "रामनरेश त्रिपाठी"
+                },
+                {
+                  "topic_name": "सुमित्रानंदन पंत"
+                },
+                {
+                  "topic_name": "भवानी प्रसाद मिश्र"
+                },
+                {
+                  "topic_name": "त्रिलोचन"
+                },
+                {
+                  "topic_name": "दुष्यंत कुमार"
+                },
+                {
+                  "topic_name": "अक्कमहादेवी"
+                },
+                {
+                  "topic_name": "पाश"
+                },
+                {
+                  "topic_name": "निर्मला पुतुल"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "वितान किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/hindi/book3.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "भारतीय गायिकाओं में बेजोड़ – लता मंगेशकर"
+                },
+                {
+                  "topic_name": "राजस्थान की रजत बूँदें"
+                },
+                {
+                  "topic_name": "आलो आँधारि"
+                },
+                {
+                  "topic_name": "भारतीय कलाएँ"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "अंतराल किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/hindi/book4.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "अंडे के छिलके"
+                },
+                {
+                  "topic_name": "हुसैन की कहानी अपनी ज़बानी"
+                },
+                {
+                  "topic_name": "आवारा मसीहा"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "History",
+          "subject_image_src": "assets/ncert/class11/subject/subject7.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Themes in world history Book",
+              "book_solution_image_src": "assets/ncert/class11/book/history/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "From the Beginning of Time"
+                },
+                {
+                  "topic_name": "Writing and City Life"
+                },
+                {
+                  "topic_name": "An Empire Across Three Continents"
+                },
+                {
+                  "topic_name": "The Central Islamic Lands"
+                },
+                {
+                  "topic_name": "Nomadic Empires"
+                },
+                {
+                  "topic_name": "The Three Orders"
+                },
+                {
+                  "topic_name": "Changing Cultural Traditions"
+                },
+                {
+                  "topic_name": "Confrontation of Cultures"
+                },
+                {
+                  "topic_name": "The Industrial Revolution"
+                },
+                {
+                  "topic_name": "Displacing Indigenous Peoples"
+                },
+                {
+                  "topic_name": "Paths to Modernisation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Mathematics",
+          "subject_image_src": "assets/ncert/class11/subject/subject8.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Mathematics Book",
+              "book_solution_image_src": "assets/ncert/class11/book/math/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Sets"
+                },
+                {
+                  "topic_name": "Relations and Functions"
+                },
+                {
+                  "topic_name": "Trigonometric Functions"
+                },
+                {
+                  "topic_name": "Principle of Mathematical Induction"
+                },
+                {
+                  "topic_name": "Complex Numbers and Quadratic Equations"
+                },
+                {
+                  "topic_name": "Linear Inequalities"
+                },
+                {
+                  "topic_name": "Permutations and Combinations"
+                },
+                {
+                  "topic_name": "Binomial Theorem"
+                },
+                {
+                  "topic_name": "Sequences and Series"
+                },
+                {
+                  "topic_name": "Straight Lines"
+                },
+                {
+                  "topic_name": "Conic Sections"
+                },
+                {
+                  "topic_name": "Introduction to Three Dimensional Geometry"
+                },
+                {
+                  "topic_name": "Limits and Derivatives"
+                },
+                {
+                  "topic_name": "Mathematical Reasoning"
+                },
+                {
+                  "topic_name": "Statistics"
+                },
+                {
+                  "topic_name": "Probability"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Physics",
+          "subject_image_src": "assets/ncert/class11/subject/subject9.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Physics Part-1 Book",
+              "book_solution_image_src": "assets/ncert/class11/book/physics/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Physical World"
+                },
+                {
+                  "topic_name": "Units and Measurement"
+                },
+                {
+                  "topic_name": "Motion in a Straight Line"
+                },
+                {
+                  "topic_name": "Motion in a Plane"
+                },
+                {
+                  "topic_name": "Laws of Motion"
+                },
+                {
+                  "topic_name": "Work, Energy and Power"
+                },
+                {
+                  "topic_name": "Systems of Particles and Rotational Motion"
+                },
+                {
+                  "topic_name": "Gravitation"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Physics Part-2 Book",
+              "book_solution_image_src": "assets/ncert/class11/book/physics/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Mechanical Properties of Solids"
+                },
+                {
+                  "topic_name": "Mechanical Properties of Fluids"
+                },
+                {
+                  "topic_name": "Thermal Properties of Matter"
+                },
+                {
+                  "topic_name": "Thermodynamics"
+                },
+                {
+                  "topic_name": "Kinetic Theory"
+                },
+                {
+                  "topic_name": "Oscillations"
+                },
+                {
+                  "topic_name": "Waves"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Political Science",
+          "subject_image_src": "assets/ncert/class11/subject/subject10.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Political Theory Book",
+              "book_solution_image_src": "assets/ncert/class11/book/politicalscience/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Political Theory-An Introduction"
+                },
+                {
+                  "topic_name": "Freedom"
+                },
+                {
+                  "topic_name": "Equality"
+                },
+                {
+                  "topic_name": "Social Justice"
+                },
+                {
+                  "topic_name": "Rights"
+                },
+                {
+                  "topic_name": "Citizenship"
+                },
+                {
+                  "topic_name": "Nationalism"
+                },
+                {
+                  "topic_name": "Secularism"
+                },
+                {
+                  "topic_name": "Peace"
+                },
+                {
+                  "topic_name": "Development"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Indian Constitution at Work Book",
+              "book_solution_image_src": "assets/ncert/class11/book/politicalscience/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Constitution-Why and How"
+                },
+                {
+                  "topic_name": "Rights and Duties in the Indian Constitution"
+                },
+                {
+                  "topic_name": "Election and Representation"
+                },
+                {
+                  "topic_name": "Executive"
+                },
+                {
+                  "topic_name": "Legislature"
+                },
+                {
+                  "topic_name": "Judiciary"
+                },
+                {
+                  "topic_name": "Federalism"
+                },
+                {
+                  "topic_name": "Local Governments"
+                },
+                {
+                  "topic_name": "Constitution as a Living Document"
+                },
+                {
+                  "topic_name": "The Philosophy of the Constitution"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Psychology",
+          "subject_image_src": "assets/ncert/class11/subject/subject11.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Psychology Book",
+              "book_solution_image_src": "assets/ncert/class11/book/psychology/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "What is Psychology"
+                },
+                {
+                  "topic_name": "Methods of Enquiry in Psychology"
+                },
+                {
+                  "topic_name": "The Bases of Human Behaviour"
+                },
+                {
+                  "topic_name": "Human Development"
+                },
+                {
+                  "topic_name": "Sensory, Attentional and Perceptual Processes"
+                },
+                {
+                  "topic_name": "Learning"
+                },
+                {
+                  "topic_name": "Human Memory"
+                },
+                {
+                  "topic_name": "Thinking"
+                },
+                {
+                  "topic_name": "Motivation and Emotion"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Sociology",
+          "subject_image_src": "assets/ncert/class11/subject/subject12.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Introducing Sociology Book",
+              "book_solution_image_src": "assets/ncert/class11/book/sociology/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Sociology and Society"
+                },
+                {
+                  "topic_name": "Terms, Concepts and their Use in Sociology"
+                },
+                {
+                  "topic_name": "Understanding Social Institutions"
+                },
+                {
+                  "topic_name": "Culture and Socialisation"
+                },
+                {
+                  "topic_name": "Doing Sociology-Research Methods"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Understanding Society Book",
+              "book_solution_image_src": "assets/ncert/class11/book/sociology/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Social Structure, Stratification and Social Processes in Society"
+                },
+                {
+                  "topic_name": "Social Change and Social Order in Rural and Urban Society"
+                },
+                {
+                  "topic_name": "Environment and Society"
+                },
+                {
+                  "topic_name": "Introducing Western Sociologists"
+                },
+                {
+                  "topic_name": "Indian Sociologists"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Economic",
+          "subject_image_src": "assets/ncert/class11/subject/subject13.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Indian Economic Development Book",
+              "book_solution_image_src": "assets/ncert/class11/book/economics/book/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Indian Economy On The Eve Of Independence"
+                },
+                {
+                  "topic_name": "Indian Economy 1950-1990"
+                },
+                {
+                  "topic_name": "Liberalisation, Privatisation And Globalisation-An Appraisal"
+                },
+                {
+                  "topic_name": "Poverty"
+                },
+                {
+                  "topic_name": "Human Capital Formation In India"
+                },
+                {
+                  "topic_name": "Rural Development"
+                },
+                {
+                  "topic_name": "Employment-Growth, Informalisation And Other Issues"
+                },
+                {
+                  "topic_name": "Infrastructure"
+                },
+                {
+                  "topic_name": "Environment  And Sustainable Develment"
+                },
+                {
+                  "topic_name": "Comparative Development Experiences Of India And Its Neighbours"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Statistics For Economic Book",
+              "book_solution_image_src": "assets/ncert/class11/book/economics/book/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Introduction"
+                },
+                {
+                  "topic_name": "Collection of Data"
+                },
+                {
+                  "topic_name": "Organisation of Data"
+                },
+                {
+                  "topic_name": "Presentation of Data"
+                },
+                {
+                  "topic_name": "Measures of Central Tendency"
+                },
+                {
+                  "topic_name": "Measures of Dispersion"
+                },
+                {
+                  "topic_name": "Correlation"
+                },
+                {
+                  "topic_name": "Index Numbers"
+                },
+                {
+                  "topic_name": "Use of Statistical Tools"
+                }
+              ]
+            }  
+          ]
+        }
+      ]
+    },
+
+    {
+      "book_name": "Exampler Books",
+      "book_image_src":  "assets/exampler/class11/exampler.png",
+      "subject_dataset": [
+        {
+          "subject_name": "Biology",
+          "subject_image_src": "assets/exampler/class11/subject/subject2.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Biology Book",
+              "book_solution_image_src": "assets/exampler/class11/book/biology/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+             
+                {
+                  "topic_name": "The Living World"
+                },
+                {
+                  "topic_name": "Biological Classification"
+                },
+                {
+                  "topic_name": "Plant Kingdom"
+                },
+                {
+                  "topic_name": "Animal Kingdom"
+                },
+                {
+                  "topic_name": "Morphology of Flowering Plants"
+                },
+                {
+                  "topic_name": "Anatomy of Flowering Plants"
+                },
+                {
+                  "topic_name": "Structural Organisation in Animals"
+                },
+                {
+                  "topic_name": "Cell-The Unit of Life"
+                },
+                {
+                  "topic_name": "Biomolecules"
+                },
+                {
+                  "topic_name": "Cell Cycle and Cell Division"
+                },
+                {
+                  "topic_name": "Transport in Plants"
+                },
+                {
+                  "topic_name": "Mineral Nutrition"
+                },
+                {
+                  "topic_name": "Photosynthesis in Higher Plants"
+                },
+                {
+                  "topic_name": "Respiration in Plants"
+                },
+                {
+                  "topic_name": "Plant Growth and Development"
+                },
+                {
+                  "topic_name": "Digestion and Absorption"
+                },
+                {
+                  "topic_name": "Breathing and Exchange of Gases"
+                },
+                {
+                  "topic_name": "Body Fluids and Circulation"
+                },
+                {
+                  "topic_name": "Excretory Products and their Elimination"
+                },
+                {
+                  "topic_name": "Locomotion and Movement"
+                },
+                {
+                  "topic_name": "Neural Control and Coordination"
+                },
+                {
+                  "topic_name": "Chemical Coordination and Integration"
+                },
+                {
+                  "topic_name": "Answer To Multiple Choice Question"
+                },
+                {
+                  "topic_name": "Model Answer To Descriptive Question"
+                },
+                {
+                  "topic_name": "Model Question Paper"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Chemistry",
+          "subject_image_src": "assets/exampler/class11/subject/subject3.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Chemistry Book",
+              "book_solution_image_src": "assets/exampler/class11/book/chemistry/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+              
+                {
+                  "topic_name": "Some Basic Concepts of Chemistry"
+                },
+                {
+                  "topic_name": "Structure Of a Ture Of Atom"
+                },
+                {
+                  "topic_name": "Classification of Elements and Periodicity in Properties"
+                },
+                {
+                  "topic_name": "Chemical Bonding and Molecular Structure"
+                },
+                {
+                  "topic_name": "States of Matter"
+                },
+                {
+                  "topic_name": "Thermodynamics"
+                },
+                {
+                  "topic_name": "Equilibrium"
+                },
+                {
+                  "topic_name": "Redox Reactions"
+                },
+                {
+                  "topic_name": "Hydrogen"
+                },
+                {
+                  "topic_name": "The s-Block Elements"
+                },
+                {
+                  "topic_name": "The p-Block Elements"
+                },
+                {
+                  "topic_name": "Organic Chemistry – Some Basic Principles and Techniques"
+                },
+                {
+                  "topic_name": "Hydrocarbons"
+                },
+                {
+                  "topic_name": "Environmental Chemistry"
+                },
+                {
+                  "topic_name": "Design of the Sample Question Paper I"
+                },
+                {
+                  "topic_name": "APPENDIX I"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Mathematics",
+          "subject_image_src": "assets/exampler/class11/subject/subject1.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Mathematics Book",
+              "book_solution_image_src": "assets/exampler/class11/book/math/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                
+                {
+                  "topic_name": "Sets"
+                },
+                {
+                  "topic_name": "Relations and Functions"
+                },
+                {
+                  "topic_name": "Trigonometric Functions"
+                },
+                {
+                  "topic_name": "Principle of Mathematical Induction"
+                },
+                {
+                  "topic_name": "Complex Numbers and Quadratic Equations"
+                },
+                {
+                  "topic_name": "Linear Inequalities"
+                },
+                {
+                  "topic_name": "Permutations and Combinations"
+                },
+                {
+                  "topic_name": "Binomial Theorem"
+                },
+                {
+                  "topic_name": "Sequences and Series"
+                },
+                {
+                  "topic_name": "Straight Lines"
+                },
+                {
+                  "topic_name": "Conic Sections"
+                },
+                {
+                  "topic_name": "Introduction to Three Dimensional Geometry"
+                },
+                {
+                  "topic_name": "Limits and Derivatives"
+                },
+                {
+                  "topic_name": "Mathematical Reasoning"
+                },
+                {
+                  "topic_name": "Statistics"
+                },
+                {
+                  "topic_name": "Probability"
+                },
+                {
+                  "topic_name": "Answers"
+                },
+                {
+                  "topic_name": "Design Of The Question"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Physics",
+          "subject_image_src": "assets/exampler/class11/subject/subject4.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Physics Part-1 Book",
+              "book_solution_image_src": "assets/exampler/class11/book/physics/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Physical World"
+                },
+                {
+                  "topic_name": "Units and Measurement"
+                },
+                {
+                  "topic_name": "Motion in a Straight Line"
+                },
+                {
+                  "topic_name": "Motion in a Plane"
+                },
+                {
+                  "topic_name": "Laws of Motion"
+                },
+                {
+                  "topic_name": "Work, Energy and Power"
+                },
+                {
+                  "topic_name": "Systems of Particles and Rotational Motion"
+                },
+                {
+                  "topic_name": "Gravitation"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Physics Part-2 Book",
+              "book_solution_image_src": "assets/exampler/class11/book/physics/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Mechanical Properties of Solids"
+                },
+                {
+                  "topic_name": "Mechanical Properties of Fluids"
+                },
+                {
+                  "topic_name": "Thermal Properties of Matter"
+                },
+                {
+                  "topic_name": "Thermodynamics"
+                },
+                {
+                  "topic_name": "Kinetic Theory"
+                },
+                {
+                  "topic_name": "Oscillations"
+                },
+                {
+                  "topic_name": "Waves"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

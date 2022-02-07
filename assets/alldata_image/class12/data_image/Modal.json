@@ -1,0 +1,2275 @@
+{
+  "book_dataset": [
+    {
+      "book_name": "Ncert Books",
+      "book_image_src": "assets/ncert/class12/ncert.png",
+      "subject_dataset": [
+        {
+          "subject_name": "Accountancy",
+          "subject_image_src": "assets/ncert/class12/subject/subject1.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Not-for-Profit Organisation and Partnership Accounts Book",
+              "book_solution_image_src": "assets/ncert/class12/book/accountacy/book1.png",  
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Accounting for Not-for-Profit Organisation"
+                },
+                {
+                  "topic_name": "Accounting for Partnership-Basic Concepts"
+                },
+                {
+                  "topic_name": "Reconstitution of a Partnership Firm – Admission of a Partner"
+                },
+                {
+                  "topic_name": "Reconstitution of a Partnership Firm –Retirement/Death of a Partner"
+                },
+                {
+                  "topic_name": "Dissolution of Partnership Firm"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Not-for-Profit Organisation and Partnership Accounts Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/accountacy/solution1.png",
+              "isitbook":false,
+              "topic_dataset": [
+              
+                {
+                  "topic_name": "Accounting for Not-for-Profit Organisation"
+                },
+                {
+                  "topic_name": "Accounting for Partnership-Basic Concepts"
+                },
+                {
+                  "topic_name": "Reconstitution of a Partnership Firm – Admission of a Partner"
+                },
+                {
+                  "topic_name": "Reconstitution of a Partnership Firm –Retirement/Death of a Partner"
+                },
+                {
+                  "topic_name": "Dissolution of Partnership Firm"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Company Accounts and Analysis of Financial Statements Book",
+              "book_solution_image_src": "assets/ncert/class12/book/accountacy/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Accounting for Share Capital"
+                },
+                {
+                  "topic_name": "Issue and Redemption of Debentures"
+                },
+                {
+                  "topic_name": "Financial Statements of a Company"
+                },
+                {
+                  "topic_name": "Analysis of Financial Statements"
+                },
+                {
+                  "topic_name": "Accounting Ratios"
+                },
+                {
+                  "topic_name": "Cash Flow Statemen"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Company Accounts and Analysis of Financial Statements Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/accountacy/solution2.png",
+              "isitbook":false,
+              "topic_dataset": [
+              
+                {
+                  "topic_name": "Accounting for Share Capital"
+                },
+                {
+                  "topic_name": "Issue and Redemption of Debentures"
+                },
+                {
+                  "topic_name": "Financial Statements of a Company"
+                },
+                {
+                  "topic_name": "Analysis of Financial Statements"
+                },
+                {
+                  "topic_name": "Accounting Ratios"
+                },
+                {
+                  "topic_name": "Cash Flow Statemen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Biology",
+          "subject_image_src": "assets/ncert/class12/subject/subject2.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Biology Book",
+              "book_solution_image_src": "assets/ncert/class12/book/biology/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Reproduction in Organisms"
+                },
+                {
+                  "topic_name": "Sexual Reproduction in Flowering Plants"
+                },
+                {
+                  "topic_name": "Human Reproduction"
+                },
+                {
+                  "topic_name": "Reproductive Health"
+                },
+                {
+                  "topic_name": "Principles of Inheritance and Variation"
+                },
+                {
+                  "topic_name": "Molecular Basis of Inheritance"
+                },
+                {
+                  "topic_name": "Evolution"
+                },
+                {
+                  "topic_name": "Human Health and Disease"
+                },
+                {
+                  "topic_name": "Strategies for Enhancement in Food Production"
+                },
+                {
+                  "topic_name": "Microbes in Human Welfare"
+                },
+                {
+                  "topic_name": "Biotechnology-Principles and Processes"
+                },
+                {
+                  "topic_name": "Biotechnology and its Applications"
+                },
+                {
+                  "topic_name": "Organisms and Populations"
+                },
+                {
+                  "topic_name": "Ecosystem"
+                },
+                {
+                  "topic_name": "Biodiversity and Conservation"
+                },
+                {
+                  "topic_name": "Environmental Issues"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Biology Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/biology/solution1.png",
+              "isitbook":false,
+              "topic_dataset": [
+               
+                {
+                  "topic_name": "Reproduction in Organisms"
+                },
+                {
+                  "topic_name": "Sexual Reproduction in Flowering Plants"
+                },
+                {
+                  "topic_name": "Human Reproduction"
+                },
+                {
+                  "topic_name": "Reproductive Health"
+                },
+                {
+                  "topic_name": "Principles of Inheritance and Variation"
+                },
+                {
+                  "topic_name": "Molecular Basis of Inheritance"
+                },
+                {
+                  "topic_name": "Evolution"
+                },
+                {
+                  "topic_name": "Human Health and Disease"
+                },
+                {
+                  "topic_name": "Strategies for Enhancement in Food Production"
+                },
+                {
+                  "topic_name": "Microbes in Human Welfare"
+                },
+                {
+                  "topic_name": "Biotechnology-Principles and Processes"
+                },
+                {
+                  "topic_name": "Biotechnology and its Applications"
+                },
+                {
+                  "topic_name": "Organisms and Populations"
+                },
+                {
+                  "topic_name": "Ecosystem"
+                },
+                {
+                  "topic_name": "Biodiversity and Conservation"
+                },
+                {
+                  "topic_name": "Environmental Issues"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Human ecology and family science Book",
+              "book_solution_image_src": "assets/ncert/class12/book/biology/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Work, Livelihood and Career"
+                },
+                {
+                  "topic_name": "Clinical Nutrition and Dietetics"
+                },
+                {
+                  "topic_name": "Public Nutrition and Health"
+                },
+                {
+                  "topic_name": "Catering and Food Service Management"
+                },
+                {
+                  "topic_name": "Food Processing and Technology"
+                },
+                {
+                  "topic_name": "Food Quality and Food Safety"
+                },
+                {
+                  "topic_name": "Early Childhood Care and Education"
+                },
+                {
+                  "topic_name": "Guidance and Counselling "
+                },
+                {
+                  "topic_name": "Special Education and Support Services"
+                },
+                {
+                  "topic_name": "Management of Support Services, Institutions and Programmes for Children, Youth and Elderly"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Chemistry",
+          "subject_image_src": "assets/ncert/class12/subject/subject3.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Chemistry Part-1 Book",
+              "book_solution_image_src": "assets/ncert/class12/book/chemistry/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Solid State"
+                },
+                {
+                  "topic_name": "Solutions"
+                },
+                {
+                  "topic_name": "Electrochemistry"
+                },
+                {
+                  "topic_name": "Chemical Kinetics"
+                },
+                {
+                  "topic_name": "Surface Chemistry"
+                },
+                {
+                  "topic_name": "General Principles and Processes of Isolation of Elements"
+                },
+                {
+                  "topic_name": "The p-Block Elements"
+                },
+                {
+                  "topic_name": "The d-and f-Block Elements"
+                },
+                {
+                  "topic_name": "Coordination Compounds"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Chemistry Part-1 Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/chemistry/solution1.png",
+              "isitbook":false,
+              "topic_dataset": [
+              
+                {
+                  "topic_name": "The Solid State"
+                },
+                {
+                  "topic_name": "Solutions"
+                },
+                {
+                  "topic_name": "Electrochemistry"
+                },
+                {
+                  "topic_name": "Chemical Kinetics"
+                },
+                {
+                  "topic_name": "Surface Chemistry"
+                },
+                {
+                  "topic_name": "General Principles and Processes of Isolation of Elements"
+                },
+                {
+                  "topic_name": "The p-Block Elements"
+                },
+                {
+                  "topic_name": "The d-and f-Block Elements"
+                },
+                {
+                  "topic_name": "Coordination Compounds"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Chemistry Part-2 Book",
+              "book_solution_image_src": "assets/ncert/class12/book/chemistry/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Haloalkanes and Haloarenes"
+                },
+                {
+                  "topic_name": "Alcohols, Phenols and Ethers"
+                },
+                {
+                  "topic_name": "Aldehydes, Ketones and Carboxylic Acids"
+                },
+                {
+                  "topic_name": "Amines"
+                },
+                {
+                  "topic_name": "Biomolecules"
+                },
+                {
+                  "topic_name": "Polymers"
+                },
+                {
+                  "topic_name": "Chemistry in Everyday Life"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Chemistry Part-2 Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/chemistry/solution2.png",
+              "isitbook":false,
+              "topic_dataset": [
+            
+                {
+                  "topic_name": "Haloalkanes and Haloarenes"
+                },
+                {
+                  "topic_name": "Alcohols, Phenols and Ethers"
+                },
+                {
+                  "topic_name": "Aldehydes, Ketones and Carboxylic Acids"
+                },
+                {
+                  "topic_name": "Amines"
+                },
+                {
+                  "topic_name": "Biomolecules"
+                },
+                {
+                  "topic_name": "Polymers"
+                },
+                {
+                  "topic_name": "Chemistry in Everyday Life"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "English",
+          "subject_image_src": "assets/ncert/class12/subject/subject4.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Prose Book",
+              "book_solution_image_src": "assets/ncert/class12/book/english/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Last Lesson"
+                },
+                {
+                  "topic_name": "Lost Spring"
+                },
+                {
+                  "topic_name": "Deep Water"
+                },
+                {
+                  "topic_name": "The Rattrap"
+                },
+                {
+                  "topic_name": "Indigo"
+                },
+                {
+                  "topic_name": "Poets And Pancakes"
+                },
+                {
+                  "topic_name": "The Interview"
+                },
+                {
+                  "topic_name": "Going Places"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Prose Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/english/solution1.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "The Last Lesson"
+                },
+                {
+                  "topic_name": "Lost Spring"
+                },
+                {
+                  "topic_name": "Deep Water"
+                },
+                {
+                  "topic_name": "The Rattrap"
+                },
+                {
+                  "topic_name": "Indigo"
+                },
+                {
+                  "topic_name": "Poets And Pancakes"
+                },
+                {
+                  "topic_name": "The Interview"
+                },
+                {
+                  "topic_name": "Going Places"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Poetry Book",
+              "book_solution_image_src": "assets/ncert/class12/book/english/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "My Mother At Sixty-six"
+                },
+                {
+                  "topic_name": "An Elementary School Classroom In A Slum"
+                },
+                {
+                  "topic_name": "Keeping Quiet"
+                },
+                {
+                  "topic_name": "A Thing Of Beauty"
+                },
+                {
+                  "topic_name": "A Roadside Stand"
+                },
+                {
+                  "topic_name": "Aunt Jennifer’s Tigers"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Poetry Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/english/solution2.png",
+              "isitbook":false,
+              "topic_dataset": [
+                
+                {
+                  "topic_name": "My Mother At Sixty-six"
+                },
+                {
+                  "topic_name": "An Elementary School Classroom In A Slum"
+                },
+                {
+                  "topic_name": "Keeping Quiet"
+                },
+                {
+                  "topic_name": "A Thing Of Beauty"
+                },
+                {
+                  "topic_name": "A Roadside Stand"
+                },
+                {
+                  "topic_name": "Aunt Jennifer’s Tigers"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Vistas Book",
+              "book_solution_image_src": "assets/ncert/class12/book/english/book3.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Third Level"
+                },
+                {
+                  "topic_name": "The Tiger King"
+                },
+                {
+                  "topic_name": "Journey to the end of the Earth"
+                },
+                {
+                  "topic_name": "The Enemy"
+                },
+                {
+                  "topic_name": "Should Wizard hit Mommy"
+                },
+                {
+                  "topic_name": "On the face of It"
+                },
+                {
+                  "topic_name": "Evans Tries an O-level"
+                },
+                {
+                  "topic_name": "Memories of Childhood"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Vistas Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/english/solution3.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "The Third Level"
+                },
+                {
+                  "topic_name": "The Tiger King"
+                },
+                {
+                  "topic_name": "Journey to the end of the Earth"
+                },
+                {
+                  "topic_name": "The Enemy"
+                },
+                {
+                  "topic_name": "Should Wizard hit Mommy"
+                },
+                {
+                  "topic_name": "On the face of It"
+                },
+                {
+                  "topic_name": "Evans Tries an O-level"
+                },
+                {
+                  "topic_name": "Memories of Childhood"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Short Stories Book",
+              "book_solution_image_src": "assets/ncert/class12/book/english/book4.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "I Sell my Dreams"
+                },
+                {
+                  "topic_name": "Eveline"
+                },
+                {
+                  "topic_name": "A Wedding in Brownsville"
+                },
+                {
+                  "topic_name": "Tomorrow"
+                },
+                {
+                  "topic_name": "One Centimetre"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Poetry – Introduction Book",
+              "book_solution_image_src": "assets/ncert/class12/book/english/book5.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "A Lecture Upon the Shadow"
+                },
+                {
+                  "topic_name": "Poems by Milton"
+                },
+                {
+                  "topic_name": "Poems by Blake"
+                },
+                {
+                  "topic_name": "Kubla Khan"
+                },
+                {
+                  "topic_name": "Trees"
+                },
+                {
+                  "topic_name": "The Wild Swans of Coole"
+                },
+                {
+                  "topic_name": "Time and Time Again"
+                },
+                {
+                  "topic_name": "Blood"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Non-fiction Book",
+              "book_solution_image_src": "assets/ncert/class12/book/english/book6.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Freedom"
+                },
+                {
+                  "topic_name": "The Mark on the Wall"
+                },
+                {
+                  "topic_name": "Film-making"
+                },
+                {
+                  "topic_name": "Why the Novel Matters"
+                },
+                {
+                  "topic_name": "The Argumentative Indian "
+                },
+                {
+                  "topic_name": "On Science Fiction"
+                }
+              ]
+            },
+            {
+              "book_solution_name": " Drama Book",
+              "book_solution_image_src": "assets/ncert/class12/book/english/book7.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Chandalika"
+                },
+                {
+                  "topic_name": "Broken Images"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Geography",
+          "subject_image_src": "assets/ncert/class12/subject/subject5.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Fundamentals Of Human Geography Book",
+              "book_solution_image_src": "assets/ncert/class12/book/geography/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Human Geography Nature and Scope"
+                },
+                {
+                  "topic_name": "The World Population Distribution, Density and Growth"
+                },
+                {
+                  "topic_name": "Population Composition"
+                },
+                {
+                  "topic_name": "Human Development"
+                },
+                {
+                  "topic_name": "Primary Activities"
+                },
+                {
+                  "topic_name": "Secondary Activities"
+                },
+                {
+                  "topic_name": "Tertiary and Quaternary Activities"
+                },
+                {
+                  "topic_name": "Transport and Communication"
+                },
+                {
+                  "topic_name": "International Trade"
+                },
+                {
+                  "topic_name": "Human Settlements"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Fundamentals Of Human Geography Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/geography/solution1.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "Human Geography Nature and Scope"
+                },
+                {
+                  "topic_name": "The World Population Distribution, Density and Growth"
+                },
+                {
+                  "topic_name": "Population Composition"
+                },
+                {
+                  "topic_name": "Human Development"
+                },
+                {
+                  "topic_name": "Primary Activities"
+                },
+                {
+                  "topic_name": "Secondary Activities"
+                },
+                {
+                  "topic_name": "Tertiary and Quaternary Activities"
+                },
+                {
+                  "topic_name": "Transport and Communication"
+                },
+                {
+                  "topic_name": "International Trade"
+                },
+                {
+                  "topic_name": "Human Settlements"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "INDIA PEOPLE AND ECONOMY Book",
+              "book_solution_image_src": "assets/ncert/class12/book/geography/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Population - Distribution, Density, Growth and Composition"
+                },
+                {
+                  "topic_name": "Migration - Types, Causes and Consequences"
+                },
+                {
+                  "topic_name": "Human Development"
+                },
+                {
+                  "topic_name": "Human Settlements"
+                },
+                {
+                  "topic_name": "Land Resources and Agriculture"
+                },
+                {
+                  "topic_name": "Water Resources"
+                },
+                {
+                  "topic_name": "Mineral and Energy Resources"
+                },
+                {
+                  "topic_name": "Manufacturing Industries"
+                },
+                {
+                  "topic_name": "Planning and Sustainable Development in Indian Context"
+                },
+                {
+                  "topic_name": "Transport and Communication"
+                },
+                {
+                  "topic_name": "International Trad"
+                },
+                {
+                  "topic_name": "Geographical Perspective on Selected Issues and Problems"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "INDIA PEOPLE AND ECONOMY Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/geography/solution2.png",
+              "isitbook":false,
+              "topic_dataset": [
+           
+                {
+                  "topic_name": "Population - Distribution, Density, Growth and Composition"
+                },
+                {
+                  "topic_name": "Migration - Types, Causes and Consequences"
+                },
+                {
+                  "topic_name": "Human Development"
+                },
+                {
+                  "topic_name": "Human Settlements"
+                },
+                {
+                  "topic_name": "Land Resources and Agriculture"
+                },
+                {
+                  "topic_name": "Water Resources"
+                },
+                {
+                  "topic_name": "Mineral and Energy Resources"
+                },
+                {
+                  "topic_name": "Manufacturing Industries"
+                },
+                {
+                  "topic_name": "Planning and Sustainable Development in Indian Context"
+                },
+                {
+                  "topic_name": "Transport and Communication"
+                },
+                {
+                  "topic_name": "International Trad"
+                },
+                {
+                  "topic_name": "Geographical Perspective on Selected Issues and Problems"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "हिंदी",
+          "subject_image_src": "assets/ncert/class12/subject/subject6.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "अंतरा कविता किताब",
+              "book_solution_image_src": "assets/ncert/class12/book/hindi/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "जयशंकर प्रसाद"
+                },
+                {
+                  "topic_name": "सूर्यकान्त त्रिपाठी ‘निराला’"
+                },
+                {
+                  "topic_name": "सच्चिदानंद हीरानंद वात्स्यायन ‘अज्ञेय’"
+                },
+                {
+                  "topic_name": "केदारनाथ सिंह"
+                },
+                {
+                  "topic_name": "विष्णु खरे"
+                },
+                {
+                  "topic_name": "रघुवीर सहाय"
+                },
+                {
+                  "topic_name": "तुलसीदास"
+                },
+                {
+                  "topic_name": "मलिक मुहम्मद जायसी"
+                },
+                {
+                  "topic_name": "विद्यापति"
+                },
+                {
+                  "topic_name": "केशवदास"
+                },
+                {
+                  "topic_name": "घनानंद"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "अंतरा कविता हल",
+              "book_solution_image_src": "assets/ncert/class12/solution/hindi/solution1.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "जयशंकर प्रसाद"
+                },
+                {
+                  "topic_name": "सूर्यकान्त त्रिपाठी ‘निराला’"
+                },
+                {
+                  "topic_name": "सच्चिदानंद हीरानंद वात्स्यायन ‘अज्ञेय’"
+                },
+                {
+                  "topic_name": "केदारनाथ सिंह"
+                },
+                {
+                  "topic_name": "विष्णु खरे"
+                },
+                {
+                  "topic_name": "रघुवीर सहाय"
+                },
+                {
+                  "topic_name": "तुलसीदास"
+                },
+                {
+                  "topic_name": "मलिक मुहम्मद जायसी"
+                },
+                {
+                  "topic_name": "विद्यापति"
+                },
+                {
+                  "topic_name": "केशवदास"
+                },
+                {
+                  "topic_name": "घनानंद"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "अंतरा गद्य किताब",
+              "book_solution_image_src": "assets/ncert/class12/book/hindi/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "रामचंद्र शुक्ल"
+                },
+                {
+                  "topic_name": "पंडित चंद्रधर शर्मा गुलेरी"
+                },
+                {
+                  "topic_name": "ब्रजमोहन व्यास"
+                },
+                {
+                  "topic_name": "फणीश्वर नाथ ‘रेणु’"
+                },
+                {
+                  "topic_name": "भीष्म साहनी"
+                },
+                {
+                  "topic_name": "असगर वजाहत"
+                },
+                {
+                  "topic_name": "निर्मल वर्मा"
+                },
+                {
+                  "topic_name": "रामविलास शर्मा"
+                },
+                {
+                  "topic_name": "ममता कालिया"
+                },
+                {
+                  "topic_name": "हजारी प्रसाद द्विवेदी"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "अंतरा गद्य हल",
+              "book_solution_image_src": "assets/ncert/class12/solution/hindi/solution2.png",
+              "isitbook":false,
+              "topic_dataset": [
+             
+                {
+                  "topic_name": "रामचंद्र शुक्ल"
+                },
+                {
+                  "topic_name": "पंडित चंद्रधर शर्मा गुलेरी"
+                },
+                {
+                  "topic_name": "ब्रजमोहन व्यास"
+                },
+                {
+                  "topic_name": "फणीश्वर नाथ ‘रेणु’"
+                },
+                {
+                  "topic_name": "भीष्म साहनी"
+                },
+                {
+                  "topic_name": "असगर वजाहत"
+                },
+                {
+                  "topic_name": "निर्मल वर्मा"
+                },
+                {
+                  "topic_name": "रामविलास शर्मा"
+                },
+                {
+                  "topic_name": "ममता कालिया"
+                },
+                {
+                  "topic_name": "हजारी प्रसाद द्विवेदी"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "आरोह काव्य किताब",
+              "book_solution_image_src": "assets/ncert/class12/book/hindi/book3.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "हरिवंश राय बच्चन"
+                },
+                {
+                  "topic_name": "आलोक धन्वा"
+                },
+                {
+                  "topic_name": "कुँवर नारायण"
+                },
+                {
+                  "topic_name": "रघुवीर सहाय"
+                },
+                {
+                  "topic_name": "गजानन माधव मुक्तिबोध"
+                },
+                {
+                  "topic_name": "शमशेर बहादुर सिंह"
+                },
+                {
+                  "topic_name": "सूर्यकांत त्रिपाठी ‘निराला’"
+                },
+                {
+                  "topic_name": "गोस्वामी तुलसीदास"
+                },
+                {
+                  "topic_name": "फ़िराक गोरखपुरी"
+                },
+                {
+                  "topic_name": "उमाशंकर जोशी"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "आरोह काव्य हल",
+              "book_solution_image_src": "assets/ncert/class12/solution/hindi/solution3.png",
+              "isitbook":false,
+              "topic_dataset": [
+             
+                {
+                  "topic_name": "हरिवंश राय बच्चन"
+                },
+                {
+                  "topic_name": "आलोक धन्वा"
+                },
+                {
+                  "topic_name": "कुँवर नारायण"
+                },
+                {
+                  "topic_name": "रघुवीर सहाय"
+                },
+                {
+                  "topic_name": "गजानन माधव मुक्तिबोध"
+                },
+                {
+                  "topic_name": "शमशेर बहादुर सिंह"
+                },
+                {
+                  "topic_name": "सूर्यकांत त्रिपाठी ‘निराला’"
+                },
+                {
+                  "topic_name": "गोस्वामी तुलसीदास"
+                },
+                {
+                  "topic_name": "फ़िराक गोरखपुरी"
+                },
+                {
+                  "topic_name": "उमाशंकर जोशी"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "आरोह गद्य किताब",
+              "book_solution_image_src": "assets/ncert/class12/book/hindi/book4.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "महादेवी वर्मा"
+                },
+                {
+                  "topic_name": "जैनेंद्र कुमार"
+                },
+                {
+                  "topic_name": "धर्मवीर भारती"
+                },
+                {
+                  "topic_name": "फणीश्वर नाथ रेणु"
+                },
+                {
+                  "topic_name": "विष्णु खरे"
+                },
+                {
+                  "topic_name": "रज़िया सज्जाद ज़हीर"
+                },
+                {
+                  "topic_name": "हजारी प्रसाद द्विवेदी"
+                },
+                {
+                  "topic_name": "बाबा साहेबभीमराव आंबेडकर"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "आरोह गद्य हल",
+              "book_solution_image_src": "assets/ncert/class12/solution/hindi/solution4.png",
+              "isitbook":false,
+              "topic_dataset": [
+              
+                {
+                  "topic_name": "महादेवी वर्मा"
+                },
+                {
+                  "topic_name": "जैनेंद्र कुमार"
+                },
+                {
+                  "topic_name": "धर्मवीर भारती"
+                },
+                {
+                  "topic_name": "फणीश्वर नाथ रेणु"
+                },
+                {
+                  "topic_name": "विष्णु खरे"
+                },
+                {
+                  "topic_name": "रज़िया सज्जाद ज़हीर"
+                },
+                {
+                  "topic_name": "हजारी प्रसाद द्विवेदी"
+                },
+                {
+                  "topic_name": "बाबा साहेबभीमराव आंबेडकर"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "वितान किताब",
+              "book_solution_image_src": "assets/ncert/class12/book/hindi/book5.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "सिल्वर वैडिंग"
+                },
+                {
+                  "topic_name": "जूझ"
+                },
+                {
+                  "topic_name": "अतीत में दबे पाँव"
+                },
+                {
+                  "topic_name": "डायरी के पन्ने"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "वितान हल",
+              "book_solution_image_src": "assets/ncert/class12/solution/hindi/solution5.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "सिल्वर वैडिंग"
+                },
+                {
+                  "topic_name": "जूझ"
+                },
+                {
+                  "topic_name": "अतीत में दबे पाँव"
+                },
+                {
+                  "topic_name": "डायरी के पन्ने"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "अंतराल किताब",
+              "book_solution_image_src": "assets/ncert/class12/book/hindi/book6.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "सूरदास की झोपड़ी"
+                },
+                {
+                  "topic_name": "आरोहण"
+                },
+                {
+                  "topic_name": "बिस्कोहर की माटी"
+                },
+                {
+                  "topic_name": "अपना मालवा (खाऊ-उजाड़ू सभ्यता में)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "History",
+          "subject_image_src": "assets/ncert/class12/subject/subject7.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Themes in indian history -1 Book",
+              "book_solution_image_src": "assets/ncert/class12/book/history/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Bricks, Beads And Bones The Harappan Civilisation"
+                },
+                {
+                  "topic_name": "Kings, Farmers And Towns Early States And Economies"
+                },
+                {
+                  "topic_name": "Kinship, Caste And Class Early Societies"
+                },
+                {
+                  "topic_name": "Thinkers, Beliefs And Buildings Cultural Developments"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Themes in indian history -1 Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/history/solution1.png",
+              "isitbook":false,
+              "topic_dataset": [
+            
+                {
+                  "topic_name": "Bricks, Beads And Bones The Harappan Civilisation"
+                },
+                {
+                  "topic_name": "Kings, Farmers And Towns Early States And Economies"
+                },
+                {
+                  "topic_name": "Kinship, Caste And Class Early Societies"
+                },
+                {
+                  "topic_name": "Thinkers, Beliefs And Buildings Cultural Developments"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Themes in indian history -2 Book",
+              "book_solution_image_src": "assets/ncert/class12/book/history/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Through The Eyes Of Travellers Perceptions of Society"
+                },
+                {
+                  "topic_name": "Bhakti-sufi Traditions Changes In Religious Beliefs And Devotional Texts"
+                },
+                {
+                  "topic_name": "An Imperial Capital-vijayanagara"
+                },
+                {
+                  "topic_name": "Peasants, Zamindars And The State Agrarian Society And The Mughal Empire"
+                },
+                {
+                  "topic_name": "Kings And Chronicles The Mughal Courts"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Themes in indian history -2 Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/history/solution2.png",
+              "isitbook":false,
+              "topic_dataset": [
+             
+                {
+                  "topic_name": "Through The Eyes Of Travellers Perceptions of Society"
+                },
+                {
+                  "topic_name": "Bhakti-sufi Traditions Changes In Religious Beliefs And Devotional Texts"
+                },
+                {
+                  "topic_name": "An Imperial Capital-vijayanagara"
+                },
+                {
+                  "topic_name": "Peasants, Zamindars And The State Agrarian Society And The Mughal Empire"
+                },
+                {
+                  "topic_name": "Kings And Chronicles The Mughal Courts"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Themes in indian history -3 Book",
+              "book_solution_image_src": "assets/ncert/class12/book/history/book3.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Colonialism And The Countryside Exploring Official Archives"
+                },
+                {
+                  "topic_name": "Rebels And The Raj The Revolt of1857 and Its Representations"
+                },
+                {
+                  "topic_name": "Colonial Cities Urbanisation, Planning and Architecture"
+                },
+                {
+                  "topic_name": "Mahatma Gandhi And The Nationalist Movement Civil Disobedience And Beyond"
+                },
+                {
+                  "topic_name": "Understanding Partition Politics, Memories, Experiences"
+                },
+                {
+                  "topic_name": "Framing The Constitution The Beginning Of A New Era"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Themes in indian history -3 Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/history/solution3.png",
+              "isitbook":false,
+              "topic_dataset": [
+              
+                {
+                  "topic_name": "Colonialism And The Countryside Exploring Official Archives"
+                },
+                {
+                  "topic_name": "Rebels And The Raj The Revolt of1857 and Its Representations"
+                },
+                {
+                  "topic_name": "Colonial Cities Urbanisation, Planning and Architecture"
+                },
+                {
+                  "topic_name": "Mahatma Gandhi And The Nationalist Movement Civil Disobedience And Beyond"
+                },
+                {
+                  "topic_name": "Understanding Partition Politics, Memories, Experiences"
+                },
+                {
+                  "topic_name": "Framing The Constitution The Beginning Of A New Era"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Mathematics",
+          "subject_image_src": "assets/ncert/class12/subject/subject8.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Mathematics Part-1 Book",
+              "book_solution_image_src": "assets/ncert/class12/book/math/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Relations and Functions"
+                },
+                {
+                  "topic_name": "Inverse Trigonometric Functions"
+                },
+                {
+                  "topic_name": "Matrices"
+                },
+                {
+                  "topic_name": "Determinants"
+                },
+                {
+                  "topic_name": "Continuity and Differentiability"
+                },
+                {
+                  "topic_name": "Application of Derivatives"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Mathematics Part-1 Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/math/solution1.png",
+              "isitbook":false,
+              "topic_dataset": [
+            
+                {
+                  "topic_name": "Relations and Functions"
+                },
+                {
+                  "topic_name": "Inverse Trigonometric Functions"
+                },
+                {
+                  "topic_name": "Matrices"
+                },
+                {
+                  "topic_name": "Determinants"
+                },
+                {
+                  "topic_name": "Continuity and Differentiability"
+                },
+                {
+                  "topic_name": "Application of Derivatives"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Mathematics Part-2 Book",
+              "book_solution_image_src": "assets/ncert/class12/book/math/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Integrals"
+                },
+                {
+                  "topic_name": "Application of Integrals"
+                },
+                {
+                  "topic_name": "Differential Equations"
+                },
+                {
+                  "topic_name": "Vector Algebra"
+                },
+                {
+                  "topic_name": "Three Dimensional Geometry"
+                },
+                {
+                  "topic_name": "Linear Programming"
+                },
+                {
+                  "topic_name": "Probability"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Mathematics Part-2 Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/math/solution2.png",
+              "isitbook":false,
+              "topic_dataset": [
+              
+                {
+                  "topic_name": "Integrals"
+                },
+                {
+                  "topic_name": "Application of Integrals"
+                },
+                {
+                  "topic_name": "Differential Equations"
+                },
+                {
+                  "topic_name": "Vector Algebra"
+                },
+                {
+                  "topic_name": "Three Dimensional Geometry"
+                },
+                {
+                  "topic_name": "Linear Programming"
+                },
+                {
+                  "topic_name": "Probability"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Physics",
+          "subject_image_src": "assets/ncert/class12/subject/subject9.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Physics Part–I Book",
+              "book_solution_image_src": "assets/ncert/class12/book/physics/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Electric Charges And Fields"
+                },
+                {
+                  "topic_name": "Electrostatic Potential And Capacitance"
+                },
+                {
+                  "topic_name": "Current Electricity"
+                },
+                {
+                  "topic_name": "Moving Charges And Magnetism"
+                },
+                {
+                  "topic_name": "Magnetism And Matter"
+                },
+                {
+                  "topic_name": "Electromagnetic InductioN"
+                },
+                {
+                  "topic_name": "Alternating Current"
+                },
+                {
+                  "topic_name": "Electromagnetic Waves"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Physics Part–I Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/physics/solution1.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "Electric Charges And Fields"
+                },
+                {
+                  "topic_name": "Electrostatic Potential And Capacitance"
+                },
+                {
+                  "topic_name": "Current Electricity"
+                },
+                {
+                  "topic_name": "Moving Charges And Magnetism"
+                },
+                {
+                  "topic_name": "Magnetism And Matter"
+                },
+                {
+                  "topic_name": "Electromagnetic InductioN"
+                },
+                {
+                  "topic_name": "Alternating Current"
+                },
+                {
+                  "topic_name": "Electromagnetic Waves"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Physics Part–II Book",
+              "book_solution_image_src": "assets/ncert/class12/book/physics/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Ray Optics And Optical Instruments"
+                },
+                {
+                  "topic_name": "Wave Optics"
+                },
+                {
+                  "topic_name": "Dual Nature Of Radiation And Matter"
+                },
+                {
+                  "topic_name": "Atoms"
+                },
+                {
+                  "topic_name": "Nuclei"
+                },
+                {
+                  "topic_name": "Semiconductor Electronics-Materials, Devices And Simple Circuits"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Physics Part–II Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/physics/solution2.png",
+              "isitbook":false,
+              "topic_dataset": [
+             
+                {
+                  "topic_name": "Ray Optics And Optical Instruments"
+                },
+                {
+                  "topic_name": "Wave Optics"
+                },
+                {
+                  "topic_name": "Dual Nature Of Radiation And Matter"
+                },
+                {
+                  "topic_name": "Atoms"
+                },
+                {
+                  "topic_name": "Nuclei"
+                },
+                {
+                  "topic_name": "Semiconductor Electronics-Materials, Devices And Simple Circuits"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Political science",
+          "subject_image_src": "assets/ncert/class12/subject/subject10.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Contemporary World Politics Book",
+              "book_solution_image_src": "assets/ncert/class12/book/politicalscience/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Cold War Era"
+                },
+                {
+                  "topic_name": "The End of Bipolarity"
+                },
+                {
+                  "topic_name": "US Hegemony in World Politics"
+                },
+                {
+                  "topic_name": "Alternative Centres of Power"
+                },
+                {
+                  "topic_name": "Contemporary South Asia"
+                },
+                {
+                  "topic_name": "International Organisations"
+                },
+                {
+                  "topic_name": "Security in the Contemporary World"
+                },
+                {
+                  "topic_name": "Environment and Natural Resources"
+                },
+                {
+                  "topic_name": "Globalisation"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Contemporary World Politics Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/politicalscience/solution1.png",
+              "isitbook":false,
+              "topic_dataset": [
+            
+                {
+                  "topic_name": "The Cold War Era"
+                },
+                {
+                  "topic_name": "The End of Bipolarity"
+                },
+                {
+                  "topic_name": "US Hegemony in World Politics"
+                },
+                {
+                  "topic_name": "Alternative Centres of Power"
+                },
+                {
+                  "topic_name": "Contemporary South Asia"
+                },
+                {
+                  "topic_name": "International Organisations"
+                },
+                {
+                  "topic_name": "Security in the Contemporary World"
+                },
+                {
+                  "topic_name": "Environment and Natural Resources"
+                },
+                {
+                  "topic_name": "Globalisation"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Politics in India since Independence Book",
+              "book_solution_image_src": "assets/ncert/class12/book/politicalscience/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Challenges of Nation Building"
+                },
+                {
+                  "topic_name": "Era of One-party Dominance"
+                },
+                {
+                  "topic_name": "Politics of Planned Development"
+                },
+                {
+                  "topic_name": "India’s External Relations"
+                },
+                {
+                  "topic_name": "Challenges to and Restoration of the Congress System"
+                },
+                {
+                  "topic_name": "The Crisis of Democratic Order"
+                },
+                {
+                  "topic_name": "Rise of Popular Movements"
+                },
+                {
+                  "topic_name": "Regional Aspirations"
+                },
+                {
+                  "topic_name": "Recent Developments in Indian Politics"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Politics in India since Independence Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/politicalscience/solution2.png",
+              "isitbook":false,
+              "topic_dataset": [
+               
+                {
+                  "topic_name": "Challenges of Nation Building"
+                },
+                {
+                  "topic_name": "Era of One-party Dominance"
+                },
+                {
+                  "topic_name": "Politics of Planned Development"
+                },
+                {
+                  "topic_name": "India’s External Relations"
+                },
+                {
+                  "topic_name": "Challenges to and Restoration of the Congress System"
+                },
+                {
+                  "topic_name": "The Crisis of Democratic Order"
+                },
+                {
+                  "topic_name": "Rise of Popular Movements"
+                },
+                {
+                  "topic_name": "Regional Aspirations"
+                },
+                {
+                  "topic_name": "Recent Developments in Indian Politics"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Psychology",
+          "subject_image_src": "assets/ncert/class12/subject/subject11.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Psychology Book",
+              "book_solution_image_src": "assets/ncert/class12/book/psychology/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Variations in Psychological Attributes"
+                },
+                {
+                  "topic_name": "Self and Personality"
+                },
+                {
+                  "topic_name": "Meeting Life Challenges"
+                },
+                {
+                  "topic_name": "Psychological Disorders"
+                },
+                {
+                  "topic_name": "Therapeutic Approaches"
+                },
+                {
+                  "topic_name": "Attitude and Social Cognition"
+                },
+                {
+                  "topic_name": "Social Influence and Group Processes"
+                },
+                {
+                  "topic_name": "Psychology and Life"
+                },
+                {
+                  "topic_name": "Developing Psychological Skills"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Psychology Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/psychology/solution1.png",
+              "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "Self and Personality"
+                },
+                {
+                  "topic_name": "Meeting Life Challenges"
+                },
+                {
+                  "topic_name": "Psychological Disorders"
+                },
+                {
+                  "topic_name": "Therapeutic Approaches"
+                },
+                {
+                  "topic_name": "Attitude and Social Cognition"
+                },
+                {
+                  "topic_name": "Social Influence and Group Processes"
+                },
+                {
+                  "topic_name": "Psychology and Life"
+                },
+                {
+                  "topic_name": "Developing Psychological Skills"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Sociology",
+          "subject_image_src": "assets/ncert/class12/subject/subject12.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Indian Society Book",
+              "book_solution_image_src": "assets/ncert/class12/book/sociology/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Introducing Indian Society"
+                },
+                {
+                  "topic_name": "The Demographic Structure of the Indian Society"
+                },
+                {
+                  "topic_name": "Social Institutions-Continuity and Change"
+                },
+                {
+                  "topic_name": "The Market as a Social Institution"
+                },
+                {
+                  "topic_name": "Patterns of Social Inequality and Exclusion"
+                },
+                {
+                  "topic_name": "The Challenges of Cultural Diversity"
+                },
+                {
+                  "topic_name": "Suggestions for Project Work"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Indian Society Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/sociology/solution1.png",
+              "isitbook":false,
+              "topic_dataset": [
+              
+                {
+                  "topic_name": "Introducing Indian Society"
+                },
+                {
+                  "topic_name": "The Demographic Structure of the Indian Society"
+                },
+                {
+                  "topic_name": "Social Institutions-Continuity and Change"
+                },
+                {
+                  "topic_name": "The Market as a Social Institution"
+                },
+                {
+                  "topic_name": "Patterns of Social Inequality and Exclusion"
+                },
+                {
+                  "topic_name": "The Challenges of Cultural Diversity"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Social Change and Development in India Book",
+              "book_solution_image_src": "assets/ncert/class12/book/sociology/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Structural Change"
+                },
+                {
+                  "topic_name": "Cultural Change"
+                },
+                {
+                  "topic_name": "The Story of Indian Democracy"
+                },
+                {
+                  "topic_name": "Change and Development in Rural Society"
+                },
+                {
+                  "topic_name": "Change and Development in Industrial Society"
+                },
+                {
+                  "topic_name": "Globalisation and Social Change"
+                },
+                {
+                  "topic_name": "Mass Media and Communications"
+                },
+                {
+                  "topic_name": "Social Movements"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Social Change and Development in India Solutions",
+              "book_solution_image_src": "assets/ncert/class12/solution/sociology/solution2.png",
+              "isitbook":false,
+              "topic_dataset": [
+              
+                {
+                  "topic_name": "Structural Change"
+                },
+                {
+                  "topic_name": "Cultural Change"
+                },
+                {
+                  "topic_name": "The Story of Indian Democracy"
+                },
+                {
+                  "topic_name": "Change and Development in Rural Society"
+                },
+                {
+                  "topic_name": "Change and Development in Industrial Society"
+                },
+                {
+                  "topic_name": "Globalisation and Social Change"
+                },
+                {
+                  "topic_name": "Mass Media and Communications"
+                },
+                {
+                  "topic_name": "Social Movements"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "book_name": "Exampler Books",
+      "book_image_src":  "assets/exampler/class12/exampler.png",
+      "subject_dataset": [
+        {
+          "subject_name": "Biology",
+          "subject_image_src": "assets/exampler/class12/subject/subject1.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Biology Book",
+              "book_solution_image_src": "assets/exampler/class12/book/biology/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                
+                {
+                  "topic_name": "Reproduction in Organisms"
+                },
+                {
+                  "topic_name": "Sexual Reproduction in Flowering Plants"
+                },
+                {
+                  "topic_name": "Human Reproduction"
+                },
+                {
+                  "topic_name": "Reproductive Health"
+                },
+                {
+                  "topic_name": "Principles of Inheritance and Variation"
+                },
+                {
+                  "topic_name": "Molecular Basis of Inheritance"
+                },
+                {
+                  "topic_name": "Evolution"
+                },
+                {
+                  "topic_name": "Human Health and Disease"
+                },
+                {
+                  "topic_name": "Strategies for Enhancement in Food Production"
+                },
+                {
+                  "topic_name": "Microbes in Human Welfare"
+                },
+                {
+                  "topic_name": "Biotechnology-Principles and Processes"
+                },
+                {
+                  "topic_name": "Biotechnology and its Applications"
+                },
+                {
+                  "topic_name": "Organisms and Populations"
+                },
+                {
+                  "topic_name": "Ecosystem"
+                },
+                {
+                  "topic_name": "Biodiversity and Conservation"
+                },
+                {
+                  "topic_name": "Environmental Issues"
+                },
+                {
+                  "topic_name": "ANSWERS TO MULTIPLE -CHOICE QUESTIONS"
+                },
+                {
+                  "topic_name": "MODEL ANSWERS TO DESCRIPTIVE QUESTIONS"
+                },
+                {
+                  "topic_name": "MODEL QUESTION PAPER"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Chemistry",
+          "subject_image_src": "assets/exampler/class12/subject/subject2.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Chemistry Book",
+              "book_solution_image_src": "assets/exampler/class12/book/chemistry/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Solid State"
+                },
+                {
+                  "topic_name": "Solutions"
+                },
+                {
+                  "topic_name": "Electrochemistry"
+                },
+                {
+                  "topic_name": "Chemical Kinetics"
+                },
+                {
+                  "topic_name": "Surface Chemistry"
+                },
+                {
+                  "topic_name": "General Principles and Processes of Isolation of Elements"
+                },
+                {
+                  "topic_name": "The p-Block Elements"
+                },
+                {
+                  "topic_name": "The d-and f-Block Elements"
+                },
+                {
+                  "topic_name": "Coordination Compounds"
+                },
+                {
+                  "topic_name": "Haloalkanes and Haloarenes"
+                },
+                {
+                  "topic_name": "Alcohols, Phenols and Ethers"
+                },
+                {
+                  "topic_name": "Aldehydes, Ketones and Carboxylic Acids"
+                },
+                {
+                  "topic_name": "Amines"
+                },
+                {
+                  "topic_name": "Biomolecules"
+                },
+                {
+                  "topic_name": "Polymers"
+                },
+                {
+                  "topic_name": "Chemistry in Everyday Life"
+                },
+                {
+                  "topic_name": "Design of the Sample Question Paper"
+                },
+                {
+                  "topic_name": "Model Question Paper-II"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "Mathematics",
+          "subject_image_src": "assets/exampler/class12/subject/subject3.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Mathematics Book",
+              "book_solution_image_src": "assets/exampler/class12/book/math/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Relations and Functions"
+                },
+                {
+                  "topic_name": "Inverse Trigonometric Functions"
+                },
+                {
+                  "topic_name": "Matrices"
+                },
+                {
+                  "topic_name": "Determinants"
+                },
+                {
+                  "topic_name": "Continuity and Differentiability"
+                },
+                {
+                  "topic_name": "Application of Derivatives"
+                },
+                {
+                  "topic_name": "Integrals"
+                },
+                {
+                  "topic_name": "Application of Integrals"
+                },
+                {
+                  "topic_name": "Differential Equations"
+                },
+                {
+                  "topic_name": "Vector Algebra"
+                },
+                {
+                  "topic_name": "Three Dimensional Geometry"
+                },
+                {
+                  "topic_name": "Linear Programming"
+                },
+                {
+                  "topic_name": "Probability"
+                },
+                {
+                  "topic_name": "Design Of The Question Paper-Set I"
+                },
+                {
+                  "topic_name": "Design Of The Question Paper-Set  II"
+                },
+                {
+                  "topic_name": "Answers"
+                }
+              ]
+            }
+       
+          ]
+        },
+        {
+          "subject_name": "Physics",
+          "subject_image_src": "assets/exampler/class12/subject/subject4.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Physics Book",
+              "book_solution_image_src": "assets/exampler/class12/book/physics/book1.png",
+              "isitbook":true,
+              "topic_dataset": [      
+                {
+                  "topic_name": "Electric Charges And Fields"
+                },
+                {
+                  "topic_name": "Electrostatic Potential And Capacitance"
+                },
+                {
+                  "topic_name": "Current Electricity"
+                },
+                {
+                  "topic_name": "Moving Charges And Magnetism"
+                },
+                {
+                  "topic_name": "Magnetism And Matter"
+                },
+                {
+                  "topic_name": "Electromagnetic InductioN"
+                },
+                {
+                  "topic_name": "Alternating Current"
+                },
+                {
+                  "topic_name": "Electromagnetic Waves"
+                },
+                {
+                  "topic_name": "Ray Optics And Optical Instruments"
+                },
+                {
+                  "topic_name": "Wave Optics"
+                },
+                {
+                  "topic_name": "Dual Nature Of Radiation And Matter"
+                },
+                {
+                  "topic_name": "Atoms"
+                },
+                {
+                  "topic_name": "Nuclei"
+                },
+                {
+                  "topic_name": "Semiconductor Electronics"
+                },
+                {
+                  "topic_name": "Communication Systems"
+                },
+                {
+                  "topic_name": "Sample Question Paper-Set I"
+                },
+                {
+                  "topic_name": "Answers"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

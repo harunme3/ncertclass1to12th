@@ -1,0 +1,21 @@
+{
+    "class_dataset":[
+        {
+          "class_name": "Class 9",
+          "class_image_src": "assets/classimg/class9.png"
+        },
+        { 
+            "class_name": "Class 10",
+            "class_image_src": "assets/classimg/class10.png"
+        },
+        {
+            "class_name": "Class 11",
+            "class_image_src": "assets/classimg/class11.png"
+        },
+        { 
+          "class_name": "Class 12",
+          "class_image_src": "assets/classimg/class12.png"
+        }
+
+    ]
+}

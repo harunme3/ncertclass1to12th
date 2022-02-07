@@ -1,0 +1,1308 @@
+{
+  "book_dataset": [
+    {
+      "book_name": "Ncert की किताबे",
+      "book_image_src": "assets/ncert/class9/ncert.png",
+      "subject_dataset": [
+        {
+          "subject_name": "गणित",
+          "subject_image_src": "assets/ncert/class9/subject/mathematics.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "गणित किताब",
+              "book_solution_image_src":  "assets/ncert/class9/book/mathematics.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "संख्या पद्वति"
+                },
+                {
+                  "topic_name": "बहुपद"
+                },
+                {
+                  "topic_name": "निर्देशांक ज्यामिति"
+                },
+                {
+                  "topic_name": "दो चरों वाले रैखिक समीकरण"
+                },
+                {
+                  "topic_name": "यूक्लिड की ज्यामिति का परिचय"
+                },
+                {
+                  "topic_name": "रेखाएँ और कोण"
+                },
+                {
+                  "topic_name": "त्रिभुज"
+                },
+                {
+                  "topic_name": "चतुर्भुज"
+                },
+                {
+                  "topic_name": "समांतर चतुर्भुजों और त्रिभुजों के क्षेत्रफल"
+                },
+                {
+                  "topic_name": "वृत्त"
+                },
+                {
+                  "topic_name": "रचनाएँ"
+                },
+                {
+                  "topic_name": "हीरोन का सूत्र"
+                },
+                {
+                  "topic_name": "पृष्ठीय क्षेत्रफल और आयतन"
+                },
+                {
+                  "topic_name": "सांख्यिकी"
+                },
+                {
+                  "topic_name": "प्रायिकता"
+                },
+                {
+                  "topic_name": "परिशिष्ट 1 – गणित में उपपत्तियाँ"
+                },
+                {
+                  "topic_name": "परिशिष्ट 2 – गणितीय निदर्शन का परिचय"
+                },
+                {
+                  "topic_name": "Answer"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "गणित हल",
+              "book_solution_image_src": "assets/ncert/class9/solution/mathematics.png",
+               "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "संख्या पद्वति"
+                },
+                {
+                  "topic_name": "बहुपद"
+                },
+                {
+                  "topic_name": "निर्देशांक ज्यामिति"
+                },
+                {
+                  "topic_name": "दो चरों वाले रैखिक समीकरण"
+                },
+                {
+                  "topic_name": "यूक्लिड की ज्यामिति का परिचय"
+                },
+                {
+                  "topic_name": "रेखाएँ और कोण"
+                },
+                {
+                  "topic_name": "त्रिभुज"
+                },
+                {
+                  "topic_name": "चतुर्भुज"
+                },
+                {
+                  "topic_name": "समांतर चतुर्भुजों और त्रिभुजों के क्षेत्रफल"
+                },
+                {
+                  "topic_name": "वृत्त"
+                },
+                {
+                  "topic_name": "रचनाएँ"
+                },
+                {
+                  "topic_name": "हीरोन का सूत्र"
+                },
+                {
+                  "topic_name": "पृष्ठीय क्षेत्रफल और आयतन"
+                },
+                {
+                  "topic_name": "सांख्यिकी"
+                },
+                {
+                  "topic_name": "प्रायिकता"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "विज्ञान",
+          "subject_image_src": "assets/ncert/class9/subject/science.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "विज्ञान किताब",
+              "book_solution_image_src":"assets/ncert/class9/book/science.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "हमारे आस-पास के पदार्थ"
+                },
+                {
+                  "topic_name": "क्या हमारे आस-पास के पदार्थ शुद्ध हैं"
+                },
+
+                {
+                  "topic_name": "परमाणु एवं अणु"
+                },
+                {
+                  "topic_name": "परमाणु की संरचना"
+                },
+                {
+                  "topic_name": "जीवन की मौलिक इकाई"
+                },
+                {
+                  "topic_name": "ऊतक"
+                },
+                {
+                  "topic_name": "जीवों में विविधता"
+                },
+                {
+                  "topic_name": "गति"
+                },
+                {
+                  "topic_name": "बल तथा गति के नियम"
+                },
+                {
+                  "topic_name": "गुरुत्वाकर्षण"
+                },
+                {
+                  "topic_name": "कार्य तथा ऊर्जा"
+                },
+                {
+                  "topic_name": "ध्वनि"
+                },
+                {
+                  "topic_name": "हम बीमार क्यों होते हैं"
+                },
+                {
+                  "topic_name": "प्राकृतिक संपदा"
+                },
+                {
+                  "topic_name": "खाद्य संसाधनों में सुधर"
+                },
+                {
+                  "topic_name": "पारिभाषिक शब्दावली"
+                },
+                {
+                  "topic_name": "उत्तरमाला"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "विज्ञान हल",
+              "book_solution_image_src": "assets/ncert/class9/solution/science.png",
+               "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "हमारे आस-पास के पदार्थ"
+                },
+                {
+                  "topic_name": "क्या हमारे आस-पास के पदार्थ शुद्ध हैं"
+                },
+
+                {
+                  "topic_name": "परमाणु एवं अणु"
+                },
+                {
+                  "topic_name": "परमाणु की संरचना"
+                },
+                {
+                  "topic_name": "जीवन की मौलिक इकाई"
+                },
+                {
+                  "topic_name": "ऊतक"
+                },
+                {
+                  "topic_name": "जीवों में विविधता"
+                },
+                {
+                  "topic_name": "गति"
+                },
+                {
+                  "topic_name": "बल तथा गति के नियम"
+                },
+                {
+                  "topic_name": "गुरुत्वाकर्षण"
+                },
+                {
+                  "topic_name": "कार्य तथा ऊर्जा"
+                },
+                {
+                  "topic_name": "ध्वनि"
+                },
+                {
+                  "topic_name": "हम बीमार क्यों होते हैं"
+                },
+                {
+                  "topic_name": "प्राकृतिक संपदा"
+                },
+                {
+                  "topic_name": "खाद्य संसाधनों में सुधर"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "अंग्रेजी",
+          "subject_image_src": "assets/ncert/class9/subject/english.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Beehive Books",
+              "book_solution_image_src":"assets/ncert/class9/book/beehive.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Fun They Had"
+                },
+                {
+                  "topic_name": "The Sound Of Music"
+                },
+                {
+                  "topic_name": "The Little Girl"
+                },
+                {
+                  "topic_name": "A Truly Beautiful Mind"
+                },
+                {
+                  "topic_name": "The Snake and the Mirror"
+                },
+                {
+                  "topic_name": "My Childhood"
+                },
+                {
+                  "topic_name": "Packing"
+                },
+                {
+                  "topic_name": "Reach for the Top"
+                },
+                {
+                  "topic_name": "The Bond of Love"
+                },
+                {
+                  "topic_name": "Kathmandu"
+                },
+                {
+                  "topic_name": "If I Were You"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Beehive Solutions",
+              "book_solution_image_src": "assets/ncert/class9/solution/beehive.png",
+               "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "The Fun They Had"
+                },
+                {
+                  "topic_name": "The Sound Of Music"
+                },
+                {
+                  "topic_name": "The Little Girl"
+                },
+                {
+                  "topic_name": "A Truly Beautiful Mind"
+                },
+                {
+                  "topic_name": "The Snake and the Mirror"
+                },
+                {
+                  "topic_name": "My Childhood"
+                },
+                {
+                  "topic_name": "Packing"
+                },
+                {
+                  "topic_name": "Reach for the Top"
+                },
+                {
+                  "topic_name": "The Bond of Love"
+                },
+                {
+                  "topic_name": "Kathmandu"
+                },
+                {
+                  "topic_name": "If I Were You"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Moments Books",
+              "book_solution_image_src": "assets/ncert/class9/book/moment.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Lost Child"
+                },
+                {
+                  "topic_name": "The Adventures of Toto"
+                },
+                {
+                  "topic_name": "Iswaran the Storyteller"
+                },
+                {
+                  "topic_name": "In the Kingdom of Fools"
+                },
+                {
+                  "topic_name": "The Happy Prince"
+                },
+                {
+                  "topic_name": "Weathering the Storm in Ersama"
+                },
+                {
+                  "topic_name": "The Last Leaf"
+                },
+                {
+                  "topic_name": "A House Is Not a Home"
+                },
+                {
+                  "topic_name": "The Accidental Tourist"
+                },
+                {
+                  "topic_name": "The Beggar"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "Moments Solutions",
+              "book_solution_image_src": "assets/ncert/class9/solution/moment.png",
+               "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "The Lost Child"
+                },
+                {
+                  "topic_name": "The Adventures of Toto"
+                },
+                {
+                  "topic_name": "Iswaran the Storyteller"
+                },
+                {
+                  "topic_name": "In the Kingdom of Fools"
+                },
+                {
+                  "topic_name": "The Happy Prince"
+                },
+                {
+                  "topic_name": "Weathering the Storm in Ersama"
+                },
+                {
+                  "topic_name": "The Last Leaf"
+                },
+                {
+                  "topic_name": "A House Is Not a Home"
+                },
+                {
+                  "topic_name": "The Accidental Tourist"
+                },
+                {
+                  "topic_name": "The Beggar"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "words and expression Books",
+              "book_solution_image_src": "assets/ncert/class9/book/wordexpression.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "Unit 1"
+                },
+                {
+                  "topic_name": "Unit 2"
+                },
+                {
+                  "topic_name": "unit 3"
+                },
+                {
+                  "topic_name": "unit 4"
+                },
+                {
+                  "topic_name": "unit 5"
+                },
+                {
+                  "topic_name": "unit 6"
+                },
+                {
+                  "topic_name": "unit 7"
+                },
+                {
+                  "topic_name": "unit 8"
+                },
+                {
+                  "topic_name": "unit 9"
+                },
+                {
+                  "topic_name": "unit 10"
+                },
+                {
+                  "topic_name": "unit 11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "हिंदी",
+          "subject_image_src": "assets/ncert/class9/subject/hindi.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "कृतिका किताब",
+              "book_solution_image_src": "assets/ncert/class9/book/kritika.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "इस जल प्रलय में"
+                },
+                {
+                  "topic_name": "मेरे संग की औरतें"
+                },
+                {
+                  "topic_name": "रीढ़ की हड्डी"
+                },
+                {
+                  "topic_name": "माटी वाली"
+                },
+                {
+                  "topic_name": "किस तरह आखिरकार मैं हिंदी में आया"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "कृतिका हल",
+              "book_solution_image_src": "assets/ncert/class9/solution/kritika.png",
+               "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "इस जल प्रलय में"
+                },
+                {
+                  "topic_name": "मेरे संग की औरतें"
+                },
+                {
+                  "topic_name": "रीढ़ की हड्डी"
+                },
+                {
+                  "topic_name": "माटी वाली"
+                },
+                {
+                  "topic_name": "किस तरह आखिरकार मैं हिंदी में आया"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "क्षितिज किताब",
+              "book_solution_image_src": "assets/ncert/class9/book/kshitij.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "दो बैलों की कथा"
+                },
+                {
+                  "topic_name": "ल्हासा की ओर"
+                },
+                {
+                  "topic_name": "उपभोक्तावाद की संस्कृति"
+                },
+                {
+                  "topic_name": "साँवले सपनों की याद"
+                },
+                {
+                  "topic_name": "नाना साहब की पुत्री देवी मैना को भस्म कर दिया"
+                },
+                {
+                  "topic_name": "प्रेंचंद के फटे जूते"
+                },
+                {
+                  "topic_name": "मेरे बचपन के दिन"
+                },
+                {
+                  "topic_name": "एक कुत्ता और एक मैना"
+                },
+                {
+                  "topic_name": "साखियाँ एवं सबद"
+                },
+                {
+                  "topic_name": "बाघ"
+                },
+                {
+                  "topic_name": "सवैये"
+                },
+                {
+                  "topic_name": "कैदी ओर कोकिला"
+                },
+                {
+                  "topic_name": "ग्राम श्री"
+                },
+                {
+                  "topic_name": "चंद्र गहना से लौटती बेर"
+                },
+                {
+                  "topic_name": "मेघ आय"
+                },
+                {
+                  "topic_name": "यमराज की दिशा"
+                },
+                {
+                  "topic_name": "बच्चे काम पर जा रहे है"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "क्षितिज हल",
+              "book_solution_image_src":  "assets/ncert/class9/solution/kshitij.png",
+               "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "दो बैलों की कथा"
+                },
+                {
+                  "topic_name": "ल्हासा की ओर"
+                },
+                {
+                  "topic_name": "उपभोक्तावाद की संस्कृति"
+                },
+                {
+                  "topic_name": "साँवले सपनों की याद"
+                },
+                {
+                  "topic_name": "नाना साहब की पुत्री देवी मैना को भस्म कर दिया"
+                },
+                {
+                  "topic_name": "प्रेंचंद के फटे जूते"
+                },
+                {
+                  "topic_name": "मेरे बचपन के दिन"
+                },
+                {
+                  "topic_name": "एक कुत्ता और एक मैना"
+                },
+                {
+                  "topic_name": "साखियाँ एवं सबद"
+                },
+                {
+                  "topic_name": "बाघ"
+                },
+                {
+                  "topic_name": "सवैये"
+                },
+                {
+                  "topic_name": "कैदी ओर कोकिला"
+                },
+                {
+                  "topic_name": "ग्राम श्री"
+                },
+                {
+                  "topic_name": "चंद्र गहना से लौटती बेर"
+                },
+                {
+                  "topic_name": "मेघ आय"
+                },
+                {
+                  "topic_name": "यमराज की दिशा"
+                },
+                {
+                  "topic_name": "बच्चे काम पर जा रहे है"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "स्पर्श किताब",
+              "book_solution_image_src": "assets/ncert/class9/book/sparsh.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "दुख का अधिकार"
+                },
+                {
+                  "topic_name": "एवेरेस्ट मेरी शिखर यात्रा"
+                },
+                {
+                  "topic_name": "तुम कब जाओगे, आतिथि"
+                },
+                {
+                  "topic_name": "वैज्ञानिक चेतना के वाहक चंद्रशेखर वेंकट रामन"
+                },
+                {
+                  "topic_name": "धर्म की आड़"
+                },
+                {
+                  "topic_name": "शुक्रतारे के समान"
+                },
+                {
+                  "topic_name": "अब कैसे छूटै राम,नाम"
+                },
+                {
+                  "topic_name": "दोहे"
+                },
+                {
+                  "topic_name": "आदमी नामा"
+                },
+                {
+                  "topic_name": "एक फूल की चाह"
+                },
+                {
+                  "topic_name": "गीत-अगीत"
+                },
+                {
+                  "topic_name": "अग्नि पथ"
+                },
+                {
+                  "topic_name": "नए इलाके में"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "स्पर्श हल",
+              "book_solution_image_src":  "assets/ncert/class9/solution/sparsh.png",
+               "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "दुख का अधिकार"
+                },
+                {
+                  "topic_name": "एवेरेस्ट मेरी शिखर यात्रा"
+                },
+                {
+                  "topic_name": "तुम कब जाओगे, आतिथि"
+                },
+                {
+                  "topic_name": "वैज्ञानिक चेतना के वाहक चंद्रशेखर वेंकट रामन"
+                },
+                {
+                  "topic_name": "धर्म की आड़"
+                },
+                {
+                  "topic_name": "शुक्रतारे के समान"
+                },
+                {
+                  "topic_name": "अब कैसे छूटै राम,नाम"
+                },
+                {
+                  "topic_name": "दोहे"
+                },
+                {
+                  "topic_name": "आदमी नामा"
+                },
+                {
+                  "topic_name": "एक फूल की चाह"
+                },
+                {
+                  "topic_name": "गीत-अगीत"
+                },
+                {
+                  "topic_name": "अग्नि पथ"
+                },
+                {
+                  "topic_name": "नए इलाके में"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "संचयन किताब",
+              "book_solution_image_src": "assets/ncert/class9/book/sanchayan.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "गिल्लू"
+                },
+                {
+                  "topic_name": "स्मृति"
+                },
+                {
+                  "topic_name": "कल्लू कुम्हार की उनाकोटी"
+                },
+                {
+                  "topic_name": "मेरा छोटा-सा निजी पुस्तकालय"
+                },
+                {
+                  "topic_name": "हामिद खाँ"
+                },
+                {
+                  "topic_name": "दिये जल उठे"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "संचयन हल",
+              "book_solution_image_src": "assets/ncert/class9/solution/sanchayan.png",
+               "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "गिल्लू"
+                },
+                {
+                  "topic_name": "स्मृति"
+                },
+                {
+                  "topic_name": "कल्लू कुम्हार की उनाकोटी"
+                },
+                {
+                  "topic_name": "मेरा छोटा-सा निजी पुस्तकालय"
+                },
+                {
+                  "topic_name": "हामिद खाँ"
+                },
+                {
+                  "topic_name": "दिये जल उठे"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "सामाजिक विज्ञान",
+          "subject_image_src": "assets/ncert/class9/subject/socialscience.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "लोकतांत्रिक राजनीति-१ किताब",
+              "book_solution_image_src": "assets/ncert/class9/book/political.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "लोकतंत्र क्या? लोकतंत्र क्यों?"
+                },
+                {
+                  "topic_name": "संविधान निर्माण"
+                },
+                {
+                  "topic_name": "चुनावी राजनीति"
+                },
+                {
+                  "topic_name": "संस्थाओ का कामकाज"
+                },
+                {
+                  "topic_name": "लोकतांत्रिक अधिकार"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "लोकतांत्रिक राजनीति-१ हल",
+              "book_solution_image_src": "assets/ncert/class9/solution/political.png",
+               "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "लोकतंत्र क्या? लोकतंत्र क्यों?"
+                },
+                {
+                  "topic_name": "संविधान निर्माण"
+                },
+                {
+                  "topic_name": "चुनावी राजनीति"
+                },
+                {
+                  "topic_name": "संस्थाओ का कामकाज"
+                },
+                {
+                  "topic_name": "लोकतांत्रिक अधिकार"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "समकालीन भारत-1 किताब",
+              "book_solution_image_src": "assets/ncert/class9/book/geography.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "भारत - आकर और स्थिति"
+                },
+                {
+                  "topic_name": "भारत का भौतिक स्वरूप"
+                },
+                {
+                  "topic_name": "अपवाह"
+                },
+                {
+                  "topic_name": "जलवायु"
+                },
+                {
+                  "topic_name": "प्राकृतिक वनस्पति तथा वन्य प्राणी"
+                },
+                {
+                  "topic_name": "जनसंख्या"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "समकालीन भारत-1 हल",
+              "book_solution_image_src":"assets/ncert/class9/solution/geography.png",
+               "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "भारत - आकर और स्थिति"
+                },
+                {
+                  "topic_name": "भारत का भौतिक स्वरूप"
+                },
+                {
+                  "topic_name": "अपवाह"
+                },
+                {
+                  "topic_name": "जलवायु"
+                },
+                {
+                  "topic_name": "प्राकृतिक वनस्पति तथा वन्य प्राणी"
+                },
+                {
+                  "topic_name": "जनसंख्या"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "अर्थशास्त्र किताब",
+              "book_solution_image_src":  "assets/ncert/class9/book/economics.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "पालमपुर गाँव की कहानी"
+                },
+                {
+                  "topic_name": "संसाधन के रूप में लोग"
+                },
+                {
+                  "topic_name": "निर्धनता-एक चुनौती"
+                },
+                {
+                  "topic_name": "भारत में खाद्य सुरक्षा"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "अर्थशास्त्र हल",
+              "book_solution_image_src": "assets/ncert/class9/solution/economics.png",
+               "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "पालमपुर गाँव की कहानी"
+                },
+                {
+                  "topic_name": "संसाधन के रूप में लोग"
+                },
+                {
+                  "topic_name": "निर्धनता-एक चुनौती"
+                },
+                {
+                  "topic_name": "भारत में खाद्य सुरक्षा"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "भारत और समकालीन विश्व -1 किताब",
+              "book_solution_image_src":"assets/ncert/class9/book/history.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "फ़्रांसिसी क्रांति"
+                },
+                {
+                  "topic_name": "यूरोप में समाजवाद एवं रुसी क्रांति"
+                },
+                {
+                  "topic_name": "नात्सीवाद और हिटलर का उद्य"
+                },
+                {
+                  "topic_name": "वन्य समाज एवं उपनिवेशवाद"
+                },
+                {
+                  "topic_name": "आधुनिक विश्व में चरवाहे आभार"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "भारत और समकालीन विश्व -1 हल",
+              "book_solution_image_src": "assets/ncert/class9/solution/history.png",
+               "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "फ़्रांसिसी क्रांति"
+                },
+                {
+                  "topic_name": "यूरोप में समाजवाद एवं रुसी क्रांति"
+                },
+                {
+                  "topic_name": "नात्सीवाद और हिटलर का उद्य"
+                },
+                {
+                  "topic_name": "वन्य समाज एवं उपनिवेशवाद"
+                },
+                {
+                  "topic_name": "आधुनिक विश्व में चरवाहे आभार"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "संस्कृत",
+          "subject_image_src": "assets/ncert/class9/subject/sanskrit.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "शेमुषी किताब",
+              "book_solution_image_src": "assets/ncert/class9/book/shemushi.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "भारतीवसन्तगीति"
+                },
+                {
+                  "topic_name": "स्वर्णकाक"
+                },
+                {
+                  "topic_name": "गोदोहनम्"
+                },
+                {
+                  "topic_name": "कल्पतरू"
+                },
+                {
+                  "topic_name": "सूक्तिमौक्तिकम्"
+                },
+                {
+                  "topic_name": "भ्रान्तो बाल"
+                },
+                {
+                  "topic_name": "प्रत्यभिज्ञानम्"
+                },
+                {
+                  "topic_name": "लौहतुला"
+                },
+                {
+                  "topic_name": "सिकतासेतु"
+                },
+                {
+                  "topic_name": "जटायो शौर्यम्"
+                },
+                {
+                  "topic_name": "पर्यावरणम्"
+                },
+                {
+                  "topic_name": "वाडमनप्राणस्वरूपम्"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "शेमुषी हल",
+              "book_solution_image_src": "assets/ncert/class9/solution/shemushi.png",
+               "isitbook":false,
+              "topic_dataset": [
+                {
+                  "topic_name": "भारतीवसन्तगीति"
+                },
+                {
+                  "topic_name": "स्वर्णकाक"
+                },
+                {
+                  "topic_name": "गोदोहनम्"
+                },
+                {
+                  "topic_name": "कल्पतरू"
+                },
+                {
+                  "topic_name": "सूक्तिमौक्तिकम्"
+                },
+                {
+                  "topic_name": "भ्रान्तो बाल"
+                },
+                {
+                  "topic_name": "प्रत्यभिज्ञानम्"
+                },
+                {
+                  "topic_name": "लौहतुला"
+                },
+                {
+                  "topic_name": "सिकतासेतु"
+                },
+                {
+                  "topic_name": "जटायो शौर्यम्"
+                },
+                {
+                  "topic_name": "पर्यावरणम्"
+                },
+                {
+                  "topic_name": "वाडमनप्राणस्वरूपम्"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "व्‍याकरणवीथि किताब",
+              "book_solution_image_src": "assets/ncert/class9/book/vykaranvithi.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "वर्ण विचार"
+                },
+                {
+                  "topic_name": "संज्ञा एवं परिभाषा प्रकरण"
+                },
+                {
+                  "topic_name": "सन्धि"
+                },
+                {
+                  "topic_name": "शब्‍दरूप सामान्‍य परिचय"
+                },
+                {
+                  "topic_name": "धातुरूप सामान्‍य परिचय"
+                },
+                {
+                  "topic_name": "उपसर्ग"
+                },
+                {
+                  "topic_name": "अव्‍यय"
+                },
+                {
+                  "topic_name": "प्रत्‍यय"
+                },
+                {
+                  "topic_name": "समास परिचय"
+                },
+                {
+                  "topic_name": "कारक और विभक्‍त"
+                },
+                {
+                  "topic_name": "वाच्‍य परिवर्तन"
+                },
+                {
+                  "topic_name": "रचना प्रयोग"
+                },
+                {
+                  "topic_name": "शब्‍दरूपािण"
+                },
+                {
+                  "topic_name": "धातुरूपािण"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "अभ्यासवान् भव किताब",
+              "book_solution_image_src":"assets/ncert/class9/book/abhyasvanbhav.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "अपठितावबोधनम्"
+                },
+                {
+                  "topic_name": "पत्रम्"
+                },
+                {
+                  "topic_name": "चित्रवर्णनम्"
+                },
+                {
+                  "topic_name": "संवादानुच्छेदलेखनम्"
+                },
+                {
+                  "topic_name": "रचनानुवाद"
+                },
+                {
+                  "topic_name": "कारकोपपदविभक्ति"
+                },
+                {
+                  "topic_name": " सन्धि"
+                },
+                {
+                  "topic_name": "उपसर्गाव्ययप्रत्यया"
+                },
+                {
+                  "topic_name": "समासा"
+                },
+                {
+                  "topic_name": "शब्दरूपाणि"
+                },
+                {
+                  "topic_name": "धातरूपाणि"
+                },
+                {
+                  "topic_name": "वर्णविचार"
+                },
+                {
+                  "topic_name": "परिशिष्टम् – 1"
+                },
+                {
+                  "topic_name": "परिशिष्टम् – 2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "book_name": "Exampler की किताबे",
+      "book_image_src": "assets/exampler/class9/exampler.png",
+      "subject_dataset": [
+        {
+          "subject_name": "गणित",
+          "subject_image_src": "assets/exampler/class9/subject/mathematics.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "गणित किताब",
+              "book_solution_image_src": "assets/exampler/class9/book/mathematics.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "संख्या पद्वति"
+                },
+                {
+                  "topic_name": "बहुपद"
+                },
+                {
+                  "topic_name": "निर्देशांक ज्यामिति"
+                },
+                {
+                  "topic_name": "दो चरों वाले रैखिक समीकरण"
+                },
+                {
+                  "topic_name": "यूक्लिड की ज्यामिति का परिचय"
+                },
+                {
+                  "topic_name": "रेखाएँ और कोण"
+                },
+                {
+                  "topic_name": "त्रिभुज"
+                },
+                {
+                  "topic_name": "चतुर्भुज"
+                },
+                {
+                  "topic_name": "समांतर चतुर्भुजों और त्रिभुजों के क्षेत्रफल"
+                },
+                {
+                  "topic_name": "वृत्त"
+                },
+                {
+                  "topic_name": "रचनाएँ"
+                },
+                {
+                  "topic_name": "हीरोन का सूत्र"
+                },
+                {
+                  "topic_name": "पृष्ठीय क्षेत्रफल और आयतन"
+                },
+                {
+                  "topic_name": "सांख्यिकी और प्रायिकता"
+                },
+                {
+                  "topic_name": "प्रश्न पत्र का डिज़ाइन सेट I"
+                },
+                {
+                  "topic_name": "प्रश्न पत्र का डिज़ाइन सेट II"
+                },
+                {
+                  "topic_name": "उत्तरमाला"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "विज्ञान",
+          "subject_image_src":"assets/exampler/class9/subject/science.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "विज्ञान किताब",
+              "book_solution_image_src": "assets/exampler/class9/book/science.png",
+               "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "हमारे आस-पास के पदार्थ"
+                },
+                {
+                  "topic_name": "क्या हमारे आस-पास के पदार्थ शुद्ध हैं"
+                },
+
+                {
+                  "topic_name": "परमाणु एवं अणु"
+                },
+                {
+                  "topic_name": "परमाणु की संरचना"
+                },
+                {
+                  "topic_name": "जीवन की मौलिक इकाई"
+                },
+                {
+                  "topic_name": "ऊतक"
+                },
+                {
+                  "topic_name": "जीवों में विविधता"
+                },
+                {
+                  "topic_name": "गति"
+                },
+                {
+                  "topic_name": "बल तथा गति के नियम"
+                },
+                {
+                  "topic_name": "गुरुत्वाकर्षण"
+                },
+                {
+                  "topic_name": "कार्य तथा ऊर्जा"
+                },
+                {
+                  "topic_name": "ध्वनि"
+                },
+                {
+                  "topic_name": "हम बीमार क्यों होते हैं"
+                },
+                {
+                  "topic_name": "प्राकृतिक संपदा"
+                },
+                {
+                  "topic_name": "खाद्य संसाधनों में सुधर"
+                },
+                {
+                  "topic_name": "Answer"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

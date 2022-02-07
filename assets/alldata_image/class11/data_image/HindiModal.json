@@ -1,0 +1,1500 @@
+{
+  "book_dataset": [
+    {
+      "book_name": "NCERT की किताबे",
+      "book_image_src": "assets/ncert/class11/ncert.png",
+      "subject_dataset": [
+        {
+          "subject_name": "लेखाशास्त्र",
+          "subject_image_src": "assets/ncert/class11/subject/subject1.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "वित्तीय लेखांकन भाग-1 किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/accountacy/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "लेखांकन का परिचय"
+                },
+                {
+                  "topic_name": "लेखांकन का सैद्धान्तिक आधार"
+                },
+                {
+                  "topic_name": "लेन-देनों का अभिलेखन-1"
+                },
+                {
+                  "topic_name": "लेन-देनों का अभिलेखन-2"
+                },
+                {
+                  "topic_name": "बैंक समाधन विवरण"
+                },
+                {
+                  "topic_name": "तलपट एवं अशुद्धिओ का शोध्न"
+                },
+                {
+                  "topic_name": "ह्रास, प्रावधन और संचय"
+                },
+                {
+                  "topic_name": "विनिमय विपत्र"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "वित्तीय लेखांकन भाग-2 किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/accountacy/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "वित्तीय विवरण - 1"
+                },
+                {
+                  "topic_name": "वित्तीय विवरण - 2"
+                },
+                {
+                  "topic_name": "अपूर्ण अभिलेखों वेफ खाते"
+                },
+                {
+                  "topic_name": "लेखांकन में कंप्यूटर का अनुप्रयोग"
+                },
+                {
+                  "topic_name": "कंप्यूटरीकृत लेखांकन प्रणाली"
+                },
+                {
+                  "topic_name": "लेखांकन वेफ लिए डाटाबेस की संरचना"
+                },
+                {
+                  "topic_name": "डाटाबेस प्रबंध् पद्वति के प्रयोग द्वारा लेखांकन प्रणाली"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "जीव विज्ञान",
+          "subject_image_src": "assets/ncert/class11/subject/subject2.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "जीव विज्ञान किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/biology/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "जीव जगत"
+                },
+                {
+                  "topic_name": "जीव जगत का वर्गीकरण"
+                },
+                {
+                  "topic_name": "वनस्पति जगत"
+                },
+                {
+                  "topic_name": "प्राणि जगत"
+                },
+                {
+                  "topic_name": "पुष्पी पादपों की आकारिकी"
+                },
+                {
+                  "topic_name": "पुष्पी पादपों का शारीर"
+                },
+                {
+                  "topic_name": "प्राणियों में संरचनात्मक संगठन"
+                },
+                {
+                  "topic_name": "कोशिका-जीवन की इकाई"
+                },
+                {
+                  "topic_name": "जैव अणु"
+                },
+                {
+                  "topic_name": "कोशिका चक्र और कोशिका विभाजन"
+                },
+                {
+                  "topic_name": "पौधें में परिवहन"
+                },
+                {
+                  "topic_name": "खनिज पोषण"
+                },
+                {
+                  "topic_name": "उच्च पादपों में प्रकाश-संश्लेषण"
+                },
+                {
+                  "topic_name": "पादप में श्वसन"
+                },
+                {
+                  "topic_name": "पादप वृद्धि एवं परिवर्धन"
+                },
+                {
+                  "topic_name": "पाचन एवं अवशोषण"
+                },
+                {
+                  "topic_name": "श्वसन और गैसों का विनिमय"
+                },
+                {
+                  "topic_name": "शरीर द्रव तथा परिसंचरण"
+                },
+                {
+                  "topic_name": "उत्सर्जी उत्पाद एवं उनका निष्कासन"
+                },
+                {
+                  "topic_name": "गमन एवं संचलन"
+                },
+                {
+                  "topic_name": "तंत्राकीय नियंत्राण एवं समन्वय"
+                },
+                {
+                  "topic_name": "रासायनिक समन्वय तथा एकीकरण"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "रसायन विज्ञान",
+          "subject_image_src": "assets/ncert/class11/subject/subject3.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "रसायन विज्ञान भाग-1 किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/chemistry/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "रसायन विज्ञान की कुछ मूल अवधारणाएँ"
+                },
+                {
+                  "topic_name": "परमाणु की संरचना"
+                },
+                {
+                  "topic_name": "तत्वों का वर्गीकरण एवं गुणधर्मों में आवर्तिता"
+                },
+                {
+                  "topic_name": "रासायनिक आबंधन तथा आण्विक संरचना"
+                },
+                {
+                  "topic_name": "द्रव्य के अवस्थाएँ तथा ठोस अवस्था"
+                },
+                {
+                  "topic_name": "उष्मागतिकी"
+                },
+                {
+                  "topic_name": "साम्यावस्था"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "रसायन विज्ञान भाग-2 किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/chemistry/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "अपचयोपचय अभिक्रियाएँ"
+                },
+                {
+                  "topic_name": "हाइड्रोजन"
+                },
+                {
+                  "topic_name": "s – बलॉक तत्व"
+                },
+                {
+                  "topic_name": "p – बलॉक तत्व"
+                },
+                {
+                  "topic_name": "कार्बनिक रसायन-कुछ आधारभूत सिद्धांत तथा तकनीकें"
+                },
+                {
+                  "topic_name": "हाइड्रोकार्बन"
+                },
+                {
+                  "topic_name": "पर्यावरणीय रसायन"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "English",
+          "subject_image_src": "assets/ncert/class11/subject/subject4.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "Short Stories Book",
+              "book_solution_image_src": "assets/ncert/class11/book/english/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Lament"
+                },
+                {
+                  "topic_name": "A Pair of Mustachios"
+                },
+                {
+                  "topic_name": "The Rocking-horse Winner"
+                },
+                {
+                  "topic_name": "The Adventure of the Three Garridebs"
+                },
+                {
+                  "topic_name": "Pappachi’s Moth"
+                },
+                {
+                  "topic_name": "The Third and Final Continent"
+                },
+                {
+                  "topic_name": "Glory at Twilight"
+                },
+                {
+                  "topic_name": "The Luncheon"
+                }
+                
+              ]
+            },
+            {
+              "book_solution_name": "Poetry Book",
+              "book_solution_image_src": "assets/ncert/class11/book/english/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Peacock"
+                },
+                {
+                  "topic_name": "Let me Not to the Marriage of True Minds"
+                },
+                {
+                  "topic_name": "Coming"
+                },
+                {
+                  "topic_name": "Telephone Conversation"
+                },
+                {
+                  "topic_name": "The World is too Much With Us"
+                },
+                {
+                  "topic_name": "Mother Tongue"
+                },
+                {
+                  "topic_name": "Hawk Roosting"
+                },
+                {
+                  "topic_name": "For Elkana"
+                },
+                {
+                  "topic_name": "Refugee Blues"
+                },
+                {
+                  "topic_name": "Felling of the Banyan Tree"
+                },
+                {
+                  "topic_name": "Ode to a Nightingale"
+                },
+                {
+                  "topic_name": "Ajamil and the Tigers"
+                }
+                
+              ]
+            },
+            {
+              "book_solution_name": "Essays Book",
+              "book_solution_image_src": "assets/ncert/class11/book/english/book3.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "My Watch"
+                },
+                {
+                  "topic_name": "My Three Passions"
+                },
+                {
+                  "topic_name": "Patterns of Creativity"
+                },
+                {
+                  "topic_name": "Tribal Verse"
+                },
+                {
+                  "topic_name": "What is a Good Book?"
+                },
+                {
+                  "topic_name": "The Story"
+                },
+                {
+                  "topic_name": "Bridges"
+                }
+                
+              ]
+            },
+            {
+              "book_solution_name": "Snapshots Book",
+              "book_solution_image_src": "assets/ncert/class11/book/english/book4.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Summer of the Beautiful White Horse"
+                },
+                {
+                  "topic_name": "The Address"
+                },
+                {
+                  "topic_name": "Ranga’s Marriage"
+                },
+                {
+                  "topic_name": "Albert Einstein at School"
+                },
+                {
+                  "topic_name": "Mother’s Day"
+                },
+                {
+                  "topic_name": "The Ghat of the Only World"
+                },
+                {
+                  "topic_name": "Birth"
+                },
+                {
+                  "topic_name": "The Tale of Melon City"
+                }
+                
+              ]
+            },
+            {
+              "book_solution_name": "Hornbill Book",
+              "book_solution_image_src": "assets/ncert/class11/book/english/book5.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "Prelims"
+                },
+                {
+                  "topic_name": "The Portrait of a Lady"
+                },
+                {
+                  "topic_name": "A Photograph"
+                },
+                {
+                  "topic_name": "We’re Not Afraid to Die if We Can All Be Together"
+                },
+                {
+                  "topic_name": "Discovering Tut-the Saga Continues"
+                },
+                {
+                  "topic_name": "The Laburnum Top"
+                },
+                {
+                  "topic_name": "Landscape of the Soul"
+                },
+                {
+                  "topic_name": "The Voice of the Rain"
+                },
+                {
+                  "topic_name": "The Ailing Planet-the Green Movement’s Role"
+                },
+                {
+                  "topic_name": "The Browning Version"
+                },
+                {
+                  "topic_name": "Childhood"
+                },
+                {
+                  "topic_name": "The Adventure"
+                },
+                {
+                  "topic_name": "Silk Road"
+                },
+                {
+                  "topic_name": "Father to Son"
+                },
+                {
+                  "topic_name": "Note-making"
+                },
+                {
+                  "topic_name": "Summarising"
+                },
+                {
+                  "topic_name": "Sub-titling"
+                },
+                {
+                  "topic_name": "Essay-writing"
+                },
+                {
+                  "topic_name": "Letter-writing "
+                },
+                {
+                  "topic_name": "Creative Writing"
+                }
+                
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "भूगोल",
+          "subject_image_src": "assets/ncert/class11/subject/subject5.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "भौतिक भूगोल के मूल सिध्दांत किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/geography/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "भूगोल एक विषय के रूप में"
+                },
+                {
+                  "topic_name": "पृथ्वी की उत्पत्ति एवं विकास"
+                },
+                {
+                  "topic_name": " पृथ्वी की आतंरिक संरचना"
+                },
+                {
+                  "topic_name": "महासागरों और महाद्वीपों का वितरण"
+                },
+                {
+                  "topic_name": "खनिज एवं शैल"
+                },
+                {
+                  "topic_name": "भू-आकृतिक प्रक्रियाएं"
+                },
+                {
+                  "topic_name": "भू-आकृतियां तथा उनका विकास"
+                },
+                {
+                  "topic_name": "वायुमंडल का संघटन तथा संरचना"
+                },
+                {
+                  "topic_name": "सौर विकिरण, ऊष्मा संतुलन एवं तापमान"
+                },
+                {
+                  "topic_name": "वायुमंडलीय परिसंचरण तथा मौसम प्रणालियाँ"
+                },
+                {
+                  "topic_name": "वायुमंडल में जल"
+                },
+                {
+                  "topic_name": "विश्व की जलवायु एवं जलवायु परिवर्तन"
+                },
+                {
+                  "topic_name": "महासागरीय जल"
+                },
+                {
+                  "topic_name": "महासागरीय जल संचलन"
+                },
+                {
+                  "topic_name": "पृथ्वी पर जीवन"
+                },
+                {
+                  "topic_name": "जैव विविधता एवं संरक्षण"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "भूगोल में प्रयोगात्मक कार्य किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/geography/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "मानचित्र का परिचय"
+                },
+                {
+                  "topic_name": "मानचित्र मापनी"
+                },
+                {
+                  "topic_name": "अक्षांश, देशांतर और समय"
+                },
+                {
+                  "topic_name": "मानचित्र प्रक्षेप"
+                },
+                {
+                  "topic_name": "स्थलाकृतिक मानचित्र"
+                },
+                {
+                  "topic_name": "वायव फोटो का परिचय"
+                },
+                {
+                  "topic_name": "सुदूर सरंचना का परिचय"
+                },
+                {
+                  "topic_name": "मौसम यंत्र, मानचित्र तथा चार्ट"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "भारत भौतिक पर्यावरण",
+              "book_solution_image_src": "assets/ncert/class11/book/geography/book3.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "भारत-स्थिति"
+                },
+                {
+                  "topic_name": "संरचना तथा भूआकृति विज्ञान"
+                },
+                {
+                  "topic_name": "अपवाह तंत्र"
+                },
+                {
+                  "topic_name": "जलवायु"
+                },
+                {
+                  "topic_name": "प्राकृतिक वनस्पति"
+                },
+                {
+                  "topic_name": "मृदा"
+                },
+                {
+                  "topic_name": "प्राकृतिक संकट तथा आपदाएँ"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "हिंदी",
+          "subject_image_src": "assets/ncert/class11/subject/subject6.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "अंतरा किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/hindi/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "ईदगाह"
+                },
+                {
+                  "topic_name": "दोपहर का भोजन"
+                },
+                {
+                  "topic_name": "टार्च बेचनेवाले"
+                },
+                {
+                  "topic_name": "गूँगे"
+                },
+                {
+                  "topic_name": "ज्योतिबा फुले"
+                },
+                {
+                  "topic_name": "खानाबदोश"
+                },
+                {
+                  "topic_name": "नए की जन्म कुंडली-एक"
+                },
+                {
+                  "topic_name": "उसकी माँ"
+                },
+                {
+                  "topic_name": "भारतवर्ष की उन्नति कैसे हो सकती है"
+                },
+                {
+                  "topic_name": "कबीर"
+                },
+                {
+                  "topic_name": "सूरदास"
+                },
+                {
+                  "topic_name": "देव"
+                },
+                {
+                  "topic_name": "पद्माकर"
+                },
+                {
+                  "topic_name": "सुमित्रानंदन पंत"
+                },
+                {
+                  "topic_name": "महादेवी वर्मा"
+                },
+                {
+                  "topic_name": "नरेंद्र शर्मा"
+                },
+                {
+                  "topic_name": "नागार्जुन"
+                },
+                {
+                  "topic_name": "श्रीकांत वर्मा"
+                },
+                {
+                  "topic_name": "धूमिल"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "आरोह किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/hindi/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "नमक का दारोगा"
+                },
+                {
+                  "topic_name": "मियाँ नसीरुद्दीन"
+                },
+                {
+                  "topic_name": "अपू के साथ ढाई साल"
+                },
+                {
+                  "topic_name": "विदाई – संभाषण"
+                },
+                {
+                  "topic_name": "गलता लोहा"
+                },
+                {
+                  "topic_name": "स्पीति में बारिश"
+                },
+                {
+                  "topic_name": "रजनी"
+                },
+                {
+                  "topic_name": "जामुन का पेड़"
+                },
+                {
+                  "topic_name": "भारत माता"
+                },
+                {
+                  "topic_name": "आत्मा का ताप"
+                },
+                {
+                  "topic_name": "कबीर"
+                },
+                {
+                  "topic_name": "मीरा"
+                },
+                {
+                  "topic_name": "रामनरेश त्रिपाठी"
+                },
+                {
+                  "topic_name": "सुमित्रानंदन पंत"
+                },
+                {
+                  "topic_name": "भवानी प्रसाद मिश्र"
+                },
+                {
+                  "topic_name": "त्रिलोचन"
+                },
+                {
+                  "topic_name": "दुष्यंत कुमार"
+                },
+                {
+                  "topic_name": "अक्कमहादेवी"
+                },
+                {
+                  "topic_name": "पाश"
+                },
+                {
+                  "topic_name": "निर्मला पुतुल"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "वितान किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/hindi/book3.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "भारतीय गायिकाओं में बेजोड़ – लता मंगेशकर"
+                },
+                {
+                  "topic_name": "राजस्थान की रजत बूँदें"
+                },
+                {
+                  "topic_name": "आलो आँधारि"
+                },
+                {
+                  "topic_name": "भारतीय कलाएँ"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "अंतराल किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/hindi/book4.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "अंडे के छिलके"
+                },
+                {
+                  "topic_name": "हुसैन की कहानी अपनी ज़बानी"
+                },
+                {
+                  "topic_name": "आवारा मसीहा"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "इतिहास",
+          "subject_image_src": "assets/ncert/class11/subject/subject7.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "विश्व इतिहास के कुछ विषय किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/history/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "समय की शुरुआत से"
+                },
+                {
+                  "topic_name": "लेखन कला और शहरी जीवन"
+                },
+                {
+                  "topic_name": "तीन महाद्वीपों में फैला हुआ साम्राज्य"
+                },
+                {
+                  "topic_name": "इस्लाम का उदय और विस्तार – लगभग 570 – 1200 ई."
+                },
+                {
+                  "topic_name": "यायावर साम्राज्य"
+                },
+                {
+                  "topic_name": "तीन वर्ग"
+                },
+                {
+                  "topic_name": "बदलती हुई सांस्कृतिक परम्पराएँ"
+                },
+                {
+                  "topic_name": "संस्कृतियों का टकराव"
+                },
+                {
+                  "topic_name": "औद्योगिक क्रांति"
+                },
+                {
+                  "topic_name": "मूल निवासियों का विस्थापन"
+                },
+                {
+                  "topic_name": "आधुनिकीकरण के रास्ते"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "गणित",
+          "subject_image_src": "assets/ncert/class11/subject/subject8.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "गणित किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/math/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "समुच्चय"
+                },
+                {
+                  "topic_name": "संबंध एवं फलन"
+                },
+                {
+                  "topic_name": "त्रिकोणमितीय फलन"
+                },
+                {
+                  "topic_name": "गणितीय आगमन का सिद्धांत"
+                },
+                {
+                  "topic_name": "सम्मिश्र संख्याएँ और द्विघातीय समीकरण"
+                },
+                {
+                  "topic_name": "रैखिक असमिकाएँ"
+                },
+                {
+                  "topic_name": "क्रमचय और संचय"
+                },
+                {
+                  "topic_name": "द्विपद प्रमेय"
+                },
+                {
+                  "topic_name": "अनुक्रम तथा श्रेणी"
+                },
+                {
+                  "topic_name": "सरल रेखाएँ"
+                },
+                {
+                  "topic_name": "शंकु परिच्छेद"
+                },
+                {
+                  "topic_name": "त्रिविमीय ज्यामिति का परिचय"
+                },
+                {
+                  "topic_name": "सीमा और अवकलज"
+                },
+                {
+                  "topic_name": "गणितीय विवेचन"
+                },
+                {
+                  "topic_name": "सांख्यिकी"
+                },
+                {
+                  "topic_name": "प्रायिकता"
+                },
+                {
+                  "topic_name": "परिशिष्ट 1-अनंत श्रेणी"
+                },
+                {
+                  "topic_name": "परिशिष्ट 2-गणितीय निदर्शन"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "भौतिक विज्ञान",
+          "subject_image_src": "assets/ncert/class11/subject/subject9.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "भौतिक विज्ञान भाग-1 किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/physics/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "भौतिक जगत"
+                },
+                {
+                  "topic_name": "मात्रक एवं मापन"
+                },
+                {
+                  "topic_name": "सरल रेखा में गति"
+                },
+                {
+                  "topic_name": "समतल में गति"
+                },
+                {
+                  "topic_name": "गति के नियम"
+                },
+                {
+                  "topic_name": "कार्य, ऊर्जा और शक्ति"
+                },
+                {
+                  "topic_name": "कणों के निकाय तथा घूर्णी गति"
+                },
+                {
+                  "topic_name": "गुरुत्वाकर्षण"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "भौतिक विज्ञान भाग-2 किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/physics/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "ठोसों के यान्त्रिक गुण"
+                },
+                {
+                  "topic_name": "तरलों के यान्त्रिक गुण"
+                },
+                {
+                  "topic_name": "द्रव्य के तापीय गुण"
+                },
+                {
+                  "topic_name": "ऊष्मागतिकी"
+                },
+                {
+                  "topic_name": "अणुगति सिद्धान्त"
+                },
+                {
+                  "topic_name": "दोलन"
+                },
+                {
+                  "topic_name": "तरंगें"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "राजनीतिक विज्ञान",
+          "subject_image_src": "assets/ncert/class11/subject/subject10.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "राजनीतिक सिद्धान्त किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/politicalscience/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "राजनीतिक सिद्धांत- एक परिचय"
+                },
+                {
+                  "topic_name": "स्वतंत्रता"
+                },
+                {
+                  "topic_name": "समानता"
+                },
+                {
+                  "topic_name": "सामाजिक न्याय"
+                },
+                {
+                  "topic_name": "अधिकार"
+                },
+                {
+                  "topic_name": "नागरिकता"
+                },
+                {
+                  "topic_name": "राष्ट्रवाद"
+                },
+                {
+                  "topic_name": "धर्मनिरपेक्षता"
+                },
+                {
+                  "topic_name": "शांति"
+                },
+                {
+                  "topic_name": "विकास"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "भारत का संविधान-सिद्धान्त और व्यवहार किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/politicalscience/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "संविधान- क्यों और कैसे"
+                },
+                {
+                  "topic_name": "भारतीय संविधान में अधिकार"
+                },
+                {
+                  "topic_name": "चुनाव और प्रतिनिधित्व"
+                },
+                {
+                  "topic_name": "कार्यपालिका"
+                },
+                {
+                  "topic_name": "विधायिका"
+                },
+                {
+                  "topic_name": "न्यायपालिका"
+                },
+                {
+                  "topic_name": "संघवाद"
+                },
+                {
+                  "topic_name": "स्थानीय शासन"
+                },
+                {
+                  "topic_name": "संविधान- एक जीवंत दस्तावेज"
+                },
+                {
+                  "topic_name": "संविधान का राजनीतिक दर्शन"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "मानोविज्ञान",
+          "subject_image_src": "assets/ncert/class11/subject/subject11.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "मानोविज्ञान किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/psychology/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "मनोविज्ञान क्या है"
+                },
+                {
+                  "topic_name": "मनोविज्ञान में जाँच की विधियाँ"
+                },
+                {
+                  "topic_name": "मानव व्यवहार के आधार"
+                },
+                {
+                  "topic_name": "मानव विकास"
+                },
+                {
+                  "topic_name": "संवेदी, अवधानिक एवं प्रात्यक्षिक प्रक्रियाएँ"
+                },
+                {
+                  "topic_name": "अधिगम"
+                },
+                {
+                  "topic_name": "मानव स्मृति"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "समाजशास्त्र",
+          "subject_image_src": "assets/ncert/class11/subject/subject12.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "समाजशास्त्र भाग-1 किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/sociology/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "समाजशास्त्र एवं समाज"
+                },
+                {
+                  "topic_name": "समाजशास्त्र में प्रयुक्त शब्दावली, संकल्पनाएँ एवं उनका उपयोग"
+                },
+                {
+                  "topic_name": "सामाजिक संस्थाओं को समझना"
+                },
+                {
+                  "topic_name": "संस्कृति तथा समाजीकरण"
+                },
+                {
+                  "topic_name": "समाजशास्त्रा - अनुसंधान पद्वतियाँ"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "समाजशास्त्र भाग-2 किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/sociology/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "समाज में सामाजिक संरचना, स्तरीकरण और  सामाजिक प्रक्रियाएँ"
+                },
+                {
+                  "topic_name": "ग्रामीण तथा नगरीय समाज में सामाजिक परिवर्तन तथा सामाजिक व्यवस्था"
+                },
+                {
+                  "topic_name": "पर्यावरण और समाज"
+                },
+                {
+                  "topic_name": "पाश्चात्य समाजशास्त्री – एक परिचय"
+                },
+                {
+                  "topic_name": "भारतीय समाजशास्त्री"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "अर्थशास्त्र",
+          "subject_image_src": "assets/ncert/class11/subject/subject13.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "भारतीय अर्थव्यवस्था का विकास किताब",
+              "book_solution_image_src": "assets/ncert/class11/book/economics/book/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "स्वतंन्त्रता की पूर्व संध्या पर भारतीय अर्थव्यवस्था"
+                },
+                {
+                  "topic_name": "भारतीय अर्थव्यवस्था (1950-1990)"
+                },
+                {
+                  "topic_name": "उदारीकरण, निजीकरण और वैश्वीकरण-एक समीक्षा"
+                },
+                {
+                  "topic_name": "निर्धनता"
+                },
+                {
+                  "topic_name": "भारत में मानव पूँजी का निर्माण"
+                },
+                {
+                  "topic_name": "रोजगार-संवृद्धि, अनौपचारीकरण एवं अन्य मुद्दे"
+                },
+                {
+                  "topic_name": "आधारिक संरचना"
+                },
+                {
+                  "topic_name": "पर्यावरण और धारणीय विकास"
+                },
+                {
+                  "topic_name": "भारत और इसके पड़ोसी देशों के तुलनात्मक विकास अनुभव"
+                }
+              ]
+            },
+            {
+              "book_solution_name": "अर्थशास्त्र में सांख्यिकी",
+              "book_solution_image_src": "assets/ncert/class11/book/economics/book/book2.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "विषय–सूची"
+                },
+                {
+                  "topic_name": "परिचय"
+                },
+                {
+                  "topic_name": "आँकड़ों का संग्रह"
+                },
+                {
+                  "topic_name": "आँकड़ों का संगठन"
+                },
+                {
+                  "topic_name": "आँकड़ों का प्रस्तुतीकरण"
+                },
+                {
+                  "topic_name": "केंद्रीय प्रवृत्ति की माप"
+                },
+                {
+                  "topic_name": "परिक्षेपण के माप"
+                },
+                {
+                  "topic_name": "सहसंबंध"
+                },
+                {
+                  "topic_name": "सूचकांक"
+                },
+                {
+                  "topic_name": "सांख्यिकीय विधियों के उपयोग"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "book_name": "Exampler की किताबे",
+      "book_image_src":"assets/exampler/class11/exampler.png",
+      "subject_dataset": [
+        {
+          "subject_name": "जीव विज्ञान",
+          "subject_image_src": "assets/exampler/class11/subject/subject1.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "जीव विज्ञान किताब",
+              "book_solution_image_src": "assets/exampler/class11/book/biology/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+              
+                {
+                  "topic_name": "जीव जगत"
+                },
+                {
+                  "topic_name": "जीव जगत का वर्गीकरण"
+                },
+                {
+                  "topic_name": "पादप जगत"
+                },
+                {
+                  "topic_name": "प्राणि जगत"
+                },
+                {
+                  "topic_name": "पुष्पी पादपों की आकारिकी"
+                },
+                {
+                  "topic_name": "पुष्पी पादपों का शरीर"
+                },
+                {
+                  "topic_name": "प्राणियों में संरचनात्मक संगठन"
+                },
+                {
+                  "topic_name": "कोशिका-जीवन की इकाई"
+                },
+                {
+                  "topic_name": "जैव अणु"
+                },
+                {
+                  "topic_name": "कोशिका चक्र और कोशिका विभाजन"
+                },
+                {
+                  "topic_name": "पौधें में परिवहन"
+                },
+                {
+                  "topic_name": "खनिज पोषण"
+                },
+                {
+                  "topic_name": "उच्च पादपों में प्रकाश-संश्लेषण"
+                },
+                {
+                  "topic_name": "पादप में श्वसन"
+                },
+                {
+                  "topic_name": "पादप वृद्धि एवं परिवर्धन"
+                },
+                {
+                  "topic_name": "पाचन एवं अवशोषण"
+                },
+                {
+                  "topic_name": "श्वसन और गैसों का विनिमय"
+                },
+                {
+                  "topic_name": "शरीर द्रव तथा परिसंचरण"
+                },
+                {
+                  "topic_name": "उत्सर्जी उत्पाद एवं उनका निष्कासन"
+                },
+                {
+                  "topic_name": "गमन एवं संचलन"
+                },
+                {
+                  "topic_name": "तंत्राकीय नियंत्राण एवं समन्वय"
+                },
+                {
+                  "topic_name": "रासायनिक समन्वय तथा एकीकरण"
+                },
+                {
+                  "topic_name": "बहु विकल्पीय प्रश्नो के उत्तर"
+                },
+                {
+                  "topic_name": "वर्णनात्मक प्रश्नो के मॉडल उत्तर"
+                },
+                {
+                  "topic_name": "मॉडल प्रश्न पत्र"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "रसायन विज्ञान",
+          "subject_image_src": "assets/exampler/class11/subject/subject2.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "रसायन विज्ञान किताब",
+              "book_solution_image_src": "assets/exampler/class11/book/chemistry/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+    
+                {
+                  "topic_name": "रसायन विज्ञान की कुछ मूल अवधारणाएँ"
+                },
+                {
+                  "topic_name": "परमाणु की संरचना"
+                },
+                {
+                  "topic_name": "तत्वों का वर्गीकरण एवं गुणधर्मों में आवर्तिता"
+                },
+                {
+                  "topic_name": "रासायनिक आबंधन तथा आण्विक संरचना"
+                },
+                {
+                  "topic_name": "द्रव्य के अवस्थाएँ "
+                },
+                {
+                  "topic_name": "उष्मागतिकी"
+                },
+                {
+                  "topic_name": "साम्यावस्था"
+                },
+                {
+                  "topic_name": "अपचयोपचय अभिक्रियाएँ"
+                },
+                {
+                  "topic_name": "हाइड्रोजन"
+                },
+                {
+                  "topic_name": "s – बलॉक तत्व"
+                },
+                {
+                  "topic_name": "p – बलॉक तत्व"
+                },
+                {
+                  "topic_name": "कार्बनिक रसायन-कुछ आधारभूत सिद्धांत तथा तकनीकें"
+                },
+                {
+                  "topic_name": "हाइड्रोकार्बन"
+                },
+                {
+                  "topic_name": "पर्यावरणीय रसायन"
+                },
+                {
+                  "topic_name": "नमूना प्रश्नपत्र की योजना"
+                },
+                {
+                  "topic_name": "परिशिष्ट I"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "गणित",
+          "subject_image_src": "assets/exampler/class11/subject/subject3.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "गणित किताब",
+              "book_solution_image_src": "assets/exampler/class11/book/math/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                
+                {
+                  "topic_name": "समुच्चय"
+                },
+                {
+                  "topic_name": "संबंध एवं फलन"
+                },
+                {
+                  "topic_name": "त्रिकोणमितीय फलन"
+                },
+                {
+                  "topic_name": "गणितीय आगमन का सिद्धांत"
+                },
+                {
+                  "topic_name": "सम्मिश्र संख्याएँ और द्विघातीय समीकरण"
+                },
+                {
+                  "topic_name": "रैखिक असमिकाएँ"
+                },
+                {
+                  "topic_name": "क्रमचय और संचय"
+                },
+                {
+                  "topic_name": "द्विपद प्रमेय"
+                },
+                {
+                  "topic_name": "अनुक्रम तथा श्रेणी"
+                },
+                {
+                  "topic_name": "सरल रेखाएँ"
+                },
+                {
+                  "topic_name": "शंकु परिच्छेद"
+                },
+                {
+                  "topic_name": "त्रिविमीय ज्यामिति का परिचय"
+                },
+                {
+                  "topic_name": "सीमा और अवकलज"
+                },
+                {
+                  "topic_name": "गणितीय विवेचन"
+                },
+                {
+                  "topic_name": "सांख्यिकी"
+                },
+                {
+                  "topic_name": "प्रायिकता"
+                },
+                {
+                  "topic_name": "उत्तरमाला"
+                },
+                {
+                  "topic_name": "प्रश्न पत्र का प्रारूप"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject_name": "भौतिक विज्ञान",
+          "subject_image_src": "assets/exampler/class11/subject/subject4.png",
+          "book_solution_dataset": [
+            {
+              "book_solution_name": "भौतिक विज्ञान किताब",
+              "book_solution_image_src": "assets/exampler/class11/book/physics/book1.png",
+              "isitbook":true,
+              "topic_dataset": [
+                {
+                  "topic_name": "मात्रक एवं मापन"
+                },
+                {
+                  "topic_name": "सरल रेखा में गति"
+                },
+                {
+                  "topic_name": "समतल में गति"
+                },
+                {
+                  "topic_name": "गति के नियम"
+                },
+                {
+                  "topic_name": "कार्य, ऊर्जा और शक्ति"
+                },
+                {
+                  "topic_name": "कणों के निकाय तथा घूर्णी गति"
+                },
+                {
+                  "topic_name": "गुरुत्वाकर्षण"
+                },
+                {
+                  "topic_name": "ठोसों के यान्त्रिक गुण"
+                },
+                {
+                  "topic_name": "तरलों के यान्त्रिक गुण"
+                },
+                {
+                  "topic_name": "द्रव्य के तापीय गुण"
+                },
+                {
+                  "topic_name": "ऊष्मागतिकी"
+                },
+                {
+                  "topic_name": "अणुगति सिद्धान्त"
+                },
+                {
+                  "topic_name": "दोलन"
+                },
+                {
+                  "topic_name": "तरंगें"
+                },
+                {
+                  "topic_name": "उत्तर"
+                }
+              ]
+            }
+           
+          ]
+        }
+      ]
+    }
+  ]
+}
