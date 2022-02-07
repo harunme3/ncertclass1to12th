@@ -3,6 +3,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
+import 'package:ncertclass1to12th/pdf%20view/otherpdf.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
@@ -92,11 +93,10 @@ class _HintDownloadState extends State<HintDownload> {
           _percenatge = 0,
           print(
               '================================task completed=================================='),
-          // Navigator.pushReplacement(
-          //   context,
-          //   MaterialPageRoute(
-          //       builder: (context) => PdfViewLocation(file: file!)),
-          // ),
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => OtherPdf(file: file!)),
+          ),
         });
   }
 

@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:in_app_update/in_app_update.dart';
+import 'package:logger/logger.dart';
 import 'package:ncertclass1to12th/DownloadHint/hintdownload.dart';
 import 'package:ncertclass1to12th/SlideUp_Pdfoption/slideup_pdfoption.dart';
 import 'package:ncertclass1to12th/pdf%20view/hintpdf.dart';
@@ -31,7 +32,7 @@ class PdfViewLocation extends StatefulWidget {
 
 class _PdfViewLocationState extends State<PdfViewLocation> {
 //pdfviewcontroller
-
+  var l = Logger();
   late PDFViewController controller;
 
   int indexPage = 0;
@@ -207,6 +208,7 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
         floatingActionButton: FloatingActionButton(
           onPressed: () async {
             var file = await ishintdownloaded(widget.filename!);
+            l.e(file);
             if (file != false) {
               Navigator.push(
                 context,

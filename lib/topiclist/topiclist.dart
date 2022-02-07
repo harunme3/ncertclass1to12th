@@ -73,10 +73,15 @@ class _TopicListState extends State<TopicList> {
   }
 
   Future<bool> isSolutionExist(int index) async {
-    return widget.bookSolutionDataSet![widget.solutionindex!].topicDataset
-        .contains(widget.topicDataSet[index].topicName);
+    for (var i
+        in widget.bookSolutionDataSet![widget.solutionindex!].topicDataset) {
+      if (i.topicName == widget.topicDataSet[index].topicName) {
+        l.w('matched');
+        return true;
+      }
+    }
 
-    //check solution is exist or not if it is exist then send path
+    return false;
   }
 
   @override
@@ -153,9 +158,9 @@ class _TopicListState extends State<TopicList> {
                                       .topicName;
                                   final String pathofdata =
                                       await '$projectname/$examname/$classname/$medium/$bookname/$subjectname/$booksolutionname/$topicname/';
-                                  final String filename =
-                                      await '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_${topicname}';
-
+                                  String filename =
+                                      await '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_$topicname' +
+                                          '.pdf';
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
