@@ -2,10 +2,8 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ncertclass1to12th/Modals/listdata.dart';
-import 'package:ncertclass1to12th/books/pdf_floatingactionbutton.dart';
 import 'package:ncertclass1to12th/config/appcolor.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
-import 'package:ncertclass1to12th/ncertvideos/ncertplaylist.dart';
 import 'package:ncertclass1to12th/subject/subjects.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:provider/provider.dart';
@@ -48,8 +46,8 @@ class _BooksState extends State<Books> {
                       SliverAppBar(
                         flexibleSpace: FlexibleSpaceBar(
                           collapseMode: CollapseMode.parallax,
-                          background: SvgPicture.asset(
-                              'assets/header/subjectheader.svg'),
+                          background:
+                              SvgPicture.asset('assets/header/books.svg'),
                         ),
 
                         expandedHeight: 180,
