@@ -1,11 +1,13 @@
 import 'dart:io';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ncertclass1to12th/Modals/listdata.dart';
+import 'package:ncertclass1to12th/pdf%20view/pdf%20view_location.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 import 'package:logger/logger.dart';
-import 'package:lottie/lottie.dart';
 import 'package:path_provider/path_provider.dart';
 
 import 'package:provider/provider.dart';
@@ -26,8 +28,6 @@ class DownloadPlatform extends StatefulWidget {
 }
 
 class _DownloadPlatformState extends State<DownloadPlatform> {
-  var l = Logger();
-
   File? file;
   DownloadTask? task;
 
@@ -59,9 +59,8 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
   }
 
   void downloadpdfdata(index, DataSet dataSet, String language) async {
-    l.e(language);
     print(
-        '========================================Love $language ==================================================');
+        '========================================$language ==================================================');
 
     final bookname = dataSet.bookDataSet[widget.index1].bookName;
     final subjectname = dataSet
@@ -86,10 +85,18 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
 
     final ref = await FirebaseStorage.instance.ref(pathofdata).listAll();
 
-    ref.items.forEach((e) {
-      filename = filename + '.pdf';
-      writefile(e, filename, index);
-    });
+    if (ref.items.isNotEmpty) {
+      ref.items.forEach((e) {
+        filename = filename + '.pdf';
+        writefile(e, filename, index);
+      });
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('can_not_download').tr(),
+        ),
+      );
+    }
   }
 
   writefile(Reference ref, String filename, index) async {
@@ -120,7 +127,10 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
           _percenatge = 0,
           print(
               '================================task completed=================================='),
-          Navigator.of(context).pop(false),
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => PdfViewLocation(file!)),
+          ),
         });
   }
 
@@ -128,34 +138,36 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
   Widget build(BuildContext context) {
     bool isDarkTheme = Provider.of<ThemeProvider>(context).isDarkTheme;
     return WillPopScope(
-      child: Scaffold(
-        appBar: PreferredSize(
-          preferredSize: Size.fromHeight(200.0),
-          child: AppBar(
-            flexibleSpace: Container(
-              child: Lottie.asset('assets/header/Downloadplatform.json'),
+      child: SafeArea(
+        child: Scaffold(
+          appBar: PreferredSize(
+            preferredSize: Size.fromHeight(200.0),
+            child: AppBar(
+              flexibleSpace: Container(
+                child: SvgPicture.asset('assets/header/Downloadplatform.svg'),
+              ),
+              elevation: 0.0,
             ),
-            elevation: 0.0,
           ),
-        ),
-        body: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 70,
-                child: LiquidLinearProgressIndicator(
-                  borderRadius: 20.0,
-                  value: _percenatge / 100,
-                  center: Text('${_percenatge.abs().toStringAsFixed(0)}%',
-                      style: Theme.of(context).primaryTextTheme.bodyText1),
-                  direction: Axis.horizontal,
-                  backgroundColor:
-                      isDarkTheme ? Colors.grey[900] : Colors.white,
+          body: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 70,
+                  child: LiquidLinearProgressIndicator(
+                    borderRadius: 20.0,
+                    value: _percenatge / 100,
+                    center: Text('${_percenatge.abs().toStringAsFixed(0)}%',
+                        style: Theme.of(context).primaryTextTheme.bodyText1),
+                    direction: Axis.horizontal,
+                    backgroundColor:
+                        isDarkTheme ? Colors.grey[900] : Colors.white,
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
       onWillPop: () async {

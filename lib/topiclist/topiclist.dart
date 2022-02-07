@@ -93,8 +93,8 @@ class _TopicListState extends State<TopicList> {
                           pinned: true,
                           expandedHeight: 180,
                           flexibleSpace: FlexibleSpaceBar(
-                            background: SvgPicture.asset(
-                                'assets/header/topicwithoutsubtopic.svg'),
+                            background:
+                                SvgPicture.asset('assets/header/TopicList.svg'),
                             collapseMode: CollapseMode.pin,
                           ),
                           leading: IconButton(
