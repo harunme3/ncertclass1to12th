@@ -1,5 +1,8 @@
 import 'dart:io';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:logger/logger.dart';
+import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdf%20view_location.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +17,7 @@ class DownloadedBook extends StatefulWidget {
 }
 
 class _DownloadedBookState extends State<DownloadedBook> {
+  var l = Logger();
   Future<List<String>> fileoperation() async {
     Directory dir = await getApplicationDocumentsDirectory();
 
@@ -29,6 +33,10 @@ class _DownloadedBookState extends State<DownloadedBook> {
   @override
   Widget build(BuildContext context) {
     bool isDarkTheme = Provider.of<ThemeProvider>(context).isDarkTheme;
+    final checkBooksSolution =
+        Provider.of<LangaugeProvider>(context, listen: false).isHindi
+            ? 'किताबे'
+            : 'Books';
     return FutureBuilder<List<String>>(
         future: fileoperation(),
         builder: (BuildContext context, AsyncSnapshot<List<String>> snapshot) {
@@ -82,7 +90,8 @@ class _DownloadedBookState extends State<DownloadedBook> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => PdfViewLocation(file)),
+                                  builder: (context) =>
+                                      PdfViewLocation(file: file)),
                             );
                           },
                           child: Padding(
@@ -117,17 +126,22 @@ class _DownloadedBookState extends State<DownloadedBook> {
                                             .bodyText1),
                                   )),
                                   Flexible(
-                                    child: Text(
-                                        '${name[0]}>${name[1]}>${name[3]}',
-                                        overflow: TextOverflow.ellipsis,
+                                    child: AutoSizeText(
+                                        '${name[4].substring(name[4].lastIndexOf(" ") + 1)}:${name[2]}>${name[5]}>${name[7].split('.')[0]}',
+                                        textAlign: TextAlign.center,
+                                        maxLines: 4,
                                         style: Theme.of(context)
                                             .primaryTextTheme
                                             .bodyText1),
                                   ),
                                   IconButton(
-                                      onPressed: () {},
-                                      icon: name[2].split(' ').last.trim() ==
-                                              'Book'
+                                      onPressed: () {
+                                        l.e(name);
+                                      },
+                                      icon: name[4].substring(
+                                                  name[4].lastIndexOf(" ") +
+                                                      1) ==
+                                              checkBooksSolution
                                           ? Icon(Icons.menu_book)
                                           : Icon(Icons.border_color))
                                 ],

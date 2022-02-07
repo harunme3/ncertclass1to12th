@@ -8,6 +8,7 @@ import 'package:flutter_switch/flutter_switch.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:ncertclass1to12th/Modals/classdata.dart';
 import 'package:ncertclass1to12th/books/books.dart';
+import 'package:ncertclass1to12th/books/pdf_floatingactionbutton.dart';
 import 'package:ncertclass1to12th/config/appcolor.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
 
@@ -194,14 +195,17 @@ class _AllClassState extends State<AllClass> {
                                           ),
                                         ),
                                         Positioned(
-                                          child: AutoSizeText(
-                                            snapshot.data!.classDataSet[index]
-                                                .className,
-                                            maxLines: 3,
-                                            textAlign: TextAlign.center,
-                                            style: Theme.of(context)
-                                                .primaryTextTheme
-                                                .bodyText1,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: AutoSizeText(
+                                              snapshot.data!.classDataSet[index]
+                                                  .className,
+                                              maxLines: 3,
+                                              textAlign: TextAlign.center,
+                                              style: Theme.of(context)
+                                                  .primaryTextTheme
+                                                  .bodyText1,
+                                            ),
                                           ),
                                         ),
                                       ],
@@ -215,6 +219,7 @@ class _AllClassState extends State<AllClass> {
                       ),
                     ],
                   ),
+                  floatingActionButton: LastopenPDFButton(),
                 ),
               );
         }

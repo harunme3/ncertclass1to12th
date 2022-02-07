@@ -128,13 +128,16 @@ class _SubjectState extends State<Subject> {
                               ),
                             ),
                             Positioned(
-                              child: AutoSizeText(
-                                widget.subjectDataSet[index].subjectName,
-                                maxLines: 3,
-                                textAlign: TextAlign.center,
-                                style: Theme.of(context)
-                                    .primaryTextTheme
-                                    .bodyText1,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: AutoSizeText(
+                                  widget.subjectDataSet[index].subjectName,
+                                  maxLines: 3,
+                                  textAlign: TextAlign.center,
+                                  style: Theme.of(context)
+                                      .primaryTextTheme
+                                      .bodyText1,
+                                ),
                               ),
                             ),
                           ],

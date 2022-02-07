@@ -11,7 +11,7 @@ import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:uc_pdfview/uc_pdfview.dart';
 
 class PdfViewLocation extends StatefulWidget {
-  const PdfViewLocation(this.file);
+  const PdfViewLocation({required this.file});
 
   final File file;
 

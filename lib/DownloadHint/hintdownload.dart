@@ -113,7 +113,8 @@ class _HintDownloadState extends State<HintDownload> {
               '================================task completed=================================='),
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => PdfViewLocation(file!)),
+            MaterialPageRoute(
+                builder: (context) => PdfViewLocation(file: file!)),
           ),
         });
   }

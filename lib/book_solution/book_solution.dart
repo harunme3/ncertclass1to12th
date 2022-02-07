@@ -137,14 +137,17 @@ class _MyBookandSolutionState extends State<MyBookandSolution> {
                               ),
                             ),
                             Positioned(
-                              child: AutoSizeText(
-                                widget.bookSolutionDataSet[index]
-                                    .booksolutionname,
-                                maxLines: 3,
-                                textAlign: TextAlign.center,
-                                style: Theme.of(context)
-                                    .primaryTextTheme
-                                    .bodyText1,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: AutoSizeText(
+                                  widget.bookSolutionDataSet[index]
+                                      .booksolutionname,
+                                  maxLines: 3,
+                                  textAlign: TextAlign.center,
+                                  style: Theme.of(context)
+                                      .primaryTextTheme
+                                      .bodyText1,
+                                ),
                               ),
                             ),
                           ],

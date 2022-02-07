@@ -73,210 +73,204 @@ class _TopicListState extends State<TopicList> {
     bool isDarkTheme = Provider.of<ThemeProvider>(context).isDarkTheme;
     return SafeArea(
       child: Scaffold(
-        body: CustomScrollView(
-          physics: ClampingScrollPhysics(),
-          slivers: [
-            SliverAppBar(
-              pinned: true,
-              expandedHeight: 180,
-              flexibleSpace: FlexibleSpaceBar(
-                background: SvgPicture.asset('assets/header/TopicList.svg'),
-                collapseMode: CollapseMode.pin,
-              ),
-              leading: IconButton(
-                icon: Icon(Icons.arrow_back),
-                onPressed: () => Navigator.pop(context),
-              ),
-              titleSpacing: 0,
-              title: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: AutoSizeText(
-                  widget.booksolutionname,
-                  maxLines: 2,
-                  textAlign: TextAlign.right,
-                  style: Theme.of(context).primaryTextTheme.bodyText1,
-                ),
-              ),
-              stretch: true,
+          body: CustomScrollView(
+        physics: ClampingScrollPhysics(),
+        slivers: [
+          SliverAppBar(
+            pinned: true,
+            expandedHeight: 180,
+            flexibleSpace: FlexibleSpaceBar(
+              background: SvgPicture.asset('assets/header/TopicList.svg'),
+              collapseMode: CollapseMode.pin,
             ),
-            SliverList(
-                delegate: SliverChildBuilderDelegate(
-                    (BuildContext context, int index) {
-              return FutureBuilder(
-                future: canviewpdf(index),
-                builder: (BuildContext context, AsyncSnapshot snapshot) {
-                  switch (snapshot.connectionState) {
-                    case ConnectionState.waiting:
-                      return SafeArea(
-                        child: Scaffold(
-                          body: Center(child: CircularProgressIndicator()),
-                        ),
-                      );
-                    default:
-                      if (snapshot.hasError)
-                        return Text('Error: ${snapshot.error}');
-                      else
-                        return snapshot.data != false
-                            ? GestureDetector(
-                                onTap: () async {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                            PdfViewLocation(snapshot.data)),
-                                  );
-                                },
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Container(
-                                    padding: const EdgeInsets.all(16.0),
-                                    decoration: BoxDecoration(
-                                      gradient: LinearGradient(
-                                          colors: [
-                                            const Color(0xFF2f5fe8),
-                                            const Color(0xFF5b59ec),
-                                            const Color(0xFF7d50ed),
-                                            const Color(0xFF9c43ec),
-                                            const Color(0xFFb82fe8),
-                                          ],
-                                          begin: Alignment.topRight,
-                                          end: Alignment.bottomLeft),
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: <Widget>[
-                                        Container(
-                                            child: CircleAvatar(
-                                          backgroundColor: isDarkTheme
-                                              ? Colors.black
-                                              : Colors.white,
-                                          child: Text(index.toString(),
-                                              style: Theme.of(context)
-                                                  .primaryTextTheme
-                                                  .bodyText1),
-                                        )),
-                                        Flexible(
-                                          child: AutoSizeText(
-                                              widget.topicDataSet[index]
-                                                  .topicName,
-                                              textAlign: TextAlign.center,
-                                              style: Theme.of(context)
-                                                  .primaryTextTheme
-                                                  .bodyText1),
-                                        ),
-                                        GestureDetector(
-                                          onTap: () {
-                                            deletePdfdata(index, snapshot.data);
-                                          },
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Icon(
-                                                Icons.delete_outline_outlined),
-                                          ),
-                                        )
-                                      ],
-                                    ),
+            leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () => Navigator.pop(context),
+            ),
+            titleSpacing: 0,
+            title: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: AutoSizeText(
+                widget.booksolutionname,
+                maxLines: 2,
+                textAlign: TextAlign.right,
+                style: Theme.of(context).primaryTextTheme.bodyText1,
+              ),
+            ),
+            stretch: true,
+          ),
+          SliverList(
+              delegate:
+                  SliverChildBuilderDelegate((BuildContext context, int index) {
+            return FutureBuilder(
+              future: canviewpdf(index),
+              builder: (BuildContext context, AsyncSnapshot snapshot) {
+                switch (snapshot.connectionState) {
+                  case ConnectionState.waiting:
+                    return Text('');
+                  default:
+                    if (snapshot.hasError)
+                      return Text('Error: ${snapshot.error}');
+                    else
+                      return snapshot.data != false
+                          ? GestureDetector(
+                              onTap: () async {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          PdfViewLocation(file: snapshot.data)),
+                                );
+                              },
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  padding: const EdgeInsets.all(16.0),
+                                  decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                        colors: [
+                                          const Color(0xFF2f5fe8),
+                                          const Color(0xFF5b59ec),
+                                          const Color(0xFF7d50ed),
+                                          const Color(0xFF9c43ec),
+                                          const Color(0xFFb82fe8),
+                                        ],
+                                        begin: Alignment.topRight,
+                                        end: Alignment.bottomLeft),
+                                    borderRadius: BorderRadius.circular(20),
                                   ),
-                                ),
-                              )
-                            : GestureDetector(
-                                onTap: () async {
-                                  final projectname = 'Education';
-                                  final examname = 'NCERT and Exampler';
-                                  final classname = widget.classname;
-                                  final medium =
-                                      await Provider.of<LangaugeProvider>(
-                                                  context,
-                                                  listen: false)
-                                              .isHindi
-                                          ? 'HindiMedium'
-                                          : 'EnglishMedium';
-
-                                  final bookname = widget.bookname;
-                                  final subjectname = widget.subjectname;
-                                  final booksolutionname =
-                                      widget.booksolutionname;
-                                  final topicname =
-                                      widget.topicDataSet[index].topicName;
-
-                                  final String pathofdata =
-                                      '$projectname/$examname/$classname/$medium/$bookname/$subjectname/$booksolutionname/$topicname/';
-                                  final String filename =
-                                      '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_${topicname}';
-
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => DownloadPlatform(
-                                              pathofdata: pathofdata,
-                                              filename: filename,
-                                            )),
-                                  ).then((value) {
-                                    setState(() {
-                                      print(
-                                          '================================Reload==================================');
-                                    });
-                                  });
-                                },
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Container(
-                                    padding: const EdgeInsets.all(16.0),
-                                    decoration: BoxDecoration(
-                                      gradient: LinearGradient(
-                                          colors: [
-                                            const Color(0xFF2f5fe8),
-                                            const Color(0xFF5b59ec),
-                                            const Color(0xFF7d50ed),
-                                            const Color(0xFF9c43ec),
-                                            const Color(0xFFb82fe8),
-                                          ],
-                                          begin: Alignment.topRight,
-                                          end: Alignment.bottomLeft),
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: <Widget>[
-                                        Container(
-                                            child: CircleAvatar(
-                                          backgroundColor: isDarkTheme
-                                              ? Colors.black
-                                              : Colors.white,
-                                          child: Text(index.toString(),
-                                              style: Theme.of(context)
-                                                  .primaryTextTheme
-                                                  .bodyText1),
-                                        )),
-                                        Flexible(
-                                          child: AutoSizeText(
-                                              widget.topicDataSet[index]
-                                                  .topicName,
-                                              textAlign: TextAlign.center,
-                                              style: Theme.of(context)
-                                                  .primaryTextTheme
-                                                  .bodyText1),
-                                        ),
-                                        Padding(
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Container(
+                                          child: CircleAvatar(
+                                        backgroundColor: isDarkTheme
+                                            ? Colors.black
+                                            : Colors.white,
+                                        child: Text(index.toString(),
+                                            style: Theme.of(context)
+                                                .primaryTextTheme
+                                                .bodyText1),
+                                      )),
+                                      Flexible(
+                                        child: AutoSizeText(
+                                            widget
+                                                .topicDataSet[index].topicName,
+                                            textAlign: TextAlign.center,
+                                            style: Theme.of(context)
+                                                .primaryTextTheme
+                                                .bodyText1),
+                                      ),
+                                      GestureDetector(
+                                        onTap: () {
+                                          deletePdfdata(index, snapshot.data);
+                                        },
+                                        child: Padding(
                                           padding: const EdgeInsets.all(8.0),
-                                          child: Icon(Icons
-                                              .download_for_offline_outlined),
-                                        )
-                                      ],
-                                    ),
+                                          child: Icon(
+                                              Icons.delete_outline_outlined),
+                                        ),
+                                      )
+                                    ],
                                   ),
                                 ),
-                              );
-                  }
-                },
-              );
-            }, childCount: widget.topicDataSet.length))
-          ],
-        ),
-      ),
+                              ),
+                            )
+                          : GestureDetector(
+                              onTap: () async {
+                                final projectname = 'Education';
+                                final examname = 'NCERT and Exampler';
+                                final classname = widget.classname;
+                                final medium =
+                                    await Provider.of<LangaugeProvider>(context,
+                                                listen: false)
+                                            .isHindi
+                                        ? 'HindiMedium'
+                                        : 'EnglishMedium';
+
+                                final bookname = widget.bookname;
+                                final subjectname = widget.subjectname;
+                                final booksolutionname =
+                                    widget.booksolutionname;
+                                final topicname =
+                                    widget.topicDataSet[index].topicName;
+
+                                final String pathofdata =
+                                    '$projectname/$examname/$classname/$medium/$bookname/$subjectname/$booksolutionname/$topicname/';
+                                final String filename =
+                                    '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_${topicname}';
+
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => DownloadPlatform(
+                                            pathofdata: pathofdata,
+                                            filename: filename,
+                                          )),
+                                ).then((value) {
+                                  setState(() {
+                                    print(
+                                        '================================Reload==================================');
+                                  });
+                                });
+                              },
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  padding: const EdgeInsets.all(16.0),
+                                  decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                        colors: [
+                                          const Color(0xFF2f5fe8),
+                                          const Color(0xFF5b59ec),
+                                          const Color(0xFF7d50ed),
+                                          const Color(0xFF9c43ec),
+                                          const Color(0xFFb82fe8),
+                                        ],
+                                        begin: Alignment.topRight,
+                                        end: Alignment.bottomLeft),
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Container(
+                                          child: CircleAvatar(
+                                        backgroundColor: isDarkTheme
+                                            ? Colors.black
+                                            : Colors.white,
+                                        child: Text(index.toString(),
+                                            style: Theme.of(context)
+                                                .primaryTextTheme
+                                                .bodyText1),
+                                      )),
+                                      Flexible(
+                                        child: AutoSizeText(
+                                            widget
+                                                .topicDataSet[index].topicName,
+                                            textAlign: TextAlign.center,
+                                            style: Theme.of(context)
+                                                .primaryTextTheme
+                                                .bodyText1),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Icon(Icons
+                                            .download_for_offline_outlined),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            );
+                }
+              },
+            );
+          }, childCount: widget.topicDataSet.length))
+        ],
+      )),
     );
   }
 }

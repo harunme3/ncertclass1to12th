@@ -98,7 +98,8 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
               '================================task completed=================================='),
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => PdfViewLocation(file!)),
+            MaterialPageRoute(
+                builder: (context) => PdfViewLocation(file: file!)),
           ),
         });
   }
