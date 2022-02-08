@@ -66,7 +66,7 @@ class _MyBookandSolutionState extends State<MyBookandSolution> {
                       if (widget.bookSolutionDataSet[index].isitbook &&
                           index + 1 < widget.bookSolutionDataSet.length &&
                           !widget.bookSolutionDataSet[index + 1].isitbook) {
-                        l.e('yessssssssssssssssss');
+                        l.e('This Subject Books has Solutions Books');
                         Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -86,6 +86,7 @@ class _MyBookandSolutionState extends State<MyBookandSolution> {
                                   )),
                         );
                       } else {
+                        l.e('This Subject Books has not Solutions Books');
                         Navigator.push(
                           context,
                           MaterialPageRoute(

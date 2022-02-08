@@ -68,161 +68,164 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-        appBar: AppBar(
-          title:
-              Text('Pdf', style: Theme.of(context).primaryTextTheme.bodyText1),
-          actions: <Widget>[
-            Center(
-              child: Text(
-                '${indexPage + 1}/$pages',
-                style: TextStyle(fontSize: 18),
-              ),
+      appBar: AppBar(
+        title: Text('Pdf', style: Theme.of(context).primaryTextTheme.bodyText1),
+        actions: <Widget>[
+          Center(
+            child: Text(
+              '${indexPage + 1}/$pages',
+              style: TextStyle(fontSize: 18),
             ),
-            IconButton(
-              icon: Icon(
-                Icons.dark_mode_outlined,
-              ),
-              onPressed: () {
-                InAppUpdate.checkForUpdate().then((info) {
-                  if (info.flexibleUpdateAllowed) {
-                    InAppUpdate.startFlexibleUpdate().then((_) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text('Your app is now Upto date'),
-                        ),
-                      );
-                    }).catchError((e) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text('Update it later'),
-                        ),
-                      );
-                    });
-                  }
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => PdfDarkMode(widget.file)),
-                  );
-                }).catchError((e) {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => PdfDarkMode(widget.file)),
-                  );
-                });
-              },
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.dark_mode_outlined,
             ),
-            IconButton(
-              icon: Icon(
-                Icons.pin_outlined,
-              ),
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (context) {
-                    return AlertDialog(
-                      title: Text('Jump to page'),
-                      content: TextField(
-                        controller: _textFieldController,
-                        decoration: InputDecoration(
-                            hintText: "Enter Numeric value :Ex-5"),
+            onPressed: () {
+              InAppUpdate.checkForUpdate().then((info) {
+                if (info.flexibleUpdateAllowed) {
+                  InAppUpdate.startFlexibleUpdate().then((_) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text('Your app is now Upto date'),
                       ),
-                      actions: <Widget>[
-                        ElevatedButton(
-                          child: Text('CANCEL'),
-                          onPressed: () {
-                            Navigator.pop(context);
-                          },
-                        ),
-                        ElevatedButton(
-                          child: Text('OK'),
-                          onPressed: () {
-                            controller.setPage(
-                                int.parse(_textFieldController.text) - 1);
-                            _textFieldController.clear();
-                            Navigator.pop(context);
-                          },
-                        ),
-                      ],
                     );
-                  },
-                );
-              },
-            ),
-            IconButton(
-              icon: Icon(
-                Icons.crop_free_outlined,
-              ),
-              onPressed: () {
-                Navigator.push(
+                  }).catchError((e) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text('Update it later'),
+                      ),
+                    );
+                  });
+                }
+                Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                      builder: (context) =>
-                          PdfViewDistractionFreeMode(widget.file)),
+                      builder: (context) => PdfDarkMode(widget.file)),
                 );
-              },
+              }).catchError((e) {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => PdfDarkMode(widget.file)),
+                );
+              });
+            },
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.pin_outlined,
             ),
-            IconButton(
-              icon: Icon(
-                Icons.more_vert,
-              ),
-              onPressed: () {
-                panelController.isPanelOpen
-                    ? panelController.close()
-                    : panelController.open();
-              },
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (context) {
+                  return AlertDialog(
+                    title: Text('Jump to page'),
+                    content: TextField(
+                      controller: _textFieldController,
+                      decoration: InputDecoration(
+                          hintText: "Enter Numeric value :Ex-5"),
+                    ),
+                    actions: <Widget>[
+                      ElevatedButton(
+                        child: Text('CANCEL'),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                      ElevatedButton(
+                        child: Text('OK'),
+                        onPressed: () {
+                          controller.setPage(
+                              int.parse(_textFieldController.text) - 1);
+                          _textFieldController.clear();
+                          Navigator.pop(context);
+                        },
+                      ),
+                    ],
+                  );
+                },
+              );
+            },
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.crop_free_outlined,
             ),
-          ],
-        ),
-        body: SlidingUpPanel(
-          controller: panelController,
-          maxHeight: size.height / 2.5,
-          minHeight: 0,
-          parallaxEnabled: true,
-          backdropEnabled: true,
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(18.0), topRight: Radius.circular(18.0)),
-          panelBuilder: (scrollController) => Paneloption(
-              scrollController, screenshotController, panelController),
-          body: Screenshot(
-            controller: screenshotController,
-            child: Container(
-              child: UCPDFView(
-                filePath: widget.file.path,
-                autoSpacing: false,
-                pageSnap: false,
-                pageFling: false,
-                onRender: (pages) => setState(() => this.pages = pages!),
-                onViewCreated: (controller) =>
-                    setState(() => this.controller = controller),
-                onPageChanged: (indexPage, _) =>
-                    setState(() => this.indexPage = indexPage!),
-              ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        PdfViewDistractionFreeMode(widget.file)),
+              );
+            },
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.more_vert,
+            ),
+            onPressed: () {
+              panelController.isPanelOpen
+                  ? panelController.close()
+                  : panelController.open();
+            },
+          ),
+        ],
+      ),
+      body: SlidingUpPanel(
+        controller: panelController,
+        maxHeight: size.height / 2.5,
+        minHeight: 0,
+        parallaxEnabled: true,
+        backdropEnabled: true,
+        borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(18.0), topRight: Radius.circular(18.0)),
+        panelBuilder: (scrollController) => Paneloption(
+            scrollController, screenshotController, panelController),
+        body: Screenshot(
+          controller: screenshotController,
+          child: Container(
+            child: UCPDFView(
+              filePath: widget.file.path,
+              autoSpacing: false,
+              pageSnap: false,
+              pageFling: false,
+              onRender: (pages) => setState(() => this.pages = pages!),
+              onViewCreated: (controller) =>
+                  setState(() => this.controller = controller),
+              onPageChanged: (indexPage, _) =>
+                  setState(() => this.indexPage = indexPage!),
             ),
           ),
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () async {
-            var file = await ishintdownloaded(widget.filename! + '.pdf');
-            l.w(widget.filename!);
-            l.e(file);
-            if (file != false) {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => HintPdf(file: file)),
-              );
-            } else if (file == false) {
-              l.e('we have to download the file');
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //       builder: (context) => DownloadPlatform(
-              //           filename: widget.filename!,
-              //           pathofdata: widget.pathofdata!)),
-              // );
-            }
-          },
-        ));
+      ),
+      floatingActionButton: widget.pathofdata != null
+          ? FloatingActionButton(
+              onPressed: () async {
+                var file = await ishintdownloaded(widget.filename! + '.pdf');
+
+                if (file != false) {
+                  l.e('File is already downloaded');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => HintPdf(file: file)),
+                  );
+                } else if (file == false) {
+                  l.e('we have to download the file');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => DownloadPlatform(
+                            filename: widget.filename!,
+                            pathofdata: widget.pathofdata!)),
+                  );
+                }
+              },
+            )
+          : null,
+    );
   }
 }
