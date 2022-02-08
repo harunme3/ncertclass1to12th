@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:logger/logger.dart';
-import 'package:ncertclass1to12th/pdf%20view/otherpdf.dart';
+import 'package:ncertclass1to12th/pdf%20view/pdf%20view_location.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
@@ -11,19 +11,23 @@ import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 
 class DownloadPlatform extends StatefulWidget {
-  const DownloadPlatform({required this.pathofdata, required this.filename});
+  const DownloadPlatform({
+    required this.filename,
+    required this.pathofdata,
+  });
 
-  final String pathofdata;
   final String filename;
+  final String pathofdata;
 
   @override
   _DownloadPlatformState createState() => _DownloadPlatformState();
 }
 
 class _DownloadPlatformState extends State<DownloadPlatform> {
-  var l = Logger();
   File? file;
+  var l = Logger();
   DownloadTask? task;
+
   double _percenatge = 0;
 
   @override
@@ -98,7 +102,8 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
               '================================task completed=================================='),
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => OtherPdf(file: file!)),
+            MaterialPageRoute(
+                builder: (context) => PdfViewLocation(file: file!)),
           ),
         });
   }

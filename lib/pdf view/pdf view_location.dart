@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:in_app_update/in_app_update.dart';
 import 'package:logger/logger.dart';
-import 'package:ncertclass1to12th/DownloadHint/hintdownload.dart';
+import 'package:ncertclass1to12th/DownloadforTopic/downloadplatform.dart';
 import 'package:ncertclass1to12th/SlideUp_Pdfoption/slideup_pdfoption.dart';
 import 'package:ncertclass1to12th/pdf%20view/hintpdf.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdfviewdarkmode.dart';
@@ -15,13 +15,11 @@ import 'package:uc_pdfview/uc_pdfview.dart';
 
 class PdfViewLocation extends StatefulWidget {
   const PdfViewLocation({
-    required this.classname,
     required this.file,
     this.filename,
     this.pathofdata,
   });
 
-  final String classname;
   final File file;
   final String? filename;
   final String? pathofdata;
@@ -31,11 +29,11 @@ class PdfViewLocation extends StatefulWidget {
 }
 
 class _PdfViewLocationState extends State<PdfViewLocation> {
+  late PDFViewController controller;
+  int indexPage = 0;
 //pdfviewcontroller
   var l = Logger();
-  late PDFViewController controller;
 
-  int indexPage = 0;
   int pages = 0;
   final PanelController panelController = PanelController();
   final ScreenshotController screenshotController = ScreenshotController();
@@ -208,6 +206,7 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
         floatingActionButton: FloatingActionButton(
           onPressed: () async {
             var file = await ishintdownloaded(widget.filename!);
+            l.w(widget.filename!);
             l.e(file);
             if (file != false) {
               Navigator.push(
@@ -218,8 +217,9 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) =>
-                        HintDownload(widget.pathofdata!, widget.filename!)),
+                    builder: (context) => DownloadPlatform(
+                        filename: widget.filename!,
+                        pathofdata: widget.pathofdata!)),
               );
             }
           },

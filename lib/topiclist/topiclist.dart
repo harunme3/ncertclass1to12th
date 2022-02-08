@@ -72,16 +72,21 @@ class _TopicListState extends State<TopicList> {
     }
   }
 
-  Future<bool> isSolutionExist(int index) async {
+  Future<int> isSolutionExist(int index) async {
+    int count = 0;
+
     for (var i
         in widget.bookSolutionDataSet![widget.solutionindex!].topicDataset) {
+      count++;
       if (i.topicName == widget.topicDataSet[index].topicName) {
         l.w('matched');
-        return true;
+        l.e(count);
+
+        return count;
       }
     }
 
-    return false;
+    return 0;
   }
 
   @override
@@ -131,51 +136,59 @@ class _TopicListState extends State<TopicList> {
                       return snapshot.data != false
                           ? GestureDetector(
                               onTap: () async {
-                                bool status = await isSolutionExist(index);
-                                l.e(status);
-                                if (status) {
-                                  final projectname = 'Education';
-                                  final examname = 'NCERT and Exampler';
-                                  final classname = widget.classname;
-                                  final medium =
-                                      await Provider.of<LangaugeProvider>(
-                                                  context,
-                                                  listen: false)
-                                              .isHindi
-                                          ? 'HindiMedium'
-                                          : 'EnglishMedium';
+                                if (widget.solutionindex != null) {
+                                  int status = await isSolutionExist(index);
+                                  l.e(status);
+                                  if (status != 0) {
+                                    final projectname = 'Education';
+                                    final examname = 'NCERT and Exampler';
+                                    final classname = widget.classname;
+                                    final medium =
+                                        await Provider.of<LangaugeProvider>(
+                                                    context,
+                                                    listen: false)
+                                                .isHindi
+                                            ? 'HindiMedium'
+                                            : 'EnglishMedium';
 
-                                  final bookname = widget.bookname;
-                                  final subjectname = widget.subjectname;
-                                  final booksolutionname = widget
-                                      .bookSolutionDataSet![
-                                          widget.solutionindex!]
-                                      .booksolutionname;
-                                  final topicname = widget
-                                      .bookSolutionDataSet![
-                                          widget.solutionindex!]
-                                      .topicDataset[index]
-                                      .topicName;
-                                  final String pathofdata =
-                                      await '$projectname/$examname/$classname/$medium/$bookname/$subjectname/$booksolutionname/$topicname/';
-                                  String filename =
-                                      await '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_$topicname' +
-                                          '.pdf';
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => PdfViewLocation(
-                                            classname: widget.classname,
-                                            file: snapshot.data,
-                                            filename: filename,
-                                            pathofdata: pathofdata)),
-                                  );
+                                    final bookname = widget.bookname;
+                                    final subjectname = widget.subjectname;
+                                    final booksolutionname = widget
+                                        .bookSolutionDataSet![
+                                            widget.solutionindex!]
+                                        .booksolutionname;
+                                    final topicname = widget
+                                        .bookSolutionDataSet![
+                                            widget.solutionindex!]
+                                        .topicDataset[status - 1]
+                                        .topicName;
+                                    final String pathofdata =
+                                        '$projectname/$examname/$classname/$medium/$bookname/$subjectname/$booksolutionname/$topicname/';
+                                    String filename =
+                                        '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_$topicname' +
+                                            '.pdf';
+                                    l.e(topicname);
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => PdfViewLocation(
+                                              file: snapshot.data,
+                                              filename: filename,
+                                              pathofdata: pathofdata)),
+                                    );
+                                  } else {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => PdfViewLocation(
+                                              file: snapshot.data)),
+                                    );
+                                  }
                                 } else {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => PdfViewLocation(
-                                            classname: widget.classname,
                                             file: snapshot.data)),
                                   );
                                 }
