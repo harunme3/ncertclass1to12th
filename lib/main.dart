@@ -1,4 +1,5 @@
 import 'package:ncertclass1to12th/Onboarding/onboarding.dart';
+import 'package:ncertclass1to12th/Rough/sideroughstatus.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
 import 'package:ncertclass1to12th/notificationlist/localnotificationservice.dart';
 import 'package:ncertclass1to12th/notificationlist/pushmessage.dart';
@@ -73,6 +74,8 @@ Future<void> main() async {
             create: (context) => ThemeProvider(isDarkTheme)),
         ChangeNotifierProvider<LangaugeProvider>(
             create: (context) => LangaugeProvider(isHindi)),
+        ChangeNotifierProvider<SideRoughStatus>(
+            create: (context) => SideRoughStatus(false)),
       ], child: NcertHome()),
     ),
   );
@@ -133,8 +136,8 @@ class _NcertHomeState extends State<NcertHome> {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer2<ThemeProvider, LangaugeProvider>(
-        builder: (context, themeProvider, langaugeProvider, child) {
+    return Consumer3<ThemeProvider, LangaugeProvider, SideRoughStatus>(builder:
+        (context, themeProvider, langaugeProvider, sideRoughStatus, child) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: themeProvider.themeData(),

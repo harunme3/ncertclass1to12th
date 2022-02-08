@@ -4,12 +4,15 @@ import 'package:hive/hive.dart';
 import 'package:in_app_update/in_app_update.dart';
 import 'package:logger/logger.dart';
 import 'package:ncertclass1to12th/DownloadforTopic/downloadplatform.dart';
+import 'package:ncertclass1to12th/Rough/siderough.dart';
+import 'package:ncertclass1to12th/Rough/sideroughstatus.dart';
 import 'package:ncertclass1to12th/SlideUp_Pdfoption/slideup_pdfoption.dart';
 import 'package:ncertclass1to12th/config/appcolor.dart';
 import 'package:ncertclass1to12th/pdf%20view/hintpdf.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdfviewdarkmode.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdfviewdistractionfreemode.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:provider/provider.dart';
 import 'package:screenshot/screenshot.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:uc_pdfview/uc_pdfview.dart';
@@ -30,6 +33,7 @@ class PdfViewLocation extends StatefulWidget {
 }
 
 class _PdfViewLocationState extends State<PdfViewLocation> {
+  SideRoughStatus sideRoughStatus = SideRoughStatus(false);
   late PDFViewController controller;
   int indexPage = 0;
 //pdfviewcontroller
@@ -175,34 +179,42 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
           ),
         ],
       ),
-      body: SlidingUpPanel(
-        controller: panelController,
-        maxHeight: size.height / 2.5,
-        minHeight: 0,
-        parallaxEnabled: true,
-        backdropEnabled: true,
-        borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(18.0), topRight: Radius.circular(18.0)),
-        panelBuilder: (scrollController) => Paneloption(
-            scrollController, screenshotController, panelController),
-        body: Screenshot(
-          controller: screenshotController,
-          child: Container(
-            child: UCPDFView(
-              filePath: widget.file.path,
-              autoSpacing: false,
-              pageSnap: false,
-              pageFling: false,
-              onRender: (pages) => setState(() => this.pages = pages!),
-              onViewCreated: (controller) =>
-                  setState(() => this.controller = controller),
-              onPageChanged: (indexPage, _) =>
-                  setState(() => this.indexPage = indexPage!),
+      body: Stack(
+        children: [
+          SlidingUpPanel(
+            controller: panelController,
+            maxHeight: size.height / 2.5,
+            minHeight: 0,
+            parallaxEnabled: true,
+            backdropEnabled: true,
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(18.0),
+                topRight: Radius.circular(18.0)),
+            panelBuilder: (scrollController) => Paneloption(
+                scrollController, screenshotController, panelController),
+            body: Screenshot(
+              controller: screenshotController,
+              child: Container(
+                child: UCPDFView(
+                  filePath: widget.file.path,
+                  autoSpacing: false,
+                  pageSnap: false,
+                  pageFling: false,
+                  onRender: (pages) => setState(() => this.pages = pages!),
+                  onViewCreated: (controller) =>
+                      setState(() => this.controller = controller),
+                  onPageChanged: (indexPage, _) =>
+                      setState(() => this.indexPage = indexPage!),
+                ),
+              ),
             ),
           ),
-        ),
+          SideRough()
+        ],
       ),
-      floatingActionButton: widget.pathofdata != null
+      floatingActionButton: widget.pathofdata != null &&
+              !Provider.of<SideRoughStatus>(context, listen: false)
+                  .getisSideBarstatus
           ? FloatingActionButton(
               backgroundColor: AppColor.third_color,
               foregroundColor: AppColor.white_color,
