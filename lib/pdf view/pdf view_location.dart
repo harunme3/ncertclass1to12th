@@ -57,7 +57,6 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
   Future ishintdownloaded(String filename) async {
     Directory dir = await getApplicationDocumentsDirectory();
     final file = File('${dir.path}/$filename');
-
     if (file.existsSync()) {
       return file;
     } else {
@@ -205,7 +204,7 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () async {
-            var file = await ishintdownloaded(widget.filename!);
+            var file = await ishintdownloaded(widget.filename! + '.pdf');
             l.w(widget.filename!);
             l.e(file);
             if (file != false) {
@@ -214,13 +213,14 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
                 MaterialPageRoute(builder: (context) => HintPdf(file: file)),
               );
             } else if (file == false) {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => DownloadPlatform(
-                        filename: widget.filename!,
-                        pathofdata: widget.pathofdata!)),
-              );
+              l.e('we have to download the file');
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(
+              //       builder: (context) => DownloadPlatform(
+              //           filename: widget.filename!,
+              //           pathofdata: widget.pathofdata!)),
+              // );
             }
           },
         ));

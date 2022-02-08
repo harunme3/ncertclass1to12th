@@ -79,9 +79,6 @@ class _TopicListState extends State<TopicList> {
         in widget.bookSolutionDataSet![widget.solutionindex!].topicDataset) {
       count++;
       if (i.topicName == widget.topicDataSet[index].topicName) {
-        l.w('matched');
-        l.e(count);
-
         return count;
       }
     }
@@ -138,8 +135,9 @@ class _TopicListState extends State<TopicList> {
                               onTap: () async {
                                 if (widget.solutionindex != null) {
                                   int status = await isSolutionExist(index);
-                                  l.e(status);
+
                                   if (status != 0) {
+                                    l.e(status - 1);
                                     final projectname = 'Education';
                                     final examname = 'NCERT and Exampler';
                                     final classname = widget.classname;
@@ -165,8 +163,7 @@ class _TopicListState extends State<TopicList> {
                                     final String pathofdata =
                                         '$projectname/$examname/$classname/$medium/$bookname/$subjectname/$booksolutionname/$topicname/';
                                     String filename =
-                                        '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_$topicname' +
-                                            '.pdf';
+                                        '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_$topicname';
                                     l.e(topicname);
                                     Navigator.push(
                                       context,

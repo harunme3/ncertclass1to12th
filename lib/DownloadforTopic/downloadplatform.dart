@@ -100,6 +100,7 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
           _percenatge = 0,
           print(
               '================================task completed=================================='),
+          l.e(file!),
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
