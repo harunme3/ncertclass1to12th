@@ -5,6 +5,7 @@ import 'package:in_app_update/in_app_update.dart';
 import 'package:logger/logger.dart';
 import 'package:ncertclass1to12th/DownloadforTopic/downloadplatform.dart';
 import 'package:ncertclass1to12th/SlideUp_Pdfoption/slideup_pdfoption.dart';
+import 'package:ncertclass1to12th/config/appcolor.dart';
 import 'package:ncertclass1to12th/pdf%20view/hintpdf.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdfviewdarkmode.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdfviewdistractionfreemode.dart';
@@ -203,6 +204,10 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
       ),
       floatingActionButton: widget.pathofdata != null
           ? FloatingActionButton(
+              backgroundColor: AppColor.third_color,
+              foregroundColor: AppColor.white_color,
+              splashColor: AppColor.first_color,
+              child: Text('Hint'),
               onPressed: () async {
                 var file = await ishintdownloaded(widget.filename! + '.pdf');
 
