@@ -59,7 +59,6 @@ dependencies:
   flutter_colorpicker: ^1.0.3
   http: ^0.13.4
   cloud_firestore: ^3.1.7
-  youtube_player_flutter: ^8.0.0
   
 
 

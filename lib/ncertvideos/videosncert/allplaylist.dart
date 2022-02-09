@@ -52,8 +52,12 @@ class _AllPlaylistState extends State<AllPlaylist> {
     for (var id in playlistids) {
       List<AllPlaylistModel> allPlaylistModel =
           await APIService.instance.fetchVideosFromPlaylist(playlistId: id);
-      list.add(allPlaylistModel);
+      if (allPlaylistModel.isNotEmpty) {
+        list.add(allPlaylistModel);
+      }
     }
+
+    l.w(list);
 
     return list;
   }
@@ -61,15 +65,7 @@ class _AllPlaylistState extends State<AllPlaylist> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        actions: [
-          IconButton(
-              onPressed: () {
-                fetchplaylistid();
-              },
-              icon: Icon(Icons.check))
-        ],
-      ),
+      appBar: AppBar(),
       body: FutureBuilder<List<List<AllPlaylistModel>>>(
           future: _initPlaylist(),
           builder:

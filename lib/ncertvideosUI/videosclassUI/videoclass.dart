@@ -4,10 +4,8 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ncertclass1to12th/Modals/classdata.dart';
-import 'package:ncertclass1to12th/config/appcolor.dart';
+
 import 'package:ncertclass1to12th/ncertvideosUI/videosbookui/videobook.dart';
-import 'package:ncertclass1to12th/theme/theme.dart';
-import 'package:provider/provider.dart';
 
 class VideoClass extends StatefulWidget {
   const VideoClass({Key? key}) : super(key: key);
@@ -27,7 +25,7 @@ class _VideoClassState extends State<VideoClass> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    bool isDarkTheme = Provider.of<ThemeProvider>(context).isDarkTheme;
+
     return FutureBuilder<ClassDataSet>(
       future: loadJsonClassDataSet(), // async work
       builder: (BuildContext context, AsyncSnapshot<ClassDataSet> snapshot) {
@@ -54,6 +52,8 @@ class _VideoClassState extends State<VideoClass> {
                             gridDelegate:
                                 const SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 3,
+                              crossAxisSpacing: 5,
+                              mainAxisSpacing: 5,
                             ),
                             itemCount: snapshot.data!.classDataSet.length,
                             shrinkWrap: true,
@@ -88,64 +88,50 @@ class _VideoClassState extends State<VideoClass> {
                                         end: Alignment.bottomLeft),
                                     borderRadius: BorderRadius.circular(20),
                                   ),
-                                  child: Container(
-                                    margin: EdgeInsets.symmetric(
-                                      horizontal: size.width / 24,
-                                      vertical: size.width / 36,
-                                    ),
-                                    child: Stack(
-                                      alignment: Alignment.bottomCenter,
-                                      children: <Widget>[
-                                        Container(
-                                          height: size.width / 3,
-                                          decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(22),
-                                            color: index.isEven
-                                                ? AppColor.Second_color
-                                                : AppColor.third_color,
-                                          ),
-                                          child: Container(
-                                            margin: EdgeInsets.only(right: 8),
-                                            decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(22),
-                                              color: isDarkTheme
-                                                  ? Colors.grey[900]
-                                                  : Colors.white,
-                                            ),
-                                          ),
-                                        ),
-                                        Positioned(
-                                          top: -size.width / 60,
-                                          child: Container(
-                                            padding: EdgeInsets.symmetric(
-                                              horizontal: size.width / 9,
-                                            ),
-                                            height: size.width / 3.2,
-                                            width: size.width / 2,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                            colors: [
+                                              Color.fromARGB(255, 179, 44, 3),
+                                              Color.fromARGB(255, 31, 29, 102),
+                                              Color.fromARGB(255, 206, 14, 126),
+                                              const Color(0xFF9c43ec),
+                                              Color.fromARGB(255, 219, 6, 166),
+                                            ],
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft),
+                                        borderRadius: BorderRadius.circular(20),
+                                      ),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          //image
+                                          Container(
+                                            height: 64,
+                                            width: 64,
                                             child: Image.asset(
                                               snapshot.data!.classDataSet[index]
                                                   .classImageSrc,
                                               fit: BoxFit.contain,
                                             ),
                                           ),
-                                        ),
-                                        Positioned(
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
+                                          //name
+                                          Container(
                                             child: AutoSizeText(
                                               snapshot.data!.classDataSet[index]
                                                   .className,
-                                              maxLines: 3,
+                                              maxLines: 2,
                                               textAlign: TextAlign.center,
                                               style: Theme.of(context)
                                                   .primaryTextTheme
                                                   .bodyText1,
                                             ),
-                                          ),
-                                        ),
-                                      ],
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),

@@ -5,10 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ncertclass1to12th/Modals/classdata.dart';
 import 'package:ncertclass1to12th/Modals/listdata.dart';
-import 'package:ncertclass1to12th/config/appcolor.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
 import 'package:ncertclass1to12th/ncertvideosUI/videossubjectui/videosubject.dart';
-import 'package:ncertclass1to12th/theme/theme.dart';
+
 import 'package:provider/provider.dart';
 
 class VideoBook extends StatefulWidget {
@@ -29,7 +28,7 @@ class _VideoBookState extends State<VideoBook> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    bool isDarkTheme = Provider.of<ThemeProvider>(context).isDarkTheme;
+
     return FutureBuilder<DataSet>(
       future: Provider.of<LangaugeProvider>(context)
           .loadJsonDataSet(widget.classname), // async work
@@ -56,7 +55,9 @@ class _VideoBookState extends State<VideoBook> {
                             physics: BouncingScrollPhysics(),
                             gridDelegate:
                                 const SliverGridDelegateWithFixedCrossAxisCount(
-                              crossAxisCount: 3,
+                              crossAxisCount: 2,
+                              crossAxisSpacing: 5,
+                              mainAxisSpacing: 5,
                             ),
                             itemCount: snapshot.data!.bookDataSet.length,
                             shrinkWrap: true,
@@ -93,64 +94,50 @@ class _VideoBookState extends State<VideoBook> {
                                         end: Alignment.bottomLeft),
                                     borderRadius: BorderRadius.circular(20),
                                   ),
-                                  child: Container(
-                                    margin: EdgeInsets.symmetric(
-                                      horizontal: size.width / 24,
-                                      vertical: size.width / 36,
-                                    ),
-                                    child: Stack(
-                                      alignment: Alignment.bottomCenter,
-                                      children: <Widget>[
-                                        Container(
-                                          height: size.width / 3,
-                                          decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(22),
-                                            color: index.isEven
-                                                ? AppColor.Second_color
-                                                : AppColor.third_color,
-                                          ),
-                                          child: Container(
-                                            margin: EdgeInsets.only(right: 8),
-                                            decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(22),
-                                              color: isDarkTheme
-                                                  ? Colors.grey[900]
-                                                  : Colors.white,
-                                            ),
-                                          ),
-                                        ),
-                                        Positioned(
-                                          top: -size.width / 60,
-                                          child: Container(
-                                            padding: EdgeInsets.symmetric(
-                                              horizontal: size.width / 9,
-                                            ),
-                                            height: size.width / 3.2,
-                                            width: size.width / 2,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                            colors: [
+                                              Color.fromARGB(255, 179, 44, 3),
+                                              Color.fromARGB(255, 31, 29, 102),
+                                              Color.fromARGB(255, 206, 14, 126),
+                                              const Color(0xFF9c43ec),
+                                              Color.fromARGB(255, 219, 6, 166),
+                                            ],
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft),
+                                        borderRadius: BorderRadius.circular(20),
+                                      ),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          //image
+                                          Container(
+                                            height: 100,
+                                            width: 100,
                                             child: Image.asset(
                                               snapshot.data!.bookDataSet[index]
                                                   .bookImageSrc,
                                               fit: BoxFit.contain,
                                             ),
                                           ),
-                                        ),
-                                        Positioned(
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
+                                          //name
+                                          Container(
                                             child: AutoSizeText(
                                               snapshot.data!.bookDataSet[index]
                                                   .bookName,
-                                              maxLines: 3,
+                                              maxLines: 2,
                                               textAlign: TextAlign.center,
                                               style: Theme.of(context)
                                                   .primaryTextTheme
                                                   .bodyText1,
                                             ),
-                                          ),
-                                        ),
-                                      ],
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
