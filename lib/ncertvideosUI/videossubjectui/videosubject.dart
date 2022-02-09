@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ncertclass1to12th/Modals/listdata.dart';
 import 'package:ncertclass1to12th/config/appcolor.dart';
+import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
 import 'package:ncertclass1to12th/ncertvideos/videosncert/allplaylist.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:provider/provider.dart';
@@ -24,6 +25,7 @@ class _VideoSubjectState extends State<VideoSubject> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     bool isDarkTheme = Provider.of<ThemeProvider>(context).isDarkTheme;
+
     return SafeArea(
       child: Scaffold(
         body: CustomScrollView(
@@ -52,10 +54,23 @@ class _VideoSubjectState extends State<VideoSubject> {
             SliverGrid(
                 delegate: SliverChildBuilderDelegate((context, index) {
                   return GestureDetector(
-                    onTap: () {
+                    onTap: () async {
+                      final medium = await Provider.of<LangaugeProvider>(
+                                  context,
+                                  listen: false)
+                              .isHindi
+                          ? 'HindiMedium'
+                          : 'EnglishMedium';
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => AllPlaylist()),
+                        MaterialPageRoute(
+                            builder: (context) => AllPlaylist(
+                                  bookname: widget.bookname,
+                                  classname: widget.classname,
+                                  medium: medium,
+                                  subjectname:
+                                      widget.subjectDataSet[index].subjectName,
+                                )),
                       );
                     },
                     child: Tooltip(

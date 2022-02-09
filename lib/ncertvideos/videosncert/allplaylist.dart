@@ -7,8 +7,16 @@ import 'package:ncertclass1to12th/ncertvideos/apiservice/apiservice.dart';
 import 'package:ncertclass1to12th/ncertvideos/videosncert/playlistvideos.dart';
 
 class AllPlaylist extends StatefulWidget {
-  const AllPlaylist({Key? key}) : super(key: key);
+  const AllPlaylist(
+      {required this.bookname,
+      required this.classname,
+      required this.medium,
+      required this.subjectname});
 
+  final String bookname;
+  final String classname;
+  final String medium;
+  final String subjectname;
   @override
   _AllPlaylistState createState() => _AllPlaylistState();
 }
@@ -17,34 +25,31 @@ class _AllPlaylistState extends State<AllPlaylist> {
   var l = Logger();
 
   Future<List<String>> fetchplaylistid() async {
-    DocumentSnapshot<Map<String, dynamic>> ref = await FirebaseFirestore
+    String bookname = widget.bookname.split(' ')[0].toUpperCase();
+    List<String> list = [];
+    CollectionReference<Map<String, dynamic>> ref = await FirebaseFirestore
         .instance
-        .collection('playlistid')
-        .doc('list')
-        .get();
-    Map<String, dynamic>? arrayofplaylist = ref.data();
-    l.e(arrayofplaylist!['arrayofplaylist']);
+        .collection('Education')
+        .doc('NCERT and Exampler')
+        .collection(widget.classname)
+        .doc(widget.medium)
+        .collection(bookname)
+        .doc(widget.subjectname)
+        .collection('Playlist');
 
-    List<String> list = List.from(arrayofplaylist['arrayofplaylist']);
-
+    QuerySnapshot<Map<String, dynamic>> snapshot = await ref.get();
+    snapshot.docs.forEach((doc) {
+      list = list + List.from(doc.data()['playlistId']);
+    });
+    l.e(list);
     return list;
   }
 
   Future<List<List<AllPlaylistModel>>> _initPlaylist() async {
-    // final List<String> playlistids = await fetchplaylistid();
+    final List<String> playlistids = await fetchplaylistid();
 
-    final List<String> playlistids = [
-      'PLa6i7rTYARy0w1coaf1myq36-PcyBhyJj',
-      'PLa6i7rTYARy1JT1605Yh0YxU3Oc90is5C',
-      'PLh7i6AwsWt1sE-fFCPpa9Yvomp3MC4yci',
-      'PLuSU7Jf37F-dZb_-FBKDKBK5BgBhgqMhE',
-      'PLWz5rJ2EKKc_KamvEnBDJrBptAfQni7Ig',
-      'PLzOt3noWLMthJKm8SJl2zmUlJiZp7fzo7',
-      'PL342JVRNQxEAcQdnNeN0JmMzfcm6VtLxS'
-    ];
     List<List<AllPlaylistModel>> list = [];
     for (var id in playlistids) {
-      l.w('map');
       List<AllPlaylistModel> allPlaylistModel =
           await APIService.instance.fetchVideosFromPlaylist(playlistId: id);
       list.add(allPlaylistModel);
@@ -56,13 +61,20 @@ class _AllPlaylistState extends State<AllPlaylist> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        actions: [
+          IconButton(
+              onPressed: () {
+                fetchplaylistid();
+              },
+              icon: Icon(Icons.check))
+        ],
+      ),
       body: FutureBuilder<List<List<AllPlaylistModel>>>(
           future: _initPlaylist(),
           builder:
               (context, AsyncSnapshot<List<List<AllPlaylistModel>>> snapshot) {
             if (snapshot.connectionState == ConnectionState.done) {
-              // If we got an error
               if (snapshot.hasError) {
                 return Center(
                   child: Text(
@@ -148,7 +160,7 @@ class _AllPlaylistState extends State<AllPlaylist> {
                                           ),
                                           Container(
                                               child: Image.asset(
-                                                  'assets/ncertvideos/youtube.png'))
+                                                  'assets/videoscources/youtube.png'))
                                         ],
                                       ),
                                     ),

@@ -221,6 +221,7 @@ class _AllClassState extends State<AllClass> {
                           ),
                           GridView.count(
                             crossAxisCount: 2,
+                            shrinkWrap: true,
                             children: [
                               GestureDetector(
                                 onTap: () {
