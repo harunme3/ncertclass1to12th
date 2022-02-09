@@ -11,6 +11,7 @@ import 'package:ncertclass1to12th/books/books.dart';
 import 'package:ncertclass1to12th/books/pdf_floatingactionbutton.dart';
 import 'package:ncertclass1to12th/config/appcolor.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
+import 'package:ncertclass1to12th/ncertvideosUI/videosclassUI/videoclass.dart';
 
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:provider/provider.dart';
@@ -223,15 +224,10 @@ class _AllClassState extends State<AllClass> {
                             children: [
                               GestureDetector(
                                 onTap: () {
-                                  // Navigator.push(
-                                  //     context,
-                                  //     MaterialPageRoute(
-                                  //         builder: (context) => Books(
-                                  //               classname: snapshot
-                                  //                   .data!
-                                  //                   .classDataSet[index]
-                                  //                   .className,
-                                  //             )));
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => VideoClass()));
                                 },
                                 child: Tooltip(
                                   textStyle: TextStyle(color: Colors.white),
