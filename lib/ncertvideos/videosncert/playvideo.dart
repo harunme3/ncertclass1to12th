@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
-class NCERTPlaylist extends StatefulWidget {
-  const NCERTPlaylist({Key? key}) : super(key: key);
+class PlayVideos extends StatefulWidget {
+  final String videoid;
+  const PlayVideos(this.videoid);
 
   @override
-  State<NCERTPlaylist> createState() => _NCERTPlaylistState();
+  _PlayVideosState createState() => _PlayVideosState();
 }
 
-class _NCERTPlaylistState extends State<NCERTPlaylist> {
+class _PlayVideosState extends State<PlayVideos> {
   late YoutubePlayerController _controller;
 
   @override
   void initState() {
     super.initState();
     _controller = YoutubePlayerController(
-      initialVideoId: 'K18cpp_-gP8',
+      initialVideoId: widget.videoid,
       params: YoutubePlayerParams(
-          playlist: ['nPt8bK2gbaU', 'gQDByCdjUXw'], // Defining custom playlist
-          startAt: Duration(seconds: 30),
+          startAt: Duration(seconds: 5),
           showControls: true,
           showFullscreenButton: true,
           playsInline: true,

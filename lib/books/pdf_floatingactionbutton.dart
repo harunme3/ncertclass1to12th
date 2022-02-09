@@ -11,6 +11,7 @@ class LastopenPDFButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
+      tooltip: 'Last Opened Pdf',
       backgroundColor: AppColor.third_color,
       foregroundColor: AppColor.white_color,
       splashColor: AppColor.first_color,
