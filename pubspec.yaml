@@ -86,6 +86,9 @@ flutter:
     - assets/header/
     - assets/classimg/
     - assets/translations/
+    #videos
+    - assets/videoscources/
+    #data_image
     - assets/alldata_image/all/
     - assets/alldata_image/class9/data_image/
     - assets/alldata_image/class10/data_image/
