@@ -59,6 +59,7 @@ dependencies:
   flutter_colorpicker: ^1.0.3
   http: ^0.13.4
   cloud_firestore: ^3.1.7
+  google_mobile_ads: ^1.0.1
   
 
 
