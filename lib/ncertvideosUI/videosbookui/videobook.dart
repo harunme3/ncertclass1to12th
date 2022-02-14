@@ -3,8 +3,10 @@ import 'dart:convert';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:ncertclass1to12th/Modals/classdata.dart';
 import 'package:ncertclass1to12th/Modals/listdata.dart';
+import 'package:ncertclass1to12th/admob/adhelper/adhelper.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
 import 'package:ncertclass1to12th/ncertvideosUI/videossubjectui/videosubject.dart';
 
@@ -18,6 +20,43 @@ class VideoBook extends StatefulWidget {
 }
 
 class _VideoBookState extends State<VideoBook> {
+  late BannerAd _ad;
+  bool _isAdLoaded = false;
+  @override
+  void initState() {
+    super.initState();
+    _createandshowBannerAd();
+  }
+
+  _createandshowBannerAd() {
+    _ad = BannerAd(
+      adUnitId: AdHelper.bannerAdUnitId,
+      size: AdSize.mediumRectangle,
+      request: AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (_) {
+          setState(() {
+            _isAdLoaded = true;
+          });
+        },
+        onAdFailedToLoad: (ad, error) {
+          // Releases an ad resource when it fails to load
+          ad.dispose();
+
+          print('Ad load failed (code=${error.code} message=${error.message})');
+        },
+      ),
+    );
+
+    _ad.load();
+  }
+
+  @override
+  void dispose() {
+    _ad.dispose();
+    super.dispose();
+  }
+
   Future<ClassDataSet> loadJsonClassDataSet() async {
     String jsonstring = await rootBundle
         .loadString('assets/alldata_image/all/classnamedata_image.json');
@@ -144,6 +183,14 @@ class _VideoBookState extends State<VideoBook> {
                               );
                             },
                           ),
+                          _isAdLoaded
+                              ? Container(
+                                  child: AdWidget(ad: _ad),
+                                  width: _ad.size.width.toDouble(),
+                                  height: _ad.size.height.toDouble(),
+                                  alignment: Alignment.center,
+                                )
+                              : Container(),
                         ],
                       ),
                     ],

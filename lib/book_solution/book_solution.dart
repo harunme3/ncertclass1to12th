@@ -1,7 +1,9 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:logger/logger.dart';
 import 'package:ncertclass1to12th/Modals/listdata.dart';
+import 'package:ncertclass1to12th/admob/adhelper/adhelper.dart';
 import 'package:ncertclass1to12th/config/appcolor.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -26,6 +28,37 @@ class MyBookandSolution extends StatefulWidget {
 }
 
 class _MyBookandSolutionState extends State<MyBookandSolution> {
+  late BannerAd _ad;
+  bool _isAdLoaded = false;
+  @override
+  void initState() {
+    super.initState();
+    _createandshowBannerAd();
+  }
+
+  _createandshowBannerAd() {
+    _ad = BannerAd(
+      adUnitId: AdHelper.bannerAdUnitId,
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (_) {
+          setState(() {
+            _isAdLoaded = true;
+          });
+        },
+        onAdFailedToLoad: (ad, error) {
+          // Releases an ad resource when it fails to load
+          ad.dispose();
+
+          print('Ad load failed (code=${error.code} message=${error.message})');
+        },
+      ),
+    );
+
+    _ad.load();
+  }
+
   var l = Logger();
   @override
   Widget build(BuildContext context) {
@@ -191,6 +224,14 @@ class _MyBookandSolutionState extends State<MyBookandSolution> {
             ),
           ],
         ),
+        bottomNavigationBar: _isAdLoaded
+            ? Container(
+                child: AdWidget(ad: _ad),
+                width: _ad.size.width.toDouble(),
+                height: _ad.size.height.toDouble(),
+                alignment: Alignment.center,
+              )
+            : null,
       ),
     );
   }

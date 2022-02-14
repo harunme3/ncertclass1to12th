@@ -52,6 +52,12 @@ class _BooksState extends State<Books> {
   }
 
   @override
+  void dispose() {
+    _ad.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     bool isDarkTheme = Provider.of<ThemeProvider>(context).isDarkTheme;
@@ -202,23 +208,18 @@ class _BooksState extends State<Books> {
                               );
                             },
                           ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          _isAdLoaded
-                              ? Container(
-                                  child: AdWidget(ad: _ad),
-                                  width: _ad.size.width.toDouble(),
-                                  height: 72.0,
-                                  alignment: Alignment.center,
-                                )
-                              : Container(
-                                  child: null,
-                                ),
                         ],
                       ),
                     ],
                   ),
+                  bottomNavigationBar: _isAdLoaded
+                      ? Container(
+                          child: AdWidget(ad: _ad),
+                          width: _ad.size.width.toDouble(),
+                          height: _ad.size.height.toDouble(),
+                          alignment: Alignment.center,
+                        )
+                      : null,
                 ),
               );
         }

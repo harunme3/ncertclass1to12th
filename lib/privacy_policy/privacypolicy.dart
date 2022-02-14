@@ -1,7 +1,51 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:ncertclass1to12th/admob/adhelper/adhelper.dart';
 
-class PrivacyPolicy extends StatelessWidget {
+class PrivacyPolicy extends StatefulWidget {
   PrivacyPolicy();
+
+  @override
+  State<PrivacyPolicy> createState() => _PrivacyPolicyState();
+}
+
+class _PrivacyPolicyState extends State<PrivacyPolicy> {
+  late BannerAd _ad;
+  bool _isAdLoaded = false;
+  @override
+  void initState() {
+    super.initState();
+    _createandshowBannerAd();
+  }
+
+  _createandshowBannerAd() {
+    _ad = BannerAd(
+      adUnitId: AdHelper.bannerAdUnitId,
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (_) {
+          setState(() {
+            _isAdLoaded = true;
+          });
+        },
+        onAdFailedToLoad: (ad, error) {
+          // Releases an ad resource when it fails to load
+          ad.dispose();
+
+          print('Ad load failed (code=${error.code} message=${error.message})');
+        },
+      ),
+    );
+
+    _ad.load();
+  }
+
+  @override
+  void dispose() {
+    _ad.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -255,6 +299,14 @@ If you have any questions or suggestions about our Privacy Policy, do not hesita
           ),
         ),
       ),
+      bottomNavigationBar: _isAdLoaded
+          ? Container(
+              child: AdWidget(ad: _ad),
+              width: _ad.size.width.toDouble(),
+              height: _ad.size.height.toDouble(),
+              alignment: Alignment.center,
+            )
+          : null,
     );
   }
 }

@@ -1,8 +1,12 @@
 import 'dart:io';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:logger/logger.dart';
+import 'package:ncertclass1to12th/admob/adhelper/adhelper.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
+import 'package:ncertclass1to12th/pdf%20view/pdf%20view_location.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
@@ -15,7 +19,61 @@ class DownloadedBook extends StatefulWidget {
   State<DownloadedBook> createState() => _DownloadedBookState();
 }
 
+//Globally define load attempt
+const int maxFailedLoadAttempts = 3;
+
 class _DownloadedBookState extends State<DownloadedBook> {
+  InterstitialAd? _interstitialAd;
+  int _interstitialLoadAttempts = 0;
+
+  void _createInterstitialAd() {
+    InterstitialAd.load(
+      adUnitId: AdHelper.interstitialAdUnitId,
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          _interstitialAd = ad;
+          _interstitialLoadAttempts = 0;
+        },
+        onAdFailedToLoad: (LoadAdError error) {
+          _interstitialLoadAttempts += 1;
+          _interstitialAd = null;
+          if (_interstitialLoadAttempts <= maxFailedLoadAttempts) {
+            _createInterstitialAd();
+          }
+        },
+      ),
+    );
+  }
+
+  void _showInterstitialAd() {
+    if (_interstitialAd != null) {
+      _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
+        onAdDismissedFullScreenContent: (InterstitialAd ad) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+        onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+      );
+      _interstitialAd!.show();
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _createInterstitialAd();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _interstitialAd?.dispose();
+  }
+
   var l = Logger();
   Future<List<String>> fileoperation() async {
     Directory dir = await getApplicationDocumentsDirectory();
@@ -86,12 +144,13 @@ class _DownloadedBookState extends State<DownloadedBook> {
 
                         return GestureDetector(
                           onTap: () async {
-                            // Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(
-                            //       builder: (context) =>
-                            //           PdfViewLocation(file: file)),
-                            // );
+                            _showInterstitialAd();
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      PdfViewLocation(file: file)),
+                            );
                           },
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
@@ -133,16 +192,13 @@ class _DownloadedBookState extends State<DownloadedBook> {
                                             .primaryTextTheme
                                             .bodyText1),
                                   ),
-                                  IconButton(
-                                      onPressed: () {
-                                        l.e(name);
-                                      },
-                                      icon: name[4].substring(
-                                                  name[4].lastIndexOf(" ") +
-                                                      1) ==
-                                              checkBooksSolution
-                                          ? Icon(Icons.menu_book)
-                                          : Icon(Icons.border_color))
+                                  Container(
+                                    child: name[4].substring(
+                                                name[4].lastIndexOf(" ") + 1) ==
+                                            checkBooksSolution
+                                        ? Icon(Icons.menu_book)
+                                        : Icon(Icons.border_color),
+                                  )
                                 ],
                               ),
                             ),
