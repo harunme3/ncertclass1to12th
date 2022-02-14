@@ -1,6 +1,8 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:ncertclass1to12th/Modals/listdata.dart';
+import 'package:ncertclass1to12th/admob/adhelper/adhelper.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
 import 'package:ncertclass1to12th/ncertvideos/videosncert/allplaylist.dart';
 import 'package:provider/provider.dart';
@@ -17,7 +19,61 @@ class VideoSubject extends StatefulWidget {
   _VideoSubjectState createState() => _VideoSubjectState();
 }
 
+//Globally define load attempt
+const int maxFailedLoadAttempts = 3;
+
 class _VideoSubjectState extends State<VideoSubject> {
+  InterstitialAd? _interstitialAd;
+  int _interstitialLoadAttempts = 0;
+
+  void _createInterstitialAd() {
+    InterstitialAd.load(
+      adUnitId: AdHelper.interstitialAdUnitId,
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          _interstitialAd = ad;
+          _interstitialLoadAttempts = 0;
+        },
+        onAdFailedToLoad: (LoadAdError error) {
+          _interstitialLoadAttempts += 1;
+          _interstitialAd = null;
+          if (_interstitialLoadAttempts <= maxFailedLoadAttempts) {
+            _createInterstitialAd();
+          }
+        },
+      ),
+    );
+  }
+
+  void _showInterstitialAd() {
+    if (_interstitialAd != null) {
+      _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
+        onAdDismissedFullScreenContent: (InterstitialAd ad) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+        onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+      );
+      _interstitialAd!.show();
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _createInterstitialAd();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _interstitialAd?.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -50,6 +106,7 @@ class _VideoSubjectState extends State<VideoSubject> {
                   itemBuilder: (BuildContext context, int index) {
                     return GestureDetector(
                       onTap: () async {
+                        _showInterstitialAd();
                         final medium = await Provider.of<LangaugeProvider>(
                                     context,
                                     listen: false)

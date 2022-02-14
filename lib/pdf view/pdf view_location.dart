@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hive/hive.dart';
 import 'package:in_app_update/in_app_update.dart';
 import 'package:logger/logger.dart';
@@ -7,6 +8,7 @@ import 'package:ncertclass1to12th/DownloadforTopic/downloadplatform.dart';
 import 'package:ncertclass1to12th/Rough/siderough.dart';
 import 'package:ncertclass1to12th/Rough/sideroughstatus.dart';
 import 'package:ncertclass1to12th/SlideUp_Pdfoption/slideup_pdfoption.dart';
+import 'package:ncertclass1to12th/admob/adhelper/adhelper.dart';
 import 'package:ncertclass1to12th/config/appcolor.dart';
 import 'package:ncertclass1to12th/pdf%20view/hintpdf.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdfviewdarkmode.dart';
@@ -32,6 +34,9 @@ class PdfViewLocation extends StatefulWidget {
   _PdfViewLocationState createState() => _PdfViewLocationState();
 }
 
+//Globally define load attempt
+const int maxFailedLoadAttempts = 3;
+
 class _PdfViewLocationState extends State<PdfViewLocation> {
   SideRoughStatus sideRoughStatus = SideRoughStatus(false);
   late PDFViewController controller;
@@ -45,11 +50,56 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
 
 //Alert Diologe
   TextEditingController _textFieldController = TextEditingController();
+  InterstitialAd? _interstitialAd;
+  int _interstitialLoadAttempts = 0;
+
+  void _createInterstitialAd() {
+    InterstitialAd.load(
+      adUnitId: AdHelper.interstitialAdUnitId,
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          _interstitialAd = ad;
+          _interstitialLoadAttempts = 0;
+        },
+        onAdFailedToLoad: (LoadAdError error) {
+          _interstitialLoadAttempts += 1;
+          _interstitialAd = null;
+          if (_interstitialLoadAttempts <= maxFailedLoadAttempts) {
+            _createInterstitialAd();
+          }
+        },
+      ),
+    );
+  }
+
+  void _showInterstitialAd() {
+    if (_interstitialAd != null) {
+      _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
+        onAdDismissedFullScreenContent: (InterstitialAd ad) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+        onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+      );
+      _interstitialAd!.show();
+    }
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _interstitialAd?.dispose();
+  }
 
   @override
   void initState() {
     super.initState();
     setpdfpath();
+    _createInterstitialAd();
   }
 
   setpdfpath() async {
@@ -221,6 +271,7 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
               splashColor: AppColor.first_color,
               child: Text('Hint'),
               onPressed: () async {
+                _showInterstitialAd();
                 var file = await ishintdownloaded(widget.filename! + '.pdf');
 
                 if (file != false) {

@@ -1,10 +1,15 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:logger/logger.dart';
+import 'package:ncertclass1to12th/admob/adhelper/adhelper.dart';
 import 'package:ncertclass1to12th/ncertvideos/Models/allplaylistmodel.dart';
 import 'package:ncertclass1to12th/ncertvideos/apiservice/apiservice.dart';
 import 'package:ncertclass1to12th/ncertvideos/videosncert/playlistvideos.dart';
+
+//Globally define load attempt
+const int maxFailedLoadAttempts = 3;
 
 class AllPlaylist extends StatefulWidget {
   const AllPlaylist(
@@ -22,6 +27,57 @@ class AllPlaylist extends StatefulWidget {
 }
 
 class _AllPlaylistState extends State<AllPlaylist> {
+  InterstitialAd? _interstitialAd;
+  int _interstitialLoadAttempts = 0;
+
+  void _createInterstitialAd() {
+    InterstitialAd.load(
+      adUnitId: AdHelper.interstitialAdUnitId,
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          _interstitialAd = ad;
+          _interstitialLoadAttempts = 0;
+        },
+        onAdFailedToLoad: (LoadAdError error) {
+          _interstitialLoadAttempts += 1;
+          _interstitialAd = null;
+          if (_interstitialLoadAttempts <= maxFailedLoadAttempts) {
+            _createInterstitialAd();
+          }
+        },
+      ),
+    );
+  }
+
+  void _showInterstitialAd() {
+    if (_interstitialAd != null) {
+      _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
+        onAdDismissedFullScreenContent: (InterstitialAd ad) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+        onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+      );
+      _interstitialAd!.show();
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _createInterstitialAd();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _interstitialAd?.dispose();
+  }
+
   var l = Logger();
 
   Future<List<String>> fetchplaylistid() async {
@@ -86,7 +142,7 @@ class _AllPlaylistState extends State<AllPlaylist> {
                   itemBuilder: (BuildContext context, int index) {
                     return GestureDetector(
                       onTap: () {
-                        l.e(snapshot.data![index][0].thumbnailUrl);
+                        _showInterstitialAd();
                         Navigator.push(
                           context,
                           MaterialPageRoute(

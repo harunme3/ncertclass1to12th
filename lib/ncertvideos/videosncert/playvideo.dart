@@ -24,7 +24,7 @@ class _PlayVideosState extends State<PlayVideos> {
           showFullscreenButton: false,
           enableCaption: false,
           playsInline: true,
-          autoPlay: false),
+          autoPlay: true),
     );
   }
 
@@ -49,14 +49,13 @@ class _PlayVideosState extends State<PlayVideos> {
           ],
         ),
         body: YoutubePlayerControllerProvider(
-            // Provides controller to all the widget below it.
-            controller: _controller,
+          // Provides controller to all the widget below it.
+          controller: _controller,
 
-            child: YoutubePlayerIFrame(
-              controller: _controller,
-            ),
+          child: YoutubePlayerIFrame(
+            controller: _controller,
           ),
-       
+        ),
       ),
     );
   }
