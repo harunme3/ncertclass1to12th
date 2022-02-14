@@ -3,6 +3,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ncertclass1to12th/DownloadforTopic/downloadplatform.dart';
 import 'package:ncertclass1to12th/Modals/listdata.dart';
+import 'package:ncertclass1to12th/admob/adhelper/adhelper.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdf%20view_location.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
@@ -10,6 +11,10 @@ import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:logger/logger.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+
+//Globally define load attempt
+const int maxFailedLoadAttempts = 3;
 
 class TopicList extends StatefulWidget {
   TopicList({
@@ -35,6 +40,57 @@ class TopicList extends StatefulWidget {
 }
 
 class _TopicListState extends State<TopicList> {
+  InterstitialAd? _interstitialAd;
+  int _interstitialLoadAttempts = 0;
+
+  void _createInterstitialAd() {
+    InterstitialAd.load(
+      adUnitId: AdHelper.interstitialAdUnitId,
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          _interstitialAd = ad;
+          _interstitialLoadAttempts = 0;
+        },
+        onAdFailedToLoad: (LoadAdError error) {
+          _interstitialLoadAttempts += 1;
+          _interstitialAd = null;
+          if (_interstitialLoadAttempts <= maxFailedLoadAttempts) {
+            _createInterstitialAd();
+          }
+        },
+      ),
+    );
+  }
+
+  void _showInterstitialAd() {
+    if (_interstitialAd != null) {
+      _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
+        onAdDismissedFullScreenContent: (InterstitialAd ad) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+        onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+      );
+      _interstitialAd!.show();
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _createInterstitialAd();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _interstitialAd?.dispose();
+  }
+
   var l = Logger();
 
   deletePdfdata(index, File file) {
@@ -133,6 +189,7 @@ class _TopicListState extends State<TopicList> {
                       return snapshot.data != false
                           ? GestureDetector(
                               onTap: () async {
+                                _showInterstitialAd();
                                 if (widget.solutionindex != null) {
                                   int status = await isSolutionExist(index);
 
