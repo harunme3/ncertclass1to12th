@@ -137,118 +137,125 @@ class _AllPlaylistState extends State<AllPlaylist> {
 
                 // if we got our data
               } else if (snapshot.hasData) {
-                return ListView.builder(
-                  itemCount: snapshot.data!.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    return GestureDetector(
-                      onTap: () {
-                        _showInterstitialAd();
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => PlaylistVideos(
-                              playlistId: snapshot.data![index][0].playlistId,
-                              totalvideos: snapshot.data![index][0].totalvideos,
+                if (snapshot.data!.length == 0) {
+                  return Center(
+                    child: Container(child: Text('No data Found')),
+                  );
+                } else {
+                  return ListView.builder(
+                    itemCount: snapshot.data!.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      return GestureDetector(
+                        onTap: () {
+                          _showInterstitialAd();
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => PlaylistVideos(
+                                playlistId: snapshot.data![index][0].playlistId,
+                                totalvideos:
+                                    snapshot.data![index][0].totalvideos,
+                              ),
                             ),
+                          );
+                        },
+                        child: Container(
+                          margin: EdgeInsets.symmetric(
+                              horizontal: 8.0, vertical: 5.0),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black12,
+                                offset: Offset(0, 1),
+                                blurRadius: 6.0,
+                              ),
+                            ],
                           ),
-                        );
-                      },
-                      child: Container(
-                        margin: EdgeInsets.symmetric(
-                            horizontal: 8.0, vertical: 5.0),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black12,
-                              offset: Offset(0, 1),
-                              blurRadius: 6.0,
-                            ),
-                          ],
-                        ),
-                        child: Column(
-                          children: [
-                            //image
-                            Container(
-                              child: Stack(
-                                children: [
-                                  Container(
-                                    child: Image.network(
-                                      snapshot.data![index][0].thumbnailUrl,
-                                    ),
-                                  ),
-                                  //overlay
-                                  Positioned(
-                                    right: 0,
-                                    top: 0,
-                                    bottom: 0,
-                                    child: Container(
-                                      decoration: new BoxDecoration(
-                                        color: Colors.black.withOpacity(0.3),
-                                        boxShadow: [
-                                          BoxShadow(
-                                            color: Colors.black12,
-                                            offset: Offset(0, 1),
-                                            blurRadius: 6.0,
-                                          ),
-                                        ],
+                          child: Column(
+                            children: [
+                              //image
+                              Container(
+                                child: Stack(
+                                  children: [
+                                    Container(
+                                      child: Image.network(
+                                        snapshot.data![index][0].thumbnailUrl,
                                       ),
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceEvenly,
-                                        children: [
-                                          //count
-                                          Container(
-                                            child: AutoSizeText(
-                                              '${snapshot.data![index][0].totalvideos} \n Videos'
-                                                  .toString(),
-                                              maxLines: 2,
-                                              minFontSize: 24,
-                                              textAlign: TextAlign.center,
-                                              style: TextStyle(
-                                                color: Colors.white,
+                                    ),
+                                    //overlay
+                                    Positioned(
+                                      right: 0,
+                                      top: 0,
+                                      bottom: 0,
+                                      child: Container(
+                                        decoration: new BoxDecoration(
+                                          color: Colors.black.withOpacity(0.3),
+                                          boxShadow: [
+                                            BoxShadow(
+                                              color: Colors.black12,
+                                              offset: Offset(0, 1),
+                                              blurRadius: 6.0,
+                                            ),
+                                          ],
+                                        ),
+                                        child: Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceEvenly,
+                                          children: [
+                                            //count
+                                            Container(
+                                              child: AutoSizeText(
+                                                '${snapshot.data![index][0].totalvideos} \n Videos'
+                                                    .toString(),
+                                                maxLines: 2,
+                                                minFontSize: 24,
+                                                textAlign: TextAlign.center,
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                          Container(
-                                              child: Image.asset(
-                                                  'assets/videoscources/youtube.png'))
-                                        ],
+                                            Container(
+                                                child: Image.asset(
+                                                    'assets/videoscources/youtube.png'))
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                            //
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Container(
-                                child: AutoSizeText(
-                                  snapshot.data![index][0].title,
-                                  minFontSize: 18,
-                                  maxLines: 3,
+                                    )
+                                  ],
                                 ),
                               ),
-                            ),
+                              //
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  child: AutoSizeText(
+                                    snapshot.data![index][0].title,
+                                    minFontSize: 18,
+                                    maxLines: 3,
+                                  ),
+                                ),
+                              ),
 
-                            Padding(
-                              padding: EdgeInsets.only(bottom: 8, right: 8),
-                              child: Container(
-                                alignment: Alignment.centerRight,
-                                child: AutoSizeText(
-                                  snapshot.data![index][0].channelTitle,
-                                  maxLines: 1,
+                              Padding(
+                                padding: EdgeInsets.only(bottom: 8, right: 8),
+                                child: Container(
+                                  alignment: Alignment.centerRight,
+                                  child: AutoSizeText(
+                                    snapshot.data![index][0].channelTitle,
+                                    maxLines: 1,
+                                  ),
                                 ),
-                              ),
-                            )
-                            //name
-                          ],
+                              )
+                              //name
+                            ],
+                          ),
                         ),
-                      ),
-                    );
-                  },
-                );
+                      );
+                    },
+                  );
+                }
               }
             }
 

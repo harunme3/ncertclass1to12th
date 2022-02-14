@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:logger/logger.dart';
