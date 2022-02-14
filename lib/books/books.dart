@@ -1,7 +1,9 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:ncertclass1to12th/Modals/listdata.dart';
+import 'package:ncertclass1to12th/admob/adhelper/adhelper.dart';
 import 'package:ncertclass1to12th/config/appcolor.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
 import 'package:ncertclass1to12th/subject/subjects.dart';
@@ -18,6 +20,37 @@ class Books extends StatefulWidget {
 }
 
 class _BooksState extends State<Books> {
+  late BannerAd _ad;
+  bool _isAdLoaded = false;
+  @override
+  void initState() {
+    super.initState();
+    _createandshowBannerAd();
+  }
+
+  _createandshowBannerAd() {
+    _ad = BannerAd(
+      adUnitId: AdHelper.bannerAdUnitId,
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (_) {
+          setState(() {
+            _isAdLoaded = true;
+          });
+        },
+        onAdFailedToLoad: (ad, error) {
+          // Releases an ad resource when it fails to load
+          ad.dispose();
+
+          print('Ad load failed (code=${error.code} message=${error.message})');
+        },
+      ),
+    );
+
+    _ad.load();
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -40,33 +73,36 @@ class _BooksState extends State<Books> {
             else
               return SafeArea(
                 child: Scaffold(
-                  body: CustomScrollView(
-                    physics: BouncingScrollPhysics(),
-                    slivers: [
-                      SliverAppBar(
-                        flexibleSpace: FlexibleSpaceBar(
-                          collapseMode: CollapseMode.parallax,
-                          background:
-                              SvgPicture.asset('assets/header/books.svg'),
-                        ),
-
-                        expandedHeight: 180,
-                        leading: IconButton(
-                          icon: Icon(Icons.arrow_back_outlined),
-                          onPressed: () => Navigator.pop(context),
-                        ),
-                        actions: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text(
-                              widget.classname,
-                            ),
-                          ),
-                        ], //IconButton
+                  appBar: PreferredSize(
+                    preferredSize: Size.fromHeight(180),
+                    child: AppBar(
+                      flexibleSpace: FlexibleSpaceBar(
+                        collapseMode: CollapseMode.parallax,
+                        background: SvgPicture.asset('assets/header/books.svg'),
                       ),
-                      SliverGrid(
-                          delegate: SliverChildBuilderDelegate(
-                            (context, index) {
+                      actions: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            widget.classname,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  body: ListView(
+                    children: [
+                      Column(
+                        children: [
+                          GridView.builder(
+                            physics: BouncingScrollPhysics(),
+                            gridDelegate:
+                                const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 2,
+                            ),
+                            itemCount: snapshot.data!.bookDataSet.length,
+                            shrinkWrap: true,
+                            itemBuilder: (BuildContext context, int index) {
                               return GestureDetector(
                                 onTap: () {
                                   Navigator.push(
@@ -85,7 +121,8 @@ class _BooksState extends State<Books> {
                                 },
                                 child: Tooltip(
                                   textStyle: TextStyle(color: Colors.white),
-                                  message: widget.classname,
+                                  message: snapshot
+                                      .data!.bookDataSet[index].bookName,
                                   preferBelow: false,
                                   verticalOffset: size.width / 5,
                                   decoration: BoxDecoration(
@@ -164,15 +201,22 @@ class _BooksState extends State<Books> {
                                 ),
                               );
                             },
-                            childCount: snapshot.data!.bookDataSet.length,
                           ),
-                          gridDelegate:
-                              SliverGridDelegateWithMaxCrossAxisExtent(
-                            maxCrossAxisExtent:
-                                MediaQuery.of(context).size.width / 2,
-                            crossAxisSpacing: 5,
-                            mainAxisSpacing: 5,
-                          )),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          _isAdLoaded
+                              ? Container(
+                                  child: AdWidget(ad: _ad),
+                                  width: _ad.size.width.toDouble(),
+                                  height: 72.0,
+                                  alignment: Alignment.center,
+                                )
+                              : Container(
+                                  child: null,
+                                ),
+                        ],
+                      ),
                     ],
                   ),
                 ),

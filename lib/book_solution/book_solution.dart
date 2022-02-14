@@ -33,162 +33,162 @@ class _MyBookandSolutionState extends State<MyBookandSolution> {
     bool isDarkTheme = Provider.of<ThemeProvider>(context).isDarkTheme;
     return SafeArea(
       child: Scaffold(
-        body: CustomScrollView(
-          physics: BouncingScrollPhysics(),
-          slivers: [
-            SliverAppBar(
-              flexibleSpace: FlexibleSpaceBar(
-                collapseMode: CollapseMode.parallax,
-                background:
-                    SvgPicture.asset('assets/header/booksandsolution.svg'),
-              ),
-
-              expandedHeight: 180,
-              leading: IconButton(
-                icon: Icon(Icons.arrow_back_outlined),
-                onPressed: () => Navigator.pop(context),
-              ),
-              titleSpacing: 0,
-              title: Padding(
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(180),
+          child: AppBar(
+            flexibleSpace: FlexibleSpaceBar(
+              collapseMode: CollapseMode.parallax,
+              background:
+                  SvgPicture.asset('assets/header/booksandsolution.svg'),
+            ),
+            actions: [
+              Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: AutoSizeText(
-                  widget.subjectname,
-                  textAlign: TextAlign.right,
-                  style: Theme.of(context).primaryTextTheme.bodyText1,
+                child: Text(
+                  widget.classname,
                 ),
               ),
-              stretch: true, //IconButton
-            ),
-            SliverGrid(
-                delegate: SliverChildBuilderDelegate((context, index) {
-                  return GestureDetector(
-                    onTap: () {
-                      if (widget.bookSolutionDataSet[index].isitbook &&
-                          index + 1 < widget.bookSolutionDataSet.length &&
-                          !widget.bookSolutionDataSet[index + 1].isitbook) {
-                        l.e('This Subject Books has Solutions Books');
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => TopicList(
-                                    bookSolutionDataSet:
-                                        widget.bookSolutionDataSet,
-                                    bookname: widget.bookname,
-                                    booksolutionname: widget
-                                        .bookSolutionDataSet[index]
-                                        .booksolutionname,
-                                    classname: widget.classname,
-                                    solutionindex: index + 1,
-                                    subjectname: widget.subjectname,
-                                    topicDataSet: widget
-                                        .bookSolutionDataSet[index]
-                                        .topicDataset,
-                                  )),
-                        );
-                      } else {
-                        l.e('This Subject Books has not Solutions Books');
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => TopicList(
-                                    bookname: widget.bookname,
-                                    booksolutionname: widget
-                                        .bookSolutionDataSet[index]
-                                        .booksolutionname,
-                                    classname: widget.classname,
-                                    subjectname: widget.subjectname,
-                                    topicDataSet: widget
-                                        .bookSolutionDataSet[index]
-                                        .topicDataset,
-                                  )),
-                        );
-                      }
-                    },
-                    child: Tooltip(
-                      textStyle: TextStyle(color: Colors.white),
-                      message:
-                          widget.bookSolutionDataSet[index].booksolutionname,
-                      preferBelow: false,
-                      verticalOffset: size.width / 5,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                            colors: [
-                              const Color(0xFF2f5fe8),
-                              const Color(0xFF5b59ec),
-                              const Color(0xFF7d50ed),
-                              const Color(0xFF9c43ec),
-                              const Color(0xFFb82fe8),
-                            ],
-                            begin: Alignment.topRight,
-                            end: Alignment.bottomLeft),
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Container(
-                        margin: EdgeInsets.symmetric(
-                          horizontal: size.width / 24,
-                          vertical: size.width / 36,
+            ],
+          ),
+        ),
+        body: ListView(
+          children: [
+            Column(
+              children: [
+                GridView.builder(
+                  physics: BouncingScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                  ),
+                  itemCount: widget.bookSolutionDataSet.length,
+                  shrinkWrap: true,
+                  itemBuilder: (BuildContext context, int index) {
+                    return GestureDetector(
+                      onTap: () {
+                        if (widget.bookSolutionDataSet[index].isitbook &&
+                            index + 1 < widget.bookSolutionDataSet.length &&
+                            !widget.bookSolutionDataSet[index + 1].isitbook) {
+                          l.e('This Subject Books has Solutions Books');
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => TopicList(
+                                      bookSolutionDataSet:
+                                          widget.bookSolutionDataSet,
+                                      bookname: widget.bookname,
+                                      booksolutionname: widget
+                                          .bookSolutionDataSet[index]
+                                          .booksolutionname,
+                                      classname: widget.classname,
+                                      solutionindex: index + 1,
+                                      subjectname: widget.subjectname,
+                                      topicDataSet: widget
+                                          .bookSolutionDataSet[index]
+                                          .topicDataset,
+                                    )),
+                          );
+                        } else {
+                          l.e('This Subject Books has not Solutions Books');
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => TopicList(
+                                      bookname: widget.bookname,
+                                      booksolutionname: widget
+                                          .bookSolutionDataSet[index]
+                                          .booksolutionname,
+                                      classname: widget.classname,
+                                      subjectname: widget.subjectname,
+                                      topicDataSet: widget
+                                          .bookSolutionDataSet[index]
+                                          .topicDataset,
+                                    )),
+                          );
+                        }
+                      },
+                      child: Tooltip(
+                        textStyle: TextStyle(color: Colors.white),
+                        message:
+                            widget.bookSolutionDataSet[index].booksolutionname,
+                        preferBelow: false,
+                        verticalOffset: size.width / 5,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                              colors: [
+                                const Color(0xFF2f5fe8),
+                                const Color(0xFF5b59ec),
+                                const Color(0xFF7d50ed),
+                                const Color(0xFF9c43ec),
+                                const Color(0xFFb82fe8),
+                              ],
+                              begin: Alignment.topRight,
+                              end: Alignment.bottomLeft),
+                          borderRadius: BorderRadius.circular(20),
                         ),
-                        child: Stack(
-                          alignment: Alignment.bottomCenter,
-                          children: <Widget>[
-                            Container(
-                              height: size.width / 3,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(22),
-                                color: index.isEven
-                                    ? AppColor.Second_color
-                                    : AppColor.third_color,
-                              ),
-                              child: Container(
-                                margin: EdgeInsets.only(right: 8),
+                        child: Container(
+                          margin: EdgeInsets.symmetric(
+                            horizontal: size.width / 24,
+                            vertical: size.width / 36,
+                          ),
+                          child: Stack(
+                            alignment: Alignment.bottomCenter,
+                            children: <Widget>[
+                              Container(
+                                height: size.width / 3,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(22),
-                                  color: isDarkTheme
-                                      ? Colors.grey[900]
-                                      : Colors.white,
+                                  color: index.isEven
+                                      ? AppColor.Second_color
+                                      : AppColor.third_color,
+                                ),
+                                child: Container(
+                                  margin: EdgeInsets.only(right: 8),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(22),
+                                    color: isDarkTheme
+                                        ? Colors.grey[900]
+                                        : Colors.white,
+                                  ),
                                 ),
                               ),
-                            ),
-                            Positioned(
-                              top: -size.width / 60,
-                              child: Container(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: size.width / 9,
-                                ),
-                                height: size.width / 3.2,
-                                width: size.width / 2,
-                                child: Image.asset(
-                                  widget.bookSolutionDataSet[index]
-                                      .booksolutionimagesrc,
-                                  fit: BoxFit.contain,
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: AutoSizeText(
-                                  widget.bookSolutionDataSet[index]
-                                      .booksolutionname,
-                                  maxLines: 3,
-                                  textAlign: TextAlign.center,
-                                  style: Theme.of(context)
-                                      .primaryTextTheme
-                                      .bodyText1,
+                              Positioned(
+                                top: -size.width / 60,
+                                child: Container(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: size.width / 9,
+                                  ),
+                                  height: size.width / 3.2,
+                                  width: size.width / 2,
+                                  child: Image.asset(
+                                    widget.bookSolutionDataSet[index]
+                                        .booksolutionimagesrc,
+                                    fit: BoxFit.contain,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                              Positioned(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: AutoSizeText(
+                                    widget.bookSolutionDataSet[index]
+                                        .booksolutionname,
+                                    maxLines: 3,
+                                    textAlign: TextAlign.center,
+                                    style: Theme.of(context)
+                                        .primaryTextTheme
+                                        .bodyText1,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                  );
-                }, childCount: widget.bookSolutionDataSet.length),
-                gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                  maxCrossAxisExtent: MediaQuery.of(context).size.width / 2,
-                  crossAxisSpacing: 5,
-                  mainAxisSpacing: 5,
-                )),
+                    );
+                  },
+                ),
+              ],
+            ),
           ],
         ),
       ),

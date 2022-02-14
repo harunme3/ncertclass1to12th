@@ -28,129 +28,132 @@ class _SubjectState extends State<Subject> {
     bool isDarkTheme = Provider.of<ThemeProvider>(context).isDarkTheme;
     return SafeArea(
       child: Scaffold(
-        body: CustomScrollView(
-          physics: BouncingScrollPhysics(),
-          slivers: [
-            SliverAppBar(
-              flexibleSpace: FlexibleSpaceBar(
-                collapseMode: CollapseMode.parallax,
-                background: SvgPicture.asset('assets/header/subjectheader.svg'),
-              ),
-
-              expandedHeight: 180,
-              leading: IconButton(
-                icon: Icon(Icons.arrow_back_outlined),
-                onPressed: () => Navigator.pop(context),
-              ),
-              actions: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    widget.bookname,
-                  ),
-                ),
-              ], //IconButton
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(180),
+          child: AppBar(
+            flexibleSpace: FlexibleSpaceBar(
+              collapseMode: CollapseMode.parallax,
+              background: SvgPicture.asset('assets/header/subjectheader.svg'),
             ),
-            SliverGrid(
-                delegate: SliverChildBuilderDelegate((context, index) {
-                  return GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => MyBookandSolution(
-                            bookSolutionDataSet: widget
-                                .subjectDataSet[index].bookSolutionDataSet,
-                            bookname: widget.bookname,
-                            classname: widget.classname,
-                            subjectname:
-                                widget.subjectDataSet[index].subjectName,
+            actions: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  widget.classname,
+                ),
+              ),
+            ],
+          ),
+        ),
+        body: ListView(
+          children: [
+            Column(
+              children: [
+                GridView.builder(
+                  physics: BouncingScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                  ),
+                  itemCount: widget.subjectDataSet.length,
+                  shrinkWrap: true,
+                  itemBuilder: (BuildContext context, int index) {
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => MyBookandSolution(
+                              bookSolutionDataSet: widget
+                                  .subjectDataSet[index].bookSolutionDataSet,
+                              bookname: widget.bookname,
+                              classname: widget.classname,
+                              subjectname:
+                                  widget.subjectDataSet[index].subjectName,
+                            ),
                           ),
+                        );
+                      },
+                      child: Tooltip(
+                        textStyle: TextStyle(color: Colors.white),
+                        message: widget.subjectDataSet[index].subjectName,
+                        preferBelow: false,
+                        verticalOffset: size.width / 5,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                              colors: [
+                                const Color(0xFF2f5fe8),
+                                const Color(0xFF5b59ec),
+                                const Color(0xFF7d50ed),
+                                const Color(0xFF9c43ec),
+                                const Color(0xFFb82fe8),
+                              ],
+                              begin: Alignment.topRight,
+                              end: Alignment.bottomLeft),
+                          borderRadius: BorderRadius.circular(20),
                         ),
-                      );
-                    },
-                    child: Tooltip(
-                      textStyle: TextStyle(color: Colors.white),
-                      message: widget.subjectDataSet[index].subjectName,
-                      preferBelow: false,
-                      verticalOffset: size.width / 5,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                            colors: [
-                              const Color(0xFF2f5fe8),
-                              const Color(0xFF5b59ec),
-                              const Color(0xFF7d50ed),
-                              const Color(0xFF9c43ec),
-                              const Color(0xFFb82fe8),
-                            ],
-                            begin: Alignment.topRight,
-                            end: Alignment.bottomLeft),
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Container(
-                        margin: EdgeInsets.symmetric(
-                          horizontal: size.width / 24,
-                          vertical: size.width / 36,
-                        ),
-                        child: Stack(
-                          alignment: Alignment.bottomCenter,
-                          children: <Widget>[
-                            Container(
-                              height: size.width / 3,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(22),
-                                color: index.isEven
-                                    ? AppColor.Second_color
-                                    : AppColor.third_color,
-                              ),
-                              child: Container(
-                                margin: EdgeInsets.only(right: 8),
+                        child: Container(
+                          margin: EdgeInsets.symmetric(
+                            horizontal: size.width / 24,
+                            vertical: size.width / 36,
+                          ),
+                          child: Stack(
+                            alignment: Alignment.bottomCenter,
+                            children: <Widget>[
+                              Container(
+                                height: size.width / 3,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(22),
-                                  color: isDarkTheme
-                                      ? Colors.grey[900]
-                                      : Colors.white,
+                                  color: index.isEven
+                                      ? AppColor.Second_color
+                                      : AppColor.third_color,
+                                ),
+                                child: Container(
+                                  margin: EdgeInsets.only(right: 8),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(22),
+                                    color: isDarkTheme
+                                        ? Colors.grey[900]
+                                        : Colors.white,
+                                  ),
                                 ),
                               ),
-                            ),
-                            Positioned(
-                              top: -size.width / 60,
-                              child: Container(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: size.width / 9,
-                                ),
-                                height: size.width / 3.2,
-                                width: size.width / 2,
-                                child: Image.asset(
-                                  widget.subjectDataSet[index].subjectimagesrc,
-                                  fit: BoxFit.contain,
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: AutoSizeText(
-                                  widget.subjectDataSet[index].subjectName,
-                                  maxLines: 3,
-                                  textAlign: TextAlign.center,
-                                  style: Theme.of(context)
-                                      .primaryTextTheme
-                                      .bodyText1,
+                              Positioned(
+                                top: -size.width / 60,
+                                child: Container(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: size.width / 9,
+                                  ),
+                                  height: size.width / 3.2,
+                                  width: size.width / 2,
+                                  child: Image.asset(
+                                    widget
+                                        .subjectDataSet[index].subjectimagesrc,
+                                    fit: BoxFit.contain,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                              Positioned(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: AutoSizeText(
+                                    widget.subjectDataSet[index].subjectName,
+                                    maxLines: 3,
+                                    textAlign: TextAlign.center,
+                                    style: Theme.of(context)
+                                        .primaryTextTheme
+                                        .bodyText1,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                  );
-                }, childCount: widget.subjectDataSet.length),
-                gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                  maxCrossAxisExtent: MediaQuery.of(context).size.width / 2,
-                  crossAxisSpacing: 5,
-                  mainAxisSpacing: 5,
-                )),
+                    );
+                  },
+                ),
+              ],
+            ),
           ],
         ),
       ),
