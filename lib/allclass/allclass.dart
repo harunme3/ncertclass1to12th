@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_switch/flutter_switch.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
+import 'package:ncertclass1to12th/App_review/app_review.dart';
 import 'package:ncertclass1to12th/Modals/classdata.dart';
 import 'package:ncertclass1to12th/books/books.dart';
 import 'package:ncertclass1to12th/books/pdf_floatingactionbutton.dart';
@@ -34,12 +35,40 @@ class _AllClassState extends State<AllClass> {
     return ClassDataSet.fromJson(jsonresponse);
   }
 
-  void askforrate(BuildContext context) {
-    showDialog(
-        context: context,
-        builder: (context) {
-          return AlertDialog();
-        });
+  Future<bool> showExitPopup() async {
+    return await showDialog(
+          //show confirm dialogue
+          //the return value will be from "Yes" or "No" options
+          context: context,
+          builder: (context) => AlertDialog(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(20))),
+            title: AutoSizeText(
+              'Exit App',
+              textAlign: TextAlign.center,
+              style: Theme.of(context).primaryTextTheme.bodyText1,
+            ),
+            content: Text(
+              'please_rate_us',
+              textAlign: TextAlign.center,
+              style: Theme.of(context).primaryTextTheme.bodyText1,
+            ).tr(),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  AppReview.rateAndReviewApp();
+                  Navigator.of(context).pop(false);
+                },
+                child: Text('Rate'),
+              ),
+              TextButton(
+                onPressed: () => Navigator.of(context).pop(true),
+                child: Text('Exit'),
+              ),
+            ],
+          ),
+        ) ??
+        false; //if showDialouge had returned null, then return false
   }
 
   @override
@@ -47,10 +76,7 @@ class _AllClassState extends State<AllClass> {
     Size size = MediaQuery.of(context).size;
     bool isDarkTheme = Provider.of<ThemeProvider>(context).isDarkTheme;
     return WillPopScope(
-      onWillPop: () {
-        askforrate(context);
-        return Future.value(true);
-      },
+      onWillPop: showExitPopup,
       child: FutureBuilder<ClassDataSet>(
         future: loadJsonClassDataSet(), // async work
         builder: (BuildContext context, AsyncSnapshot<ClassDataSet> snapshot) {
