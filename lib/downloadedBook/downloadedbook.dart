@@ -22,8 +22,34 @@ class DownloadedBook extends StatefulWidget {
 const int maxFailedLoadAttempts = 3;
 
 class _DownloadedBookState extends State<DownloadedBook> {
+  var l = Logger();
+
   InterstitialAd? _interstitialAd;
   int _interstitialLoadAttempts = 0;
+
+  @override
+  void dispose() {
+    super.dispose();
+    _interstitialAd?.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _createInterstitialAd();
+  }
+
+  Future<List<String>> fileoperation() async {
+    Directory dir = await getApplicationDocumentsDirectory();
+
+    var listofpdf = dir
+        .listSync()
+        .map((item) => item.path)
+        .where((element) => element.endsWith('.pdf'))
+        .toList();
+
+    return listofpdf;
+  }
 
   void _createInterstitialAd() {
     InterstitialAd.load(
@@ -59,31 +85,6 @@ class _DownloadedBookState extends State<DownloadedBook> {
       );
       _interstitialAd!.show();
     }
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _createInterstitialAd();
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-    _interstitialAd?.dispose();
-  }
-
-  var l = Logger();
-  Future<List<String>> fileoperation() async {
-    Directory dir = await getApplicationDocumentsDirectory();
-
-    var listofpdf = dir
-        .listSync()
-        .map((item) => item.path)
-        .where((element) => element.endsWith('.pdf'))
-        .toList();
-
-    return listofpdf;
   }
 
   @override

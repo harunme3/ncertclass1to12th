@@ -38,7 +38,6 @@ class PdfViewLocation extends StatefulWidget {
 const int maxFailedLoadAttempts = 3;
 
 class _PdfViewLocationState extends State<PdfViewLocation> {
-  SideRoughStatus sideRoughStatus = SideRoughStatus(false);
   late PDFViewController controller;
   int indexPage = 0;
 //pdfviewcontroller
@@ -47,11 +46,42 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
   int pages = 0;
   final PanelController panelController = PanelController();
   final ScreenshotController screenshotController = ScreenshotController();
+  SideRoughStatus sideRoughStatus = SideRoughStatus(false);
 
-//Alert Diologe
-  TextEditingController _textFieldController = TextEditingController();
   InterstitialAd? _interstitialAd;
   int _interstitialLoadAttempts = 0;
+//Alert Diologe
+  TextEditingController _textFieldController = TextEditingController();
+
+  @override
+  void dispose() {
+    super.dispose();
+    _interstitialAd?.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    setpdfpath();
+    _createInterstitialAd();
+  }
+
+  setpdfpath() async {
+    final pdfbox = await Hive.openBox('pdfbox');
+    pdfbox.clear();
+    pdfbox.put('lastopenpdf', widget.file.path);
+    pdfbox.close();
+  }
+
+  Future ishintdownloaded(String filename) async {
+    Directory dir = await getApplicationDocumentsDirectory();
+    final file = File('${dir.path}/$filename');
+    if (file.existsSync()) {
+      return file;
+    } else {
+      return false;
+    }
+  }
 
   void _createInterstitialAd() {
     InterstitialAd.load(
@@ -86,36 +116,6 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
         },
       );
       _interstitialAd!.show();
-    }
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-    _interstitialAd?.dispose();
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    setpdfpath();
-    _createInterstitialAd();
-  }
-
-  setpdfpath() async {
-    final pdfbox = await Hive.openBox('pdfbox');
-    pdfbox.clear();
-    pdfbox.put('lastopenpdf', widget.file.path);
-    pdfbox.close();
-  }
-
-  Future ishintdownloaded(String filename) async {
-    Directory dir = await getApplicationDocumentsDirectory();
-    final file = File('${dir.path}/$filename');
-    if (file.existsSync()) {
-      return file;
-    } else {
-      return false;
     }
   }
 

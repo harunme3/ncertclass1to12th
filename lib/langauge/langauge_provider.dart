@@ -6,9 +6,9 @@ import 'dart:convert';
 import 'package:hive/hive.dart';
 
 class LangaugeProvider with ChangeNotifier {
-  bool isHindi;
-
   LangaugeProvider(this.isHindi);
+
+  bool isHindi;
 
   bool get getselectedLangauge => isHindi;
 

@@ -1,10 +1,4 @@
 class AllPlaylistModel {
-  final int totalvideos;
-  final String thumbnailUrl;
-  final String channelTitle;
-  final String playlistId;
-  final String title;
-
   AllPlaylistModel({
     required this.thumbnailUrl,
     required this.channelTitle,
@@ -23,4 +17,10 @@ class AllPlaylistModel {
       title: snippet['title'],
     );
   }
+
+  final String channelTitle;
+  final String playlistId;
+  final String thumbnailUrl;
+  final String title;
+  final int totalvideos;
 }

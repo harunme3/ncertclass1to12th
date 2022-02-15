@@ -14,6 +14,20 @@ class Onboarding extends StatefulWidget {
 }
 
 class _OnboardingState extends State<Onboarding> {
+  void goToHome(context) => Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (_) => Home()),
+      );
+
+  DotsDecorator getDotDecoration() => DotsDecorator(
+        color: Color(0xFFBDBDBD),
+        activeColor: AppColor.first_color,
+        size: Size(10, 10),
+        activeSize: Size(22, 10),
+        activeShape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(24),
+        ),
+      );
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -44,18 +58,4 @@ class _OnboardingState extends State<Onboarding> {
       ),
     );
   }
-
-  void goToHome(context) => Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => Home()),
-      );
-
-  DotsDecorator getDotDecoration() => DotsDecorator(
-        color: Color(0xFFBDBDBD),
-        activeColor: AppColor.first_color,
-        size: Size(10, 10),
-        activeSize: Size(22, 10),
-        activeShape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(24),
-        ),
-      );
 }

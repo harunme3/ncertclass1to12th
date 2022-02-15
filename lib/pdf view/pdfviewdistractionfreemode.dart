@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:uc_pdfview/uc_pdfview.dart';
 
 class PdfViewDistractionFreeMode extends StatefulWidget {
-  final File file;
   PdfViewDistractionFreeMode(this.file);
+
+  final File file;
 
   @override
   _PdfViewDistractionFreeModeState createState() =>

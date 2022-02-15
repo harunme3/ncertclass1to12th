@@ -1,9 +1,4 @@
 class VideoAllPlaylistModel {
-  final String id;
-  final String thumbnailUrl;
-  final String title;
-  final int totalvideos;
-
   VideoAllPlaylistModel({
     required this.id,
     required this.thumbnailUrl,
@@ -20,4 +15,9 @@ class VideoAllPlaylistModel {
       totalvideos: totalvideos,
     );
   }
+
+  final String id;
+  final String thumbnailUrl;
+  final String title;
+  final int totalvideos;
 }

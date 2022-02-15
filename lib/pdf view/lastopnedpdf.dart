@@ -5,8 +5,9 @@ import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:uc_pdfview/uc_pdfview.dart';
 
 class LastOpenedPdf extends StatefulWidget {
-  final String path;
   const LastOpenedPdf({Key? key, required this.path}) : super(key: key);
+
+  final String path;
 
   @override
   _LastOpenedPdfState createState() => _LastOpenedPdfState();

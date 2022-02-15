@@ -12,6 +12,13 @@ class PrivacyPolicy extends StatefulWidget {
 class _PrivacyPolicyState extends State<PrivacyPolicy> {
   late BannerAd _ad;
   bool _isAdLoaded = false;
+
+  @override
+  void dispose() {
+    _ad.dispose();
+    super.dispose();
+  }
+
   @override
   void initState() {
     super.initState();
@@ -39,12 +46,6 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
     );
 
     _ad.load();
-  }
-
-  @override
-  void dispose() {
-    _ad.dispose();
-    super.dispose();
   }
 
   @override

@@ -4,7 +4,6 @@ import 'package:http/http.dart' as http;
 import 'package:ncertclass1to12th/ncertvideos/Models/allplaylistmodel.dart';
 import 'package:ncertclass1to12th/ncertvideos/utilities/key.dart';
 
-
 class APIService {
   APIService._instantiate();
 

@@ -12,9 +12,9 @@ class Paneloption extends StatelessWidget {
       this.scrollController, this.screenshotController, this.panelController);
 
   final l = Logger();
+  final PanelController panelController;
   final ScreenshotController screenshotController;
   final ScrollController scrollController;
-  final PanelController panelController;
 
   @override
   Widget build(BuildContext context) {

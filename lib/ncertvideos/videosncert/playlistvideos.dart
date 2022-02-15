@@ -15,9 +15,16 @@ class PlaylistVideos extends StatefulWidget {
 }
 
 class _PlaylistVideosState extends State<PlaylistVideos> {
-  ScrollController _controller = ScrollController();
   List<VideoAllPlaylistModel> videolist = [];
+
+  ScrollController _controller = ScrollController();
   bool _isLoading = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _initVideolist(widget.playlistId);
+  }
 
   _initVideolist(id) async {
     List<VideoAllPlaylistModel> allPlaylistModel =
@@ -25,12 +32,6 @@ class _PlaylistVideosState extends State<PlaylistVideos> {
     setState(() {
       videolist = allPlaylistModel;
     });
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _initVideolist(widget.playlistId);
   }
 
   _loadMoreVideos(id) async {

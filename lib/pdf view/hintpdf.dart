@@ -7,8 +7,9 @@ import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:uc_pdfview/uc_pdfview.dart';
 
 class HintPdf extends StatefulWidget {
-  final File file;
   const HintPdf({Key? key, required this.file}) : super(key: key);
+
+  final File file;
 
   @override
   _HintPdfState createState() => _HintPdfState();

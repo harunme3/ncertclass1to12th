@@ -10,10 +10,10 @@ class _CorrectionFormState extends State<CorrectionForm> {
   late String bookName;
   late String chapterName;
   late String email;
+  late String others;
   late String pageNo;
   late String subjectName;
   late String topicName;
-  late String others;
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 

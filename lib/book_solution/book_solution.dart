@@ -28,8 +28,11 @@ class MyBookandSolution extends StatefulWidget {
 }
 
 class _MyBookandSolutionState extends State<MyBookandSolution> {
+  var l = Logger();
+
   late BannerAd _ad;
   bool _isAdLoaded = false;
+
   @override
   void initState() {
     super.initState();
@@ -59,7 +62,6 @@ class _MyBookandSolutionState extends State<MyBookandSolution> {
     _ad.load();
   }
 
-  var l = Logger();
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;

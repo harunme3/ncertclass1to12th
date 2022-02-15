@@ -24,37 +24,40 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Container(
-              height: size.height / 3,
-              width: size.width,
-              child: SvgPicture.asset('assets/header/Splashscreen.svg'),
-            ),
-          ),
-          Column(
-            children: [
-              Container(
-                  child: AutoSizeText(
-                'Virtual Study',
-                maxFontSize: 36,
-                minFontSize: 28,
-                textAlign: TextAlign.center,
-              )),
-              Container(
-                child: AutoSizeText(
-                  'NCERT Hindi Class All',
-                  maxFontSize: 28,
-                  minFontSize: 18,
-                  textAlign: TextAlign.center,
-                ),
+      body: Container(
+        color: Colors.white,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Container(
+                height: size.height / 3,
+                width: size.width,
+                child: SvgPicture.asset('assets/header/Splashscreen.svg'),
               ),
-            ],
-          )
-        ],
+            ),
+            Column(
+              children: [
+                Container(
+                    child: AutoSizeText(
+                  'Virtual Study',
+                  maxFontSize: 36,
+                  minFontSize: 28,
+                  textAlign: TextAlign.center,
+                )),
+                Container(
+                  child: AutoSizeText(
+                    'NCERT Hindi Class All',
+                    maxFontSize: 28,
+                    minFontSize: 18,
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

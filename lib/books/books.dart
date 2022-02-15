@@ -22,6 +22,13 @@ class Books extends StatefulWidget {
 class _BooksState extends State<Books> {
   late BannerAd _ad;
   bool _isAdLoaded = false;
+
+  @override
+  void dispose() {
+    _ad.dispose();
+    super.dispose();
+  }
+
   @override
   void initState() {
     super.initState();
@@ -49,12 +56,6 @@ class _BooksState extends State<Books> {
     );
 
     _ad.load();
-  }
-
-  @override
-  void dispose() {
-    _ad.dispose();
-    super.dispose();
   }
 
   @override

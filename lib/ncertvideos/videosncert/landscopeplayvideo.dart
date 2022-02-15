@@ -4,6 +4,7 @@ import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
 class LandscopePlayVideo extends StatefulWidget {
   const LandscopePlayVideo({required this.videoid});
+
   final String videoid;
 
   @override
@@ -12,6 +13,15 @@ class LandscopePlayVideo extends StatefulWidget {
 
 class _LandscopePlayVideoState extends State<LandscopePlayVideo> {
   late YoutubePlayerController _controller;
+
+  @override
+  void dispose() {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
+    super.dispose();
+  }
 
   @override
   void initState() {
@@ -30,15 +40,6 @@ class _LandscopePlayVideoState extends State<LandscopePlayVideo> {
           playsInline: true,
           autoPlay: true),
     );
-  }
-
-  @override
-  void dispose() {
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitUp,
-      DeviceOrientation.portraitDown,
-    ]);
-    super.dispose();
   }
 
   @override

@@ -139,7 +139,14 @@ class _AllPlaylistState extends State<AllPlaylist> {
               } else if (snapshot.hasData) {
                 if (snapshot.data!.length == 0) {
                   return Center(
-                    child: Container(child: Text('No data Found')),
+                    child: Container(
+                      child: AutoSizeText(
+                        'No Videos Found',
+                        maxLines: 2,
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context).primaryTextTheme.bodyText1,
+                      ),
+                    ),
                   );
                 } else {
                   return ListView.builder(

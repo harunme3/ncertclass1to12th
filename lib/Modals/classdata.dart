@@ -1,6 +1,4 @@
 class ClassDataSet {
-  final List<ClassNameDataSet> classDataSet;
-
   ClassDataSet({required this.classDataSet});
 
   factory ClassDataSet.fromJson(Map<String, dynamic> data) {
@@ -9,12 +7,11 @@ class ClassDataSet {
         list.map((e) => ClassNameDataSet.fromJson(e)).toList();
     return ClassDataSet(classDataSet: classDataSetlist);
   }
+
+  final List<ClassNameDataSet> classDataSet;
 }
 
 class ClassNameDataSet {
-  final String className;
-  final String classImageSrc;
-
   ClassNameDataSet({required this.className, required this.classImageSrc});
 
   factory ClassNameDataSet.fromJson(Map<String, dynamic> data) {
@@ -23,4 +20,7 @@ class ClassNameDataSet {
       classImageSrc: data['class_image_src'],
     );
   }
+
+  final String classImageSrc;
+  final String className;
 }

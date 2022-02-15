@@ -21,6 +21,18 @@ class _LastopenPDFButtonState extends State<LastopenPDFButton> {
   InterstitialAd? _interstitialAd;
   int _interstitialLoadAttempts = 0;
 
+  @override
+  void dispose() {
+    super.dispose();
+    _interstitialAd?.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _createInterstitialAd();
+  }
+
   void _createInterstitialAd() {
     InterstitialAd.load(
       adUnitId: AdHelper.interstitialAdUnitId,
@@ -55,18 +67,6 @@ class _LastopenPDFButtonState extends State<LastopenPDFButton> {
       );
       _interstitialAd!.show();
     }
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _createInterstitialAd();
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-    _interstitialAd?.dispose();
   }
 
   @override

@@ -11,26 +11,6 @@ class ThemeChanger extends StatefulWidget {
 }
 
 class _ThemeChangerState extends State<ThemeChanger> {
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      child: Row(
-        children: [
-          Icon(
-            Icons.dark_mode_outlined,
-          ),
-          SizedBox(
-            width: 10,
-          ),
-          Text('theme_changer',
-                  style: Theme.of(context).primaryTextTheme.bodyText1)
-              .tr()
-        ],
-      ),
-      onTap: () => _showThemeDialoge(context),
-    );
-  }
-
   _showThemeDialoge(BuildContext context) {
     showDialog(
         barrierColor: Colors.white.withOpacity(0),
@@ -128,5 +108,25 @@ class _ThemeChangerState extends State<ThemeChanger> {
                 ],
               ));
         });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Row(
+        children: [
+          Icon(
+            Icons.dark_mode_outlined,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Text('theme_changer',
+                  style: Theme.of(context).primaryTextTheme.bodyText1)
+              .tr()
+        ],
+      ),
+      onTap: () => _showThemeDialoge(context),
+    );
   }
 }

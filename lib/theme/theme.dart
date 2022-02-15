@@ -3,9 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hive/hive.dart';
 
 class ThemeProvider with ChangeNotifier {
-  bool isDarkTheme;
-
   ThemeProvider(this.isDarkTheme);
+
+  bool isDarkTheme;
 
   // use to toggle the theme
   toggleThemeData() async {
@@ -43,7 +43,7 @@ class ThemeProvider with ChangeNotifier {
               bodyText1:
                   TextStyle(color: Colors.black, fontWeight: FontWeight.normal),
             ),
-     textTheme: GoogleFonts.robotoTextTheme(),
+      textTheme: GoogleFonts.robotoTextTheme(),
     );
   }
 }

@@ -14,7 +14,9 @@ import 'package:provider/provider.dart';
 
 class VideoBook extends StatefulWidget {
   const VideoBook({required this.classname});
+
   final String classname;
+
   @override
   _VideoBookState createState() => _VideoBookState();
 }
@@ -22,10 +24,24 @@ class VideoBook extends StatefulWidget {
 class _VideoBookState extends State<VideoBook> {
   late BannerAd _ad;
   bool _isAdLoaded = false;
+
+  @override
+  void dispose() {
+    _ad.dispose();
+    super.dispose();
+  }
+
   @override
   void initState() {
     super.initState();
     _createandshowBannerAd();
+  }
+
+  Future<ClassDataSet> loadJsonClassDataSet() async {
+    String jsonstring = await rootBundle
+        .loadString('assets/alldata_image/all/classnamedata_image.json');
+    final jsonresponse = json.decode(jsonstring);
+    return ClassDataSet.fromJson(jsonresponse);
   }
 
   _createandshowBannerAd() {
@@ -49,19 +65,6 @@ class _VideoBookState extends State<VideoBook> {
     );
 
     _ad.load();
-  }
-
-  @override
-  void dispose() {
-    _ad.dispose();
-    super.dispose();
-  }
-
-  Future<ClassDataSet> loadJsonClassDataSet() async {
-    String jsonstring = await rootBundle
-        .loadString('assets/alldata_image/all/classnamedata_image.json');
-    final jsonresponse = json.decode(jsonstring);
-    return ClassDataSet.fromJson(jsonresponse);
   }
 
   @override

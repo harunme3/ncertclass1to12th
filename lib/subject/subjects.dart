@@ -26,6 +26,7 @@ class Subject extends StatefulWidget {
 class _SubjectState extends State<Subject> {
   late BannerAd _ad;
   bool _isAdLoaded = false;
+
   @override
   void initState() {
     super.initState();

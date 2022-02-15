@@ -3,8 +3,9 @@ import 'package:ncertclass1to12th/ncertvideos/videosncert/landscopeplayvideo.dar
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
 class PlayVideos extends StatefulWidget {
-  final String videoid;
   const PlayVideos(this.videoid);
+
+  final String videoid;
 
   @override
   _PlayVideosState createState() => _PlayVideosState();

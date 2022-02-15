@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:uc_pdfview/uc_pdfview.dart';
 
 class PdfDarkMode extends StatelessWidget {
-  final File file;
-
   const PdfDarkMode(this.file);
+
+  final File file;
 
   @override
   Widget build(BuildContext context) {

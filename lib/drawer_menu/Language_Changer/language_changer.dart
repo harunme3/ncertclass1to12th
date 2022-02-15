@@ -12,26 +12,6 @@ class LanguageChanger extends StatefulWidget {
 }
 
 class _LanguageChangerState extends State<LanguageChanger> {
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      child: Row(
-        children: [
-          Icon(
-            Icons.translate,
-          ),
-          SizedBox(
-            width: 10,
-          ),
-          Text('language_changer',
-                  style: Theme.of(context).primaryTextTheme.bodyText1)
-              .tr()
-        ],
-      ),
-      onTap: () => _showLanguageDialoge(context),
-    );
-  }
-
   _showLanguageDialoge(BuildContext context) {
     showDialog(
         barrierColor: Colors.white.withOpacity(0),
@@ -126,5 +106,25 @@ class _LanguageChangerState extends State<LanguageChanger> {
                 ],
               ));
         });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Row(
+        children: [
+          Icon(
+            Icons.translate,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Text('language_changer',
+                  style: Theme.of(context).primaryTextTheme.bodyText1)
+              .tr()
+        ],
+      ),
+      onTap: () => _showLanguageDialoge(context),
+    );
   }
 }

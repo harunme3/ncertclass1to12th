@@ -1,6 +1,4 @@
 class DataSet {
-  final List<BookDataSet> bookDataSet;
-
   DataSet({required this.bookDataSet});
 
   factory DataSet.fromJson(Map<String, dynamic> data) {
@@ -9,13 +7,11 @@ class DataSet {
         list.map((e) => BookDataSet.fromJson(e)).toList();
     return DataSet(bookDataSet: bookDataSetlist);
   }
+
+  final List<BookDataSet> bookDataSet;
 }
 
 class BookDataSet {
-  final String bookName;
-  final String bookImageSrc;
-  final List<SubjectDataSet> subjectDataSet;
-
   BookDataSet(
       {required this.bookName,
       required this.bookImageSrc,
@@ -30,13 +26,13 @@ class BookDataSet {
         bookImageSrc: data['book_image_src'],
         subjectDataSet: subjectDataSetlist);
   }
+
+  final String bookImageSrc;
+  final String bookName;
+  final List<SubjectDataSet> subjectDataSet;
 }
 
 class SubjectDataSet {
-  final String subjectName;
-  final String subjectimagesrc;
-  final List<BookSolutionDataSet> bookSolutionDataSet;
-
   SubjectDataSet({
     required this.subjectName,
     required this.subjectimagesrc,
@@ -54,14 +50,13 @@ class SubjectDataSet {
       bookSolutionDataSet: bookSolutionDataSetlist,
     );
   }
+
+  final List<BookSolutionDataSet> bookSolutionDataSet;
+  final String subjectName;
+  final String subjectimagesrc;
 }
 
 class BookSolutionDataSet {
-  final String booksolutionname;
-  final String booksolutionimagesrc;
-  final bool isitbook;
-  final List<TopicDataSet> topicDataset;
-
   BookSolutionDataSet(
       {required this.booksolutionname,
       required this.booksolutionimagesrc,
@@ -80,14 +75,19 @@ class BookSolutionDataSet {
       topicDataset: topicDatasetlist,
     );
   }
+
+  final String booksolutionimagesrc;
+  final String booksolutionname;
+  final bool isitbook;
+  final List<TopicDataSet> topicDataset;
 }
 
 class TopicDataSet {
-  final String topicName;
-
   TopicDataSet({required this.topicName});
 
   factory TopicDataSet.fromJson(Map<String, dynamic> data) {
     return TopicDataSet(topicName: data['topic_name']);
   }
+
+  final String topicName;
 }

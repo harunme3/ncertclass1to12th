@@ -12,9 +12,11 @@ class VideoSubject extends StatefulWidget {
       {required this.bookname,
       required this.classname,
       required this.subjectDataSet});
+
   final String bookname;
   final String classname;
   final List<SubjectDataSet> subjectDataSet;
+
   @override
   _VideoSubjectState createState() => _VideoSubjectState();
 }
@@ -25,6 +27,18 @@ const int maxFailedLoadAttempts = 3;
 class _VideoSubjectState extends State<VideoSubject> {
   InterstitialAd? _interstitialAd;
   int _interstitialLoadAttempts = 0;
+
+  @override
+  void dispose() {
+    super.dispose();
+    _interstitialAd?.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _createInterstitialAd();
+  }
 
   void _createInterstitialAd() {
     InterstitialAd.load(
@@ -60,18 +74,6 @@ class _VideoSubjectState extends State<VideoSubject> {
       );
       _interstitialAd!.show();
     }
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _createInterstitialAd();
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-    _interstitialAd?.dispose();
   }
 
   @override
