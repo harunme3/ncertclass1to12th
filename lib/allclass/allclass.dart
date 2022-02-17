@@ -44,6 +44,7 @@ class _AllClassState extends State<AllClass> {
             title: AutoSizeText(
               'Exit App',
               textAlign: TextAlign.center,
+              minFontSize: 18,
               style: Theme.of(context).primaryTextTheme.bodyText1,
             ),
             content: Text(
@@ -57,11 +58,17 @@ class _AllClassState extends State<AllClass> {
                   AppReview.rateAndReviewApp();
                   Navigator.of(context).pop(false);
                 },
-                child: Text('Rate'),
+                child: AutoSizeText(
+                  'Rate',
+                  minFontSize: 18,
+                ),
               ),
               TextButton(
                 onPressed: () => Navigator.of(context).pop(true),
-                child: Text('Exit'),
+                child: AutoSizeText(
+                  'Exit',
+                  minFontSize: 18,
+                ),
               ),
             ],
           ),
