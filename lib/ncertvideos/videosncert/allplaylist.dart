@@ -22,13 +22,70 @@ class AllPlaylist extends StatefulWidget {
   final String classname;
   final String medium;
   final String subjectname;
+
   @override
   _AllPlaylistState createState() => _AllPlaylistState();
 }
 
 class _AllPlaylistState extends State<AllPlaylist> {
+  String isclicked = "";
+  var l = Logger();
+
   InterstitialAd? _interstitialAd;
   int _interstitialLoadAttempts = 0;
+
+  @override
+  void dispose() {
+    super.dispose();
+    _interstitialAd?.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _createInterstitialAd();
+  }
+
+  Future<List<String>> fetchplaylistid() async {
+    String bookname = widget.bookname.split(' ')[0].toUpperCase();
+    List<String> list = [];
+    CollectionReference<Map<String, dynamic>> ref = await FirebaseFirestore
+        .instance
+        .collection('Education')
+        .doc('NCERT and Exampler')
+        .collection(widget.classname)
+        .doc(bookname)
+        .collection(widget.subjectname);
+
+    QuerySnapshot<Map<String, dynamic>> snapshot = await ref.get();
+    snapshot.docs.forEach((doc) {
+      list = list + List.from(doc.data()['playlistId']);
+    });
+    return list;
+  }
+
+  Future<List<String>> filterfetchplaylistid(String medium) async {
+    String bookname = widget.bookname.split(' ')[0].toUpperCase();
+    List<String> list = [];
+    CollectionReference<Map<String, dynamic>> ref = await FirebaseFirestore
+        .instance
+        .collection('Education')
+        .doc('NCERT and Exampler')
+        .collection(widget.classname)
+        .doc(bookname)
+        .collection(widget.subjectname);
+
+    QuerySnapshot<Map<String, dynamic>> snapshot = await ref.get();
+    snapshot.docs.forEach((doc) {
+      for (var i = 0; i < doc.data()['language_code'].length; i++) {
+        if (doc.data()['language_code'][i] == medium) {
+          list.add(doc.data()['playlistId'][i]);
+        }
+      }
+    });
+
+    return list;
+  }
 
   void _createInterstitialAd() {
     InterstitialAd.load(
@@ -66,43 +123,14 @@ class _AllPlaylistState extends State<AllPlaylist> {
     }
   }
 
-  @override
-  void initState() {
-    super.initState();
-    _createInterstitialAd();
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-    _interstitialAd?.dispose();
-  }
-
-  var l = Logger();
-
-  Future<List<String>> fetchplaylistid() async {
-    String bookname = widget.bookname.split(' ')[0].toUpperCase();
-    List<String> list = [];
-    CollectionReference<Map<String, dynamic>> ref = await FirebaseFirestore
-        .instance
-        .collection('Education')
-        .doc('NCERT and Exampler')
-        .collection(widget.classname)
-        .doc(widget.medium)
-        .collection(bookname)
-        .doc(widget.subjectname)
-        .collection('Playlist');
-
-    QuerySnapshot<Map<String, dynamic>> snapshot = await ref.get();
-    snapshot.docs.forEach((doc) {
-      list = list + List.from(doc.data()['playlistId']);
-    });
-    l.e(list);
-    return list;
-  }
-
-  Future<List<List<AllPlaylistModel>>> _initPlaylist() async {
-    final List<String> playlistids = await fetchplaylistid();
+  Future<List<List<AllPlaylistModel>>> _initPlaylist(
+      [String medium = ""]) async {
+    final List<String> playlistids;
+    if (medium == "en" || medium == "hi") {
+      playlistids = await filterfetchplaylistid(medium);
+    } else {
+      playlistids = await fetchplaylistid();
+    }
 
     List<List<AllPlaylistModel>> list = [];
     for (var id in playlistids) {
@@ -113,17 +141,60 @@ class _AllPlaylistState extends State<AllPlaylist> {
       }
     }
 
-    l.w(list);
-
     return list;
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        actions: [
+          PopupMenuButton(
+            itemBuilder: (context) => [
+              PopupMenuItem(
+                child: Text(
+                  'Hindi Voice',
+                  style: Theme.of(context).primaryTextTheme.bodyText1,
+                ),
+                onTap: () {
+                  setState(() {
+                    isclicked = "hi";
+                  });
+                },
+              ),
+              PopupMenuItem(
+                child: Text(
+                  'English Voice',
+                  style: Theme.of(context).primaryTextTheme.bodyText1,
+                ),
+                onTap: () {
+                  setState(() {
+                    isclicked = "en";
+                  });
+                },
+              ),
+              PopupMenuItem(
+                child: Text(
+                  'All',
+                  style: Theme.of(context).primaryTextTheme.bodyText1,
+                ),
+                onTap: () {
+                  setState(() {
+                    isclicked = "";
+                  });
+                },
+              ),
+            ],
+            icon: Icon(
+              Icons.filter_list_outlined,
+            ),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+          )
+        ],
+      ),
       body: FutureBuilder<List<List<AllPlaylistModel>>>(
-          future: _initPlaylist(),
+          future: isclicked == "" ? _initPlaylist() : _initPlaylist(isclicked),
           builder:
               (context, AsyncSnapshot<List<List<AllPlaylistModel>>> snapshot) {
             if (snapshot.connectionState == ConnectionState.done) {
