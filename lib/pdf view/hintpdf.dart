@@ -81,12 +81,6 @@ class _HintPdfState extends State<HintPdf> {
             ),
             IconButton(
               icon: Icon(
-                Icons.brush_outlined,
-              ),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(
                 Icons.more_vert,
               ),
               onPressed: () {

@@ -34,10 +34,12 @@ class _AllPlaylistState extends State<AllPlaylist> {
   InterstitialAd? _interstitialAd;
   int _interstitialLoadAttempts = 0;
 
+  List<List<AllPlaylistModel>> listofid = [];
   @override
   void dispose() {
     super.dispose();
     _interstitialAd?.dispose();
+    listofid.clear();
   }
 
   @override
@@ -59,7 +61,11 @@ class _AllPlaylistState extends State<AllPlaylist> {
 
     QuerySnapshot<Map<String, dynamic>> snapshot = await ref.get();
     snapshot.docs.forEach((doc) {
-      list = list + List.from(doc.data()['playlistId']);
+      for (var i = 0; i < doc.data()['playlistId'].length; i++) {
+        String data = doc.data()['playlistId'][i];
+
+        list.add(data.trim());
+      }
     });
     return list;
   }
@@ -79,7 +85,9 @@ class _AllPlaylistState extends State<AllPlaylist> {
     snapshot.docs.forEach((doc) {
       for (var i = 0; i < doc.data()['language_code'].length; i++) {
         if (doc.data()['language_code'][i] == medium) {
-          list.add(doc.data()['playlistId'][i]);
+          String data = doc.data()['playlistId'][i];
+
+          list.add(data.trim());
         }
       }
     });
@@ -132,16 +140,16 @@ class _AllPlaylistState extends State<AllPlaylist> {
       playlistids = await fetchplaylistid();
     }
 
-    List<List<AllPlaylistModel>> list = [];
+    listofid.clear();
     for (var id in playlistids) {
       List<AllPlaylistModel> allPlaylistModel =
           await APIService.instance.fetchVideosFromPlaylist(playlistId: id);
       if (allPlaylistModel.isNotEmpty) {
-        list.add(allPlaylistModel);
+        listofid.add(allPlaylistModel);
       }
     }
 
-    return list;
+    return listofid;
   }
 
   @override
