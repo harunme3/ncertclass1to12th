@@ -77,12 +77,7 @@ class _LastOpenedPdfState extends State<LastOpenedPdf> {
                 );
               },
             ),
-            IconButton(
-              icon: Icon(
-                Icons.brush_outlined,
-              ),
-              onPressed: () {},
-            ),
+        
             IconButton(
               icon: Icon(
                 Icons.more_vert,
