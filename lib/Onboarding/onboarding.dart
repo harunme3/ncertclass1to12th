@@ -37,7 +37,6 @@ class _OnboardingState extends State<Onboarding> {
           Welcome(),
           LastIntroPage(),
         ],
-
         done: Text('Read', style: TextStyle(fontWeight: FontWeight.w600)),
         onDone: () => goToHome(context),
         showSkipButton: true,
@@ -50,11 +49,6 @@ class _OnboardingState extends State<Onboarding> {
         skipFlex: 0,
         nextFlex: 0,
         color: AppColor.first_color,
-        // isProgressTap: false,
-        // isProgress: false,
-        // showNextButton: false,
-        // freeze: true,
-        // animationDuration: 1000,
       ),
     );
   }

@@ -21,8 +21,8 @@ class DrawingArea {
 class _SideRoughState extends State<SideRough>
     with SingleTickerProviderStateMixin<SideRough> {
   List<DrawingArea> points = [];
-  late Color selectedColor;
-  late double strokeWidth;
+  Color selectedColor = Colors.black;
+  double strokeWidth = 2.0;
 
   late AnimationController _animationController;
   final _animationDuration = const Duration(milliseconds: 500);
@@ -30,12 +30,12 @@ class _SideRoughState extends State<SideRough>
   @override
   void initState() {
     super.initState();
-    Provider.of<SideRoughStatus>(context, listen: false).setisSideBarstatus =
-        false;
-    _animationController =
-        AnimationController(vsync: this, duration: _animationDuration);
-    selectedColor = Colors.black;
-    strokeWidth = 2.0;
+    Future.delayed(Duration(seconds: 2), () {
+      Provider.of<SideRoughStatus>(context, listen: false).setisSideBarstatus =
+          false;
+      _animationController =
+          AnimationController(vsync: this, duration: _animationDuration);
+    });
   }
 
   void onIconPressed() {

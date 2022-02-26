@@ -6,8 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_switch/flutter_switch.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
+import 'package:logger/logger.dart';
 import 'package:ncertclass1to12th/App_review/app_review.dart';
 import 'package:ncertclass1to12th/Modals/classdata.dart';
+import 'package:ncertclass1to12th/app_analysis/app_analysis.dart';
 import 'package:ncertclass1to12th/books/books.dart';
 import 'package:ncertclass1to12th/books/pdf_floatingactionbutton.dart';
 import 'package:ncertclass1to12th/config/appcolor.dart';
@@ -35,45 +37,74 @@ class _AllClassState extends State<AllClass> {
     return ClassDataSet.fromJson(jsonresponse);
   }
 
+  var l = Logger();
   Future<bool> showExitPopup() async {
-    return await showDialog(
-          context: context,
-          builder: (context) => AlertDialog(
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(20))),
-            title: AutoSizeText(
-              'Exit App',
-              textAlign: TextAlign.center,
-              minFontSize: 18,
-              style: Theme.of(context).primaryTextTheme.bodyText1,
+    if (Provider.of<AppAnalysisProvider>(context, listen: false).getcount ==
+        20) {
+      l.e(Provider.of<AppAnalysisProvider>(context, listen: false).getcount);
+      Provider.of<AppAnalysisProvider>(context, listen: false).setcount(21);
+      return await showDialog(
+            context: context,
+            builder: (context) => AlertDialog(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(20))),
+              title: AutoSizeText(
+                'Exit App',
+                textAlign: TextAlign.center,
+                minFontSize: 18,
+                style: Theme.of(context).primaryTextTheme.bodyText1,
+              ),
+              content: Text(
+                'please_rate_us',
+                textAlign: TextAlign.center,
+                style: Theme.of(context).primaryTextTheme.bodyText1,
+              ).tr(),
+              actions: [
+                TextButton(
+                  onPressed: () {
+                    Provider.of<AppAnalysisProvider>(context, listen: false)
+                        .setcount(-50);
+                    Navigator.of(context).pop(true);
+                  },
+                  child: AutoSizeText(
+                    'Ignore',
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {
+                    AppReview.rateAndReviewApp();
+                    Navigator.of(context).pop(false);
+                  },
+                  child: AutoSizeText(
+                    'Rate',
+                  ),
+                ),
+                TextButton(
+                  onPressed: () => Navigator.of(context).pop(true),
+                  child: AutoSizeText(
+                    'Exit',
+                  ),
+                ),
+              ],
             ),
-            content: Text(
-              'please_rate_us',
-              textAlign: TextAlign.center,
-              style: Theme.of(context).primaryTextTheme.bodyText1,
-            ).tr(),
-            actions: [
-              TextButton(
-                onPressed: () {
-                  AppReview.rateAndReviewApp();
-                  Navigator.of(context).pop(false);
-                },
-                child: AutoSizeText(
-                  'Rate',
-                  minFontSize: 18,
-                ),
-              ),
-              TextButton(
-                onPressed: () => Navigator.of(context).pop(true),
-                child: AutoSizeText(
-                  'Exit',
-                  minFontSize: 18,
-                ),
-              ),
-            ],
-          ),
-        ) ??
-        false; //if showDialouge had returned null, then return false
+          ) ??
+          false; //
+    } else {
+      int currentappcount =
+          Provider.of<AppAnalysisProvider>(context, listen: false).getcount;
+
+      if (currentappcount > 20) {
+        Provider.of<AppAnalysisProvider>(context, listen: false).setcount(1);
+        l.wtf(
+            Provider.of<AppAnalysisProvider>(context, listen: false).getcount);
+      } else {
+        Provider.of<AppAnalysisProvider>(context, listen: false)
+            .setcount(++currentappcount);
+        l.w(Provider.of<AppAnalysisProvider>(context, listen: false).getcount);
+      }
+
+      return true;
+    }
   }
 
   @override

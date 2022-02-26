@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ncertclass1to12th/SlideUp_Pdfoption/slideup_pdfoption.dart';
-import 'package:screenshot/screenshot.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:uc_pdfview/uc_pdfview.dart';
 
@@ -21,7 +20,6 @@ class _LastOpenedPdfState extends State<LastOpenedPdf> {
   int indexPage = 0;
   int pages = 0;
   final PanelController panelController = PanelController();
-  final ScreenshotController screenshotController = ScreenshotController();
 
 //Alert Diologe
   TextEditingController _textFieldController = TextEditingController();
@@ -77,7 +75,6 @@ class _LastOpenedPdfState extends State<LastOpenedPdf> {
                 );
               },
             ),
-        
             IconButton(
               icon: Icon(
                 Icons.more_vert,
@@ -98,22 +95,19 @@ class _LastOpenedPdfState extends State<LastOpenedPdf> {
           backdropEnabled: true,
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(18.0), topRight: Radius.circular(18.0)),
-          panelBuilder: (scrollController) => Paneloption(
-              scrollController, screenshotController, panelController),
-          body: Screenshot(
-            controller: screenshotController,
-            child: Container(
-              child: UCPDFView(
-                filePath: widget.path,
-                autoSpacing: false,
-                pageSnap: false,
-                pageFling: false,
-                onRender: (pages) => setState(() => this.pages = pages!),
-                onViewCreated: (controller) =>
-                    setState(() => this.controller = controller),
-                onPageChanged: (indexPage, _) =>
-                    setState(() => this.indexPage = indexPage!),
-              ),
+          panelBuilder: (scrollController) =>
+              Paneloption(scrollController, panelController),
+          body: Container(
+            child: UCPDFView(
+              filePath: widget.path,
+              autoSpacing: false,
+              pageSnap: false,
+              pageFling: false,
+              onRender: (pages) => setState(() => this.pages = pages!),
+              onViewCreated: (controller) =>
+                  setState(() => this.controller = controller),
+              onPageChanged: (indexPage, _) =>
+                  setState(() => this.indexPage = indexPage!),
             ),
           ),
         ));

@@ -63,6 +63,7 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
   void initState() {
     super.initState();
     setpdfpath();
+
     _createInterstitialAd();
   }
 
@@ -240,22 +241,23 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(18.0),
                 topRight: Radius.circular(18.0)),
-            panelBuilder: (scrollController) => Paneloption(
-                scrollController, screenshotController, panelController),
-            body: Screenshot(
-              controller: screenshotController,
-              child: Container(
-                child: UCPDFView(
-                  filePath: widget.file.path,
-                  autoSpacing: false,
-                  pageSnap: false,
-                  pageFling: false,
-                  onRender: (pages) => setState(() => this.pages = pages!),
-                  onViewCreated: (controller) =>
-                      setState(() => this.controller = controller),
-                  onPageChanged: (indexPage, _) =>
-                      setState(() => this.indexPage = indexPage!),
-                ),
+            panelBuilder: (scrollController) =>
+                Paneloption(scrollController, panelController),
+            body: Container(
+              child: UCPDFView(
+                filePath: widget.file.path,
+                autoSpacing: false,
+                pageSnap: false,
+                pageFling: false,
+                onRender: (pages) => setState(() {
+                  this.pages = pages!;
+                }),
+                onViewCreated: (controller) => setState(() {
+                  this.controller = controller;
+                }),
+                onPageChanged: (indexPage, _) => setState(() {
+                  this.indexPage = indexPage!;
+                }),
               ),
             ),
           ),

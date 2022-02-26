@@ -1,5 +1,6 @@
 import 'package:ncertclass1to12th/Onboarding/onboarding.dart';
 import 'package:ncertclass1to12th/Rough/sideroughstatus.dart';
+import 'package:ncertclass1to12th/app_analysis/app_analysis.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
 import 'package:ncertclass1to12th/notificationlist/localnotificationservice.dart';
 import 'package:ncertclass1to12th/notificationlist/pushmessage.dart';
@@ -54,6 +55,12 @@ Future<void> main() async {
   bool isHindi = languagebox.get('isHindi') ?? false;
 
 //=============================================================================================
+  //app count
+
+  final countbox = await Hive.openBox('countbox');
+  int appCount = countbox.get('appcount') ?? 0;
+
+//=============================================================================================
 // localization hindi to english and English to Hindi
   await EasyLocalization.ensureInitialized();
 
@@ -76,6 +83,8 @@ Future<void> main() async {
             create: (context) => LangaugeProvider(isHindi)),
         ChangeNotifierProvider<SideRoughStatus>(
             create: (context) => SideRoughStatus(false)),
+        ChangeNotifierProvider<AppAnalysisProvider>(
+            create: (context) => AppAnalysisProvider(appCount)),
       ], child: NcertHome()),
     ),
   );
@@ -136,8 +145,15 @@ class _NcertHomeState extends State<NcertHome> {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer3<ThemeProvider, LangaugeProvider, SideRoughStatus>(builder:
-        (context, themeProvider, langaugeProvider, sideRoughStatus, child) {
+    return Consumer4<ThemeProvider, LangaugeProvider, SideRoughStatus,
+        AppAnalysisProvider>(builder: (
+      context,
+      themeProvider,
+      langaugeProvider,
+      sideRoughStatus,
+      appAnalysisProvider,
+      child,
+    ) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: themeProvider.themeData(),
