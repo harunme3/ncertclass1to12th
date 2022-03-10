@@ -15,7 +15,6 @@ import 'package:ncertclass1to12th/pdf%20view/pdfviewdarkmode.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdfviewdistractionfreemode.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
-import 'package:screenshot/screenshot.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:uc_pdfview/uc_pdfview.dart';
 
@@ -45,7 +44,6 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
 
   int pages = 0;
   final PanelController panelController = PanelController();
-  final ScreenshotController screenshotController = ScreenshotController();
   SideRoughStatus sideRoughStatus = SideRoughStatus(false);
 
   InterstitialAd? _interstitialAd;

@@ -229,223 +229,265 @@
           "subject_name": "English",
           "subject_image_src": "assets/ncert/class11/subject/subject4.png",
           "book_solution_dataset": [
-            {
-              "book_solution_name": "Short Stories Book",
-              "book_solution_image_src": "assets/ncert/class11/book/english/book1.png",
-              "isitbook":true,
-              "topic_dataset": [
-                {
-                  "topic_name": "Prelims"
-                },
-                {
-                  "topic_name": "The Lament"
-                },
-                {
-                  "topic_name": "A Pair of Mustachios"
-                },
-                {
-                  "topic_name": "The Rocking-horse Winner"
-                },
-                {
-                  "topic_name": "The Adventure of the Three Garridebs"
-                },
-                {
-                  "topic_name": "Pappachi’s Moth"
-                },
-                {
-                  "topic_name": "The Third and Final Continent"
-                },
-                {
-                  "topic_name": "Glory at Twilight"
-                },
-                {
-                  "topic_name": "The Luncheon"
-                }
-                
-              ]
-            },
-            {
-              "book_solution_name": "Poetry Book",
-              "book_solution_image_src": "assets/ncert/class11/book/english/book2.png",
-              "isitbook":true,
-              "topic_dataset": [
-                {
-                  "topic_name": "Prelims"
-                },
-                {
-                  "topic_name": "The Peacock"
-                },
-                {
-                  "topic_name": "Let me Not to the Marriage of True Minds"
-                },
-                {
-                  "topic_name": "Coming"
-                },
-                {
-                  "topic_name": "Telephone Conversation"
-                },
-                {
-                  "topic_name": "The World is too Much With Us"
-                },
-                {
-                  "topic_name": "Mother Tongue"
-                },
-                {
-                  "topic_name": "Hawk Roosting"
-                },
-                {
-                  "topic_name": "For Elkana"
-                },
-                {
-                  "topic_name": "Refugee Blues"
-                },
-                {
-                  "topic_name": "Felling of the Banyan Tree"
-                },
-                {
-                  "topic_name": "Ode to a Nightingale"
-                },
-                {
-                  "topic_name": "Ajamil and the Tigers"
-                }
-                
-              ]
-            },
-            {
-              "book_solution_name": "Essays Book",
-              "book_solution_image_src": "assets/ncert/class11/book/english/book3.png",
-              "isitbook":true,
-              "topic_dataset": [
-                {
-                  "topic_name": "Prelims"
-                },
-                {
-                  "topic_name": "My Watch"
-                },
-                {
-                  "topic_name": "My Three Passions"
-                },
-                {
-                  "topic_name": "Patterns of Creativity"
-                },
-                {
-                  "topic_name": "Tribal Verse"
-                },
-                {
-                  "topic_name": "What is a Good Book?"
-                },
-                {
-                  "topic_name": "The Story"
-                },
-                {
-                  "topic_name": "Bridges"
-                }
-                
-              ]
-            },
-            {
-              "book_solution_name": "Snapshots Book",
-              "book_solution_image_src": "assets/ncert/class11/book/english/book4.png",
-              "isitbook":true,
-              "topic_dataset": [
-                {
-                  "topic_name": "Prelims"
-                },
-                {
-                  "topic_name": "The Summer of the Beautiful White Horse"
-                },
-                {
-                  "topic_name": "The Address"
-                },
-                {
-                  "topic_name": "Ranga’s Marriage"
-                },
-                {
-                  "topic_name": "Albert Einstein at School"
-                },
-                {
-                  "topic_name": "Mother’s Day"
-                },
-                {
-                  "topic_name": "The Ghat of the Only World"
-                },
-                {
-                  "topic_name": "Birth"
-                },
-                {
-                  "topic_name": "The Tale of Melon City"
-                }
-                
-              ]
-            },
-            {
-              "book_solution_name": "Hornbill Book",
-              "book_solution_image_src": "assets/ncert/class11/book/english/book5.png",
-              "isitbook":true,
-              "topic_dataset": [
-                {
-                  "topic_name": "Prelims"
-                },
-                {
-                  "topic_name": "The Portrait of a Lady"
-                },
-                {
-                  "topic_name": "A Photograph"
-                },
-                {
-                  "topic_name": "We’re Not Afraid to Die if We Can All Be Together"
-                },
-                {
-                  "topic_name": "Discovering Tut-the Saga Continues"
-                },
-                {
-                  "topic_name": "The Laburnum Top"
-                },
-                {
-                  "topic_name": "Landscape of the Soul"
-                },
-                {
-                  "topic_name": "The Voice of the Rain"
-                },
-                {
-                  "topic_name": "The Ailing Planet-the Green Movement’s Role"
-                },
-                {
-                  "topic_name": "The Browning Version"
-                },
-                {
-                  "topic_name": "Childhood"
-                },
-                {
-                  "topic_name": "The Adventure"
-                },
-                {
-                  "topic_name": "Silk Road"
-                },
-                {
-                  "topic_name": "Father to Son"
-                },
-                {
-                  "topic_name": "Note-making"
-                },
-                {
-                  "topic_name": "Summarising"
-                },
-                {
-                  "topic_name": "Sub-titling"
-                },
-                {
-                  "topic_name": "Essay-writing"
-                },
-                {
-                  "topic_name": "Letter-writing "
-                },
-                {
-                  "topic_name": "Creative Writing"
-                }
-                
-              ]
-            }
+          	{
+							"book_solution_name": "Snapshots Book",
+							"book_solution_image_src": "assets/ncert/class11/book/english/book1.png",
+							"isitbook": true,
+							"topic_dataset": [
+								{
+									"topic_name": "Prelims"
+								},
+								{
+									"topic_name": "The Summer of the Beautiful White Horse"
+								},
+								{
+									"topic_name": "The Address"
+								},
+								{
+									"topic_name": "Ranga’s Marriage"
+								},
+								{
+									"topic_name": "Albert Einstein at School"
+								},
+								{
+									"topic_name": "Mother’s Day"
+								},
+								{
+									"topic_name": "The Ghat of the Only World"
+								},
+								{
+									"topic_name": "Birth"
+								},
+								{
+									"topic_name": "The Tale of Melon City"
+								}
+							]
+						},
+						{
+							"book_solution_name": "Snapshots Solution",
+							"book_solution_image_src": "assets/ncert/class11/solution/english/solution1.png",
+							"isitbook": false,
+							"topic_dataset": [
+								{
+									"topic_name": "The Summer of the Beautiful White Horse"
+								},
+								{
+									"topic_name": "The Address"
+								},
+								{
+									"topic_name": "Ranga’s Marriage"
+								},
+								{
+									"topic_name": "Albert Einstein at School"
+								},
+								{
+									"topic_name": "Mother’s Day"
+								},
+								{
+									"topic_name": "The Ghat of the Only World"
+								},
+								{
+									"topic_name": "Birth"
+								},
+								{
+									"topic_name": "The Tale of Melon City"
+								}
+							]
+						},
+						{
+							"book_solution_name": "Hornbill Book",
+							"book_solution_image_src": "assets/ncert/class11/book/english/book2.png",
+							"isitbook": true,
+							"topic_dataset": [
+								{
+									"topic_name": "Prelims"
+								},
+								{
+									"topic_name": "The Portrait of a Lady"
+								},
+								{
+									"topic_name": "We’re Not Afraid to Die if We Can All Be Together"
+								},
+								{
+									"topic_name": "Discovering Tut-the Saga Continues"
+								},
+
+								{
+									"topic_name": "Landscape of the Soul"
+								},
+								{
+									"topic_name": "The Ailing Planet-the Green Movement’s Role"
+								},
+								{
+									"topic_name": "The Browning Version"
+								},
+								{
+									"topic_name": "The Adventure"
+								},
+								{
+									"topic_name": "Silk Road"
+								},
+								{
+									"topic_name": "Note-making"
+								},
+								{
+									"topic_name": "Summarising"
+								},
+								{
+									"topic_name": "Sub-titling"
+								},
+								{
+									"topic_name": "Essay-writing"
+								},
+								{
+									"topic_name": "Letter-writing "
+								},
+								{
+									"topic_name": "Creative Writing"
+								}
+							]
+						},
+						{
+							"book_solution_name": "Hornbill Solution",
+							"book_solution_image_src": "assets/ncert/class11/solution/english/solution2.png",
+							"isitbook": false,
+							"topic_dataset": [
+								{
+									"topic_name": "The Portrait of a Lady"
+								},
+
+								{
+									"topic_name": "We’re Not Afraid to Die if We Can All Be Together"
+								},
+								{
+									"topic_name": "Discovering Tut-the Saga Continues"
+								},
+
+								{
+									"topic_name": "Landscape of the Soul"
+								},
+
+								{
+									"topic_name": "The Ailing Planet-the Green Movement’s Role"
+								},
+								{
+									"topic_name": "The Browning Version"
+								},
+
+								{
+									"topic_name": "The Adventure"
+								},
+								{
+									"topic_name": "Silk Road"
+								},
+								{
+									"topic_name": "A Photograph"
+								},
+								{
+									"topic_name": "The Laburnum Top"
+								},
+								{
+									"topic_name": "The Voice of the Rain"
+								},
+								{
+									"topic_name": "Childhood"
+								},
+								{
+									"topic_name": "Father to Son"
+								}
+							]
+						},
+						{
+							"book_solution_name": "Woven Words Book",
+							"book_solution_image_src": "assets/ncert/class11/book/english/book3.png",
+							"isitbook": true,
+							"topic_dataset": [
+								{
+									"topic_name": "Prelims"
+								},
+								{
+									"topic_name": "The Lament"
+								},
+								{
+									"topic_name": "A Pair of Mustachios"
+								},
+								{
+									"topic_name": "The Rocking-horse Winner"
+								},
+								{
+									"topic_name": "The Adventure of the Three Garridebs"
+								},
+								{
+									"topic_name": "Pappachi’s Moth"
+								},
+								{
+									"topic_name": "The Third and Final Continent"
+								},
+								{
+									"topic_name": "Glory at Twilight"
+								},
+								{
+									"topic_name": "The Luncheon"
+								},
+								{
+									"topic_name": "The Peacock"
+								},
+								{
+									"topic_name": "Let me Not to the Marriage of True Minds"
+								},
+								{
+									"topic_name": "Coming"
+								},
+								{
+									"topic_name": "Telephone Conversation"
+								},
+								{
+									"topic_name": "The World is too Much With Us"
+								},
+								{
+									"topic_name": "Mother Tongue"
+								},
+								{
+									"topic_name": "Hawk Roosting"
+								},
+								{
+									"topic_name": "For Elkana"
+								},
+								{
+									"topic_name": "Refugee Blues"
+								},
+								{
+									"topic_name": "Felling of the Banyan Tree"
+								},
+								{
+									"topic_name": "Ode to a Nightingale"
+								},
+								{
+									"topic_name": "Ajamil and the Tigers"
+								},
+								{
+									"topic_name": "My Watch"
+								},
+								{
+									"topic_name": "My Three Passions"
+								},
+								{
+									"topic_name": "Patterns of Creativity"
+								},
+								{
+									"topic_name": "Tribal Verse"
+								},
+								{
+									"topic_name": "What is a Good Book?"
+								},
+								{
+									"topic_name": "The Story"
+								},
+								{
+									"topic_name": "Bridges"
+								}
+							]
+						}
           ]
         },
         {
