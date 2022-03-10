@@ -1,0 +1,1374 @@
+{
+	"exam_dataset": [
+		{
+			"Paper_type": "Previous Year Paper",
+			"type_image_src": "assets/ncert/class10/ncert.png",
+			"board_dataset": [
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				},
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				},
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				},
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				},
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				},
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				},
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"Paper_type": "Previous Year Paper",
+			"type_image_src": "assets/ncert/class10/ncert.png",
+			"board_dataset": [
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				},
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				},
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				},
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				},
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				},
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				},
+				{
+					"board_name": "CBSE Board",
+					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"subject_dataset": [
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						},
+						{
+							"subject_name": "Mathematics Books",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+
+							"paper_dataset": [
+								{
+									"paper_name": "Math 2021"
+								},
+								{
+									"paper_name": "Math 2022"
+								},
+								{
+									"paper_name": "Math 2019"
+								},
+								{
+									"paper_name": "Math 2018"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

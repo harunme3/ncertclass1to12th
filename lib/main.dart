@@ -1,3 +1,4 @@
+import 'package:ncertclass1to12th/Exam/paperprovider/paperprovider.dart';
 import 'package:ncertclass1to12th/Onboarding/onboarding.dart';
 import 'package:ncertclass1to12th/Rough/sideroughstatus.dart';
 import 'package:ncertclass1to12th/app_analysis/app_analysis.dart';
@@ -85,6 +86,8 @@ Future<void> main() async {
             create: (context) => SideRoughStatus(false)),
         ChangeNotifierProvider<AppAnalysisProvider>(
             create: (context) => AppAnalysisProvider(appCount)),
+        ChangeNotifierProvider<PaperProvider>(
+            create: (context) => PaperProvider()),
       ], child: NcertHome()),
     ),
   );
@@ -145,13 +148,14 @@ class _NcertHomeState extends State<NcertHome> {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer4<ThemeProvider, LangaugeProvider, SideRoughStatus,
-        AppAnalysisProvider>(builder: (
+    return Consumer5<ThemeProvider, LangaugeProvider, SideRoughStatus,
+        AppAnalysisProvider, PaperProvider>(builder: (
       context,
       themeProvider,
       langaugeProvider,
       sideRoughStatus,
       appAnalysisProvider,
+      paperProvider,
       child,
     ) {
       return MaterialApp(
