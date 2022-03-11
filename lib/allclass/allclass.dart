@@ -388,10 +388,95 @@ class _AllClassState extends State<AllClass> {
                                       ),
                                     ),
                                   ),
+                                ),
+                                //Board result
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                VideoClass()));
+                                  },
+                                  child: Tooltip(
+                                    textStyle: TextStyle(color: Colors.white),
+                                    message: 'Exam Result',
+                                    preferBelow: false,
+                                    verticalOffset: size.width / 5,
+                                    decoration: BoxDecoration(
+                                      gradient: LinearGradient(
+                                          colors: [
+                                            const Color(0xFF2f5fe8),
+                                            const Color(0xFF5b59ec),
+                                            const Color(0xFF7d50ed),
+                                            const Color(0xFF9c43ec),
+                                            const Color(0xFFb82fe8),
+                                          ],
+                                          begin: Alignment.topRight,
+                                          end: Alignment.bottomLeft),
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    child: Container(
+                                      margin: EdgeInsets.symmetric(
+                                        horizontal: size.width / 24,
+                                        vertical: size.width / 36,
+                                      ),
+                                      child: Stack(
+                                        alignment: Alignment.bottomCenter,
+                                        children: <Widget>[
+                                          Container(
+                                            height: size.width / 3,
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(22),
+                                              color: AppColor.third_color,
+                                            ),
+                                            child: Container(
+                                              margin: EdgeInsets.only(right: 8),
+                                              decoration: BoxDecoration(
+                                                borderRadius:
+                                                    BorderRadius.circular(22),
+                                                color: isDarkTheme
+                                                    ? Colors.grey[900]
+                                                    : Colors.white,
+                                              ),
+                                            ),
+                                          ),
+                                          Positioned(
+                                            top: -size.width / 60,
+                                            child: Container(
+                                              padding: EdgeInsets.symmetric(
+                                                horizontal: size.width / 9,
+                                              ),
+                                              height: size.width / 3.2,
+                                              width: size.width / 2,
+                                              child: Image.asset(
+                                                'assets/exam/class10thboard.png',
+                                                fit: BoxFit.contain,
+                                              ),
+                                            ),
+                                          ),
+                                          Positioned(
+                                            child: Padding(
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
+                                              child: AutoSizeText(
+                                                'Exam Result',
+                                                maxLines: 3,
+                                                textAlign: TextAlign.center,
+                                                style: Theme.of(context)
+                                                    .primaryTextTheme
+                                                    .bodyText1,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
                                 )
                               ],
                             )
-                   
                           ],
                         ),
                       ],
