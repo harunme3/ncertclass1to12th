@@ -31,15 +31,21 @@ class AllPaperList extends StatefulWidget {
 
 class _AllPaperListState extends State<AllPaperList> {
   Future canviewpdf(int index) async {
-    final classname = widget.classname;
-    final papertype = widget.papertype;
-    final boardName = widget.boardName;
-    final subjectname = widget.subjectname;
-    final papername = widget.subjectDataset.paperDataset[index].papername;
+    final classname = widget.classname.split(' ').last;
+    final papertype = widget.papertype.split(' ').first;
+    final boardName = widget.boardName.split(' ').first;
+    final subjectname = widget.subjectname.split(' ').first +
+        widget.subjectname.split(' ').last;
+
+    final papername =
+        widget.subjectDataset.paperDataset[index].papername.split('-').last +
+            index.toString();
 
     String filename =
-        '${classname}_${papertype}_${boardName}_${subjectname}_$papername' +
+        '${classname}_${papertype}_${boardName}_${subjectname}_${papername}' +
             '.pdf';
+    ;
+
     Directory dir = await getApplicationDocumentsDirectory();
     final file = File('${dir.path}/$filename');
 
@@ -146,17 +152,26 @@ class _AllPaperListState extends State<AllPaperList> {
                           : GestureDetector(
                               onTap: () async {
                                 final projectname = 'Exam';
-                                final classname = widget.classname;
-                                final papertype = widget.papertype;
-                                final boardName = widget.boardName;
-                                final subjectname = widget.subjectname;
+                                final classname =
+                                    widget.classname.split(' ').last;
+                                final papertype =
+                                    widget.papertype.split(' ').first;
+                                final boardName =
+                                    widget.boardName.split(' ').first;
+                                final subjectname =
+                                    widget.subjectname.split(' ').first +
+                                        widget.subjectname.split(' ').last;
+
                                 final papername = widget.subjectDataset
-                                    .paperDataset[index].papername;
+                                        .paperDataset[index].papername
+                                        .split('-')
+                                        .last +
+                                    index.toString();
                                 final String pathofdata =
                                     '$projectname/$classname/$papertype/$boardName/$subjectname/$papername/';
 
                                 String filename =
-                                    '${classname}_${papertype}_${boardName}_${papername}';
+                                    '${classname}_${papertype}_${boardName}_${subjectname}_${papername}';
 
                                 Navigator.push(
                                   context,

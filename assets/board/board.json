@@ -1,0 +1,20 @@
+{
+	"board_dataset": [
+		{
+			"board_name": "Class 9",
+			"board_image_src": "assets/classimg/class9.png"
+		},
+		{
+			"board_name": "Class 9",
+			"board_image_src": "assets/classimg/class9.png"
+		},
+		{
+			"board_name": "Class 9",
+			"board_image_src": "assets/classimg/class9.png"
+		},
+		{
+			"board_name": "Class 9",
+			"board_image_src": "assets/classimg/class9.png"
+		}
+	]
+}

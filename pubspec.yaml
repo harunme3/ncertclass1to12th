@@ -87,6 +87,10 @@ flutter:
     - assets/translations/
     #videos
     - assets/videoscources/
+    #exam
+    - assets/exam/
+    - assets/boardimage/
+
     #data_image
     - assets/alldata_image/all/
     - assets/alldata_image/class9/data_image/
@@ -95,6 +99,7 @@ flutter:
     - assets/alldata_image/class12/data_image/
     - assets/Paper/class10/
     - assets/Paper/class12/
+    - assets/board/
     #class 9
     - assets/ncert/class9/
     - assets/ncert/class9/subject/
