@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ncertclass1to12th/config/appcolor.dart';
 import 'package:ncertclass1to12th/result/boardpage.dart';
 
 class ClassPage extends StatefulWidget {
@@ -14,8 +15,7 @@ class _ClassPageState extends State<ClassPage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+      body: ListView(
         children: [
           GestureDetector(
             onTap: () {
@@ -26,10 +26,15 @@ class _ClassPageState extends State<ClassPage> {
                             classname: 'Class 10',
                           )));
             },
-            child: Container(
-              height: size.height / 2,
-              width: size.width,
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
               child: Image.asset('assets/exam/class10thboard.png'),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
             ),
           ),
           GestureDetector(
@@ -41,10 +46,17 @@ class _ClassPageState extends State<ClassPage> {
                             classname: 'Class 12',
                           )));
             },
-            child: Container(
-              height: size.height / 2,
-              width: size.width,
-              child: Image.asset('assets/exam/class10thboard.png'),
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Image.asset(
+                'assets/exam/class12thboard.png',
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
             ),
           ),
         ],

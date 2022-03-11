@@ -278,7 +278,7 @@ class _BooksState extends State<Books> {
                                             height: size.width / 3.2,
                                             width: size.width / 2,
                                             child: Image.asset(
-                                              'assets/videoscources/videocources.png',
+                                              'assets/exam/examhelper.png',
                                               fit: BoxFit.contain,
                                             ),
                                           ),
@@ -287,7 +287,7 @@ class _BooksState extends State<Books> {
                                           child: Padding(
                                             padding: const EdgeInsets.all(8.0),
                                             child: AutoSizeText(
-                                              'Previous year paper',
+                                              'Exam helper',
                                               maxLines: 3,
                                               textAlign: TextAlign.center,
                                               style: Theme.of(context)

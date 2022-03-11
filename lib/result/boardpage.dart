@@ -17,8 +17,7 @@ class BoardPage extends StatefulWidget {
 
 class _BoardPageState extends State<BoardPage> {
   Future<ResultDataset> loadborddata() async {
-    String jsonstring =
-        await rootBundle.loadString('assets/Paper/class10/paper.json');
+    String jsonstring = await rootBundle.loadString('assets/board/board.json');
     final jsonresponse = json.decode(jsonstring);
     return ResultDataset.fromJson(jsonresponse);
   }
@@ -88,18 +87,7 @@ class _BoardPageState extends State<BoardPage> {
                               padding: const EdgeInsets.all(8.0),
                               child: Container(
                                 decoration: BoxDecoration(
-                                  gradient: LinearGradient(
-                                    stops: [
-                                      0.10,
-                                      0.90,
-                                    ],
-                                    begin: Alignment.topRight,
-                                    end: Alignment.bottomLeft,
-                                    colors: [
-                                      Color(0xFF2f5fe8),
-                                      Color(0xFFb82fe8),
-                                    ],
-                                  ),
+                                  color: Colors.white,
                                   borderRadius: BorderRadius.circular(20),
                                 ),
                                 child: Column(

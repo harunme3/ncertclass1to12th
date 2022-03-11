@@ -15,6 +15,7 @@ import 'package:ncertclass1to12th/books/pdf_floatingactionbutton.dart';
 import 'package:ncertclass1to12th/config/appcolor.dart';
 import 'package:ncertclass1to12th/langauge/langauge_provider.dart';
 import 'package:ncertclass1to12th/ncertvideosUI/videosclassUI/videoclass.dart';
+import 'package:ncertclass1to12th/result/classpage.dart';
 
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:provider/provider.dart';
@@ -395,8 +396,7 @@ class _AllClassState extends State<AllClass> {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) =>
-                                                VideoClass()));
+                                            builder: (context) => ClassPage()));
                                   },
                                   child: Tooltip(
                                     textStyle: TextStyle(color: Colors.white),
@@ -451,7 +451,7 @@ class _AllClassState extends State<AllClass> {
                                               height: size.width / 3.2,
                                               width: size.width / 2,
                                               child: Image.asset(
-                                                'assets/exam/class10thboard.png',
+                                                'assets/exam/result.png',
                                                 fit: BoxFit.contain,
                                               ),
                                             ),
