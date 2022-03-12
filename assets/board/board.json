@@ -1,20 +1,136 @@
 {
 	"board_dataset": [
 		{
-			"board_name": "CBSE Board",
-			"board_image_src": "assets/boardimage/cbse.jpg"
+			"board_name": "AP Board",
+			"board_image_src": "assets/boardimage/ap.jpg"
+		},
+		{
+			"board_name": "Arunachal Pradesh Board",
+			"board_image_src": "assets/boardimage/arunachal.jpg"
 		},
 		{
 			"board_name": "Assam Board",
 			"board_image_src": "assets/boardimage/assam.jpg"
 		},
 		{
+			"board_name": "Bihar Board",
+			"board_image_src": "assets/boardimage/bihar.jpg"
+		},
+		{
+			"board_name": "CBSE Board",
+			"board_image_src": "assets/boardimage/cbse.jpg"
+		},
+
+		{
+			"board_name": "CGBSE Board",
+			"board_image_src": "assets/boardimage/cgbse.jpg"
+		},
+		{
+			"board_name": "Goa Board",
+			"board_image_src": "assets/boardimage/goa.jpg"
+		},
+		{
+			"board_name": "Gujrat Board",
+			"board_image_src": "assets/boardimage/gujrat.jpg"
+		},
+		{
+			"board_name": "HBSE Board",
+			"board_image_src": "assets/boardimage/hbse.jpg"
+		},
+		{
+			"board_name": "HP Board",
+			"board_image_src": "assets/boardimage/hp.jpg"
+		},
+		{
+			"board_name": "ICSE Board",
+			"board_image_src": "assets/boardimage/icse.jpg"
+		},
+		{
+			"board_name": "Jammu & Kashmir Board",
+			"board_image_src": "assets/boardimage/jk.jpg"
+		},
+		{
+			"board_name": "Jharkhand Board",
+			"board_image_src": "assets/boardimage/jharkhand.jpg"
+		},
+		{
+			"board_name": "Karnataka Board",
+			"board_image_src": "assets/boardimage/karnataka.jpg"
+		},
+		{
+			"board_name": "Kerala",
+			"board_image_src": "assets/boardimage/kerala.png"
+		},
+		{
+			"board_name": "Maharashtra Board",
+			"board_image_src": "assets/boardimage/maharastra.png"
+		},
+		{
+			"board_name": "Manipur Board",
+			"board_image_src": "assets/boardimage/manipur.png"
+		},
+		{
+			"board_name": "Meghalaya Board",
+			"board_image_src": "assets/boardimage/meghalaya.jpg"
+		},
+
+		{
+			"board_name": "Mizoram Board",
+			"board_image_src": "assets/boardimage/mijoram.png"
+		},
+		{
+			"board_name": "MP Board",
+			"board_image_src": "assets/boardimage/mp.jpg"
+		},
+
+		{
+			"board_name": "Nagaland Board",
+			"board_image_src": "assets/boardimage/nagaland.jpg"
+		},
+		{
+			"board_name": "Odisha Board",
+			"board_image_src": "assets/boardimage/odisha.jpg"
+		},
+
+		{
+			"board_name": "Punjab Board",
+			"board_image_src": "assets/boardimage/punjab.jpg"
+		},
+		{
+			"board_name": "Rajasthan Board",
+			"board_image_src": "assets/boardimage/rajasthan.jpg"
+		},
+		{
+			"board_name": "RSOS Board",
+			"board_image_src": "assets/boardimage/rsos.png"
+		},
+		{
+			"board_name": "Sikkim Board",
+			"board_image_src": "assets/boardimage/sikkim.jpg"
+		},
+		{
+			"board_name": "Tamilnadu Board",
+			"board_image_src": "assets/boardimage/tamilnadu.png"
+		},
+		{
+			"board_name": "Telangana Board",
+			"board_image_src": "assets/boardimage/telangana.jpg"
+		},
+		{
+			"board_name": "Tripura Board",
+			"board_image_src": "assets/boardimage/tripura.jpg"
+		},
+		{
 			"board_name": "UP Board",
 			"board_image_src": "assets/boardimage/up.jpg"
 		},
 		{
-			"board_name": "AP Board",
-			"board_image_src": "assets/boardimage/ap.jpg"
+			"board_name": "Uttrakhand Board",
+			"board_image_src": "assets/boardimage/uttrakhand.png"
+		},
+		{
+			"board_name": "West Bengal Board",
+			"board_image_src": "assets/boardimage/west.jpg"
 		}
 	]
 }

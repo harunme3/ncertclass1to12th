@@ -61,7 +61,7 @@ class _BoardPageState extends State<BoardPage> {
                                     builder: (context) => ResultPage(
                                           boardname: snapshot.data!
                                               .boardDataSet[index].boardName,
-                                          classname: 'Class 10',
+                                          classname: widget.classname,
                                         )));
                           },
                           child: Tooltip(

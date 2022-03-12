@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ncertclass1to12th/config/appcolor.dart';
 import 'package:ncertclass1to12th/result/boardpage.dart';
 
 class ClassPage extends StatefulWidget {
@@ -12,7 +11,6 @@ class ClassPage extends StatefulWidget {
 class _ClassPageState extends State<ClassPage> {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(),
       body: ListView(
