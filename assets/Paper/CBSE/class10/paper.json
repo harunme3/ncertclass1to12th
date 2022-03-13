@@ -440,7 +440,7 @@
 						},
 						{
 							"subject_name": "English",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class10/book/english.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Communicative Paper 2020 code - 1/4/1",
@@ -990,7 +990,7 @@
 						},
 						{
 							"subject_name": "Hindi",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class10/book/hindi.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Hindi-A Paper 2020 code - 3/1/1",
@@ -1636,7 +1636,7 @@
 						},
 						{
 							"subject_name": "Social Science",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class10/book/socialscience.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Social Science Paper 2020 code - 32/1/1",
@@ -1962,7 +1962,7 @@
 						},
 						{
 							"subject_name": "Science",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class10/book/science.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Science Paper 2020 code - 31/1/1",
@@ -2288,7 +2288,7 @@
 						},
 						{
 							"subject_name": "Sanskrit",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class10/book/sanskrit.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Sanskrit Paper 2020 JBB",
@@ -2382,7 +2382,7 @@
 						},
 						{
 							"subject_name": "information Technology",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class10/book/it.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Information Technology Paper 2020",
@@ -2514,7 +2514,7 @@
 						},
 						{
 							"subject_name": "English",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class10/book/english.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Language & Literature Sample Paper Term-1 2021-2022",
@@ -2592,7 +2592,7 @@
 						},
 						{
 							"subject_name": "Hindi",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class10/book/hindi.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Hindi-A Sample Paper Term-1 2021-2022",
@@ -2694,7 +2694,7 @@
 						},
 						{
 							"subject_name": "Social Science",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class10/book/socialscience.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Social Science Sample Paper Term-1 2021-2022",
@@ -2748,7 +2748,7 @@
 						},
 						{
 							"subject_name": "Science",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class10/book/science.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Science Sample Paper Term-1 2021-2022",
@@ -2802,7 +2802,7 @@
 						},
 						{
 							"subject_name": "Sanskrit",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class10/book/sanskrit.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Sanskrit Sample Paper Term-1 2021-2022",
@@ -2844,7 +2844,7 @@
 						},
 						{
 							"subject_name": "Computer Application",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class10/book/it.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Computer Application Sample Paper Term-1 2021-2022",

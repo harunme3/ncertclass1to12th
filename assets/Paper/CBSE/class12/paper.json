@@ -10,7 +10,7 @@
 					"subject_dataset": [
 						{
 							"subject_name": "Accountancy",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject1.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Accountancy Paper 2020 code - 67/1/1",
@@ -336,7 +336,7 @@
 						},
 						{
 							"subject_name": "Biology",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject2.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Biology Paper 2020 code -57/1/1",
@@ -662,7 +662,7 @@
 						},
 						{
 							"subject_name": "Business Studies",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject3.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Business Studies Science Paper 2019 code -66/1/1",
@@ -868,7 +868,7 @@
 						},
 						{
 							"subject_name": "Chemistry",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject4.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Chemistry Paper 2020 code -56/1/1",
@@ -1194,7 +1194,7 @@
 						},
 						{
 							"subject_name": "Computer",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject5.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Computer Science Paper 2019",
@@ -1264,7 +1264,7 @@
 						},
 						{
 							"subject_name": "Economics",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject6.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Economics Paper 2020 code -58/1/1",
@@ -1590,7 +1590,7 @@
 						},
 						{
 							"subject_name": "English",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject7.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "English Core Paper 2020 code -1/1/1",
@@ -1980,7 +1980,7 @@
 						},
 						{
 							"subject_name": "Geography",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject8.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Geography Science Paper 2019 code -64/1/1",
@@ -2186,7 +2186,7 @@
 						},
 						{
 							"subject_name": "Hindi",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject9.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Hindi Core Paper 2019 code -2/1/1",
@@ -2576,7 +2576,7 @@
 						},
 						{
 							"subject_name": "History",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject10.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "History Paper 2020 code -61/1/1",
@@ -2894,7 +2894,7 @@
 						},
 						{
 							"subject_name": "Home Science",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject11.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Home Science Paper 2019(BVM)",
@@ -2932,7 +2932,7 @@
 						},
 						{
 							"subject_name": "Mathematics",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject12.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Maths Paper 2020 code -65/1/1",
@@ -3258,7 +3258,7 @@
 						},
 						{
 							"subject_name": "Physics",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject13.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Physics Paper 2020 code -55/1/1",
@@ -3576,7 +3576,7 @@
 						},
 						{
 							"subject_name": "Political Science",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject14.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Political Science Paper 2020 code -59/1/1",
@@ -3894,7 +3894,7 @@
 						},
 						{
 							"subject_name": "Physical Education",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject15.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Sociology Paper 2020(HMJ/4)",
@@ -3964,7 +3964,7 @@
 						},
 						{
 							"subject_name": "Sociology",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject16.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Sociology Paper 2019(BVM)",
@@ -4054,7 +4054,7 @@
 					"subject_dataset": [
 						{
 							"subject_name": "Accountancy",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject1.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Accountancy Sample Paper Term-2 2021-2022",
@@ -4112,7 +4112,7 @@
 						},
 						{
 							"subject_name": "Applied Mathematics",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject2.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Appliied Sample Paper Term-2 2021-2022",
@@ -4134,7 +4134,7 @@
 						},
 						{
 							"subject_name": "Biology",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject3.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Biology Sample Paper Term-2 2021-2022",
@@ -4204,7 +4204,7 @@
 						},
 						{
 							"subject_name": "Business Studies",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject4.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Business Studies Sample Paper Term-2 2021-2022",
@@ -4274,7 +4274,7 @@
 						},
 						{
 							"subject_name": "Chemistry",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject5.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Chemistry Sample Paper Term-2 2021-2022",
@@ -4344,7 +4344,7 @@
 						},
 						{
 							"subject_name": "Computer",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject6.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Computer Science Sample Paper Term-2 2021-2022",
@@ -4422,7 +4422,7 @@
 						},
 						{
 							"subject_name": "Economics",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject7.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Economics Sample Paper Term-2 2021-2022",
@@ -4492,7 +4492,7 @@
 						},
 						{
 							"subject_name": "English",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject8.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "English Core Sample Paper Term-2 2021-2022",
@@ -4610,7 +4610,7 @@
 						},
 						{
 							"subject_name": "Geography",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject9.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Geography Sample Paper Term-2 2021-2022",
@@ -4680,7 +4680,7 @@
 						},
 						{
 							"subject_name": "Hindi",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject10.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Hindi Core Sample Paper Term-2 2021-2022",
@@ -4814,7 +4814,7 @@
 						},
 						{
 							"subject_name": "History",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject11.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "History Sample Paper Term-2 2021-2022",
@@ -4884,7 +4884,7 @@
 						},
 						{
 							"subject_name": "Home Science",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject12.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Home Science Sample Paper Term-2 2021-2022",
@@ -4954,7 +4954,7 @@
 						},
 						{
 							"subject_name": "Mathematics",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject13.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Maths Sample Paper Term-2 2021-2022",
@@ -5024,7 +5024,7 @@
 						},
 						{
 							"subject_name": "Physics",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject14.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Physics Sample Paper Term-2 2021-2022",
@@ -5094,7 +5094,7 @@
 						},
 						{
 							"subject_name": "Political Science",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject15.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Political Science Sample Paper Term-2 2021-2022",
@@ -5164,7 +5164,7 @@
 						},
 						{
 							"subject_name": "Physical Education",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject16.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Physical Education Sample Paper Term-2 2021-2022",
@@ -5226,7 +5226,7 @@
 						},
 						{
 							"subject_name": "Sociology",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"subject_image_src": "assets/ncert/class12/book/subject17.png",
 							"paper_dataset": [
 								{
 								  "paper_name": "Sociology Sample Paper Term-2 2021-2022",
