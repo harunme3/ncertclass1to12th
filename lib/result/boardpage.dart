@@ -3,7 +3,9 @@ import 'dart:convert';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:ncertclass1to12th/Exam/exammodal/boardmodal.dart';
+import 'package:ncertclass1to12th/admob/adhelper/adhelper.dart';
 import 'package:ncertclass1to12th/result/result.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:provider/provider.dart';
@@ -17,11 +19,65 @@ class BoardPage extends StatefulWidget {
   State<BoardPage> createState() => _BoardPageState();
 }
 
+//Globally define load attempt
+const int maxFailedLoadAttempts = 3;
+
 class _BoardPageState extends State<BoardPage> {
+  InterstitialAd? _interstitialAd;
+  int _interstitialLoadAttempts = 0;
+
+  @override
+  void dispose() {
+    super.dispose();
+    _interstitialAd?.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _createInterstitialAd();
+  }
+
   Future<ResultDataset> loadborddata() async {
     String jsonstring = await rootBundle.loadString('assets/board/board.json');
     final jsonresponse = json.decode(jsonstring);
     return ResultDataset.fromJson(jsonresponse);
+  }
+
+  void _createInterstitialAd() {
+    InterstitialAd.load(
+      adUnitId: AdHelper.interstitialAdUnitId,
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          _interstitialAd = ad;
+          _interstitialLoadAttempts = 0;
+        },
+        onAdFailedToLoad: (LoadAdError error) {
+          _interstitialLoadAttempts += 1;
+          _interstitialAd = null;
+          if (_interstitialLoadAttempts <= maxFailedLoadAttempts) {
+            _createInterstitialAd();
+          }
+        },
+      ),
+    );
+  }
+
+  void _showInterstitialAd() {
+    if (_interstitialAd != null) {
+      _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
+        onAdDismissedFullScreenContent: (InterstitialAd ad) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+        onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+      );
+      _interstitialAd!.show();
+    }
   }
 
   @override
@@ -58,6 +114,7 @@ class _BoardPageState extends State<BoardPage> {
                       itemBuilder: (BuildContext context, int index) {
                         return GestureDetector(
                           onTap: () {
+                            _showInterstitialAd();
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(

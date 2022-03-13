@@ -42,7 +42,7 @@ class _VideoClassState extends State<VideoClass> {
   _createandshowBannerAd() {
     _ad = BannerAd(
       adUnitId: AdHelper.bannerAdUnitId,
-      size: AdSize.mediumRectangle,
+      size: AdSize.banner,
       request: AdRequest(),
       listener: BannerAdListener(
         onAdLoaded: (_) {
@@ -178,18 +178,18 @@ class _VideoClassState extends State<VideoClass> {
                               );
                             },
                           ),
-                          _isAdLoaded
-                              ? Container(
-                                  child: AdWidget(ad: _ad),
-                                  width: _ad.size.width.toDouble(),
-                                  height: _ad.size.height.toDouble(),
-                                  alignment: Alignment.center,
-                                )
-                              : Container(),
                         ],
                       ),
                     ],
                   ),
+                  bottomNavigationBar: _isAdLoaded
+                      ? Container(
+                          child: AdWidget(ad: _ad),
+                          width: _ad.size.width.toDouble(),
+                          height: _ad.size.height.toDouble(),
+                          alignment: Alignment.center,
+                        )
+                      : Container(),
                 ),
               );
         }

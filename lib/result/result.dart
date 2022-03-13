@@ -2,7 +2,9 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:logger/logger.dart';
+import 'package:ncertclass1to12th/admob/adhelper/adhelper.dart';
 import 'package:ncertclass1to12th/browser/browser.dart';
 import 'package:ncertclass1to12th/onlinepdfviewer/onlinepdfviewer.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
@@ -19,9 +21,27 @@ class ResultPage extends StatefulWidget {
   State<ResultPage> createState() => _ResultPageState();
 }
 
+//Globally define load attempt
+const int maxFailedLoadAttempts = 3;
+
 class _ResultPageState extends State<ResultPage> {
   int count = 0;
   var l = Logger();
+
+  InterstitialAd? _interstitialAd;
+  int _interstitialLoadAttempts = 0;
+
+  @override
+  void dispose() {
+    super.dispose();
+    _interstitialAd?.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _createInterstitialAd();
+  }
 
   String renderddata(Map<String, dynamic> data) {
     return """
@@ -85,7 +105,7 @@ class _ResultPageState extends State<ResultPage> {
   Widget BuildServer(link) {
     return TextButton(
       onPressed: () {
-        l.e(link);
+        _showInterstitialAd();
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -102,6 +122,42 @@ class _ResultPageState extends State<ResultPage> {
             .copyWith(color: Colors.blue, fontSize: 24),
       ),
     );
+  }
+
+  void _createInterstitialAd() {
+    InterstitialAd.load(
+      adUnitId: AdHelper.interstitialAdUnitId,
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          _interstitialAd = ad;
+          _interstitialLoadAttempts = 0;
+        },
+        onAdFailedToLoad: (LoadAdError error) {
+          _interstitialLoadAttempts += 1;
+          _interstitialAd = null;
+          if (_interstitialLoadAttempts <= maxFailedLoadAttempts) {
+            _createInterstitialAd();
+          }
+        },
+      ),
+    );
+  }
+
+  void _showInterstitialAd() {
+    if (_interstitialAd != null) {
+      _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
+        onAdDismissedFullScreenContent: (InterstitialAd ad) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+        onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+      );
+      _interstitialAd!.show();
+    }
   }
 
   @override
@@ -152,6 +208,7 @@ class _ResultPageState extends State<ResultPage> {
                             ),
                           ),
                         ),
+
                         MarkdownBody(
                           data: renderddata(snapshot.data!),
                           selectable: true,
@@ -169,6 +226,7 @@ class _ResultPageState extends State<ResultPage> {
                           padding: const EdgeInsets.all(8.0),
                           child: ElevatedButton(
                             onPressed: () async {
+                              _showInterstitialAd();
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(

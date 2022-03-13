@@ -2,8 +2,10 @@ import 'dart:io';
 
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:ncertclass1to12th/DownloadforTopic/downloadplatform.dart';
 import 'package:ncertclass1to12th/Exam/exammodal/exammodal.dart';
+import 'package:ncertclass1to12th/admob/adhelper/adhelper.dart';
 import 'package:ncertclass1to12th/pdf%20view/pdf%20view_location.dart';
 import 'package:ncertclass1to12th/theme/theme.dart';
 import 'package:path_provider/path_provider.dart';
@@ -30,21 +32,25 @@ class AllPaperList extends StatefulWidget {
 }
 
 class _AllPaperListState extends State<AllPaperList> {
+  InterstitialAd? _interstitialAd;
+  int _interstitialLoadAttempts = 0;
+
+  @override
+  void dispose() {
+    super.dispose();
+    _interstitialAd?.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _createInterstitialAd();
+  }
+
   Future canviewpdf(int index) async {
-    final classname = widget.classname.split(' ').last;
-    final papertype = widget.papertype.split(' ').first;
-    final boardName = widget.boardName.split(' ').first;
-    final subjectname = widget.subjectname.split(' ').first +
-        widget.subjectname.split(' ').last;
+    final papername = widget.subjectDataset.paperDataset[index].id;
 
-    final papername =
-        widget.subjectDataset.paperDataset[index].papername.split('-').last +
-            index.toString();
-
-    String filename =
-        '${classname}_${papertype}_${boardName}_${subjectname}_${papername}' +
-            '.pdf';
-    ;
+    String filename = '$papername' + '.pdf';
 
     Directory dir = await getApplicationDocumentsDirectory();
     final file = File('${dir.path}/$filename');
@@ -60,6 +66,42 @@ class _AllPaperListState extends State<AllPaperList> {
     if (file.existsSync()) {
       file.deleteSync();
       setState(() {});
+    }
+  }
+
+  void _createInterstitialAd() {
+    InterstitialAd.load(
+      adUnitId: AdHelper.interstitialAdUnitId,
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          _interstitialAd = ad;
+          _interstitialLoadAttempts = 0;
+        },
+        onAdFailedToLoad: (LoadAdError error) {
+          _interstitialLoadAttempts += 1;
+          _interstitialAd = null;
+          if (_interstitialLoadAttempts <= maxFailedLoadAttempts) {
+            _createInterstitialAd();
+          }
+        },
+      ),
+    );
+  }
+
+  void _showInterstitialAd() {
+    if (_interstitialAd != null) {
+      _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
+        onAdDismissedFullScreenContent: (InterstitialAd ad) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+        onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
+          ad.dispose();
+          _createInterstitialAd();
+        },
+      );
+      _interstitialAd!.show();
     }
   }
 
@@ -88,6 +130,7 @@ class _AllPaperListState extends State<AllPaperList> {
                           return snapshot.data != false
                               ? GestureDetector(
                                   onTap: () async {
+                                    _showInterstitialAd();
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(
@@ -157,26 +200,18 @@ class _AllPaperListState extends State<AllPaperList> {
                               : GestureDetector(
                                   onTap: () async {
                                     final projectname = 'Exam';
-                                    final classname =
-                                        widget.classname.split(' ').last;
-                                    final papertype =
-                                        widget.papertype.split(' ').first;
-                                    final boardName =
-                                        widget.boardName.split(' ').first;
-                                    final subjectname =
-                                        widget.subjectname.split(' ').first +
-                                            widget.subjectname.split(' ').last;
+                                    final classname = widget.classname;
+                                    final papertype = widget.papertype;
+                                    final boardName = widget.boardName;
+                                    final subjectname = widget.subjectname;
 
                                     final papername = widget.subjectDataset
-                                            .paperDataset[index].papername
-                                            .split('-')
-                                            .last +
-                                        index.toString();
+                                        .paperDataset[index].papername;
                                     final String pathofdata =
                                         '$projectname/$classname/$papertype/$boardName/$subjectname/$papername/';
 
-                                    String filename =
-                                        '${classname}_${papertype}_${boardName}_${subjectname}_${papername}';
+                                    String filename = widget
+                                        .subjectDataset.paperDataset[index].id;
 
                                     Navigator.push(
                                       context,
