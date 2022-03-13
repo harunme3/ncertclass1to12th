@@ -81,11 +81,14 @@ class SubjectDataset {
 }
 
 class PaperDataSet {
-  PaperDataSet({required this.papername});
+  PaperDataSet({required this.papername,required this.id});
 
   factory PaperDataSet.fromJson(Map<String, dynamic> data) {
-    return PaperDataSet(papername: data['paper_name']);
+    return PaperDataSet(papername: data['paper_name'],
+    id:data['id'],
+    );
   }
 
   final String papername;
+  final String id;
 }

@@ -2,682 +2,3057 @@
 	"exam_dataset": [
 		{
 			"Paper_type": "Previous Year Paper",
-			"type_image_src": "assets/ncert/class10/ncert.png",
+			"type_image_src": "assets//exam/previouspaper.png",
 			"board_dataset": [
 				{
 					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"board_image_src": "../../../assets/boardimage/cbse.jpg",
 					"subject_dataset": [
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Accountancy",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Accountancy Paper 2020 code - 67/1/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Accountancy Solution 2020 code - 67/1/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Accountancy Paper 2020 code - 67/1/2"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Accountancy Solution 2020 code - 67/1/2"
+								},
+								{
+									"paper_name": "Accountancy Paper 2020 code - 67/1/3"
+								},
+								{
+									"paper_name": "Accountancy Solution 2020 code - 67/1/3"
+								},
+								{
+									"paper_name": "Accountancy Paper 2020 code - 67/2/1"
+								},
+								{
+									"paper_name": "Accountancy Solution 2020 code - 67/2/1"
+								},
+								{
+									"paper_name": "Accountancy Paper 2020 code - 67/2/2"
+								},
+								{
+									"paper_name": "Accountancy Solution 2020 code - 67/2/2"
+								},
+								{
+									"paper_name": "Accountancy Paper 2020 code - 67/2/3"
+								},
+								{
+									"paper_name": "Accountancy Solution 2020 code - 67/2/3"
+								},
+								{
+									"paper_name": "Accountancy Paper 2020 code - 67/3/1"
+								},
+								{
+									"paper_name": "Accountancy Solution 2020 code - 67/3/1"
+								},
+								{
+									"paper_name": "Accountancy Paper 2020 code - 67/3/2"
+								},
+								{
+									"paper_name": "Accountancy Solution 2020 code - 67/3/2"
+								},
+								{
+									"paper_name": "Accountancy Paper 2020 code - 67/3/3"
+								},
+								{
+									"paper_name": "Accountancy Solution 2020 code - 67/3/3"
+								},
+								{
+									"paper_name": "Accountancy Paper 2020 code - 67/4/1"
+								},
+								{
+									"paper_name": "Accountancy Solution 2020 code - 67/4/1"
+								},
+								{
+									"paper_name": "Accountancy Paper 2020 code - 67/4/2"
+								},
+								{
+									"paper_name": "Accountancy Solution 2020 code - 67/4/2"
+								},
+								{
+									"paper_name": "Accountancy Paper 2020 code - 67/4/3"
+								},
+								{
+									"paper_name": "Accountancy Solution 2020 code - 67/4/3"
+								},
+								{
+									"paper_name": "Accountancy Paper 2020 code - 67/5/1"
+								},
+								{
+									"paper_name": "Accountancy Solution 2020 code - 67/5/1"
+								},
+								{
+									"paper_name": "Accountancy Paper 2020 code - 67/5/2"
+								},
+								{
+									"paper_name": "Accountancy Solution 2020 code - 67/5/2"
+								},
+								{
+									"paper_name": "Accountancy Paper 2020 code - 67/5/3"
+								},
+								{
+									"paper_name": "Accountancy Solution 2020 code - 67/5/3"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/1/1"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/1/1"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/1/2"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/1/2"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/1/3"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/1/3"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/2/1"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/2/1"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/2/2"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/2/2"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/2/3"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/2/3"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/3/1"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/3/1"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/3/2"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/3/2"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/3/3"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/3/3"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/4/1"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/4/1"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/4/2"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/4/2"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/4/3"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/4/3"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/5/1"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/5/1"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/5/2"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/5/2"
+								},
+								{
+									"paper_name": "Accountancy Paper 2019 code - 67/5/3"
+								},
+								{
+									"paper_name": "Accountancy Solution 2019 code - 67/5/3"
+								},
+								{
+									"paper_name": "Accountancy Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "Accountancy Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "Accountancy Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "Accountancy Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "Accountancy Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Accountancy Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Accountancy Paper 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Accountancy Solution 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Accountancy Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Accountancy Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Accountancy Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Accountancy Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Accountancy Paper 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Accountancy Solution 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Accountancy Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "Accountancy Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "Accountancy Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Accountancy Solution 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Accountancy Paper 2015 (Foreign)"
+								},
+								{
+									"paper_name": "Accountancy Solution 2015 (Foreign)"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Biology",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Biology Paper 2020 code -57/1/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Biology Solution 2020 code -57/1/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Biology Paper 2020 code -57/1/2"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Biology Solution 2020 code -57/1/2"
+								},
+								{
+									"paper_name": "Biology Paper 2020 code -57/1/3"
+								},
+								{
+									"paper_name": "Biology Solution 2020 code -57/1/3"
+								},
+								{
+									"paper_name": "Biology Paper 2020 code -57/2/1"
+								},
+								{
+									"paper_name": "Biology Solution 2020 code -57/2/1"
+								},
+								{
+									"paper_name": "Biology Paper 2020 code -57/2/2"
+								},
+								{
+									"paper_name": "Biology Solution 2020 code -57/2/2"
+								},
+								{
+									"paper_name": "Biology Paper 2020 code -57/2/3"
+								},
+								{
+									"paper_name": "Biology Solution 2020 code -57/2/3"
+								},
+								{
+									"paper_name": "Biology Paper 2020 code -57/3/1"
+								},
+								{
+									"paper_name": "Biology Solution 2020 code -57/3/1"
+								},
+								{
+									"paper_name": "Biology Paper 2020 code -57/3/2"
+								},
+								{
+									"paper_name": "Biology Solution 2020 code -57/3/2"
+								},
+								{
+									"paper_name": "Biology Paper 2020 code -57/3/3"
+								},
+								{
+									"paper_name": "Biology Solution 2020 code -57/3/3"
+								},
+								{
+									"paper_name": "Biology Paper 2020 code -57/4/1"
+								},
+								{
+									"paper_name": "Biology Solution 2020 code -57/4/1"
+								},
+								{
+									"paper_name": "Biology Paper 2020 code -57/4/2"
+								},
+								{
+									"paper_name": "Biology Solution 2020 code -57/4/2"
+								},
+								{
+									"paper_name": "Biology Paper 2020 code -57/4/3"
+								},
+								{
+									"paper_name": "Biology Solution 2020 code -57/4/3"
+								},
+								{
+									"paper_name": "Biology Paper 2020 code -57/5/1"
+								},
+								{
+									"paper_name": "Biology Solution 2020 code -57/5/1"
+								},
+								{
+									"paper_name": "Biology Paper 2020 code -57/5/2"
+								},
+								{
+									"paper_name": "Biology Solution 2020 code -57/5/2"
+								},
+								{
+									"paper_name": "Biology Paper 2020 code -57/5/3"
+								},
+								{
+									"paper_name": "Biology Solution 2020 code -57/5/3"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/1/1"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/1/1"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/1/2"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/1/2"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/1/3"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/1/3"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/2/1"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/2/1"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/2/2"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/2/2"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/2/3"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/2/3"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/3/1"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/3/1"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/3/2"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/3/2"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/3/3"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/3/3"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/4/1"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/4/1"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/4/2"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/4/2"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/4/3"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/4/3"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/5/1"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/5/1"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/5/2"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/5/2"
+								},
+								{
+									"paper_name": "Biology Paper 2019 code -57/5/3"
+								},
+								{
+									"paper_name": "Biology Solution 2019 code -57/5/3"
+								},
+								{
+									"paper_name": "Biology Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "Biology Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "Biology Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "Biology Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "Biology Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Biology Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Biology Paper 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Biology Solution 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Biology Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Biology Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Biology Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Biology Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Biology Paper 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Biology Solution 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Biology Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "Biology Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "Biology Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Biology Solution 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Biology Paper 2015 (Foreign)"
+								},
+								{
+									"paper_name": "Biology Solution 2015 (Foreign)"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Business Studies",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Business Studies Science Paper 2019 code -66/1/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Business Studies Science Solution 2019 code -66/1/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Business Studies Science Paper 2019 code -66/1/2"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Business Studies Science Solution 2019 code -66/1/2"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2019 code -66/1/3"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2019 code -66/1/3"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2019 code -66/2/1"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2019 code -66/2/1"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2019 code -66/2/2"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2019 code -66/2/2"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2019 code -66/2/3"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2019 code -66/2/3"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2019 code -66/3/1"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2019 code -66/3/1"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2019 code -66/3/2"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2019 code -66/3/2"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2019 code -66/3/3"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2019 code -66/3/3"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2019 code -66/4/1"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2019 code -66/4/1"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2019 code -66/4/2"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2019 code -66/4/2"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2019 code -66/4/3"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2019 code -66/4/3"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2019 code -66/5/1"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2019 code -66/5/1"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2019 code -66/5/2"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2019 code -66/5/2"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2019 code -66/5/3"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2019 code -66/5/3"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Business Studies Science Paper 2015 (Foreign)"
+								},
+								{
+									"paper_name": "Business Studies Science Solution 2015 (Foreign)"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Chemistry",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Chemistry Paper 2020 code -56/1/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Chemistry Solution 2020 code -56/1/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Chemistry Paper 2020 code -56/1/2"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Chemistry Solution 2020 code -56/1/2"
+								},
+								{
+									"paper_name": "Chemistry Paper 2020 code -56/1/3"
+								},
+								{
+									"paper_name": "Chemistry Solution 2020 code -56/1/3"
+								},
+								{
+									"paper_name": "Chemistry Paper 2020 code -56/2/1"
+								},
+								{
+									"paper_name": "Chemistry Solution 2020 code -56/2/1"
+								},
+								{
+									"paper_name": "Chemistry Paper 2020 code -56/2/2"
+								},
+								{
+									"paper_name": "Chemistry Solution 2020 code -56/2/2"
+								},
+								{
+									"paper_name": "Chemistry Paper 2020 code -56/2/3"
+								},
+								{
+									"paper_name": "Chemistry Solution 2020 code -56/2/3"
+								},
+								{
+									"paper_name": "Chemistry Paper 2020 code -56/3/1"
+								},
+								{
+									"paper_name": "Chemistry Solution 2020 code -56/3/1"
+								},
+								{
+									"paper_name": "Chemistry Paper 2020 code -56/3/2"
+								},
+								{
+									"paper_name": "Chemistry Solution 2020 code -56/3/2"
+								},
+								{
+									"paper_name": "Chemistry Paper 2020 code -56/3/3"
+								},
+								{
+									"paper_name": "Chemistry Solution 2020 code -56/3/3"
+								},
+								{
+									"paper_name": "Chemistry Paper 2020 code -56/4/1"
+								},
+								{
+									"paper_name": "Chemistry Solution 2020 code -56/4/1"
+								},
+								{
+									"paper_name": "Chemistry Paper 2020 code -56/4/2"
+								},
+								{
+									"paper_name": "Chemistry Solution 2020 code -56/4/2"
+								},
+								{
+									"paper_name": "Chemistry Paper 2020 code -56/4/3"
+								},
+								{
+									"paper_name": "Chemistry Solution 2020 code -56/4/3"
+								},
+								{
+									"paper_name": "Chemistry Paper 2020 code -56/5/1"
+								},
+								{
+									"paper_name": "Chemistry Solution 2020 code -56/5/1"
+								},
+								{
+									"paper_name": "Chemistry Paper 2020 code -56/5/2"
+								},
+								{
+									"paper_name": "Chemistry Solution 2020 code -56/5/2"
+								},
+								{
+									"paper_name": "Chemistry Paper 2020 code -56/5/3"
+								},
+								{
+									"paper_name": "Chemistry Solution 2020 code -56/5/3"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/1/1"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/1/1"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/1/2"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/1/2"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/1/3"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/1/3"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/2/1"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/2/1"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/2/2"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/2/2"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/2/3"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/2/3"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/3/1"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/3/1"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/3/2"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/3/2"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/3/3"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/3/3"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/4/1"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/4/1"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/4/2"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/4/2"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/4/3"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/4/3"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/5/1"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/5/1"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/5/2"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/5/2"
+								},
+								{
+									"paper_name": "Chemistry Paper 2019 code -56/5/3"
+								},
+								{
+									"paper_name": "Chemistry Solution 2019 code -56/5/3"
+								},
+								{
+									"paper_name": "Chemistry Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "Chemistry Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "Chemistry Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "Chemistry Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "Chemistry Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Chemistry Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Chemistry Paper 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Chemistry Solution 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Chemistry Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Chemistry Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Chemistry Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Chemistry Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Chemistry Paper 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Chemistry Solution 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Chemistry Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "Chemistry Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "Chemistry Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Chemistry Solution 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Chemistry Paper 2015 (Foreign)"
+								},
+								{
+									"paper_name": "Chemistry Solution 2015 (Foreign)"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
-								},
-								{
-									"paper_name": "Math 2022"
-								},
-								{
-									"paper_name": "Math 2019"
-								},
-								{
-									"paper_name": "Math 2018"
-								}
-							]
-						}
-					]
-				},
-				{
-					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
-					"subject_dataset": [
-						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Computer",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Computer Science Paper 2019"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Computer Science Solution 2019"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Computer Science Paper 2018(All India)"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Computer Science Paper 2018(All India)"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Computer Science Paper 2017 (All India)"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Computer Science Solution 2017 (All India)"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Computer Science Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Computer Science Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Computer Science Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Computer Science Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Computer Science Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Computer Science Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Computer Science Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "Computer Science Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "Computer Science Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Computer Science Solution 2015 (Delhi)"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Economics",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Economics Paper 2020 code -58/1/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Economics Solution 2020 code -58/1/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Economics Paper 2020 code -58/1/2"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Economics Solution 2020 code -58/1/2"
+								},
+								{
+									"paper_name": "Economics Paper 2020 code -58/1/3"
+								},
+								{
+									"paper_name": "Economics Solution 2020 code -58/1/3"
+								},
+								{
+									"paper_name": "Economics Paper 2020 code -58/2/1"
+								},
+								{
+									"paper_name": "Economics Solution 2020 code -58/2/1"
+								},
+								{
+									"paper_name": "Economics Paper 2020 code -58/2/2"
+								},
+								{
+									"paper_name": "Economics Solution 2020 code -58/2/2"
+								},
+								{
+									"paper_name": "Economics Paper 2020 code -58/2/3"
+								},
+								{
+									"paper_name": "Economics Solution 2020 code -58/2/3"
+								},
+								{
+									"paper_name": "Economics Paper 2020 code -58/3/1"
+								},
+								{
+									"paper_name": "Economics Solution 2020 code -58/3/1"
+								},
+								{
+									"paper_name": "Economics Paper 2020 code -58/3/2"
+								},
+								{
+									"paper_name": "Economics Solution 2020 code -58/3/2"
+								},
+								{
+									"paper_name": "Economics Paper 2020 code -58/3/3"
+								},
+								{
+									"paper_name": "Economics Solution 2020 code -58/3/3"
+								},
+								{
+									"paper_name": "Economics Paper 2020 code -58/4/1"
+								},
+								{
+									"paper_name": "Economics Solution 2020 code -58/4/1"
+								},
+								{
+									"paper_name": "Economics Paper 2020 code -58/4/2"
+								},
+								{
+									"paper_name": "Economics Solution 2020 code -58/4/2"
+								},
+								{
+									"paper_name": "Economics Paper 2020 code -58/4/3"
+								},
+								{
+									"paper_name": "Economics Solution 2020 code -58/4/3"
+								},
+								{
+									"paper_name": "Economics Paper 2020 code -58/5/1"
+								},
+								{
+									"paper_name": "Economics Solution 2020 code -58/5/1"
+								},
+								{
+									"paper_name": "Economics Paper 2020 code -58/5/2"
+								},
+								{
+									"paper_name": "Economics Solution 2020 code -58/5/2"
+								},
+								{
+									"paper_name": "Economics Paper 2020 code -58/5/3"
+								},
+								{
+									"paper_name": "Economics Solution 2020 code -58/5/3"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/1/1"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/1/1"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/1/2"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/1/2"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/1/3"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/1/3"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/2/1"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/2/1"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/2/2"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/2/2"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/2/3"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/2/3"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/3/1"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/3/1"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/3/2"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/3/2"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/3/3"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/3/3"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/4/1"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/4/1"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/4/2"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/4/2"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/4/3"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/4/3"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/5/1"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/5/1"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/5/2"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/5/2"
+								},
+								{
+									"paper_name": "Economics Paper 2019 code -58/5/3"
+								},
+								{
+									"paper_name": "Economics Solution 2019 code -58/5/3"
+								},
+								{
+									"paper_name": "Economics Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "Economics Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "Economics Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "Economics Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "Economics Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Economics Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Economics Paper 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Economics Solution 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Economics Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Economics Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Economics Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Economics Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Economics Paper 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Economics Solution 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Economics Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "Economics Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "Economics Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Economics Solution 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Economics Paper 2015 (Foreign)"
+								},
+								{
+									"paper_name": "Economics Solution 2015 (Foreign)"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "English",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "English Core Paper 2020 code -1/1/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "English Core Solution 2020 code -1/1/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "English Core Paper 2020 code -1/1/2"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "English Core Solution 2020 code -1/1/2"
+								},
+								{
+									"paper_name": "English Core Paper 2020 code -1/1/3"
+								},
+								{
+									"paper_name": "English Core Solution 2020 code -1/1/3"
+								},
+								{
+									"paper_name": "English Core Paper 2020 code -1/1/1"
+								},
+								{
+									"paper_name": "English Core Solution 2020 code -1/1/1"
+								},
+								{
+									"paper_name": "English Core Paper 2020 code -1/1/2"
+								},
+								{
+									"paper_name": "English Core Solution 2020 code -1/1/2"
+								},
+								{
+									"paper_name": "English Core Paper 2020 code -1/1/3"
+								},
+								{
+									"paper_name": "English Core Solution 2020 code -1/1/3"
+								},
+								{
+									"paper_name": "English Core Paper 2020 code - 1/3/1"
+								},
+								{
+									"paper_name": "English Core Solution 2020 code - 1/3/1"
+								},
+								{
+									"paper_name": "English Core Paper 2020 code - 1/3/2"
+								},
+								{
+									"paper_name": "English Core Solution 2020 code - 1/3/2"
+								},
+								{
+									"paper_name": "English Core Paper 2020 code - 1/3/3"
+								},
+								{
+									"paper_name": "English Core Solution 2020 code - 1/3/3"
+								},
+								{
+									"paper_name": "English Core Paper 2020 code - 1/4/1"
+								},
+								{
+									"paper_name": "English Core Solution 2020 code - 1/4/1"
+								},
+								{
+									"paper_name": "English Core Paper 2020 code - 1/4/2"
+								},
+								{
+									"paper_name": "English Core Solution 2020 code - 1/4/2"
+								},
+								{
+									"paper_name": "English Core Paper 2020 code - 1/4/3"
+								},
+								{
+									"paper_name": "English Core Solution 2020 code - 1/4/3"
+								},
+								{
+									"paper_name": "English Core Paper 2020 code - 1/5/1"
+								},
+								{
+									"paper_name": "English Core Solution 2020 code - 1/5/1"
+								},
+								{
+									"paper_name": "English Core Paper 2020 code - 1/5/2"
+								},
+								{
+									"paper_name": "English Core Solution 2020 code - 1/5/2"
+								},
+								{
+									"paper_name": "English Core Paper 2020 code - 1/5/3"
+								},
+								{
+									"paper_name": "English Core Solution 2020 code - 1/5/3"
+								},
+								{
+									"paper_name": "English Elective Paper 2020 (C)"
+								},
+								{
+									"paper_name": "English Elective Solution 2020 (C)"
+								},
+								{
+									"paper_name": "English Elective Paper 2020 (N)"
+								},
+								{
+									"paper_name": "English Elective Solution 2020 (N)"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code -1/1/1"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code -1/1/1"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code -1/1/2"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code -1/1/2"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code -1/1/3"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code -1/1/3"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code -1/1/1"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code -1/1/1"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code -1/1/2"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code -1/1/2"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code -1/1/3"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code -1/1/3"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code - 1/3/1"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code - 1/3/1"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code - 1/3/2"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code - 1/3/2"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code - 1/3/3"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code - 1/3/3"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code - 1/4/1"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code - 1/4/1"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code - 1/4/2"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code - 1/4/2"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code - 1/4/3"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code - 1/4/3"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code - 1/5/1"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code - 1/5/1"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code - 1/5/2"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code - 1/5/2"
+								},
+								{
+									"paper_name": "English Core Paper 2019 code - 1/5/3"
+								},
+								{
+									"paper_name": "English Core Solution 2019 code - 1/5/3"
+								},
+								{
+									"paper_name": "English Elective Paper 2018 (C)"
+								},
+								{
+									"paper_name": "English Elective Solution 2018 (C)"
+								},
+								{
+									"paper_name": "English Elective Paper 2018 (N)"
+								},
+								{
+									"paper_name": "English Elective Solution 2018 (N)"
+								},
+								{
+									"paper_name": "English Core Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "English Core Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "English Elective Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "English Elective Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "English Core Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "English Core Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "English Core Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "English Core Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "English Core Paper 2017 (Foreign)"
+								},
+								{
+									"paper_name": "English Core Solution 2017 (Foreign)"
+								},
+								{
+									"paper_name": "English Elective Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "English Elective Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "English Elective Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "English Elective Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "English Core Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "English Core Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "English Core Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "English Core Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "English Core Paper 2016 (Foreign)"
+								},
+								{
+									"paper_name": "English Core Solution 2016 (Foreign)"
+								},
+								{
+									"paper_name": "English Elective Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "English Elective Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "English Core Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "English Core Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "English Core Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "English Core Solution 2015 (Delhi)"
+								},
+								{
+									"paper_name": "English Core Paper 2015 (Foreign)"
+								},
+								{
+									"paper_name": "English Core Solution 2015 (Foreign)"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
-								},
-								{
-									"paper_name": "Math 2022"
-								},
-								{
-									"paper_name": "Math 2019"
-								},
-								{
-									"paper_name": "Math 2018"
-								}
-							]
-						}
-					]
-				},
-				{
-					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
-					"subject_dataset": [
-						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Geography",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Geography Science Paper 2019 code -64/1/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Geography Science Solution 2019 code -64/1/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Geography Science Paper 2019 code -64/1/2"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Geography Science Solution 2019 code -64/1/2"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Geography Science Paper 2019 code -64/1/3"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Geography Science Solution 2019 code -64/1/3"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Geography Science Paper 2019 code -64/2/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Geography Science Solution 2019 code -64/2/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Geography Science Paper 2019 code -64/2/2"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Geography Science Solution 2019 code -64/2/2"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Geography Science Paper 2019 code -64/2/3"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Geography Science Solution 2019 code -64/2/3"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Geography Science Paper 2019 code -64/3/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Geography Science Solution 2019 code -64/3/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Geography Science Paper 2019 code -64/3/2"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						}
-					]
-				},
-				{
-					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
-					"subject_dataset": [
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Geography Science Solution 2019 code -64/3/2"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Geography Science Paper 2019 code -64/3/3"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Geography Science Solution 2019 code -64/3/3"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Geography Science Paper 2019 code -64/4/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Geography Science Solution 2019 code -64/4/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Geography Science Paper 2019 code -64/4/2"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Geography Science Solution 2019 code -64/4/2"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Geography Science Paper 2019 code -64/4/3"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Geography Science Solution 2019 code -64/4/3"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Geography Science Paper 2019 code -64/5/1"
+								},
+								{
+									"paper_name": "Geography Science Solution 2019 code -64/5/1"
+								},
+								{
+									"paper_name": "Geography Science Paper 2019 code -64/5/2"
+								},
+								{
+									"paper_name": "Geography Science Solution 2019 code -64/5/2"
+								},
+								{
+									"paper_name": "Geography Science Paper 2019 code -64/5/3"
+								},
+								{
+									"paper_name": "Geography Science Solution 2019 code -64/5/3"
+								},
+								{
+									"paper_name": "Geography Science Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "Geography Science Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "Geography Science Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "Geography Science Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "Geography Science Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Geography Science Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Geography Science Paper 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Geography Science Solution 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Geography Science Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Geography Science Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Geography Science Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Geography Science Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Geography Science Paper 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Geography Science Solution 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Geography Science Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "Geography Science Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "Geography Science Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Geography Science Solution 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Geography Science Paper 2015 (Foreign)"
+								},
+								{
+									"paper_name": "Geography Science Solution 2015 (Foreign)"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Hindi",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Hindi Core Paper 2019 code -2/1/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Hindi Core Solution 2019 code -2/1/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Hindi Core Paper 2019 code -2/1/2"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Hindi Core Solution 2019 code -2/1/2"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2019 code -2/1/3"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2019 code -2/1/3"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2019 code -2/2/1"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2019 code -2/2/1"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2019 code -2/2/2"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2019 code -2/2/2"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2019 code -2/2/3"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2019 code -2/2/3"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2019 code - 2/3/1"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2019 code - 2/3/1"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2019 code - 2/3/2"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2019 code - 2/3/2"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2019 code - 2/3/3"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2019 code - 2/3/3"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2019 code - 2/4/1"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2019 code - 2/4/1"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2019 code - 2/4/2"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2019 code - 2/4/2"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2019 code - 2/4/3"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2019 code - 2/4/3"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2019 code - 2/5/1"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2019 code - 2/5/1"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2019 code - 2/5/2"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2019 code - 2/5/2"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2019 code - 2/5/3"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2019 code - 2/5/3"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/1/1"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/1/1"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/1/2"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/1/2"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/1/3"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/1/3"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/2/1"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/2/1"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/2/2"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/2/2"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/2/3"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/2/3"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/3/1"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/3/1"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/3/2"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/3/2"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/3/3"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/3/3"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/4/1"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/4/1"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/4/2"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/4/2"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/4/3"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/4/3"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/5/1"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/5/1"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/5/2"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/5/2"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2019 code - 29/5/3"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2019 code - 29/5/3"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Hindi Core Paper 2015 (Foreign)"
+								},
+								{
+									"paper_name": "Hindi Core Solution 2015 (Foreign)"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Hindi Elective Paper 2015 (Foreign)"
+								},
+								{
+									"paper_name": "Hindi Elective Solution 2015 (Foreign)"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
-								},
-								{
-									"paper_name": "Math 2022"
-								},
-								{
-									"paper_name": "Math 2019"
-								},
-								{
-									"paper_name": "Math 2018"
-								}
-							]
-						}
-					]
-				},
-				{
-					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
-					"subject_dataset": [
-						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "History",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "History Paper 2020 code -61/1/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "History Solution 2020 code -61/1/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "History Paper 2020 code -61/1/2"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "History Solution 2020 code -61/1/2"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "History Paper 2020 code -61/1/3"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "History Solution 2020 code -61/1/3"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "History Paper 2020 code -61/2/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "History Solution 2020 code -61/2/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "History Paper 2020 code -61/2/2"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "History Solution 2020 code -61/2/2"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "History Paper 2020 code -61/2/3"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "History Solution 2020 code -61/2/3"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "History Paper 2020 code -61/3/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "History Solution 2020 code -61/3/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "History Paper 2020 code -61/3/2"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						}
-					]
-				},
-				{
-					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
-					"subject_dataset": [
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "History Solution 2020 code -61/3/2"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "History Paper 2020 code -61/3/3"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "History Solution 2020 code -61/3/3"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "History Paper 2020 code -61/4/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "History Solution 2020 code -61/4/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "History Paper 2020 code -61/4/2"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "History Solution 2020 code -61/4/2"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "History Paper 2020 code -61/4/3"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "History Solution 2020 code -61/4/3"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "History Paper 2020 code -61/5/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "History Solution 2020 code -61/5/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "History Paper 2020 code -61/5/2"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "History Solution 2020 code -61/5/2"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "History Paper 2020 code -61/5/3"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "History Solution 2020 code -61/5/3"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						}
-					]
-				},
-				{
-					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
-					"subject_dataset": [
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "History Paper 2019 code -61/1/2"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "History Solution 2019 code -61/1/2"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "History Paper 2019 code -61/1/3"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "History Solution 2019 code -61/1/3"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "History Paper 2019 code -61/2/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "History Solution 2019 code -61/2/1"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "History Paper 2019 code -61/2/2"
+								},
+								{
+									"paper_name": "History Solution 2019 code -61/2/2"
+								},
+								{
+									"paper_name": "History Paper 2019 code -61/2/3"
+								},
+								{
+									"paper_name": "History Solution 2019 code -61/2/3"
+								},
+								{
+									"paper_name": "History Paper 2019 code -61/3/1"
+								},
+								{
+									"paper_name": "History Solution 2019 code -61/3/1"
+								},
+								{
+									"paper_name": "History Paper 2019 code -61/3/2"
+								},
+								{
+									"paper_name": "History Solution 2019 code -61/3/2"
+								},
+								{
+									"paper_name": "History Paper 2019 code -61/3/3"
+								},
+								{
+									"paper_name": "History Solution 2019 code -61/3/3"
+								},
+								{
+									"paper_name": "History Paper 2019 code -61/4/1"
+								},
+								{
+									"paper_name": "History Solution 2019 code -61/4/1"
+								},
+								{
+									"paper_name": "History Paper 2019 code -61/4/2"
+								},
+								{
+									"paper_name": "History Solution 2019 code -61/4/2"
+								},
+								{
+									"paper_name": "History Paper 2019 code -61/4/3"
+								},
+								{
+									"paper_name": "History Solution 2019 code -61/4/3"
+								},
+								{
+									"paper_name": "History Paper 2019 code -61/5/1"
+								},
+								{
+									"paper_name": "History Solution 2019 code -61/5/1"
+								},
+								{
+									"paper_name": "History Paper 2019 code -61/5/2"
+								},
+								{
+									"paper_name": "History Solution 2019 code -61/5/2"
+								},
+								{
+									"paper_name": "History Paper 2019 code -61/5/3"
+								},
+								{
+									"paper_name": "History Solution 2019 code -61/5/3"
+								},
+								{
+									"paper_name": "History Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "History Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "History Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "History Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "History Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "History Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "History Paper 2017 (Foreign)"
+								},
+								{
+									"paper_name": "History Solution 2017 (Foreign)"
+								},
+								{
+									"paper_name": "History Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "History Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "History Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "History Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "History Paper 2016 (Foreign)"
+								},
+								{
+									"paper_name": "History Solution 2016 (Foreign)"
+								},
+								{
+									"paper_name": "History Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "History Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "History Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "History Solution 2015 (Delhi)"
+								},
+								{
+									"paper_name": "History Paper 2015 (Foreign)"
+								},
+								{
+									"paper_name": "History Solution 2015 (Foreign)"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Home Science",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Home Science Paper 2019(BVM)"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Home Science Paper 2019(BVM)"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Home Science Paper 2018(All India)"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Home Science Solution 2018(All India)"
+								},
+								{
+									"paper_name": "Home Science Paper 2017(All India)"
+								},
+								{
+									"paper_name": "Home Science Paper 2017(All India)"
+								},
+								{
+									"paper_name": "Home Science Paper 2016(All India)"
+								},
+								{
+									"paper_name": "Home Science Solution 2016(All India)"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Mathematics",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Maths Paper 2020 code -65/1/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Maths Solution 2020 code -65/1/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Maths Paper 2020 code -65/1/2"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Maths Solution 2020 code -65/1/2"
+								},
+								{
+									"paper_name": "Maths Paper 2020 code -65/1/3"
+								},
+								{
+									"paper_name": "Maths Solution 2020 code -65/1/3"
+								},
+								{
+									"paper_name": "Maths Paper 2020 code -65/2/1"
+								},
+								{
+									"paper_name": "Maths Solution 2020 code -65/2/1"
+								},
+								{
+									"paper_name": "Maths Paper 2020 code -65/2/2"
+								},
+								{
+									"paper_name": "Maths Solution 2020 code -65/2/2"
+								},
+								{
+									"paper_name": "Maths Paper 2020 code -65/2/3"
+								},
+								{
+									"paper_name": "Maths Solution 2020 code -65/2/3"
+								},
+								{
+									"paper_name": "Maths Paper 2020 code -65/3/1"
+								},
+								{
+									"paper_name": "Maths Solution 2020 code -65/3/1"
+								},
+								{
+									"paper_name": "Maths Paper 2020 code -65/3/2"
+								},
+								{
+									"paper_name": "Maths Solution 2020 code -65/3/2"
+								},
+								{
+									"paper_name": "Maths Paper 2020 code -65/3/3"
+								},
+								{
+									"paper_name": "Maths Solution 2020 code -65/3/3"
+								},
+								{
+									"paper_name": "Maths Paper 2020 code -65/4/1"
+								},
+								{
+									"paper_name": "Maths Solution 2020 code -65/4/1"
+								},
+								{
+									"paper_name": "Maths Paper 2020 code -65/4/2"
+								},
+								{
+									"paper_name": "Maths Solution 2020 code -65/4/2"
+								},
+								{
+									"paper_name": "Maths Paper 2020 code -65/4/3"
+								},
+								{
+									"paper_name": "Maths Solution 2020 code -65/4/3"
+								},
+								{
+									"paper_name": "Maths Paper 2020 code -65/5/1"
+								},
+								{
+									"paper_name": "Maths Solution 2020 code -65/5/1"
+								},
+								{
+									"paper_name": "Maths Paper 2020 code -65/5/2"
+								},
+								{
+									"paper_name": "Maths Solution 2020 code -65/5/2"
+								},
+								{
+									"paper_name": "Maths Paper 2020 code -65/5/3"
+								},
+								{
+									"paper_name": "Maths Solution 2020 code -65/5/3"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/1/1"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/1/1"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/1/2"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/1/2"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/1/3"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/1/3"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/2/1"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/2/1"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/2/2"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/2/2"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/2/3"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/2/3"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/3/1"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/3/1"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/3/2"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/3/2"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/3/3"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/3/3"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/4/1"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/4/1"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/4/2"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/4/2"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/4/3"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/4/3"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/5/1"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/5/1"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/5/2"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/5/2"
+								},
+								{
+									"paper_name": "Maths Paper 2019 code -65/5/3"
+								},
+								{
+									"paper_name": "Maths Solution 2019 code -65/5/3"
+								},
+								{
+									"paper_name": "Maths Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "Maths Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "Maths Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "Maths Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "Maths Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Maths Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Maths Paper 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Maths Solution 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Maths Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Maths Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Maths Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Maths Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Maths Paper 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Maths Solution 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Maths Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "Maths Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "Maths Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Maths Solution 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Maths Paper 2015 (Foreign)"
+								},
+								{
+									"paper_name": "Maths Solution 2015 (Foreign)"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Physics",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Physics Paper 2020 code -55/1/1"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Physics Solution 2020 code -55/1/1"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Physics Paper 2020 code -55/1/2"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Physics Solution 2020 code -55/1/2"
+								},
+								{
+									"paper_name": "Physics Paper 2020 code -55/1/3"
+								},
+								{
+									"paper_name": "Physics Solution 2020 code -55/1/3"
+								},
+								{
+									"paper_name": "Physics Paper 2020 code -55/2/1"
+								},
+								{
+									"paper_name": "Physics Solution 2020 code -55/2/1"
+								},
+								{
+									"paper_name": "Physics Paper 2020 code -55/2/2"
+								},
+								{
+									"paper_name": "Physics Solution 2020 code -55/2/2"
+								},
+								{
+									"paper_name": "Physics Paper 2020 code -55/2/3"
+								},
+								{
+									"paper_name": "Physics Solution 2020 code -55/2/3"
+								},
+								{
+									"paper_name": "Physics Paper 2020 code -55/3/1"
+								},
+								{
+									"paper_name": "Physics Solution 2020 code -55/3/1"
+								},
+								{
+									"paper_name": "Physics Paper 2020 code -55/3/2"
+								},
+								{
+									"paper_name": "Physics Solution 2020 code -55/3/2"
+								},
+								{
+									"paper_name": "Physics Paper 2020 code -55/3/3"
+								},
+								{
+									"paper_name": "Physics Solution 2020 code -55/3/3"
+								},
+								{
+									"paper_name": "Physics Paper 2020 code -55/4/1"
+								},
+								{
+									"paper_name": "Physics Solution 2020 code -55/4/1"
+								},
+								{
+									"paper_name": "Physics Paper 2020 code -55/4/2"
+								},
+								{
+									"paper_name": "Physics Solution 2020 code -55/4/2"
+								},
+								{
+									"paper_name": "Physics Paper 2020 code -55/4/3"
+								},
+								{
+									"paper_name": "Physics Solution 2020 code -55/4/3"
+								},
+								{
+									"paper_name": "Physics Paper 2020 code -55/5/1"
+								},
+								{
+									"paper_name": "Physics Solution 2020 code -55/5/1"
+								},
+								{
+									"paper_name": "Physics Paper 2020 code -55/5/2"
+								},
+								{
+									"paper_name": "Physics Solution 2020 code -55/5/2"
+								},
+								{
+									"paper_name": "Physics Paper 2020 code -55/5/3"
+								},
+								{
+									"paper_name": "Physics Solution 2020 code -55/5/3"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/1/1"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/1/1"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/1/2"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/1/2"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/1/3"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/1/3"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/2/1"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/2/1"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/2/2"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/2/2"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/2/3"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/2/3"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/3/1"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/3/1"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/3/2"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/3/2"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/3/3"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/3/3"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/4/1"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/4/1"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/4/2"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/4/2"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/4/3"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/4/3"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/5/1"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/5/1"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/5/2"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/5/2"
+								},
+								{
+									"paper_name": "Physics Paper 2019 code -55/5/3"
+								},
+								{
+									"paper_name": "Physics Solution 2019 code -55/5/3"
+								},
+								{
+									"paper_name": "Physics Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "Physics Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "Physics Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "Physics Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "Physics Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Physics Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Physics Paper 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Physics Solution 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Physics Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Physics Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Physics Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Physics Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Physics Paper 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Physics Solution 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Physics Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "Physics Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "Physics Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Physics Solution 2015 (Delhi)"
+								}
+							]
+						},
+						{
+							"subject_name": "Political Science",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Political Science Paper 2020 code -59/1/1"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/1/1"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/1/2"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/1/2"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/1/3"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/1/3"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/2/1"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/2/1"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/2/2"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/2/2"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/2/3"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/2/3"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/3/1"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/3/1"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/3/2"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/3/2"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/3/3"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/3/3"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/4/1"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/4/1"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/4/2"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/4/2"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/4/3"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/4/3"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/5/1"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/5/1"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/5/2"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/5/2"
+								},
+								{
+									"paper_name": "Political Science Paper 2020 code -59/5/3"
+								},
+								{
+									"paper_name": "Political Science Solution 2020 code -59/5/3"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/1/2"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/1/2"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/1/3"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/1/3"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/2/1"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/2/1"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/2/2"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/2/2"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/2/3"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/2/3"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/3/1"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/3/1"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/3/2"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/3/2"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/3/3"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/3/3"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/4/1"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/4/1"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/4/2"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/4/2"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/4/3"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/4/3"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/5/1"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/5/1"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/5/2"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/5/2"
+								},
+								{
+									"paper_name": "Political Science Paper 2019 code -59/5/3"
+								},
+								{
+									"paper_name": "Political Science Solution 2019 code -59/5/3"
+								},
+								{
+									"paper_name": "Political Science Paper 2018 (All India)"
+								},
+								{
+									"paper_name": "Political Science Solution 2018 (All India)"
+								},
+								{
+									"paper_name": "Political Science Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "Political Science Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "Political Science Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Political Science Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Political Science Paper 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Political Science Solution 2017 (Foreign)"
+								},
+								{
+									"paper_name": "Political Science Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Political Science Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Political Science Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Political Science Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Political Science Paper 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Political Science Solution 2016 (Foreign)"
+								},
+								{
+									"paper_name": "Political Science Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "Political Science Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "Political Science Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Political Science Solution 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Political Science Paper 2015 (Foreign)"
+								},
+								{
+									"paper_name": "Political Science Solution 2015 (Foreign)"
+								}
+							]
+						},
+						{
+							"subject_name": "Physical Education",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Sociology Paper 2020(HMJ/4)"
+								},
+								{
+									"paper_name": "Sociology Solution 2020(HMJ/4)"
+								},
+								{
+									"paper_name": "Sociology Paper 2019(BVM)"
+								},
+								{
+									"paper_name": "Sociology Solution 2019(BVM)"
+								},
+								{
+									"paper_name": "Sociology Paper 2018(All India)"
+								},
+								{
+									"paper_name": "Sociology Paper 2018(All India)"
+								},
+								{
+									"paper_name": "Sociology Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "Sociology Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "Sociology Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Sociology Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Sociology Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Sociology Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Sociology Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Sociology Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Sociology Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Sociology Solution 2015 (Delhi)"
+								}
+							]
+						},
+						{
+							"subject_name": "Sociology",
+							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
+							"paper_dataset": [
+								{
+									"paper_name": "Sociology Paper 2019(BVM)"
+								},
+								{
+									"paper_name": "Sociology Solution 2019(BVM)"
+								},
+								{
+									"paper_name": "Sociology Paper 2019(BVM)"
+								},
+								{
+									"paper_name": "Sociology Solution 2019(BVM)"
+								},
+								{
+									"paper_name": "Sociology Paper 2018(All India)"
+								},
+								{
+									"paper_name": "Sociology Paper 2018(All India)"
+								},
+								{
+									"paper_name": "Sociology Paper 2017 (All India)"
+								},
+								{
+									"paper_name": "Sociology Solution 2017 (All India)"
+								},
+								{
+									"paper_name": "Sociology Paper 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Sociology Solution 2017 (Delhi)"
+								},
+								{
+									"paper_name": "Sociology Paper 2016 (All India)"
+								},
+								{
+									"paper_name": "Sociology Solution 2016 (All India)"
+								},
+								{
+									"paper_name": "Sociology Paper 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Sociology Solution 2016 (Delhi)"
+								},
+								{
+									"paper_name": "Sociology Paper 2015 (All India)"
+								},
+								{
+									"paper_name": "Sociology Solution 2015 (All India)"
+								},
+								{
+									"paper_name": "Sociology Paper 2015 (Delhi)"
+								},
+								{
+									"paper_name": "Sociology Solution 2015 (Delhi)"
 								}
 							]
 						}
@@ -686,683 +3061,967 @@
 			]
 		},
 		{
-			"Paper_type": "Previous Year Paper",
-			"type_image_src": "assets/ncert/class10/ncert.png",
+			"Paper_type": "Sample Paper",
+			"type_image_src": "assets/exam/samplepaper.png",
 			"board_dataset": [
 				{
 					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
+					"board_image_src": "../../../assets/boardimage/cbse.jpg",
 					"subject_dataset": [
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Accountancy",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Accountancy Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Accountancy Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Accountancy Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Accountancy Sample Solution Term-1 2021-2022"
+								},
+								{
+									"paper_name": "Accountancy Sample Paper 2020-2021"
+								},
+								{
+									"paper_name": "Accountancy Sample Solution 2020-2021"
+								},
+								{
+									"paper_name": "Accountancy Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "Accountancy Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "Accountancy Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Accountancy Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Accountancy Sample Paper & Solution 2017-2018"
+								},
+								{
+									"paper_name": "Accountancy Sample Paper & Solution 2016-2017"
+								},
+								{
+									"paper_name": "Accountancy Sample Paper & Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Applied Mathematics",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Appliied Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Appliied Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Appliied Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Appliied Sample Solution Term-1 2021-2022"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Biology",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Biology Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Biology Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Biology Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Biology Sample Solution Term-1 2021-2022"
+								},
+								{
+									"paper_name": "Biology Sample Paper 2020-2021"
+								},
+								{
+									"paper_name": "Biology Sample Solution 2020-2021"
+								},
+								{
+									"paper_name": "Biology Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "Biology Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "Biology Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Biology Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Biology Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "Biology Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "Biology Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "Biology Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "Biology Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "Biology Sample Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Business Studies",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Business Studies Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Business Studies Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Business Studies Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Business Studies Sample Solution Term-1 2021-2022"
+								},
+								{
+									"paper_name": "Business Studies Sample Paper 2020-2021"
+								},
+								{
+									"paper_name": "Business Studies Sample Solution 2020-2021"
+								},
+								{
+									"paper_name": "Business Studies Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "Business Studies Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "Business Studies Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Business Studies Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Business Studies Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "Business Studies Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "Business Studies Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "Business Studies Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "Business Studies Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "Business Studies Sample Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
-								},
-								{
-									"paper_name": "Math 2022"
-								},
-								{
-									"paper_name": "Math 2019"
-								},
-								{
-									"paper_name": "Math 2018"
-								}
-							]
-						}
-					]
-				},
-				{
-					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
-					"subject_dataset": [
-						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Chemistry",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Chemistry Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Chemistry Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Chemistry Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Chemistry Sample Solution Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Chemistry Sample Paper 2020-2021"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Chemistry Sample Solution 2020-2021"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Chemistry Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "Chemistry Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "Chemistry Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Chemistry Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Chemistry Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "Chemistry Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "Chemistry Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "Chemistry Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "Chemistry Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "Chemistry Sample Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Computer",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Computer Science Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Computer Science Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Computer Science Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Computer Science Sample Solution Term-1 2021-2022"
+								},
+								{
+									"paper_name": "Computer Science Sample Paper 2020-2021"
+								},
+								{
+									"paper_name": "Computer Science Sample Solution 2020-2021"
+								},
+								{
+									"paper_name": "Computer Science Sample Paper 2019-2020(Python)"
+								},
+								{
+									"paper_name": "Computer Science Sample Solution 2019-2020(Python)"
+								},
+								{
+									"paper_name": "Computer Science Sample Paper 2019-2020(C++)"
+								},
+								{
+									"paper_name": "Computer Science Sample Solution 2019-2020(C++)"
+								},
+								{
+									"paper_name": "Computer Science Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Computer Science Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Computer Science Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "Computer Science Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "Computer Science Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "Computer Science Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "Computer Science Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "Computer Science Sample Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Economics",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Economics Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Economics Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Economics Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Economics Sample Solution Term-1 2021-2022"
+								},
+								{
+									"paper_name": "Economics Sample Paper 2020-2021"
+								},
+								{
+									"paper_name": "Economics Sample Solution 2020-2021"
+								},
+								{
+									"paper_name": "Economics Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "Economics Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "Economics Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Economics Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Economics Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "Economics Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "Economics Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "Economics Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "Economics Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "Economics Sample Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
-								},
-								{
-									"paper_name": "Math 2022"
-								},
-								{
-									"paper_name": "Math 2019"
-								},
-								{
-									"paper_name": "Math 2018"
-								}
-							]
-						}
-					]
-				},
-				{
-					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
-					"subject_dataset": [
-						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "English",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "English Core Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "English Core Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "English Core Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "English Core Sample Solution Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "English Elective Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "English Elective Sample Solution Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "English Core Sample Paper 2020-2021"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "English Core Sample Solution 2020-2021"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "English Core Sample Paper 2019-2020"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "English Core Sample Solution 2019-2020"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "English Elective Sample Paper 2019-2020"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "English Elective Sample Solution 2019-2020"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "English Core Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "English Core Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "English Elective Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "English Elective Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "English Core Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "English Core Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "English Elective Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "English Elective Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "English Core Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "English Core Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "English Elective Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "English Elective Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "English Core Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "English Core Sample Solution 2015-2016"
+								},
+								{
+									"paper_name": "English Elective Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "English Elective Sample Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
-								},
-								{
-									"paper_name": "Math 2022"
-								},
-								{
-									"paper_name": "Math 2019"
-								},
-								{
-									"paper_name": "Math 2018"
-								}
-							]
-						}
-					]
-				},
-				{
-					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
-					"subject_dataset": [
-						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Geography",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Geography Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Geography Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Geography Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Geography Sample Solution Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Geography Sample Paper 2020-2021"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Geography Sample Solution 2020-2021"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Geography Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "Geography Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "Geography Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Geography Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Geography Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "Geography Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "Geography Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "Geography Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "Geography Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "Geography Sample Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Hindi",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Hindi Core Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Hindi Core Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Hindi Elective Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Hindi Elective Sample Solution Term-2 2021-2022"
+								},
+								{
+									"paper_name": "Hindi Core Sample Paper Term-1 2021-2022"
+								},
+								{
+									"paper_name": "Hindi Core Sample Solution Term-1 2021-2022"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Paper Term-1 2021-2022"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Solution Term-1 2021-2022"
+								},
+								{
+									"paper_name": "Hindi Core Sample Paper 2020-2021"
+								},
+								{
+									"paper_name": "Hindi Core Sample Solution 2020-2021"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Paper 2020-2021"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Solution 2020-2021"
+								},
+								{
+									"paper_name": "Hindi Core Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "Hindi Core Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "Hindi Core Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Hindi Core Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Hindi Core Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "Hindi Core Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "Hindi Core Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "Hindi Core Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "Hindi Core Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "Hindi Core Sample Solution 2015-2016"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "Hindi Elective Sample Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "History",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "History Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "History Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "History Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "History Sample Solution Term-1 2021-2022"
+								},
+								{
+									"paper_name": "History Sample Paper 2020-2021"
+								},
+								{
+									"paper_name": "History Sample Solution 2020-2021"
+								},
+								{
+									"paper_name": "History Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "History Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "History Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "History Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "History Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "History Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "History Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "History Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "History Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "History Sample Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
-								},
-								{
-									"paper_name": "Math 2022"
-								},
-								{
-									"paper_name": "Math 2019"
-								},
-								{
-									"paper_name": "Math 2018"
-								}
-							]
-						}
-					]
-				},
-				{
-					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
-					"subject_dataset": [
-						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Home Science",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Home Science Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Home Science Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Home Science Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Home Science Sample Solution Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Home Science Sample Paper 2020-2021"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Home Science Sample Solution 2020-2021"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Home Science Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "Home Science Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "Home Science Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Home Science Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Home Science Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "Home Science Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "Home Science Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "Home Science Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "Home Science Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "Home Science Sample Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Mathematics",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Maths Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Maths Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Maths Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Maths Sample Solution Term-1 2021-2022"
+								},
+								{
+									"paper_name": "Maths Sample Paper 2020-2021"
+								},
+								{
+									"paper_name": "Maths Sample Solution 2020-2021"
+								},
+								{
+									"paper_name": "Maths Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "Maths Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "Maths Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Maths Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Maths Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "Maths Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "Maths Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "Maths Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "Maths Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "Maths Sample Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Physics",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Physics Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Physics Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Physics Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Physics Sample Solution Term-1 2021-2022"
+								},
+								{
+									"paper_name": "Physics Sample Paper 2020-2021"
+								},
+								{
+									"paper_name": "Physics Sample Solution 2020-2021"
+								},
+								{
+									"paper_name": "Physics Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "Physics Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "Physics Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Physics Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Physics Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "Physics Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "Physics Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "Physics Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "Physics Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "Physics Sample Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
-								},
-								{
-									"paper_name": "Math 2022"
-								},
-								{
-									"paper_name": "Math 2019"
-								},
-								{
-									"paper_name": "Math 2018"
-								}
-							]
-						}
-					]
-				},
-				{
-					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
-					"subject_dataset": [
-						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Political Science",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Political Science Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Political Science Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Political Science Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Political Science Sample Solution Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Political Science Sample Paper 2020-2021"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Political Science Sample Solution 2020-2021"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Political Science Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "Political Science Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "Political Science Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Political Science Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Political Science Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "Political Science Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "Political Science Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "Political Science Sample Solution 2016-2017"
+								},
+								{
+									"paper_name": "Political Science Sample Paper 2015-2016"
+								},
+								{
+									"paper_name": "Political Science Sample Solution 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Physical Education",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Physical Education Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Physical Education Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Physical Education Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
+									"paper_name": "Physical Education Sample Solution Term-1 2021-2022"
+								},
+								{
+									"paper_name": "Physical Education Sample Paper 2020-2021"
+								},
+								{
+									"paper_name": "Physical Education Sample Solution 2020-2021"
+								},
+								{
+									"paper_name": "Physical Education Sample Paper 2019-2020"
+								},
+								{
+									"paper_name": "Physical Education Sample Solution 2019-2020"
+								},
+								{
+									"paper_name": "Physical Education Sample Paper 2018-2019"
+								},
+								{
+									"paper_name": "Physical Education Sample Solution 2018-2019"
+								},
+								{
+									"paper_name": "Physical Education Sample Paper 2017-2018"
+								},
+								{
+									"paper_name": "Physical Education Sample Solution 2017-2018"
+								},
+								{
+									"paper_name": "Physical Education Sample Paper 2016-2017"
+								},
+								{
+									"paper_name": "Physical Education Sample Paper 2015-2016"
 								}
 							]
 						},
 						{
-							"subject_name": "Mathematics Books",
+							"subject_name": "Sociology",
 							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
 							"paper_dataset": [
 								{
-									"paper_name": "Math 2021"
+									"paper_name": "Sociology Sample Paper Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Sociology Sample Solution Term-2 2021-2022"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Sociology Sample Paper Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Sociology Sample Solution Term-1 2021-2022"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Sociology Sample Paper 2020-2021"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Sociology Sample Solution 2020-2021"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						}
-					]
-				},
-				{
-					"board_name": "CBSE Board",
-					"board_image_src": "assets/ncert/class10/subject/mathematics.png",
-					"subject_dataset": [
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Sociology Sample Paper 2019-2020"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Sociology Sample Solution 2019-2020"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Sociology Sample Paper 2018-2019"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Sociology Sample Solution 2018-2019"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Sociology Sample Paper 2017-2018"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Sociology Sample Solution 2017-2018"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
+									"paper_name": "Sociology Sample Paper 2016-2017"
 								},
 								{
-									"paper_name": "Math 2022"
+									"paper_name": "Sociology Sample Solution 2016-2017"
 								},
 								{
-									"paper_name": "Math 2019"
+									"paper_name": "Sociology Sample Paper 2015-2016"
 								},
 								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
-								},
-								{
-									"paper_name": "Math 2022"
-								},
-								{
-									"paper_name": "Math 2019"
-								},
-								{
-									"paper_name": "Math 2018"
-								}
-							]
-						},
-						{
-							"subject_name": "Mathematics Books",
-							"subject_image_src": "assets/ncert/class10/book/mathematics.png",
-
-							"paper_dataset": [
-								{
-									"paper_name": "Math 2021"
-								},
-								{
-									"paper_name": "Math 2022"
-								},
-								{
-									"paper_name": "Math 2019"
-								},
-								{
-									"paper_name": "Math 2018"
+									"paper_name": "Sociology Sample Solution 2015-2016"
 								}
 							]
 						}
