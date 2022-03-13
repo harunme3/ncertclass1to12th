@@ -2,11 +2,11 @@
 	"exam_dataset": [
 		{
 			"Paper_type": "Previous Year Paper",
-			"type_image_src": "assets//exam/previouspaper.png",
+			"type_image_src": "assets/exam/previouspaper.png",
 			"board_dataset": [
 				{
 					"board_name": "CBSE Board",
-					"board_image_src": "../../../assets/boardimage/cbse.jpg",
+					"board_image_src": "assets/boardimage/cbse.jpg",
 					"subject_dataset": [
 						{
 							"subject_name": "Accountancy",
@@ -3066,7 +3066,7 @@
 			"board_dataset": [
 				{
 					"board_name": "CBSE Board",
-					"board_image_src": "../../../assets/boardimage/cbse.jpg",
+					"board_image_src": "assets/boardimage/cbse.jpg",
 					"subject_dataset": [
 						{
 							"subject_name": "Accountancy",
