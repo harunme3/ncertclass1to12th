@@ -5,6 +5,8 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:logger/logger.dart';
 import 'package:ncertclass1to12th/browser/browser.dart';
 import 'package:ncertclass1to12th/onlinepdfviewer/onlinepdfviewer.dart';
+import 'package:ncertclass1to12th/theme/theme.dart';
+import 'package:provider/provider.dart';
 
 class ResultPage extends StatefulWidget {
   const ResultPage({Key? key, required this.boardname, required this.classname})
@@ -55,13 +57,18 @@ class _ResultPageState extends State<ResultPage> {
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(20))),
         title: AutoSizeText(
-          'Result Server',
-          minFontSize: 18,
-          style: Theme.of(context).primaryTextTheme.bodyText1,
+          'For Result Click on Server',
+          style: Theme.of(context)
+              .primaryTextTheme
+              .bodyText1!
+              .copyWith(fontSize: 20),
         ),
-        content: Text(
-          'If one is not working use other',
-          style: Theme.of(context).primaryTextTheme.bodyText1,
+        content: AutoSizeText(
+          'If one server is not working use other',
+          style: Theme.of(context)
+              .primaryTextTheme
+              .bodyText1!
+              .copyWith(fontSize: 16),
         ),
         actions: [
           Align(
@@ -89,12 +96,17 @@ class _ResultPageState extends State<ResultPage> {
       },
       child: AutoSizeText(
         'Server ${++count}',
+        style: Theme.of(context)
+            .primaryTextTheme
+            .bodyText1!
+            .copyWith(color: Colors.blue, fontSize: 24),
       ),
     );
   }
 
   @override
   Widget build(BuildContext context) {
+    bool isDarkTheme = Provider.of<ThemeProvider>(context).isDarkTheme;
     return FutureBuilder<Map<String, dynamic>>(
         future: fetchresultdata(),
         builder: (BuildContext context,
@@ -144,12 +156,13 @@ class _ResultPageState extends State<ResultPage> {
                           data: renderddata(snapshot.data!),
                           selectable: true,
                           styleSheet: MarkdownStyleSheet(
-                            textScaleFactor: 1.5,
+                            textScaleFactor: 1.2,
                             listBullet:
-                                TextStyle(color: Colors.red, fontSize: 24),
+                                Theme.of(context).primaryTextTheme.bodyText1,
                             h3: TextStyle(
-                              color: Colors.red,
+                              color: Color.fromARGB(255, 43, 190, 75),
                             ),
+                            p: Theme.of(context).primaryTextTheme.bodyText1,
                           ),
                         ),
                         Padding(

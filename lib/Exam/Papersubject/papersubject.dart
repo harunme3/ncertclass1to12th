@@ -2,6 +2,8 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:ncertclass1to12th/Exam/allpaperlist/allpaperlist.dart';
 import 'package:ncertclass1to12th/Exam/exammodal/exammodal.dart';
+import 'package:ncertclass1to12th/theme/theme.dart';
+import 'package:provider/provider.dart';
 
 class PaperSubject extends StatefulWidget {
   const PaperSubject(
@@ -25,6 +27,7 @@ class _PaperSubjectState extends State<PaperSubject> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    bool isDarkTheme = Provider.of<ThemeProvider>(context).isDarkTheme;
     return Scaffold(
       appBar: AppBar(),
       body: GridView.builder(
@@ -73,14 +76,14 @@ class _PaperSubjectState extends State<PaperSubject> {
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       stops: [
-                        0.10,
-                        0.90,
+                        0.060,
+                        0.97,
                       ],
-                      begin: Alignment.topRight,
-                      end: Alignment.bottomLeft,
+                      begin: Alignment.centerRight,
+                      end: Alignment.centerLeft,
                       colors: [
-                        Color(0xFF2f5fe8),
-                        Color(0xFFb82fe8),
+                        Color(0xFF89d4cf),
+                        Color(0xFF9b4ae8),
                       ],
                     ),
                     borderRadius: BorderRadius.circular(20),

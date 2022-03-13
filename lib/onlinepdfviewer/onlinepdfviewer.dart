@@ -61,6 +61,7 @@ class _OnlinePdfViwerState extends State<OnlinePdfViwer> {
                     body: Center(
                         child: AutoSizeText(
                   'No data inform us on rahulguptasonu123@gmail.com',
+                  style: Theme.of(context).primaryTextTheme.bodyText1,
                   maxLines: 2,
                 )));
               else

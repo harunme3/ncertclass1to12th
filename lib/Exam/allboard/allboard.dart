@@ -70,14 +70,14 @@ class _AllBoardState extends State<AllBoard> {
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       stops: [
-                        0.10,
-                        0.90,
+                        0.060,
+                        0.97,
                       ],
-                      begin: Alignment.topRight,
-                      end: Alignment.bottomLeft,
+                      begin: Alignment.centerRight,
+                      end: Alignment.centerLeft,
                       colors: [
-                        Color(0xFF2f5fe8),
-                        Color(0xFFb82fe8),
+                        Color(0xFF89d4cf),
+                        Color(0xFF9b4ae8),
                       ],
                     ),
                     borderRadius: BorderRadius.circular(20),

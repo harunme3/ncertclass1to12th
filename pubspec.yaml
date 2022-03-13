@@ -98,8 +98,8 @@ flutter:
     - assets/alldata_image/class10/data_image/
     - assets/alldata_image/class11/data_image/
     - assets/alldata_image/class12/data_image/
-    - assets/Paper/class10/
-    - assets/Paper/class12/
+    - assets/Paper/CBSE/class10/
+    - assets/Paper/CBSE/class12/
     - assets/board/
     #class 9
     - assets/ncert/class9/

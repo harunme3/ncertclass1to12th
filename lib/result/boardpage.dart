@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ncertclass1to12th/Exam/exammodal/boardmodal.dart';
 import 'package:ncertclass1to12th/result/result.dart';
+import 'package:ncertclass1to12th/theme/theme.dart';
+import 'package:provider/provider.dart';
 
 class BoardPage extends StatefulWidget {
   const BoardPage({Key? key, required this.classname}) : super(key: key);
@@ -25,6 +27,7 @@ class _BoardPageState extends State<BoardPage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    bool isDarkTheme = Provider.of<ThemeProvider>(context).isDarkTheme;
     return FutureBuilder<ResultDataset>(
         future: loadborddata(),
         builder: (BuildContext context, AsyncSnapshot<ResultDataset> snapshot) {
@@ -87,7 +90,9 @@ class _BoardPageState extends State<BoardPage> {
                               padding: const EdgeInsets.all(8.0),
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: isDarkTheme
+                                      ? Colors.grey[900]
+                                      : Colors.white,
                                   borderRadius: BorderRadius.circular(20),
                                 ),
                                 child: Column(
