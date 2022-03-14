@@ -30,38 +30,6 @@ class MyBookandSolution extends StatefulWidget {
 class _MyBookandSolutionState extends State<MyBookandSolution> {
   var l = Logger();
 
-  late BannerAd _ad;
-  bool _isAdLoaded = false;
-
-  @override
-  void initState() {
-    super.initState();
-    _createandshowBannerAd();
-  }
-
-  _createandshowBannerAd() {
-    _ad = BannerAd(
-      adUnitId: AdHelper.bannerAdUnitId,
-      size: AdSize.banner,
-      request: AdRequest(),
-      listener: BannerAdListener(
-        onAdLoaded: (_) {
-          setState(() {
-            _isAdLoaded = true;
-          });
-        },
-        onAdFailedToLoad: (ad, error) {
-          // Releases an ad resource when it fails to load
-          ad.dispose();
-
-          print('Ad load failed (code=${error.code} message=${error.message})');
-        },
-      ),
-    );
-
-    _ad.load();
-  }
-
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -226,14 +194,6 @@ class _MyBookandSolutionState extends State<MyBookandSolution> {
             ),
           ],
         ),
-        bottomNavigationBar: _isAdLoaded
-            ? Container(
-                child: AdWidget(ad: _ad),
-                width: _ad.size.width.toDouble(),
-                height: _ad.size.height.toDouble(),
-                alignment: Alignment.center,
-              )
-            : null,
       ),
     );
   }

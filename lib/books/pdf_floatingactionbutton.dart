@@ -18,57 +18,6 @@ class LastopenPDFButton extends StatefulWidget {
 const int maxFailedLoadAttempts = 3;
 
 class _LastopenPDFButtonState extends State<LastopenPDFButton> {
-  InterstitialAd? _interstitialAd;
-  int _interstitialLoadAttempts = 0;
-
-  @override
-  void dispose() {
-    super.dispose();
-    _interstitialAd?.dispose();
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _createInterstitialAd();
-  }
-
-  void _createInterstitialAd() {
-    InterstitialAd.load(
-      adUnitId: AdHelper.interstitialAdUnitId,
-      request: AdRequest(),
-      adLoadCallback: InterstitialAdLoadCallback(
-        onAdLoaded: (InterstitialAd ad) {
-          _interstitialAd = ad;
-          _interstitialLoadAttempts = 0;
-        },
-        onAdFailedToLoad: (LoadAdError error) {
-          _interstitialLoadAttempts += 1;
-          _interstitialAd = null;
-          if (_interstitialLoadAttempts <= maxFailedLoadAttempts) {
-            _createInterstitialAd();
-          }
-        },
-      ),
-    );
-  }
-
-  void _showInterstitialAd() {
-    if (_interstitialAd != null) {
-      _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
-        onAdDismissedFullScreenContent: (InterstitialAd ad) {
-          ad.dispose();
-          _createInterstitialAd();
-        },
-        onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
-          ad.dispose();
-          _createInterstitialAd();
-        },
-      );
-      _interstitialAd!.show();
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
@@ -84,7 +33,6 @@ class _LastopenPDFButtonState extends State<LastopenPDFButton> {
         var path = pdfbox.get('lastopenpdf');
 
         if (path != null) {
-          _showInterstitialAd();
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => LastOpenedPdf(path: path)),

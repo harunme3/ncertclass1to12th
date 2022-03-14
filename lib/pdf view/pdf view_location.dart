@@ -23,11 +23,13 @@ class PdfViewLocation extends StatefulWidget {
     required this.file,
     this.filename,
     this.pathofdata,
+    this.isitcomefromdownload,
   });
 
   final File file;
   final String? filename;
   final String? pathofdata;
+  final bool? isitcomefromdownload;
 
   @override
   _PdfViewLocationState createState() => _PdfViewLocationState();
@@ -121,179 +123,188 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Pdf', style: Theme.of(context).primaryTextTheme.bodyText1),
-        actions: <Widget>[
-          Center(
-            child: Text(
-              '${indexPage + 1}/$pages',
-              style: TextStyle(fontSize: 18),
-            ),
-          ),
-          IconButton(
-            icon: Icon(
-              Icons.dark_mode_outlined,
-            ),
-            onPressed: () {
-              InAppUpdate.checkForUpdate().then((info) {
-                if (info.flexibleUpdateAllowed) {
-                  InAppUpdate.startFlexibleUpdate().then((_) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('Your app is now Upto date'),
-                      ),
-                    );
-                  }).catchError((e) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('Update it later'),
-                      ),
-                    );
-                  });
-                }
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => PdfDarkMode(widget.file)),
-                );
-              }).catchError((e) {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => PdfDarkMode(widget.file)),
-                );
-              });
-            },
-          ),
-          IconButton(
-            icon: Icon(
-              Icons.pin_outlined,
-            ),
-            onPressed: () {
-              showDialog(
-                context: context,
-                builder: (context) {
-                  return AlertDialog(
-                    title: Text('Jump to page'),
-                    content: TextField(
-                      controller: _textFieldController,
-                      decoration: InputDecoration(
-                          hintText: "Enter Numeric value :Ex-5"),
-                    ),
-                    actions: <Widget>[
-                      ElevatedButton(
-                        child: Text('CANCEL'),
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                      ),
-                      ElevatedButton(
-                        child: Text('OK'),
-                        onPressed: () {
-                          controller.setPage(
-                              int.parse(_textFieldController.text) - 1);
-                          _textFieldController.clear();
-                          Navigator.pop(context);
-                        },
-                      ),
-                    ],
-                  );
-                },
-              );
-            },
-          ),
-          IconButton(
-            icon: Icon(
-              Icons.crop_free_outlined,
-            ),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) =>
-                        PdfViewDistractionFreeMode(widget.file)),
-              );
-            },
-          ),
-          IconButton(
-            icon: Icon(
-              Icons.more_vert,
-            ),
-            onPressed: () {
-              panelController.isPanelOpen
-                  ? panelController.close()
-                  : panelController.open();
-            },
-          ),
-        ],
-      ),
-      body: Stack(
-        children: [
-          SlidingUpPanel(
-            controller: panelController,
-            maxHeight: size.height / 2.5,
-            minHeight: 0,
-            parallaxEnabled: true,
-            backdropEnabled: true,
-            borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(18.0),
-                topRight: Radius.circular(18.0)),
-            panelBuilder: (scrollController) =>
-                Paneloption(scrollController, panelController),
-            body: Container(
-              child: PDFView(
-                filePath: widget.file.path,
-                autoSpacing: false,
-                pageSnap: false,
-                pageFling: false,
-                onRender: (pages) => setState(() {
-                  this.pages = pages!;
-                }),
-                onViewCreated: (controller) => setState(() {
-                  this.controller = controller;
-                }),
-                onPageChanged: (indexPage, _) => setState(() {
-                  this.indexPage = indexPage!;
-                }),
+    return WillPopScope(
+      onWillPop: () {
+        if (widget.isitcomefromdownload != null) {
+          _showInterstitialAd();
+        }
+        return Future<bool>.value(true);
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title:
+              Text('Pdf', style: Theme.of(context).primaryTextTheme.bodyText1),
+          actions: <Widget>[
+            Center(
+              child: Text(
+                '${indexPage + 1}/$pages',
+                style: TextStyle(fontSize: 18),
               ),
             ),
-          ),
-          SideRough()
-        ],
-      ),
-      floatingActionButton: widget.pathofdata != null &&
-              !Provider.of<SideRoughStatus>(context, listen: false)
-                  .getisSideBarstatus
-          ? FloatingActionButton(
-              backgroundColor: AppColor.third_color,
-              foregroundColor: AppColor.white_color,
-              splashColor: AppColor.first_color,
-              child: Text('Hint'),
-              onPressed: () async {
-                _showInterstitialAd();
-                var file = await ishintdownloaded(widget.filename! + '.pdf');
-
-                if (file != false) {
-                  l.e('File is already downloaded');
-                  Navigator.push(
+            IconButton(
+              icon: Icon(
+                Icons.dark_mode_outlined,
+              ),
+              onPressed: () {
+                InAppUpdate.checkForUpdate().then((info) {
+                  if (info.flexibleUpdateAllowed) {
+                    InAppUpdate.startFlexibleUpdate().then((_) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('Your app is now Upto date'),
+                        ),
+                      );
+                    }).catchError((e) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('Update it later'),
+                        ),
+                      );
+                    });
+                  }
+                  Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => HintPdf(file: file)),
+                        builder: (context) => PdfDarkMode(widget.file)),
                   );
-                } else if (file == false) {
-                  l.e('we have to download the file');
-                  Navigator.push(
+                }).catchError((e) {
+                  Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => DownloadPlatform(
-                            filename: widget.filename!,
-                            pathofdata: widget.pathofdata!)),
+                        builder: (context) => PdfDarkMode(widget.file)),
                   );
-                }
+                });
               },
-            )
-          : null,
+            ),
+            IconButton(
+              icon: Icon(
+                Icons.pin_outlined,
+              ),
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      title: Text('Jump to page'),
+                      content: TextField(
+                        controller: _textFieldController,
+                        decoration: InputDecoration(
+                            hintText: "Enter Numeric value :Ex-5"),
+                      ),
+                      actions: <Widget>[
+                        ElevatedButton(
+                          child: Text('CANCEL'),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                        ),
+                        ElevatedButton(
+                          child: Text('OK'),
+                          onPressed: () {
+                            controller.setPage(
+                                int.parse(_textFieldController.text) - 1);
+                            _textFieldController.clear();
+                            Navigator.pop(context);
+                          },
+                        ),
+                      ],
+                    );
+                  },
+                );
+              },
+            ),
+            IconButton(
+              icon: Icon(
+                Icons.crop_free_outlined,
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          PdfViewDistractionFreeMode(widget.file)),
+                );
+              },
+            ),
+            IconButton(
+              icon: Icon(
+                Icons.more_vert,
+              ),
+              onPressed: () {
+                panelController.isPanelOpen
+                    ? panelController.close()
+                    : panelController.open();
+              },
+            ),
+          ],
+        ),
+        body: Stack(
+          children: [
+            SlidingUpPanel(
+              controller: panelController,
+              maxHeight: size.height / 2.5,
+              minHeight: 0,
+              parallaxEnabled: true,
+              backdropEnabled: true,
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(18.0),
+                  topRight: Radius.circular(18.0)),
+              panelBuilder: (scrollController) =>
+                  Paneloption(scrollController, panelController),
+              body: Container(
+                child: PDFView(
+                  filePath: widget.file.path,
+                  autoSpacing: false,
+                  pageSnap: false,
+                  pageFling: false,
+                  onRender: (pages) => setState(() {
+                    this.pages = pages!;
+                  }),
+                  onViewCreated: (controller) => setState(() {
+                    this.controller = controller;
+                  }),
+                  onPageChanged: (indexPage, _) => setState(() {
+                    this.indexPage = indexPage!;
+                  }),
+                ),
+              ),
+            ),
+            SideRough()
+          ],
+        ),
+        floatingActionButton: widget.pathofdata != null &&
+                !Provider.of<SideRoughStatus>(context, listen: false)
+                    .getisSideBarstatus
+            ? FloatingActionButton(
+                backgroundColor: AppColor.third_color,
+                foregroundColor: AppColor.white_color,
+                splashColor: AppColor.first_color,
+                child: Text('Hint'),
+                onPressed: () async {
+                  _showInterstitialAd();
+                  var file = await ishintdownloaded(widget.filename! + '.pdf');
+
+                  if (file != false) {
+                    l.e('File is already downloaded');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => HintPdf(file: file)),
+                    );
+                  } else if (file == false) {
+                    l.e('we have to download the file');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DownloadPlatform(
+                              filename: widget.filename!,
+                              pathofdata: widget.pathofdata!)),
+                    );
+                  }
+                },
+              )
+            : null,
+      ),
     );
   }
 }

@@ -103,7 +103,10 @@ class _DownloadPlatformState extends State<DownloadPlatform> {
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => PdfViewLocation(file: file!)),
+                builder: (context) => PdfViewLocation(
+                      file: file!,
+                      isitcomefromdownload: true,
+                    )),
           ),
         });
   }

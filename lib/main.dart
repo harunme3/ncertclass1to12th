@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'package:android_intent_plus/android_intent.dart';
 import 'package:ncertclass1to12th/Exam/paperprovider/paperprovider.dart';
 import 'package:ncertclass1to12th/Onboarding/onboarding.dart';
 import 'package:ncertclass1to12th/Rough/sideroughstatus.dart';
@@ -17,7 +16,6 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:platform/platform.dart';
 
 ///Receive message when app is in background solution for on message
 Future<void> backgroundHandler(RemoteMessage message) async {
@@ -103,7 +101,7 @@ class NcertHome extends StatefulWidget {
 
 class _NcertHomeState extends State<NcertHome> {
   @override
-  void initState() async {
+  void initState() {
     super.initState();
     LocalNotificationService.initialize(context);
 
