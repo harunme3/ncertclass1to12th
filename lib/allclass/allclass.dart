@@ -31,6 +31,8 @@ class AllClass extends StatefulWidget {
 }
 
 class _AllClassState extends State<AllClass> {
+  var l = Logger();
+
   Future<ClassDataSet> loadJsonClassDataSet() async {
     String jsonstring = await rootBundle
         .loadString('assets/alldata_image/all/classnamedata_image.json');
@@ -38,7 +40,6 @@ class _AllClassState extends State<AllClass> {
     return ClassDataSet.fromJson(jsonresponse);
   }
 
-  var l = Logger();
   Future<bool> showExitPopup() async {
     if (Provider.of<AppAnalysisProvider>(context, listen: false).getcount ==
         20) {

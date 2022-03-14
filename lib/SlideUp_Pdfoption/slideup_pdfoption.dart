@@ -10,7 +10,6 @@ class Paneloption extends StatelessWidget {
 
   final l = Logger();
   final PanelController panelController;
-
   final ScrollController scrollController;
 
   @override

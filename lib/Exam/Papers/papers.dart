@@ -7,7 +7,9 @@ import 'package:provider/provider.dart';
 
 class Papers extends StatefulWidget {
   const Papers({Key? key, required this.classname}) : super(key: key);
+
   final String classname;
+
   @override
   State<Papers> createState() => _PapersState();
 }

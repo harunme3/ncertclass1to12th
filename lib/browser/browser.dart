@@ -3,6 +3,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 
 class AppBrowser extends StatefulWidget {
   const AppBrowser({Key? key, required this.url}) : super(key: key);
+
   final String url;
 
   @override
@@ -11,6 +12,7 @@ class AppBrowser extends StatefulWidget {
 
 class _AppBrowserState extends State<AppBrowser> {
   late WebViewController controller;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

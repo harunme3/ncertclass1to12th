@@ -30,11 +30,11 @@ class AllPlaylist extends StatefulWidget {
 class _AllPlaylistState extends State<AllPlaylist> {
   String isclicked = "";
   var l = Logger();
+  List<List<AllPlaylistModel>> listofid = [];
 
   InterstitialAd? _interstitialAd;
   int _interstitialLoadAttempts = 0;
 
-  List<List<AllPlaylistModel>> listofid = [];
   @override
   void dispose() {
     super.dispose();

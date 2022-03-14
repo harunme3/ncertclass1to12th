@@ -210,8 +210,10 @@ class _AllPaperListState extends State<AllPaperList> {
                                     final String pathofdata =
                                         '$projectname/$classname/$papertype/$boardName/$subjectname/$papername/';
 
-                                    String filename = widget
-                                        .subjectDataset.paperDataset[index].id;
+                                    String filename = widget.subjectDataset
+                                            .paperDataset[index].id +
+                                        widget.classname.split(' ').last +
+                                        widget.boardName.split(' ').first;
 
                                     Navigator.push(
                                       context,

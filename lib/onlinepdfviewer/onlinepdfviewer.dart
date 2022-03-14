@@ -9,6 +9,7 @@ import 'package:uc_pdfview/uc_pdfview.dart';
 
 class OnlinePdfViwer extends StatefulWidget {
   const OnlinePdfViwer({Key? key, required this.url}) : super(key: key);
+
   final String url;
 
   @override
