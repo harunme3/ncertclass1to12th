@@ -48,7 +48,10 @@ class _AllPaperListState extends State<AllPaperList> {
   }
 
   Future canviewpdf(int index) async {
-    final papername = widget.subjectDataset.paperDataset[index].id;
+   final papername = widget.subjectDataset
+                     .paperDataset[index].id +
+                     widget.classname.split(' ').last +
+                     widget.boardName.split(' ').first;
 
     String filename = '$papername' + '.pdf';
 
