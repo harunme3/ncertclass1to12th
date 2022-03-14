@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ncertclass1to12th/SlideUp_Pdfoption/slideup_pdfoption.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
-import 'package:uc_pdfview/uc_pdfview.dart';
+import 'package:flutter_pdfview/flutter_pdfview.dart';
 
 class LastOpenedPdf extends StatefulWidget {
   const LastOpenedPdf({Key? key, required this.path}) : super(key: key);
@@ -98,7 +98,7 @@ class _LastOpenedPdfState extends State<LastOpenedPdf> {
           panelBuilder: (scrollController) =>
               Paneloption(scrollController, panelController),
           body: Container(
-            child: UCPDFView(
+            child: PDFView(
               filePath: widget.path,
               autoSpacing: false,
               pageSnap: false,

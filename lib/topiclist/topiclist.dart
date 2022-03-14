@@ -65,21 +65,16 @@ class _TopicListState extends State<TopicList> {
   }
 
   Future canviewpdf(int index) async {
-    final projectname = 'Education';
-    final examname = 'NCERT and Exampler';
-    final classname = widget.classname;
-    final medium =
-        await Provider.of<LangaugeProvider>(context, listen: false).isHindi
-            ? 'HindiMedium'
-            : 'EnglishMedium';
+    final mclassname = widget.classname.split(' ').last;
+    final mbookname =
+        widget.bookname.split(' ').first + widget.bookname.split(' ').last;
+    final msubjectname = widget.subjectname.split(' ').first;
+    final mbooksolutionname = widget.booksolutionname;
+    final mtopicname = widget.topicDataSet[index].topicName.split(' ').first +
+        widget.topicDataSet[index].topicName.split(' ').last;
 
-    final bookname = widget.bookname;
-    final subjectname = widget.subjectname;
-    final booksolutionname = widget.booksolutionname;
-    final topicname = widget.topicDataSet[index].topicName;
-
-    String filename =
-        '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_$topicname' +
+    final String filename =
+        '${mclassname}_${mbookname}_${msubjectname}_${mbooksolutionname}_$mtopicname' +
             '.pdf';
 
     Directory dir = await getApplicationDocumentsDirectory();
@@ -322,8 +317,26 @@ class _TopicListState extends State<TopicList> {
 
                                 final String pathofdata =
                                     '$projectname/$examname/$classname/$medium/$bookname/$subjectname/$booksolutionname/$topicname/';
+
+                                final mclassname =
+                                    widget.classname.split(' ').last;
+                                final mbookname =
+                                    widget.bookname.split(' ').first +
+                                        widget.bookname.split(' ').last;
+                                final msubjectname =
+                                    widget.subjectname.split(' ').first;
+                                final mbooksolutionname =
+                                    widget.booksolutionname;
+                                final mtopicname = widget
+                                        .topicDataSet[index].topicName
+                                        .split(' ')
+                                        .first +
+                                    widget.topicDataSet[index].topicName
+                                        .split(' ')
+                                        .last;
+
                                 final String filename =
-                                    '${projectname}_${examname}_${classname}_${medium}_${bookname}_${subjectname}_${booksolutionname}_${topicname}';
+                                    '${mclassname}_${mbookname}_${msubjectname}_${mbooksolutionname}_$mtopicname';
 
                                 Navigator.push(
                                   context,

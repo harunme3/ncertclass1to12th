@@ -16,7 +16,7 @@ import 'package:ncertclass1to12th/pdf%20view/pdfviewdistractionfreemode.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
-import 'package:uc_pdfview/uc_pdfview.dart';
+import 'package:flutter_pdfview/flutter_pdfview.dart';
 
 class PdfViewLocation extends StatefulWidget {
   const PdfViewLocation({
@@ -242,7 +242,7 @@ class _PdfViewLocationState extends State<PdfViewLocation> {
             panelBuilder: (scrollController) =>
                 Paneloption(scrollController, panelController),
             body: Container(
-              child: UCPDFView(
+              child: PDFView(
                 filePath: widget.file.path,
                 autoSpacing: false,
                 pageSnap: false,

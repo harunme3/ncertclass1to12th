@@ -5,7 +5,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:uc_pdfview/uc_pdfview.dart';
+import 'package:flutter_pdfview/flutter_pdfview.dart';
 
 class OnlinePdfViwer extends StatefulWidget {
   const OnlinePdfViwer({Key? key, required this.url}) : super(key: key);
@@ -70,7 +70,7 @@ class _OnlinePdfViwerState extends State<OnlinePdfViwer> {
                   child: Scaffold(
                     appBar: AppBar(),
                     body: Container(
-                        child: UCPDFView(filePath: snapshot.data!.path)),
+                        child: PDFView(filePath: snapshot.data!.path)),
                   ),
                 );
           }

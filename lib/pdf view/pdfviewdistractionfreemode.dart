@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:uc_pdfview/uc_pdfview.dart';
+import 'package:flutter_pdfview/flutter_pdfview.dart';
 
 class PdfViewDistractionFreeMode extends StatefulWidget {
   PdfViewDistractionFreeMode(this.file);
@@ -25,7 +25,7 @@ class _PdfViewDistractionFreeModeState
     return SafeArea(
       child: Scaffold(
         body: Container(
-            child: UCPDFView(
+            child: PDFView(
           filePath: widget.file.path,
           autoSpacing: false,
           pageSnap: false,

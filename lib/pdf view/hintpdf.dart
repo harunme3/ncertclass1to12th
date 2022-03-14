@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:ncertclass1to12th/SlideUp_Pdfoption/slideup_pdfoption.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
-import 'package:uc_pdfview/uc_pdfview.dart';
+import 'package:flutter_pdfview/flutter_pdfview.dart';
 
 class HintPdf extends StatefulWidget {
   const HintPdf({Key? key, required this.file}) : super(key: key);
@@ -100,7 +100,7 @@ class _HintPdfState extends State<HintPdf> {
           panelBuilder: (scrollController) =>
               Paneloption(scrollController, panelController),
           body: Container(
-            child: UCPDFView(
+            child: PDFView(
               filePath: widget.file.path,
               autoSpacing: false,
               pageSnap: false,

@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:uc_pdfview/uc_pdfview.dart';
+import 'package:flutter_pdfview/flutter_pdfview.dart';
 
 class PdfDarkMode extends StatelessWidget {
   const PdfDarkMode(this.file);
@@ -13,7 +13,7 @@ class PdfDarkMode extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Container(
-            child: UCPDFView(
+            child: PDFView(
           filePath: file.path,
           autoSpacing: false,
           pageSnap: false,
